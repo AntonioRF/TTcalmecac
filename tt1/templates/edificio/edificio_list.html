@@ -1,0 +1,34 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<td>#</td>
+				<td>Nombre</td>
+				<td>Nivel</td>
+				<td>Tipo</td>
+			</tr>
+		</thead>
+		<tbody>
+			{% if object_list%}
+			{% for edificio in object_list %}
+			<tr>
+				<td>{{edificio.id}}</td>
+				<td>{{edificio.nombre}}</td>
+				<td>{{edificio.nivel}}</td>
+				<td>{{edificio.tipo}}</td>
+				<td>
+					<a class="btn btn-primary" href="{% url 'edificio_editar' edificio.id %}">Editar</a>
+					<a class="btn btn-danger" href="{% url 'edificio_eliminar' edificio.id %}">Eliminar</a>
+				</td>
+			</tr>
+			{% endfor %}
+			{% else%}
+			<h1>No hay registros de edificios</h1>
+			{% endif %}
+		</tbody>
+	</table>
+
+{% endblock %}

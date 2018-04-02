@@ -1,0 +1,42 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<td>#</td>
+				<td>Numero</td>
+				<td>Nombre</td>
+				<td>Capacidad</td>
+				<td>Tipo</td>
+				<td>Acceso a discapacitados</td>
+				<td>Puede ser utilizado</td>
+				<td>Observaciones</td>
+			</tr>
+		</thead>
+		<tbody>
+			{% if object_list%}
+			{% for espacio in object_list %}
+			<tr>
+				<td>{{espacio.id}}</td>
+				<td>{{espacio.numero}}</td>
+				<td>{{espacio.nombre}}</td>
+				<td>{{espacio.capacidad}}</td>
+				<td>{{espacio.tipo}}</td>
+				<td>{{espacio.acceso_discapacitados}}</td>
+				<td>{{espacio.puede_utilizar}}</td>
+				<td>{{espacio.observaciones}}</td>
+				<td>
+					<a class="btn btn-primary" href="{% url 'espacio_editar' espacio.id %}">Editar</a>
+					<a class="btn btn-danger" href="{% url 'espacio_eliminar' espacio.id %}">Eliminar</a>
+				</td>
+			</tr>
+			{% endfor %}
+			{% else%}
+			<h1>No hay registros de espacios</h1>
+			{% endif %}
+		</tbody>
+	</table>
+
+{% endblock %}
