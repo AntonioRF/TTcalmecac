@@ -1,0 +1,126 @@
+
+\begin{UseCase}{CUC-1}{Iniciar sesión}
+	{	
+		Permite a los usuarios acceder a las acciones correspondientes a cada perfil con los menús y pantallas respectivas. Para entrar al sistema el usuario debe ingresar usuario, es decir su correo y la contraseña correspondiente.
+	}
+\UCccitem{Versión}{0.1}
+\UCccsection{Administración de Requerimientos}
+\UCccitem{Autor}{Alma Nallely Gordillo Ramírez}
+\UCccitem{Evaluador}{}
+\UCccitem{Operación}{Negocio}
+\UCccitem{Prioridad}{Alta}
+\UCccitem{Complejidad}{Alta}
+\UCccitem{Volatilidad}{Muy baja}
+\UCccitem{Madurez}{Alta}
+\UCccitem{Estatus}{Edición}
+\UCccitem{Fecha del último estatus}{13 de noviembre de 2017}
+
+% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+% Esta sección la debe llenar solo el Revisor
+%--------------------------------------------------------
+\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+\UCccitem{Fecha}{6 de noviembre de 2017}
+\UCccitem{Evaluador}{}
+\UCccitem{Resultado}{Revisado}
+\UCccitem{Observaciones}{
+	\begin{Titemize}
+		\Titem 
+	\end{Titemize}   
+}
+%-------------------------------------------------------------------
+	\UCsection{Atributos}
+	\UCitem{Actor(es)}{
+	Usuario
+	}
+	\UCitem{Propósito}{Ofrecer seguridad y confianza de la información a los usuarios del sistema, así como acceso a la misma.}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli \cdtRef{cuenta:usuario}{Usuario}: \ioEscribir
+			\UCli \cdtRef{cuenta:contrasenia}{Contraseña}: \ioEscribir
+		\end{UClist}
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			\UCli \textbf{Interna:} Que el actor pueda acceder a la URL para iniciar sesión.
+			\UCli \textbf{Interna:} Que exista al menos un usuario registrado.
+		\end{UClist}
+	}
+	
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli \textbf{Interna:} El actor podrá realizar las funciones correspondientes al perfil con el que se accedió.	
+		\end{UClist}
+	}
+	
+	%Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli \cdtIdRef {RN-S2}{Datos requeridos}: Verifica que no se omita ningún campo obligatorio.
+			\UCli \cdtIdRef {RN-S6}{Número de intentos para ingresar al sistema}: Verifica que el número de intentos fallidos para ingresar no sean mayor o igual a 3.
+		\end{UClist}
+	}
+	\UCitem{Errores}{
+		\begin{UClist}
+			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUC-1}{Iniciar sesión} debido a que se omitió el usuario o la contraseña, los cuales son datos marcados como obligatorios.
+			\UCli \cdtIdRef{MSG26}{Usuario y/o contraseña incorrecto}: Se muestra en la pantalla \cdtIdRef{IUC-1}{Iniciar sesión} debido a que el usuario o contraseña fueron ingresados incorrectamente.
+			\UCli \cdtIdRef{MSG27}{Cuenta bloqueada temporalmente}: Se muestra en la pantalla \cdtIdRef{IUC-1}{Iniciar sesión} debido a que ha excedido el número de intentos para acceder a la cuenta.
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Primario}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	\UCpaso[\UCactor] Ingresa a la pantalla \cdtIdRef{IUC-1}{Iniciar sesión}.
+	\UCpaso[\UCactor] Ingresa el \cdtRef{cuenta:usuario}{usuario} y la \cdtRef{cuenta:contrasenia}{contraseña}.
+	\label{cuc-1:iniciarSesion}
+	\UCpaso[\UCactor] Oprime el botón \cdtButton{Aceptar}.
+	\UCpaso [\UCsist] Verifica que no se haya omitido un campo marcado como obligatorio, con base en la regla de negocio \cdtIdRef{RN-S2}{Datos requeridos}. \refTray{A} 
+	\UCpaso [\UCsist] Verifica que el usuario corresponda con la contraseña registrada. \refTray{B} 
+	\UCpaso [\UCsist] Verifica que el número de intentos para iniciar sesión de la cuenta ingresada sea menor o igual a 3. \refTray{C} 
+	\UCpaso [\UCsist] Reinicia el contador de intentos a 0 (cero).
+	\UCpaso [\UCsist] Obtiene el perfil correspondiente a la cuenta. \refTray{D} \refTray{E}
+%	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IU1}{Pantalla principal}.
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{A}{El actor omitió el usuario o contraseña.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUC-1}{Iniciar sesión}.
+	\UCpaso[] Regresa al paso \ref{cuc-1:iniciarSesion} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{B}{El actor ingresó el usuario y/o contraseña que no coincide con la registrada.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG26}{Usuario y/o contraseña incorrecto} en la pantalla \cdtIdRef{IUC-1}{Iniciar sesión}.
+	\UCpaso[\UCsist] Incrementa el contador de número de intentos.
+	\UCpaso[] Regresa al paso \ref{cuc-1:iniciarSesion} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{C}{El actor excedió el número de intentos.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG27}{Cuenta bloqueada temporalmente} en la pantalla \cdtIdRef{IUC-1}{Iniciar sesión}.
+	\UCpaso[\UCsist] Inicia temporizador de 30 minutos.
+	\UCpaso[\UCsist] Recibe notificación de temporizador terminado.
+	\UCpaso[\UCsist] Restablece el contado de número para iniciar sesión.
+	\UCpaso[] Regresa al paso \ref{cuc-1:iniciarSesion} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin del caso de uso]{D}{El perfil del actor es Secretaría de Postgrado.}
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IU1}{Pantalla principal} con el menú \cdtIdRef{MN1}{Menú de la Secretaría de Posgrado}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin del caso de uso]{E}{El perfil del actor es Coordinación de Control Escolar.}
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IU1}{Pantalla principal} con el menú \cdtIdRef{MN1}{Menú de la Coordinación de Control Escolar}.
+\end{UCtrayectoriaA}
+
+\subsection{Puntos de extensión}
+\UCExtensionPoint
+{El actor requiere recuperar su contraseña}
+{ Paso \ref{cuc-1:iniciarSesion} de la Trayectoria Principal}
+{\cdtIdRef{CUC-1.1}{Recuperar contraseña}}
+
+\UCExtensionPoint
+{El actor requiere crear una nueva cuenta de usuario}
+{ Paso \ref{cuc-1:iniciarSesion} de la Trayectoria Principal}
+{\cdtIdRef{CUC-1.2}{Crear cuenta}}

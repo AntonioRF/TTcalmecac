@@ -1,0 +1,95 @@
+% comandos propios para este proyecto
+
+\newcommand{\eld}{Escuela Libre de Derecho}
+\newcommand{\cdt}{Coordinación de Desarrollo Tecnológico, ESCOM-IPN }
+\newcommand{\sae}{Sistema de Administración Escolar Versión 2.0}
+%\newcommand{\paear}{Programa de Acreditación de Escuelas Ambientalmente Responsables}
+
+\newcommand{\btnAdvertencia}{\imgInline{Iconos/advertencia.png}}
+\newcommand{\btnAlerta}{\imgInline{Iconos/alerta.png}}
+\newcommand{\btnArchivo}{\imgInline{Iconos/archivo.png}}
+\newcommand{\btnAsistencia}{\imgInline{Iconos/asistencia.png}}
+\newcommand{\btnBorrar}{\imgInline{Iconos/borrar.png}}
+\newcommand{\btnCalendario}{\imgInline{Iconos/calendario.png}}
+\newcommand{\btnCarpeta}{\imgInline{Iconos/carpeta.png}}
+\newcommand{\btnCorreo}{\imgInline{Iconos/correo.png}}
+\newcommand{\btnDescargar}{\imgInline{Iconos/descargar.png}}
+\newcommand{\btnDone}{\imgInline{Iconos/done.png}}
+\newcommand{\btnEditar}{\imgInline{Iconos/editar.png}}
+\newcommand{\btnError}{\imgInline{Iconos/error.png}}
+\newcommand{\btnEscritorio}{\imgInline{Iconos/escritorio.png}}
+\newcommand{\btnEvaluacion}{\imgInline{Iconos/evaluacion.png}}
+\newcommand{\btnImprimir}{\imgInline{Iconos/imprimir.png}}
+\newcommand{\btnInformacion}{\imgInline{Iconos/info.png}}
+\newcommand{\btnIntercambio}{\imgInline{Iconos/intercambio.png}}
+\newcommand{\btnAgregar}{\imgInline{Iconos/mas.png}}
+\newcommand{\btnQuitar}{\imgInline{Iconos/menos.png}}
+\newcommand{\btnCheck}{\imgInline{Iconos/palomita.png}}
+\newcommand{\btnPDF}{\imgInline{Iconos/pdf.png}}
+\newcommand{\btnPregunta}{\imgInline{Iconos/pregunta.png}}
+\newcommand{\btnPsicologo}{\imgInline{Iconos/psicologo.png}}
+\newcommand{\btnReloj}{\imgInline{Iconos/reloj.png}}
+\newcommand{\btnUpload}{\imgInline{Iconos/subir.png}}
+\newcommand{\btnVer}{\imgInline{Iconos/ver.png}}
+\newcommand{\btnRegistrar}{\imgInline{Iconos/registrar.png}}
+\newcommand{\btnGestionar}{\imgInline{Iconos/gestionar.png}}
+\newcommand{\btnAprobar}{\imgInline{Iconos/aprobar.png}}
+\newcommand{\btnTerminos}{\imgInline{Iconos/check.png}}
+\newcommand{\btnRadioButton}{\imgInline{Iconos/raddioButton.png}}
+\newcommand{\btnDomicilio}{\imgInline{Iconos/domicilio.png}}
+\newcommand{\btnMedioDeContacto}{\imgInline{Iconos/mediodecontacto.png}}
+\newcommand{\btnTrayectoria}{\imgInline{Iconos/trayectoria.png}}
+\newcommand{\btnPrioridad}{\imgInline{Iconos/prioridad.png}}
+\newcommand{\btnSalon}{\imgInline{Iconos/salon.png}}
+\newcommand{\btnProfesor}{\imgInline{Iconos/profesor.png}}
+\newcommand{\btnRegistrarEvaluacion}{\imgInline{Iconos/registrarEvaluacion.png}}
+\newcommand{\btnRegresarConvocatoria}{\imgInline{Iconos/regresar.png}}
+\newcommand{\btnCerrarConvocatoria}{\imgInline{Iconos/error.png}}
+\newcommand{\btnArrowLeft}{\imgInline{Iconos/arrowLeft.png}}
+\newcommand{\btnArrowRigth}{\imgInline{Iconos/arrowRigth.png}}
+\newcommand{\btnActivo}{\imgInline{Iconos/activo.png}}
+\newcommand{\btnInactivo}{\imgInline{Iconos/inactivo.png}}
+\newcommand{\btnAusenciaTotal}{\imgInline{Iconos/ausenciaTotal.png}}
+\newcommand{\btnAusencia}{\imgInline{Iconos/ausencia.png}}
+\newcommand{\btnContrasena}{\imgInline{Iconos/contrasena.png}}
+\newcommand{\btnPrivacidad}{\imgInline{Iconos/privacidad.png}}
+\newcommand{\btnLista}{\imgInline{Iconos/lista.png}}
+\newcommand{\btnReinscribir}{\imgInline{Iconos/reinscribir.png}}
+\newcommand{\btnPublicar}{\imgInline{Iconos/publicar.png}}
+\newcommand{\btnDerogar}{\imgInline{Iconos/derogar.png}}
+\newcommand{\btnTemario}{\imgInline{Iconos/temario.png}}
+\newcommand{\btnJustificar}{\imgInline{Iconos/justificar.png}}
+\newcommand{\btnReaperturar}{\imgInline{Iconos/reaperturar.png}}
+\newcommand{\btnLicencias}{\imgInline{Iconos/Licencias.png}}
+\newcommand{\btnhistorial}{\imgInline{Iconos/Historial.png}}
+%%==========================================================================
+% Para definir un indicador.
+% Use:
+%
+%\begin{indicador}{IDA1}{Nombre del indicador}
+%	\item[Descripción:] Descripción del indicador.
+%	\item[Fórmula:] A = B + C
+%\end{indicador}
+%==========================================================================
+\newenvironment{indicador}[4]{%
+	\hypertarget{#1}{{\hspace{1pt}}}%
+	\subsection{{#1} {#2}} %ID y nombre del mensaje
+	\vspace{-6mm}%
+	%\noindent{\includegraphics[width=\textwidth]{images/pantallas/iconos/indicador}}%
+	\vspace{-6mm}%
+	\subsubsection{Variables}
+	\begin{description}\addtolength{\itemsep}{-0.5\baselineskip}%%
+		\item [Descripción:] #4
+		\item [Fórmula:] #3
+	\end{description}
+
+		\begin{center}
+		\begin{longtable}{ | p{.20\textwidth} | c | p{.60\textwidth} |} \hline
+			\rowcolor{black} \color{white} Variable & \color{white} Unidad & \color{white} Descripción \\ \hline
+}{%
+		\end{longtable}
+	\end{center}
+}
+
+\newcommand{\INitem}[3]{{#1} & {#2} & {#3} \\ \hline}%
+\newcommand{\ioCalcularIndicador}{Lo calcula el sistema mediante el indicador }

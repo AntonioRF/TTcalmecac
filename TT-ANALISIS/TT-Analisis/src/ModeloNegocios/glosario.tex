@@ -1,0 +1,96 @@
+\label{sec:glosario}
+    Este capítulo describe los términos usados a lo largo del documento que tienen un significado singular en la Escuela Superior de Cómputo o el Sistema y que se consideran necesario definirlos para evitar ambigüedades o malos entendidos.
+    La lista de términos se encuentra agrupada por áreas de conocimiento:
+\begin{Citemize}
+    \item Términos técnicos: Agrupa los términos que tienen que ver con el sistema.
+    \item Términos del negocio: Agrupa los términos que tienen significado dentro de la Escuela Superior de Cómputo.
+\end{Citemize}
+
+    Para fines de este documento la siguiente lista de términos se debe interpretar como se describen en este capítulo.
+
+%  \RCitem{ARM-01}{\TOCHK{En todos los términos, cuando menciones ``tipo de dato'' que sea una referencia al término.}}{31 de julio de 2014}
+%  \RCitem{ARM-02}{\TOCHK{Agrega el término ``Georreferenciación'' en el documento de ANPs ya está la definición :)}}{31 de julio de 2014}
+%  \RCitem{ARM-03}{\TOCHK{El término ``Tipo de documento legal'' ampliar su definición}}{31 de julio de 2014}
+   
+%====================================================================
+\section{Términos técnicos}
+\label{gls:terminosTecnicos}
+
+  En esta sección se definen los términos técnicos que se utilizan para describir el comportamiento del sistema.
+  
+  \begin{description}
+  
+    \BRterm{gls:alfanumerico}{Alfanumérico:} Es un \cdtRef{gls:tipoDato}{tipo de dato} definido por el conjunto de caracteres numéricos y alfabéticos.
+    
+    \BRterm{gls:archivoDigital}{Archivo digital:} Equivalente digital de los archivos escritos en libros, tarjetas, libretas, papel o microfichas del entorno de oficina tradicional. --
+    
+    \BRterm{gls:atributo}{Atributo:} Son las características que definen o identifican a una entidad en un conjunto de entidades.
+
+    \BRterm{gls:booleano}{Booleano:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que puede tomar los siguientes valores: verdadero ó falso (1 ó 0).
+    
+    \BRterm{gls:cadena}{Cadena:} Es el \cdtRef{gls:tipoDato}{tipo de dato} definido por cualquier valor que se compone de una secuencia de caracteres, con o sin acentos, espacios, dígitos y signos de puntuación. Existen tres tipos de cadenas: palabra, frase y párrafo.
+    
+    \BRterm{gls:catalogo}{Catálogo:} Es una lista ordenada o clasificada de elementos relacionados.
+    
+    \BRterm{gls:decimal}{Decimal:} Es un \cdtRef{gls:tipoDato}{tipo de dato} \cdtRef{gls:numerico}{numérico}. Los números decimales son valores que denotan números racionales y la aproximación a números irracionales.
+    
+    \BRterm{gls:entero}{Entero:} Es el \cdtRef{gls:tipoDato}{tipo de dato} \cdtRef{gls:numerico}{numérico} definido por todos los valores numéricos enteros, tanto positivos como negativos.
+
+    \BRterm{gls:entidad}{Entidad:} Término genérico que se utiliza para determinar un ente el cual puede ser concreto, abstracto o conceptual por ejemplo: Unidad administrativa, entregable, persona, etc. La entidades se caracterizan a través de atributos que personalizan a la entidad.		
+    %Se usa para hacer referencia a un objeto con existencia física (entidad concreta) como: Una persona, un animal, una casa, etc.; o un objeto con existencia conceptual (entidad abstracta) como: Un puesto de trabajo, una asignatura de clases, un nombre, etc. Una \cdtRef{gls:entidad}{entidad} se representa por sus características o atributos, por ejemplo: La entidad persona tiene características como: Nombre, apellido, género, estatura, peso, fecha de nacimiento, etc.
+
+    \BRterm{gls:fecha}{Fecha:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que indica un día único en referencia al calendario gregoriano. La fecha tiene el formato DD/MMM/YYYY, por ejemplo: 24/Mar/2013.
+    
+    \BRterm{gls:fechacorta}{Fecha Corta:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que indica el mes y año calendario gregoriano. La fecha tiene el formato MM/AA, por ejemplo: 02/17.
+     
+    \BRterm{gls:fechaActual}{Fecha Actual:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que indica el día presente en referencia al calendario gregoriano. La fecha tiene el formato DD/MMM/YYYY, por ejemplo: 22/Dic/2017.
+
+    \BRterm{gls:frase}{Frase:} Es un \cdtRef{gls:tipoDato}{tipo de dato}  conformado por \cdtRef{gls:palabra}{palabras} y espacios.
+    
+    \BRterm{gls:numerico}{Numérico:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que se compone de la combinación de los símbolos \textit{0,1,2,3,4,5,6,7,8,9,. y -.}  que expresan una cantidad en relación a su unidad.
+    
+    \BRterm{gls:opcional}{Opcional:} Es un elemento que el actor puede o no proporcionar en el formulario o la pantalla, su decisión no afectará la ejecución de la operación solicitada.
+
+    \BRterm{gls:palabra}{Palabra:} Es un \cdtRef{gls:tipoDato}{tipo de dato} \cdtRef{gls:cadena}{cadena} conformado por el alfabeto y símbolos especiales como son \textit{\#,-,\$,\%,\&,(,),etc} y se caracteriza por no tener espacios.
+    
+    \BRterm{gls:parrafo}{Párrafo:} Es un \cdtRef{gls:tipoDato}{tipo de dato} conformado por \cdtRef{gls:frase}{frases}.
+
+    \BRterm{gls:requerido}{Requerido:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que debe proporcionarse de manera obligatoria. La ejecución de la operación solicitada dependerá de que se proporcione este dato.
+    
+    \BRterm{gls:contrasena}{Contraseña:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que se compone de 8 a 20 caracteres, al menos un caracter especial y una letra mayúscula; los caracteres especiales que pueden ser utilizados son \textit{\,?,!,\%,\&}.
+    
+    %Es un atributo de una \cdtRef{gls:entidad}{entidad} que por definición no puede quedar indeterminado. Lo cual implica para el sistema, que, si se solicita mediante una pantalla, base de datos o servicio externo, el dato debe proporcionarse de manera obligatoria para el registro adecuado en el sistema.
+
+    \BRterm{gls:tipoDato}{Tipo de dato:} Es el dominio o conjunto de valores que puede tomar un atributo de una \cdtRef{gls:entidad}{entidad} en el modelo de información. Los tipos de datos utilizados son: \cdtRef{gls:palabra}{palabra}, \cdtRef{gls:frase}{frase}, \cdtRef{gls:parrafo}{párrafo}, \cdtRef{gls:numerico}{numérico}, \cdtRef{gls:fecha}{fecha} y \cdtRef{gls:booleano}{booleano}.
+    
+
+    %\BRterm{gls:na}{NA} Abreviación del término ``No Aplica'', se utiliza para indicar que algún elemento en la estructura del documento o en el sistema no aplica.
+\end{description}
+
+
+%====================================================================
+
+%\begin{description}
+%    \BRterm{gls:cuenta}{Cuenta:} Es la entidad que permite el ingreso al sistema informático.
+%    
+%     \BRterm{gls:usuario}{Usuario:} Un usuario es una persona que utiliza el sistema informático.
+%     
+%    \BRterm{gls:periodo}{Periodo:} Intervalo de tiempo que se definen para denotar una serie de actividades.
+%
+%    \BRterm{gls:documentoRequerido}{Documento Requerido:} Testimonio material de un hecho que ha sido emitido por instituciones o personas físicas, jurídicas, públicas o privadas, el cual es obligatorio presentar ante las personas requeridas o ante el sistema.
+%
+%    \BRterm{gls:mediosDeContacto}{Medios de Contacto:} Instrumento tecnológico que permite establecer comunicación con una persona.
+%    
+%    \BRterm{gls:domicilio}{Domicilio:} Lugar donde una persona (física o jurídica) tiene su residencia.
+%
+%    \BRterm{gls:historialAcademico}{Historial Académico:} Es la información registrada de los distintos niveles de educación que una persona ha cursado, generalmente cada nivel de eduacación es parametrizados con un promedio.
+%    
+%    \BRterm{gls:calendario}{Calendario:} Esquema visual que permite la medición del tiempo.
+%    
+%    \BRterm{gls:criterio}{Criterio:} Actividad definida que al ejecutarse genera un resultado ponderado.
+%    
+%    \BRterm{gls:convocatoria}{Convocatoria:} Anuncio mediante el cual se da a conocer los lineamientos que describen las distintas actividades para llevar a cabo un proceso.
+%    
+%    \BRterm{gls:tarjetaDeCredito}{Tarjeta de Crédito/Débito:} Medio de pago por el cual las personas pueden concretar una transacción. 
+%
+%\end{description}

@@ -1,0 +1,94 @@
+
+\begin{UseCase}{CUI1.4}{Consultar edificio}{	
+	Permite al Subdirector Académico consultar un edificio previamente registrado y los espacios que contiene el edificio. De este modo, el Subdirector Académico podrá ver de modo general el contenido del edificio.
+}
+	\UCccitem{Versión}{0.1}
+	\UCccsection{Administración de Requerimientos}
+	\UCccitem{Autor}{Brenda Gómez Caballero}
+	\UCccitem{Evaluador}{}
+	\UCccitem{Operación}{Registro}
+	\UCccitem{Prioridad}{Alta}
+	\UCccitem{Complejidad}{Baja}
+	\UCccitem{Volatilidad}{Muy baja}
+	\UCccitem{Madurez}{Alta}
+	\UCccitem{Estatus}{Edición}
+	\UCccitem{Fecha del último estatus}{01 de Abril de 2018}
+	
+	% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+	% Esta sección la debe llenar solo el Revisor
+	%--------------------------------------------------------
+	\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+	\UCccitem{Fecha}{}
+	\UCccitem{Evaluador}{}
+	\UCccitem{Resultado}{}
+	\UCccitem{Observaciones}{
+		\begin{Titemize}
+			\Titem \DONE 
+			\Titem \DONE 
+			\Titem \DONE 
+		\end{Titemize}   
+	}
+	%-------------------------------------------------------------------
+	\UCsection{Atributos}
+	\UCitem{Actor(es)}{ \begin{UClist}
+			\UCli Subdirector Académico
+		\end{UClist} 
+	}
+	\UCitem{Propósito}{Permite al actor la consulta de los detalles del edificio y los espacios registrados en el.}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			Información del edificio
+			\UCli Nombre.
+			\UCli Niveles.
+			
+			Información del espacio
+			\UCli Número del nivel
+			\UCli Clave
+			\UCli Nombre
+			\UCli Capacidad
+		\end{UClist}
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}	
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli Ninguna	
+		\end{UClist}
+	}
+	%Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Errores}{
+		\begin{UClist}	
+			\UCli Ninguno
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Primario}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	\UCpaso [\UCactor] Solicita consultar un edifico dando clic en el ícono IUConsultar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
+	
+	\UCpaso [\UCsist] Obtiene el nombre y número de niveles del edificio a consultar.
+	
+	\UCpaso [\UCsist] Obtiene el número de nivel, clave, nombre y capacidad de los espacios asociados al edificio.
+	
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUI1.4}{Consultar Edificio} con la información obtenida.
+	
+	\UCpaso [\UCactor] Solicita finalizar la consulta oprimiendo el botón \cdtButton{Regresar}. 
+	
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}.
+	
+\end{UCtrayectoria}
+

@@ -1,0 +1,200 @@
+\documentclass[10pt]{book}
+\usepackage{cdt/cdtBusiness}
+\usepackage{eld}
+\usepackage{subfigure}
+\usepackage{cite}
+\usepackage{verbatim}
+\usepackage{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Datos del proyecto
+
+\title{Instituto Polit\'ecnico Nacional \\ Escuela Superior de C\'omputo}
+\subtitle{\Large{TLAMATINIME: Timetabling Problem, Prototipo de Optimización de Horarios en la ESCOM \\ 2017-B092}}
+
+\organizacion[IPN]{}
+
+\documento{C1--DA}{\Large{Que para cumplir con la opción de titulación curricular en la carrera de: \\ Ingeniería en Sistemas Computacionales}}{\RELEASE{1.0}}%{\DRAFT{\today}} 
+
+%\entregable{}{\Large{TLAMATINIME: Timetabling Problem, Prototipo de Optimización de Horarios en la ESCOM}}
+%\entregable{}{ }x
+
+% Descomentar y establecer la fecha cuando se desee congelar la fecha del documento.
+%\fecha{12 de Abril de 2013}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Documentos relacionados con el documento actual
+
+% TODO: Escriba los documentos en los que está basado este documento.
+\docRefs{
+
+%     \docItem{Catálogo de Escuelas}{}{Catálogo de Escuelas de la DGAIR (Dirección General de Acreditación, Incorporación y Revalidación) de la SEP (Secretaría de Educación Pública)}
+%     \docItem{Plan de Proyecto}{1.0}{ \cdtLabel{planProyecto}{Plan de proyecto del Programa de Acreditación de Escuelas Ambientalmente Responsables}}
+%     \docItem{PAEAR}{1.0}{ \cdtLabel{PAEAR}{Programa de Acreditación de Escuelas Ambientalmente Responsables}}
+%     \docItem{MPOCCT}{1.0}{ \cdtLabel{cct}{Manual de Procedmientos para la Operación del Catálogo de Centros de Trabajo}}
+%     \docItem{M-1TR}{1.0}{ \cdtLabel{M-3TR}{Minuta de la Primera Reunión de Toma de Requerimientos}}
+%     \docItem{M-2TR}{1.0}{ \cdtLabel{M-2TR}{Minuta de la Segunda Reunión de Toma de Requerimientos}}
+%     \docItem{M-3TR}{1.0}{ \cdtLabel{M-3TR}{Minuta de la Tercera Reunión de Toma de Requerimientos }}
+
+
+
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Elementos contenidos en el documento
+
+% TODO: Al finalizar el análisis resuma aquí todos los elementos del componente: RN, CU, IU, MSG.
+\elemRefs{
+	
+	
+	%Resumen
+	%\elemItem{Resumen}{1.0}{}
+	%Contexto de trabajo
+%	\elemItem{Contexto de trabajo}{1.0}{}
+		%Problemática
+	\elemItem{Problemática}{1.0}{}
+		%Trabajo previo
+	\elemItem{Trabajo previo}{1.0}{}
+		%Solución propuesta
+	\elemItem{Solución propuesta}{1.0}{}
+		%Objetivos
+	\elemItem{Objetivos}{1.0}{}
+		%Justificación
+	\elemItem{Justificación}{1.0}{}
+
+	%Glosario de términos
+ %--  \elemItem{Glosario de términos}{1.0}{Descripción de los términos técnicos y de negocio utilizados}
+
+
+	
+
+
+	
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%=========================================================
+% Portada
+%\ThisLRCornerWallPaper{1}{cdt/theme/agua.jpg}
+\thispagestyle{empty}
+
+\maketitle
+  
+%=========================================================
+% Hoja de revisión
+%\makeDocInfo
+\vspace{0.5cm}
+%\makeElemRefs
+%\makeDocRefs
+%\makeObservaciones[3cm]
+\vspace{0.5cm}
+%\makeFirmas
+
+%=========================================================
+% Indices del documento
+%\frontmatter
+%\LRCornerWallPaper{1}{cdt/theme/pleca.jpg}
+\tableofcontents
+\listoffigures
+%\listoftables
+%\mainmatter
+
+% Para esconder la información del documentador se descomenta el \hideControlVersion
+% \hideControlVersion
+
+%=========================================================
+%\chapter{Resumen}\label{chp:resumen}
+%\cfinput{ModeloNegocios/resumen}
+
+%=========================================================
+%\chapter{Contexto de trabajo}\label{chp:contextotrabajo}
+%\cfinput{ModeloNegocios/introduccion}
+
+%=========================================================
+\chapter{Problemática}\label{chp:problematica}
+\cfinput{ModeloNegocios/EntornoTT/problematica}
+
+%=========================================================
+\chapter{Trabajo previo}\label{chp:trabajoprevio}
+\cfinput{ModeloNegocios/EntornoTT/trabajoPrevio}
+
+%=========================================================
+\chapter{Solución propuesta}\label{chp:solucionpropuesta}
+\cfinput{ModeloNegocios/EntornoTT/solucionPropuesta}   
+   
+%=========================================================
+\chapter{Objetivos}\label{chp:objetivos}
+\cfinput{ModeloNegocios/EntornoTT/objetivos}
+
+%=========================================================
+\chapter{Justificación}\label{chp:justificacion}
+\cfinput{ModeloNegocios/EntornoTT/justificacion}
+
+%=========================================================
+\chapter{Selección de herramientas}\label{chp:seleccionHerramientas}
+\cfinput{ModeloNegocios/EntornoTT/seleccionHerramientas}
+
+%=========================================================
+\chapter{Glosario de términos}\label{chp:glosarioTerminos}
+\cfinput{ModeloNegocios/glosario}
+
+%=====================MODELO DE ESTADOS==============================================================
+%\chapter{Modelo de estados}\label{chp:modeloEstados} 
+%\cfinput{ModeloNegocios/estados}
+
+%=====================MODELO DE NEGOCIO==============================================================
+\chapter{Modelo de negocio}\label{chp:modeloNegocios} 
+\cfinput{ModeloNegocios/modelo}
+%\cfinput{ModeloNegocios/estructura}
+%\cfinput{ModeloNegocios/estructuracionAcademica}
+%\cfinput{ModeloNegocios/admision}
+%\cfinput{ModeloNegocios/gestionAcademica}
+%\cfinput{ModeloNegocios/informacion-EstructuraAcademica}
+
+\cfinput{ModeloNegocios/reglas}
+
+%=====================MODELO DE COMPORTAMIENTO=======================================================
+\chapter{Modelo de comportamiento}\label{chp:modeloComportamiento}
+\cfinput{ModeloComportamiento/comportamiento}
+%\cfinput{ModeloComportamiento/InicioSesion/modelo-comportamiento}
+
+%=================================ACADEMIAS====================================
+\cfinput{ModeloComportamiento/Academias/modelo-comportamiento}
+
+%=================================ACADEMIAS====================================
+\cfinput{ModeloComportamiento/Infraestructura/modelo-comportamiento}
+
+
+
+%=====================MODELO DE INTERACCIÓN======================================
+\chapter{Modelo de interacción con el usuario}\label{chp:modeloInteraccionUsuario}
+%\cfinput{ModeloInteraccion/interaccion}
+
+\section{Interfaces del módulo: Academias}
+\cfinput{ModeloInteraccion/Academias/AsistenciaAlumnos}
+
+\section{Interfaces del módulo: Infraestructura}
+\subsection{Edificios}
+\cfinput{ModeloInteraccion/Infraestructura/Edificios}
+
+\subsection{Espacios}
+\cfinput{ModeloInteraccion/Infraestructura/Espacios}
+
+\section{Diseño de mensajes}
+\cfinput{ModeloInteraccion/mensajes}
+
+
+
+% Bibliografía
+% \bibliographystyle{plain}
+% \bibliography{bibSEIPA}
+%\addcontentsline{toc}{chapter}{Bibliografía}
+
+
+
+%\clossing
+\end{document}

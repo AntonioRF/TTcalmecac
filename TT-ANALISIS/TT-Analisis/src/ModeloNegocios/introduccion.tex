@@ -1,0 +1,40 @@
+\label{sec:introduccion}
+
+\textbf{Survey on University Timetabling Problem} \\
+
+El problema de organización de tiempo de un curso en una universidad se cataloga como NP Hard, lo que significa que el problema se vuelve más difícil a medida que se aumenta el número de instancias aumenta, y disminuye la posibilidad de que exista una solución óptima. \\
+
+Se tienen restricciones que siempre deben cumplirse a toda costa tales como: el horario y los salones, pero se tienen condiciones que se pueden violar aunque sea penalizado como las preferencias de los profesores. \\ 
+
+Dadas sus características el problema puede ser abordado de distintas maneras entre ellas el uso de algoritmos basados en la naturaleza, simulaciones, distribuciones de colores y algoritmos genéticos. \\
+
+Categorías de problemas para su solución:
+	
+	\begin{itemize}
+		\item UTTP: Problema de Horarios de Universidades
+		en cuyo caso las clases son asignadas de forma semanal y se tienen que asignar materias a las clases dentro de un horario.
+		
+		\item CTTP: Problema de Horarios por Curso
+		Se refiere al problema de las clases impartidas de un curso/materia a la semana en que el problema incluye asignarles salones y profesores a las materias dentro de un horario.
+		
+		\item LTTP: Problema de horarios por clase
+		Se refiere al problema de asignar una sola clase de un curso por día en la universidad sin que se translapen unas con otras.
+		
+		\item ETTP: Problema de horarios por examinación
+		Contiene una gran cantidad de situaciones propias de los demás problemas. La capacidad de los salones y el horario de profesores y alumnos debe ser tomado en cuenta.
+	\end{itemize}
+	
+	Se han propuesto varias posibles soluciones para el problema tales como:
+	
+	\begin{itemize}
+		
+		\item PROGRAMACIÓN LINEAL(1989,1996,1997): Implementación secuencial de las restricciones del conflicto
+		
+		\item SATISFACCION DE RESTRICCIONES(1998): Se resuelven las restricciones con retroalimentación y consistencia.
+		
+		\item SOLUCIÓN DE COLOREADO DE GRAFOS(1974): Basado en la teoría de grafos se reduce el problema a el vértices y lados. Los eventos en forma de vértices y los lados en forma de condiciones.
+		
+		\item SOLUCIÓN METAHEURÍSTICA: Proceso de generación iterativa que utiliza varios conceptos de inteligencia para explorar las opciones viables del espacio de búsqueda mientras usa estrategias de aprendizaje para llevar a cabo un ordenamiento y encontrar de forma eficiente las soluciones óptimas
+		
+		\item ALGORITMO GENÉTICO: Algoritmo genético usado en combinación con búsqueda secuencial local que usa una fase de construcción y una fase de mejora. Donde cada posible juego de soluciones es conocida como población y cada posible solución es conocida como cromosoma. Se lleva una mejora con el algotimo híbrido con el algoritmo genético y de búsqueda local.
+	\end{itemize}

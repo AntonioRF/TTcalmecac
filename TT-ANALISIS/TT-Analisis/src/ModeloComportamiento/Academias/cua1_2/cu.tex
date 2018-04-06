@@ -1,0 +1,136 @@
+
+\begin{UseCase}{CUA1.2}{Modificar academia}{	
+	Permite a la \cdtRef{Actor:SP}{Secretaría de Posgrado} modificar una academia previamente registrada.
+}
+\UCccitem{Versión}{0.1}
+\UCccsection{Administración de Requerimientos}
+\UCccitem{Autor}{Brenda Gómez Caballero}
+\UCccitem{Evaluador}{}
+\UCccitem{Operación}{Edición}
+\UCccitem{Prioridad}{Media}
+\UCccitem{Complejidad}{Baja}
+\UCccitem{Volatilidad}{Muy baja}
+\UCccitem{Madurez}{Alta}
+\UCccitem{Estatus}{Edición}
+\UCccitem{Fecha del último estatus}{}
+
+% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+% Esta sección la debe llenar solo el Revisor
+%--------------------------------------------------------
+\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+\UCccitem{Fecha}{}
+\UCccitem{Evaluador}{}
+\UCccitem{Resultado}{}
+\UCccitem{Observaciones}{
+	\begin{Titemize}
+		\Titem \DONE 
+		\Titem \DONE 
+		\Titem \DONE 
+	\end{Titemize}   
+}
+%-------------------------------------------------------------------
+	\UCsection{Atributos}
+	\UCitem{Actor(es)}{\begin{UClist}
+			\UCli Subdirector Académico
+	\end{UClist} }
+	\UCitem{Propósito}{Modificar una academia previamente registrada a fin de mantener actualizada la información de estas y poder asignarla a una o más Unidades de Aprendizaje.}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli Nombre: \ioEscribir.
+			\UCli Jefe de academia: \ioSeleccionar.
+		\end{UClist}
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli Nombre.
+			\UCli Jefe de academia.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUA1}{Gestionar Academia} indicando que el registro se realizó correctamente.
+		\end{UClist}
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			\UCli Que se haya registrado al menos un profesor.
+		\end{UClist}
+	}
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli Ninguna	
+		\end{UClist}
+	}
+	%Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli \cdtIdRef{RN-S1}{Datos requeridos}
+			\UCli \cdtIdRef{RN-S2}{Unicidad de elementos} 
+			\UCli \cdtIdRef{RN-N4}{Jefe de academia}.
+		\end{UClist}
+	}
+	\UCitem{Errores}{
+		\begin{UClist}	
+			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUA1.1}{Registrar Academia} indicando que faltan campos obligatorios por completar.
+			
+			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUA1.1}{Registrar Academia} indicando que el nombre de la academia ya existe.
+			
+			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUA1.1}{Registrar Academia} indicando que el jefe de academia que desea seleccionar ya es jefe de otra academia.
+			
+			\UCli \cdtIdRef{MSG7}{No existe información necesaria en el sistema}: Se muestra en la pantalla \cdtIdRef{IUA1}{Gestionar Academias} indicando que no se puede registrar una academia debido a que no se ha registrado al menos un profesor.
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Primario}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	\UCpaso [\UCactor] Solicita modificar una academia dando clic en el ícono %\IUModificar
+	de la pantalla \cdtIdRef{IUA1}{Gestionar Academias}. 
+	
+	\UCpaso [\UCsist] Verifica que exista al menos un profesor registrado. \refTray{A}
+	
+	\UCpaso [\UCsist] Obtiene el nombre completo de los profesores basificados con base en la regla de negocios \cdtIdRef{RN-N4}{Jefe de academia}.
+	
+	\UCpaso [\UCsist] Obtiene la información de la academia previamente registrada.
+
+	\UCpaso[\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUA1.1}{Registrar Academia} con la información obtenida.
+	
+	\UCpaso [\UCactor] Completa la información solicitada. \label{CUA1.1:CompletaInfo}
+	
+	\UCpaso [\UCactor] Solicita modificar la información oprimiendo el botón \cdtButton{Aceptar}. \refTray{B}
+	
+	\UCpaso [\UCsist] Verifica que se hayan completado los campos obligatorios con base en la regla de negocios \cdtIdRef{RN-S1}{Datos requeridos}. \refTray{C}
+	
+	\UCpaso [\UCsist] Verifica que el nombre de la academia no se haya registrado previamente, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{D}
+		
+	\UCpaso [\UCsist] Verifica que el profesor seleccionado como jefe de academia no sea ya jefe de otra academia, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{E}
+	
+	\UCpaso [\UCsist] Modifica el nombre y jefe de la academia.
+	
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUA1}{Gestionar Academias}, indicando que la academia se modificó correctamente.	
+	
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El catálogo de profesores no tiene información.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG7}{No existe información necesaria en el sistema} en la pantalla \cdtIdRef{IUA1}{Gestionar Academias}. 
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin del caso de uso]{B}{El actor desea cancelar la operación.}
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUA1}{Gestionar Academias}. 
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{C}{No se completaron los campos obligatorios.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUA1.1}{Registrar Academia}.
+	
+	\UCpaso Regresa al paso \ref{CUA1.1:CompletaInfo} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{D}{El nombre de la academia ya fue registrado.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUA1.1}{Registrar Academia}.
+	
+	\UCpaso Regresa al paso \ref{CUA1.1:CompletaInfo} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{E}{El profesor seleccionado ya es jefe de otra academia.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUA1.1}{Registrar Academia}.
+	
+	\UCpaso Regresa al paso \ref{CUA1.1:CompletaInfo} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+

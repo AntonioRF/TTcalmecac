@@ -1,0 +1,144 @@
+
+\begin{UseCase}{CUC-1.1}{Recuperar contraseña}
+	{	
+		Permite a los usuarios obtener una nueva contraseña que les permitirá iniciar sesión posteriormente, al solicitar recuperarla solicitará un correo electrónico donde podrá registrar una nueva.
+	}
+\UCccitem{Versión}{0.1}
+\UCccsection{Administración de Requerimientos}
+\UCccitem{Autor}{Alma Nallely Gordillo Ramírez}
+\UCccitem{Evaluador}{}
+\UCccitem{Operación}{Negocio}
+\UCccitem{Prioridad}{Alta}
+\UCccitem{Complejidad}{Alta}
+\UCccitem{Volatilidad}{Muy baja}
+\UCccitem{Madurez}{Alta}
+\UCccitem{Estatus}{Edición}
+\UCccitem{Fecha del último estatus}{14 de noviembre de 2017}
+
+% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+% Esta sección la debe llenar solo el Revisor
+%--------------------------------------------------------
+\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+\UCccitem{Fecha}{6 de noviembre de 2017}
+\UCccitem{Evaluador}{}
+\UCccitem{Resultado}{Revisado}
+\UCccitem{Observaciones}{
+	\begin{Titemize}
+		\Titem 
+	\end{Titemize}   
+}
+%-------------------------------------------------------------------
+	\UCsection{Atributos}
+	\UCitem{Actor(es)}{
+	Usuario
+	}
+	\UCitem{Propósito}{Obtener una nueva contraseña para iniciar sesión.}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli \cdtRef{cuenta:usuario}{Usuario}: \ioEscribir
+			\UCli \cdtRef{cuenta:contrasenia}{Ingresar nueva contraseña}: \ioEscribir
+			\UCli \cdtRef{cuenta:contrasenia}{Repetir contraseña}: \ioEscribir
+		\end{UClist}
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli \cdtIdRef{MSG1}{Operación exitosa}: Se muestra en la pantalla \cdtIdRef{IUC-1}{Iniciar sesión} cuando el correo electrónico se ha enviado exitosamente.
+			\UCli \cdtIdRef{MSG28}{Correo para confirmar operación}: Se muestra en el correo electrónico asociado a la cuenta del usuario.
+		\end{UClist}
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			%\UCli \textbf{Interna:} Que el actor pueda acceder a la URL para iniciar sesión.
+			\UCli \textbf{Interna:} Debe estar registrado el usuario en el sistema.
+		\end{UClist}
+	}
+	
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli \textbf{Interna:} La contraseña asociada a la cuenta será modificada.
+			\UCli \textbf{Interna:} El actor podrá iniciar sesión.
+		\end{UClist}
+	}
+	
+	%Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli \cdtIdRef{RN-S2}{Datos requeridos}: Verifica que no se omita ningún campo obligatorio.
+			\UCli \cdtIdRef{RN-S7}{Token para recuperar contraseña}: Verifica que al ingresar el token sea válido.
+		\end{UClist}
+	}
+	\UCitem{Errores}{
+		\begin{UClist}
+			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUC-1.1A}{Correo electrónico a recuperar contraseña} e \cdtIdRef{IUC-1.1B}{Nueva contraseña}  debido a que se omitió el usuario o la contraseña, los cuales son datos marcados como obligatorios.
+			\UCli \cdtIdRef{MSG4}{Formato de campo incorrecto}: Se muestra en la pantalla \cdtIdRef{IUC-1.1B}{Nueva contraseña} debido a que la contraseña no corresponde al modelo de información \cdtRef{cuenta}{Cuenta}.
+			\UCli \cdtIdRef{MSG29}{Entidad no encontrada}: Se muestra en la pantalla \cdtIdRef{IUC-1.1A}{Correo electrónico a recuperar contraseña} indicando que el correo electrónico ingresado no coincide con alguno registrado.
+			\UCli \cdtIdRef{MSG30}{La confirmación de la contraseña no coincide}: Se muestra en la pantalla \cdtIdRef{IUC-1.1B}{Nueva contraseña} indicando que la contraseña ingresada y la confirmación de la misma no coinciden.
+			\UCli \cdtIdRef{MSG31}{Error con el token de recuperación de contraseña}: Se muestra en la pantalla \cdtIdRef{IUC-1.1A}{Correo electrónico a recuperar contraseña} indicando que el token para recuperar contraseña ya no es válido o ha experido.
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUC-1}{Iniciar sesión}}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	\UCpaso[\UCactor] Requiere recuperar contraseña a través de la liga ''¿Has olvidado tu contraseña?'' en la pantalla \cdtIdRef{IUC-1}{Iniciar sesión}.
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUC-1.1A}{Correo electrónico a recuperar contraseña}.
+	\UCpaso[\UCactor] Ingresa el correo electrónico.
+	\label{cuc-1.1:recuperarCuenta}
+	\UCpaso[\UCactor] Confirma enviar el correo electrónico, oprimiendo el botón \cdtButton{Aceptar}. \refTray{A}
+	\UCpaso[\UCsist] Verifica que el correo electrónico no haya sido omitido, con base en la regla de negocio \cdtIdRef{RN-S2}{Datos requeridos}. \refTray{B} 
+	\UCpaso[\UCsist] Verifica que exista una cuenta asociada al usuario ingresado. \refTray{C} 
+	\UCpaso[\UCsist] Envía el correo electrónico que contien el mensaje \cdtIdRef{MSG28}{Correo para confirmar operación} y el token para recuperar contraseña.
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación exitosa} en la pantalla \cdtIdRef{IUC-1}{Iniciar sesión}.
+	\UCpaso[\UCactor] Da clic en el token del correo electrónico para recuperar contraseña.
+	\UCpaso[\UCsist] Verifica que el token no haya caducado, con base en la regla de negocio \cdtIdRef{RN-S7}{Token para recuperar contraseña}. \refTray{D}
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUC-1.1B}{Nueva contraseña}.
+	\UCpaso[\UCactor] Ingresa la nueva contraseña y la confirmación de la misma.
+	\label{cuc-1.1:recuperaCuenta}
+	\UCpaso[\UCactor] Confirma recuperar la contraseña, oprimiendo el botón \cdtButton{Aceptar}. \refTray{E}
+	\UCpaso[\UCsist] Verifica que la contraseña y su confirmación no hayan sido omitidos, con base en la regla de negocio \cdtIdRef{RN-S2}{Datos requeridos}. \refTray{F} 
+	\UCpaso[\UCsist] Verifica que la confirmación de la contraseña coincida con la nueva contraseña. \refTray{G} 
+	\UCpaso[\UCsist] Verifica que la contraseña tenga el formato y el tipo de dato correcto, como se indica en el modelo de información de \cdtRef{cuenta}{Cuenta}. \refTray{H}
+	\UCpaso[\UCsist] Reinicia el contador de intentos a 0 (cero).
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación exitosa} en la pantalla \cdtIdRef{IUC-1}{Iniciar sesión}.
+\end{UCtrayectoria}
+
+
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor requiere cancelar la operación.}
+	\UCpaso[\UCactor] Oprime el botón \cdtButton{Cancelar} de la pantalla \cdtIdRef{IUC-1.1A}{Correo electrónico a recuperar contraseña}.
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUC-1}{Iniciar sesión}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{B}{El actor omitió el correo electrónico.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUC-1.1A}{Correo electrónico a recuperar contraseña}.
+	\UCpaso[] Regresa al paso \ref{cuc-1.1:recuperarCuenta} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{C}{No existe una cuenta asociada al actor.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG29}{Entidad no encontrada} en la pantalla \cdtIdRef{IUC-1.1A}{Correo electrónico a recuperar contraseña}.
+	\UCpaso[] Regresa al paso \ref{cuc-1.1:recuperarCuenta} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin del caso de uso]{D}{El token es inválido o expiró.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG31}{Error con el token de recuperación de contraseña} en la pantalla \cdtIdRef{IUC-1.1A}{Correo electrónico a recuperar contraseña}.
+%	\UCpaso[] Regresa al paso \ref{cuc-1.1:recuperarCuenta} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin del caso de uso]{E}{El actor requiere cancelar la recuperación de la contraseña.}
+	\UCpaso[\UCactor] Oprime el botón \cdtButton{Cancelar} de la pantalla \cdtIdRef{IUC-1.1B}{Nueva contraseña}.
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUC-1}{Iniciar sesión}.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{F}{El actor omitió la nueva contraseña y su confirmación.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUC-1.1B}{Nueva contraseña}.
+	\UCpaso[] Regresa al paso \ref{cuc-1.1:recuperaCuenta} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{G}{El actor ingreso contraseñas que no coinciden.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG30}{La confirmación de la contraseña no coincide} en la pantalla \cdtIdRef{IUC-1.1B}{Nueva contraseña}.
+	\UCpaso[] Regresa al paso \ref{cuc-1.1:recuperaCuenta} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{H}{El actor ingresó contraseñas con formato incorrecto.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG4}{Formato de campo incorrecto} en la pantalla  \cdtIdRef{IUC-1.1B}{Nueva contraseña}.
+	\UCpaso[] Regresa al paso \ref{cuc-1.1:recuperaCuenta} de la trayectoria principal.
+\end{UCtrayectoriaA}

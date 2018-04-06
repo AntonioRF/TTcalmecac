@@ -1,0 +1,106 @@
+
+\begin{UseCase}{CUI1}{Gestionar edificios}{	
+	Permite al Subdirector Académico registrar un nuevo edificio, consultar, modificar y eliminar los registros de los edificios ya existentes para la ESCOM. Esto permitirá tener un control de la infraestructura de la escuela.
+}
+
+\UCccitem{Versión}{0.1}
+\UCccsection{Administración de Requerimientos}
+\UCccitem{Autor}{Brenda Gómez Caballero}
+\UCccitem{Evaluador}{}
+\UCccitem{Operación}{Gestión}
+\UCccitem{Prioridad}{Alta}
+\UCccitem{Complejidad}{Baja}
+\UCccitem{Volatilidad}{Muy baja}
+\UCccitem{Madurez}{Alta}
+\UCccitem{Estatus}{Edición}
+\UCccitem{Fecha del último estatus}{01 de Abril de 2018}
+
+% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+% Esta sección la debe llenar solo el Revisor
+%--------------------------------------------------------
+\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+\UCccitem{Fecha}{}
+\UCccitem{Evaluador}{}
+\UCccitem{Resultado}{}
+\UCccitem{Observaciones}{
+	\begin{Titemize}
+		\Titem \DONE 
+		\Titem \DONE 
+		\Titem \DONE 
+	\end{Titemize}   
+}
+%-------------------------------------------------------------------
+	\UCsection{Atributos}
+	\UCitem{Actor(es)}{	
+		\begin{UClist}
+			\UCli Subdirector Académico
+		\end{UClist} 
+	}
+	\UCitem{Propósito}{Tener un control de la infraestructura de la ESCOM y asignarla en los horarios.}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli Tabla que muestra el Nombre del edificio y el número de niveles que tiene.
+		\end{UClist}
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli Ninguna	
+		\end{UClist}
+	}
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Errores}{
+		\begin{UClist}
+			\UCli Ninguno
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Primario}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	
+	\UCpaso [\UCactor] Selecciona la opción ''Edificios'' del menú \textbf{Edificios}. %\cdtIdRef{MN1}{Menú de la Secretaría de Posgrado}.
+	
+	\UCpaso [\UCsist] Obtiene el nombre del edificio y el número de niveles.
+	
+	\UCpaso [\UCsist] Ordena alfabéticamente los edificios por el nombre.
+	
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUI1}{Gestionar Edificios} con la información de los edificios obtenida e iconos IUModificar, IUEliminar y IURegistrar. 
+	\label{cui1:gestionar}
+\end{UCtrayectoria}
+
+\subsection{Puntos de extensión}
+
+\UCExtensionPoint 
+{El actor requiere registrar un nuevo edificio.}
+{Paso \ref{cui1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUI1.1}{Registrar edificio}}
+
+\UCExtensionPoint 
+{El actor requiere modificar un edificio previamente registrado.}
+{Paso \ref{cui1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUI1.2}{Modificar edificio}}
+
+\UCExtensionPoint 
+{El actor requiere eliminar un edificio previamente registrado.}
+{Paso \ref{cui1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUI1.3}{Eliminar edificio}}
+
+\UCExtensionPoint 
+{El actor requiere consultar un edificio previamente registrado.}
+{Paso \ref{cui1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUI1.4}{Consultar edificio}}
+

@@ -1,0 +1,127 @@
+
+\begin{UseCase}{CUI1.5.1}{Registrar Espacio}{	
+	Permite al Subdirector Académico registrar un nuevo espacio de un edificio de la ESCOM.
+}
+\UCccitem{Versión}{0.1}
+\UCccsection{Administración de Requerimientos}
+\UCccitem{Autor}{Carlos Aníbal Larios Moguel}
+\UCccitem{Evaluador}{}
+\UCccitem{Operación}{Registro}
+\UCccitem{Prioridad}{Alta}
+\UCccitem{Complejidad}{Baja}
+\UCccitem{Volatilidad}{Muy baja}
+\UCccitem{Madurez}{Alta}
+\UCccitem{Estatus}{Edición}
+\UCccitem{Fecha del último estatus}{2/Abril/2018}
+
+% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+% Esta sección la debe llenar solo el Revisor
+%--------------------------------------------------------
+\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+\UCccitem{Fecha}{}
+\UCccitem{Evaluador}{}
+\UCccitem{Resultado}{}
+\UCccitem{Observaciones}{
+	\begin{Titemize}
+		\Titem \DONE 
+		\Titem \DONE 
+		\Titem \DONE 
+	\end{Titemize}   
+}
+%-------------------------------------------------------------------
+	\UCsection{Atributos}
+	\UCitem{Actor(es)}{ \begin{UClist}
+			\UCli Subdirector Académico
+		\end{UClist} 
+	}
+	\UCitem{Propósito}{Registrar un nuevo espacio para poder asignarlo un grupo de Unidades de Aprendizaje.}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli Número: \ioEscribir.
+			\UCli Nombre: \ioEscribir.
+			\UCli Capacidad: \ioEscribir.
+			\UCli Tipo de espacio: \ioSeleccionar.
+			\UCli Tipo de laboratorio: \ioSeleccionar.
+			\UCli Acceso a discapacitados: \ioSeleccionar.
+			\UCli ¿Puede ser utilizado?: \ioSeleccionar.
+			\UCli Observaciones: \ioEscribir.
+		\end{UClist}
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios} indicando que el registro se realizó correctamente.
+		\end{UClist}
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			\UCli Que se haya registrado al menos un edificio.
+		\end{UClist}
+	}
+	
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli Ninguna	
+		\end{UClist}
+	}
+	
+	%Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli \cdtIdRef{RN-S1}{Datos requeridos}
+			\UCli \cdtIdRef{RN-S2}{Unicidad de elementos} 
+		\end{UClist}
+	}
+	\UCitem{Errores}{
+		\begin{UClist}	
+			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUI1.5.1}{Registrar Espacio} indicando que faltan campos obligatorios por completar.
+			
+			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUI1.5.1}{Registrar Espacio} indicando que el nombre de espacio ya existe.
+			
+			
+			\UCli \cdtIdRef{MSG7}{No existe información necesaria en el sistema}: Se muestra en la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios} indicando que no se puede registrar un espacio debido a que no se ha registrado al menos un tipo de laboratorio.
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Primario}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	\UCpaso [\UCactor] Solicita registrar un espacio dando clic en el ícono  IURegistrar 
+	de la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios}. 
+	
+	\UCpaso [\UCsist] Verifica que exista al menos un tipo de laboratorio registrado. \refTray{A}
+
+	\UCpaso[\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUI1.5.1}{Registrar Espacio}.
+	
+	\UCpaso [\UCactor] Completa la información solicitada. \label{CUI1.5.1:CompletaInfo}
+	
+	\UCpaso [\UCactor] Solicita registrar la información oprimiendo el botón \cdtButton{Aceptar}. \refTray{B}
+	
+	\UCpaso [\UCsist] Verifica que se hayan completado los campos obligatorios con base en la regla de negocios \cdtIdRef{RN-S1}{Datos requeridos}. \refTray{C}
+		
+	\UCpaso [\UCsist] Verifica que no haya otro Espacio registrado con el mismo nombre, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{D}
+	
+	\UCpaso [\UCsist] Registra el espacio.
+	
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios}, indicando que espacio se registró correctamente.	
+	
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El catálogo tipo de laboratorio no tiene información.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG7}{No existe información necesaria en el sistema} en la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios}. 
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin del caso de uso]{B}{El actor desea cancelar la operación.}
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios}. 
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{C}{No se completaron los campos obligatorios.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUI1.5.1}{Registrar Espacio}.
+	
+	\UCpaso Regresa al paso \ref{CUA1.1:CompletaInfo} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{D}{El nombre del espacio ya fue registrado.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUI1.5.1}{Registrar Espacio}.
+	
+	\UCpaso Regresa al paso \ref{CUA1.1:CompletaInfo} de la trayectoria principal.
+\end{UCtrayectoriaA}
