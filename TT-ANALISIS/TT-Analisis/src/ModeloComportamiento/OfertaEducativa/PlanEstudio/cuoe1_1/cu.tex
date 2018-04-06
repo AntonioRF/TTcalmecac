@@ -1,6 +1,6 @@
 
-\begin{UseCase}{CUI1.1}{Registrar edificio}{	
-	Permite al actor registrar un nuevo edificio para la infraestructura de la ESCOM.
+\begin{UseCase}{CUOE1.1}{Registrar plan de estudio}{	
+	Permite al actor registrar un nuevo plan de estudio para el programa académico Ingeniería en Sistemas Computacionales, el cual se oferta en la ESCOM.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -30,20 +30,27 @@
 }
 %-------------------------------------------------------------------
 	\UCsection{Atributos}
-	\UCitem{Actor(es)}{ \begin{UClist}
+	\UCitem{Actor(es)}{ 
+		\begin{UClist}
 			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Llevar un control de la infraestructura de la ESCOM.}
+	\UCitem{Propósito}{Mantener un control de los planes de estudio, en donde al plan vigente se le registren las unidades académicas que lo componen.}
 	\UCitem{Entradas}{
 		\begin{UClist}
-			\UCli Nombre: \ioEscribir.
-			\UCli Niveles: \ioSeleccionar.
+			\UCli Clave del plan: \ioEscribir.
+			\UCli Nombre del plan: \ioEscribir.
+			\UCli Estado: \ioSeleccionar.
+			\UCli Tipo división: \ioSeleccionar.
+			\UCli Fecha autorización: 
+			\UCli Fecha entrada en vigor:
+			\UCli Número de divisiones: \ioSeleccionar.
 		\end{UClist}
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
+			\UCli Programa Académico: Ingeniería en Sistemas Computacionales.
 			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUI1}{Gestionar Edificios} indicando que el registro se realizó correctamente.
 		\end{UClist}
 	}
