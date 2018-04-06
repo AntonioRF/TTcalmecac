@@ -1,6 +1,6 @@
 
 \begin{UseCase}{CUI1.3}{Eliminar edificio}{	
-	Permite al Subdirector Académico eliminar un edificio que se registró por error o ya no desea utilizarse.
+	Permite al actor eliminar un edificio que se registró por error o ya no desea utilizarse.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -31,8 +31,10 @@
 %-------------------------------------------------------------------
 	\UCsection{Atributos}
 	\UCitem{Actor(es)}{\begin{UClist}
-			\UCli Subdirector Académico
-	\end{UClist} }
+			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
+			\UCli \cdtRef{Actor:C}{Capturista}
+		\end{UClist} 
+	}
 	\UCitem{Propósito}{
 		Eliminar un edificio que fue registrado por error o que ya no será utilizado.
 	}
