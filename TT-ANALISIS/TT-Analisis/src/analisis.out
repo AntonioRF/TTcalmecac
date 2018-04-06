@@ -18,83 +18,86 @@
 \BOOKMARK [2][-]{subsection.9.2.1}{Subdirector Acad\351mico}{section.9.2}% 18
 \BOOKMARK [2][-]{subsection.9.2.2}{Capturista}{section.9.2}% 19
 \BOOKMARK [2][-]{subsection.9.2.3}{Jefe de Departamento}{section.9.2}% 20
-\BOOKMARK [0][-]{chapter.10}{Modelo de comportamiento del subsistema: Gestionar Academias }{}% 21
-\BOOKMARK [1][-]{section.10.1}{CUA1 Gestionar academias}{chapter.10}% 22
-\BOOKMARK [2][-]{subsection.10.1.1}{Resumen}{section.10.1}% 23
-\BOOKMARK [2][-]{subsection.10.1.2}{Descripci\363n}{section.10.1}% 24
-\BOOKMARK [2][-]{subsection.10.1.3}{Trayectorias del caso de uso}{section.10.1}% 25
-\BOOKMARK [2][-]{subsection.10.1.4}{Puntos de extensi\363n}{section.10.1}% 26
-\BOOKMARK [1][-]{section.10.2}{CUA1.1 Registrar academia}{chapter.10}% 27
-\BOOKMARK [2][-]{subsection.10.2.1}{Resumen}{section.10.2}% 28
-\BOOKMARK [2][-]{subsection.10.2.2}{Descripci\363n}{section.10.2}% 29
-\BOOKMARK [2][-]{subsection.10.2.3}{Trayectorias del caso de uso}{section.10.2}% 30
-\BOOKMARK [1][-]{section.10.3}{CUA1.2 Modificar academia}{chapter.10}% 31
-\BOOKMARK [2][-]{subsection.10.3.1}{Resumen}{section.10.3}% 32
-\BOOKMARK [2][-]{subsection.10.3.2}{Descripci\363n}{section.10.3}% 33
-\BOOKMARK [2][-]{subsection.10.3.3}{Trayectorias del caso de uso}{section.10.3}% 34
-\BOOKMARK [1][-]{section.10.4}{CUA1.3 Eliminar academia}{chapter.10}% 35
-\BOOKMARK [2][-]{subsection.10.4.1}{Resumen}{section.10.4}% 36
-\BOOKMARK [2][-]{subsection.10.4.2}{Descripci\363n}{section.10.4}% 37
-\BOOKMARK [2][-]{subsection.10.4.3}{Trayectorias del caso de uso}{section.10.4}% 38
-\BOOKMARK [0][-]{chapter.11}{Modelo de comportamiento del m\363dulo: Gestionar Infraestructura }{}% 39
-\BOOKMARK [1][-]{section.11.1}{CUI1 Gestionar edificios}{chapter.11}% 40
-\BOOKMARK [2][-]{subsection.11.1.1}{Resumen}{section.11.1}% 41
-\BOOKMARK [2][-]{subsection.11.1.2}{Descripci\363n}{section.11.1}% 42
-\BOOKMARK [2][-]{subsection.11.1.3}{Trayectorias del caso de uso}{section.11.1}% 43
-\BOOKMARK [2][-]{subsection.11.1.4}{Puntos de extensi\363n}{section.11.1}% 44
-\BOOKMARK [1][-]{section.11.2}{CUI1.1 Registrar edificio}{chapter.11}% 45
-\BOOKMARK [2][-]{subsection.11.2.1}{Resumen}{section.11.2}% 46
-\BOOKMARK [2][-]{subsection.11.2.2}{Descripci\363n}{section.11.2}% 47
-\BOOKMARK [2][-]{subsection.11.2.3}{Trayectorias del caso de uso}{section.11.2}% 48
-\BOOKMARK [1][-]{section.11.3}{CUI1.2 Modificar edificio}{chapter.11}% 49
-\BOOKMARK [2][-]{subsection.11.3.1}{Resumen}{section.11.3}% 50
-\BOOKMARK [2][-]{subsection.11.3.2}{Descripci\363n}{section.11.3}% 51
-\BOOKMARK [2][-]{subsection.11.3.3}{Trayectorias del caso de uso}{section.11.3}% 52
-\BOOKMARK [1][-]{section.11.4}{CUI1.3 Eliminar edificio}{chapter.11}% 53
-\BOOKMARK [2][-]{subsection.11.4.1}{Resumen}{section.11.4}% 54
-\BOOKMARK [2][-]{subsection.11.4.2}{Descripci\363n}{section.11.4}% 55
-\BOOKMARK [2][-]{subsection.11.4.3}{Trayectorias del caso de uso}{section.11.4}% 56
-\BOOKMARK [1][-]{section.11.5}{CUI1.4 Consultar edificio}{chapter.11}% 57
-\BOOKMARK [2][-]{subsection.11.5.1}{Resumen}{section.11.5}% 58
-\BOOKMARK [2][-]{subsection.11.5.2}{Descripci\363n}{section.11.5}% 59
-\BOOKMARK [2][-]{subsection.11.5.3}{Trayectorias del caso de uso}{section.11.5}% 60
-\BOOKMARK [1][-]{section.11.6}{CUI1.5 Gestionar Espacios}{chapter.11}% 61
-\BOOKMARK [2][-]{subsection.11.6.1}{Resumen}{section.11.6}% 62
-\BOOKMARK [2][-]{subsection.11.6.2}{Descripci\363n}{section.11.6}% 63
-\BOOKMARK [2][-]{subsection.11.6.3}{Trayectorias del caso de uso}{section.11.6}% 64
-\BOOKMARK [2][-]{subsection.11.6.4}{Puntos de extensi\363n}{section.11.6}% 65
-\BOOKMARK [1][-]{section.11.7}{CUI1.5.1 Registrar Espacio}{chapter.11}% 66
-\BOOKMARK [2][-]{subsection.11.7.1}{Resumen}{section.11.7}% 67
-\BOOKMARK [2][-]{subsection.11.7.2}{Descripci\363n}{section.11.7}% 68
-\BOOKMARK [2][-]{subsection.11.7.3}{Trayectorias del caso de uso}{section.11.7}% 69
-\BOOKMARK [1][-]{section.11.8}{CUI1.5.1 Modificar Espacio}{chapter.11}% 70
-\BOOKMARK [2][-]{subsection.11.8.1}{Resumen}{section.11.8}% 71
-\BOOKMARK [2][-]{subsection.11.8.2}{Descripci\363n}{section.11.8}% 72
-\BOOKMARK [2][-]{subsection.11.8.3}{Trayectorias del caso de uso}{section.11.8}% 73
-\BOOKMARK [1][-]{section.11.9}{CUA1.3 Eliminar espacio}{chapter.11}% 74
-\BOOKMARK [2][-]{subsection.11.9.1}{Resumen}{section.11.9}% 75
-\BOOKMARK [2][-]{subsection.11.9.2}{Descripci\363n}{section.11.9}% 76
-\BOOKMARK [2][-]{subsection.11.9.3}{Trayectorias del caso de uso}{section.11.9}% 77
-\BOOKMARK [1][-]{section.11.10}{CUI1.5.4 Consultar Espacio}{chapter.11}% 78
-\BOOKMARK [2][-]{subsection.11.10.1}{Resumen}{section.11.10}% 79
-\BOOKMARK [2][-]{subsection.11.10.2}{Descripci\363n}{section.11.10}% 80
-\BOOKMARK [2][-]{subsection.11.10.3}{Trayectorias del caso de uso}{section.11.10}% 81
-\BOOKMARK [0][-]{chapter.12}{Modelo de interacci\363n con el usuario}{}% 82
-\BOOKMARK [1][-]{section.12.1}{Interfaces del m\363dulo: Academias}{chapter.12}% 83
-\BOOKMARK [2][-]{subsection.12.1.1}{IUA1 Gestionar Academias}{section.12.1}% 84
-\BOOKMARK [2][-]{subsection.12.1.2}{IUA1.1 Registrar Academia}{section.12.1}% 85
-\BOOKMARK [2][-]{subsection.12.1.3}{IUA1.2 Modificar Academia}{section.12.1}% 86
-\BOOKMARK [1][-]{section.12.2}{Interfaces del m\363dulo: Infraestructura}{chapter.12}% 87
-\BOOKMARK [2][-]{subsection.12.2.1}{Edificios}{section.12.2}% 88
-\BOOKMARK [2][-]{subsection.12.2.2}{IUI1 Gestionar Edificios}{section.12.2}% 89
-\BOOKMARK [2][-]{subsection.12.2.3}{IUI1.1 Registrar Edificio}{section.12.2}% 90
-\BOOKMARK [2][-]{subsection.12.2.4}{IUI1.2 Modificar Edificio}{section.12.2}% 91
-\BOOKMARK [2][-]{subsection.12.2.5}{IUI1.4 Consultar Edificio}{section.12.2}% 92
-\BOOKMARK [2][-]{subsection.12.2.6}{Espacios}{section.12.2}% 93
-\BOOKMARK [2][-]{subsection.12.2.7}{IUI1.5 Gestionar Edificios}{section.12.2}% 94
-\BOOKMARK [2][-]{subsection.12.2.8}{IUI1.5.1 Registrar Espacio}{section.12.2}% 95
-\BOOKMARK [2][-]{subsection.12.2.9}{IUI1.5.2 Modificar Espacio}{section.12.2}% 96
-\BOOKMARK [2][-]{subsection.12.2.10}{IUI1.5.4 Consultar Espacio}{section.12.2}% 97
-\BOOKMARK [1][-]{section.12.3}{Dise\361o de mensajes}{chapter.12}% 98
-\BOOKMARK [1][-]{section.12.4}{Par\341metros comunes}{chapter.12}% 99
-\BOOKMARK [1][-]{section.12.5}{Mensajes a trav\351s de la pantalla}{chapter.12}% 100
+\BOOKMARK [1][-]{section.9.3}{Casos de Uso del m\363dulo de Academias}{chapter.9}% 21
+\BOOKMARK [1][-]{section.9.4}{Casos de Uso del m\363dulo de Infraestructura}{chapter.9}% 22
+\BOOKMARK [1][-]{section.9.5}{Casos de Uso del m\363dulo de Oferta Educativa}{chapter.9}% 23
+\BOOKMARK [0][-]{chapter.10}{Modelo de comportamiento del subsistema: Gestionar Academias }{}% 24
+\BOOKMARK [1][-]{section.10.1}{CUA1 Gestionar academias}{chapter.10}% 25
+\BOOKMARK [2][-]{subsection.10.1.1}{Resumen}{section.10.1}% 26
+\BOOKMARK [2][-]{subsection.10.1.2}{Descripci\363n}{section.10.1}% 27
+\BOOKMARK [2][-]{subsection.10.1.3}{Trayectorias del caso de uso}{section.10.1}% 28
+\BOOKMARK [2][-]{subsection.10.1.4}{Puntos de extensi\363n}{section.10.1}% 29
+\BOOKMARK [1][-]{section.10.2}{CUA1.1 Registrar academia}{chapter.10}% 30
+\BOOKMARK [2][-]{subsection.10.2.1}{Resumen}{section.10.2}% 31
+\BOOKMARK [2][-]{subsection.10.2.2}{Descripci\363n}{section.10.2}% 32
+\BOOKMARK [2][-]{subsection.10.2.3}{Trayectorias del caso de uso}{section.10.2}% 33
+\BOOKMARK [1][-]{section.10.3}{CUA1.2 Modificar academia}{chapter.10}% 34
+\BOOKMARK [2][-]{subsection.10.3.1}{Resumen}{section.10.3}% 35
+\BOOKMARK [2][-]{subsection.10.3.2}{Descripci\363n}{section.10.3}% 36
+\BOOKMARK [2][-]{subsection.10.3.3}{Trayectorias del caso de uso}{section.10.3}% 37
+\BOOKMARK [1][-]{section.10.4}{CUA1.3 Eliminar academia}{chapter.10}% 38
+\BOOKMARK [2][-]{subsection.10.4.1}{Resumen}{section.10.4}% 39
+\BOOKMARK [2][-]{subsection.10.4.2}{Descripci\363n}{section.10.4}% 40
+\BOOKMARK [2][-]{subsection.10.4.3}{Trayectorias del caso de uso}{section.10.4}% 41
+\BOOKMARK [0][-]{chapter.11}{Modelo de comportamiento del m\363dulo: Gestionar Infraestructura }{}% 42
+\BOOKMARK [1][-]{section.11.1}{CUI1 Gestionar edificios}{chapter.11}% 43
+\BOOKMARK [2][-]{subsection.11.1.1}{Resumen}{section.11.1}% 44
+\BOOKMARK [2][-]{subsection.11.1.2}{Descripci\363n}{section.11.1}% 45
+\BOOKMARK [2][-]{subsection.11.1.3}{Trayectorias del caso de uso}{section.11.1}% 46
+\BOOKMARK [2][-]{subsection.11.1.4}{Puntos de extensi\363n}{section.11.1}% 47
+\BOOKMARK [1][-]{section.11.2}{CUI1.1 Registrar edificio}{chapter.11}% 48
+\BOOKMARK [2][-]{subsection.11.2.1}{Resumen}{section.11.2}% 49
+\BOOKMARK [2][-]{subsection.11.2.2}{Descripci\363n}{section.11.2}% 50
+\BOOKMARK [2][-]{subsection.11.2.3}{Trayectorias del caso de uso}{section.11.2}% 51
+\BOOKMARK [1][-]{section.11.3}{CUI1.2 Modificar edificio}{chapter.11}% 52
+\BOOKMARK [2][-]{subsection.11.3.1}{Resumen}{section.11.3}% 53
+\BOOKMARK [2][-]{subsection.11.3.2}{Descripci\363n}{section.11.3}% 54
+\BOOKMARK [2][-]{subsection.11.3.3}{Trayectorias del caso de uso}{section.11.3}% 55
+\BOOKMARK [1][-]{section.11.4}{CUI1.3 Eliminar edificio}{chapter.11}% 56
+\BOOKMARK [2][-]{subsection.11.4.1}{Resumen}{section.11.4}% 57
+\BOOKMARK [2][-]{subsection.11.4.2}{Descripci\363n}{section.11.4}% 58
+\BOOKMARK [2][-]{subsection.11.4.3}{Trayectorias del caso de uso}{section.11.4}% 59
+\BOOKMARK [1][-]{section.11.5}{CUI1.4 Consultar edificio}{chapter.11}% 60
+\BOOKMARK [2][-]{subsection.11.5.1}{Resumen}{section.11.5}% 61
+\BOOKMARK [2][-]{subsection.11.5.2}{Descripci\363n}{section.11.5}% 62
+\BOOKMARK [2][-]{subsection.11.5.3}{Trayectorias del caso de uso}{section.11.5}% 63
+\BOOKMARK [1][-]{section.11.6}{CUI1.5 Gestionar Espacios}{chapter.11}% 64
+\BOOKMARK [2][-]{subsection.11.6.1}{Resumen}{section.11.6}% 65
+\BOOKMARK [2][-]{subsection.11.6.2}{Descripci\363n}{section.11.6}% 66
+\BOOKMARK [2][-]{subsection.11.6.3}{Trayectorias del caso de uso}{section.11.6}% 67
+\BOOKMARK [2][-]{subsection.11.6.4}{Puntos de extensi\363n}{section.11.6}% 68
+\BOOKMARK [1][-]{section.11.7}{CUI1.5.1 Registrar Espacio}{chapter.11}% 69
+\BOOKMARK [2][-]{subsection.11.7.1}{Resumen}{section.11.7}% 70
+\BOOKMARK [2][-]{subsection.11.7.2}{Descripci\363n}{section.11.7}% 71
+\BOOKMARK [2][-]{subsection.11.7.3}{Trayectorias del caso de uso}{section.11.7}% 72
+\BOOKMARK [1][-]{section.11.8}{CUI1.5.1 Modificar Espacio}{chapter.11}% 73
+\BOOKMARK [2][-]{subsection.11.8.1}{Resumen}{section.11.8}% 74
+\BOOKMARK [2][-]{subsection.11.8.2}{Descripci\363n}{section.11.8}% 75
+\BOOKMARK [2][-]{subsection.11.8.3}{Trayectorias del caso de uso}{section.11.8}% 76
+\BOOKMARK [1][-]{section.11.9}{CUA1.3 Eliminar espacio}{chapter.11}% 77
+\BOOKMARK [2][-]{subsection.11.9.1}{Resumen}{section.11.9}% 78
+\BOOKMARK [2][-]{subsection.11.9.2}{Descripci\363n}{section.11.9}% 79
+\BOOKMARK [2][-]{subsection.11.9.3}{Trayectorias del caso de uso}{section.11.9}% 80
+\BOOKMARK [1][-]{section.11.10}{CUI1.5.4 Consultar Espacio}{chapter.11}% 81
+\BOOKMARK [2][-]{subsection.11.10.1}{Resumen}{section.11.10}% 82
+\BOOKMARK [2][-]{subsection.11.10.2}{Descripci\363n}{section.11.10}% 83
+\BOOKMARK [2][-]{subsection.11.10.3}{Trayectorias del caso de uso}{section.11.10}% 84
+\BOOKMARK [0][-]{chapter.12}{Modelo de interacci\363n con el usuario}{}% 85
+\BOOKMARK [1][-]{section.12.1}{Interfaces del m\363dulo: Academias}{chapter.12}% 86
+\BOOKMARK [2][-]{subsection.12.1.1}{IUA1 Gestionar Academias}{section.12.1}% 87
+\BOOKMARK [2][-]{subsection.12.1.2}{IUA1.1 Registrar Academia}{section.12.1}% 88
+\BOOKMARK [2][-]{subsection.12.1.3}{IUA1.2 Modificar Academia}{section.12.1}% 89
+\BOOKMARK [1][-]{section.12.2}{Interfaces del m\363dulo: Infraestructura}{chapter.12}% 90
+\BOOKMARK [2][-]{subsection.12.2.1}{Edificios}{section.12.2}% 91
+\BOOKMARK [2][-]{subsection.12.2.2}{IUI1 Gestionar Edificios}{section.12.2}% 92
+\BOOKMARK [2][-]{subsection.12.2.3}{IUI1.1 Registrar Edificio}{section.12.2}% 93
+\BOOKMARK [2][-]{subsection.12.2.4}{IUI1.2 Modificar Edificio}{section.12.2}% 94
+\BOOKMARK [2][-]{subsection.12.2.5}{IUI1.4 Consultar Edificio}{section.12.2}% 95
+\BOOKMARK [2][-]{subsection.12.2.6}{Espacios}{section.12.2}% 96
+\BOOKMARK [2][-]{subsection.12.2.7}{IUI1.5 Gestionar Edificios}{section.12.2}% 97
+\BOOKMARK [2][-]{subsection.12.2.8}{IUI1.5.1 Registrar Espacio}{section.12.2}% 98
+\BOOKMARK [2][-]{subsection.12.2.9}{IUI1.5.2 Modificar Espacio}{section.12.2}% 99
+\BOOKMARK [2][-]{subsection.12.2.10}{IUI1.5.4 Consultar Espacio}{section.12.2}% 100
+\BOOKMARK [1][-]{section.12.3}{Dise\361o de mensajes}{chapter.12}% 101
+\BOOKMARK [1][-]{section.12.4}{Par\341metros comunes}{chapter.12}% 102
+\BOOKMARK [1][-]{section.12.5}{Mensajes a trav\351s de la pantalla}{chapter.12}% 103
