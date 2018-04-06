@@ -1,0 +1,81 @@
+\label{sec:marcoTeo}
+	
+	Para abordar el problema de la generación de horarios se utilizará el Cómputo evolutivo lo cual implica varios conceptos que serán abordados a continuación.
+
+	\section{Cómputo Evolutivo}
+		
+		El cómputo evolutivo es definido como la disciplina del enfoque sub-simbólico o Bottom-UP de la Inteligencia Artificial, compuesta por un conjunto de técnicas heurísticas que imita la evolución y otros mecanismos observados en la naturaleza para la resolución de problemas intratables por otras técnicas. Todo el cómputo evolutivo se basa en la teoría de la evolución por selección natural de Darwin, el cómputo evolutivo está deriva así en programación evolutiva, estrategias evolutivas y algoritmos genéticos.
+
+		\subsection{Algoritmos genéticos}
+		Los algoritmos genéticos fueron propuestos por John H. Hollan a principios de la decada de los 60 como: 
+			Un algoritmo matemático altamente paralelo que transforma un conjunto de objetos matemáticos individuales con respecto al tiempo usando operaciones modeladas de acuerdo al principio Darwiniano de reproducción y supervivencia del más apto, y tras haberse presentado de forma natural una serie de operaciones genéticas de entre las que destaca la recombinación sexual. Cada uno de estos objetos matemáticos suele ser una cadena de caracteres (letras o números) de longitud fija que se ajusta el modelo de las cadenas de cromosomas, y se les asocia con una cierta función matemática que refleja su aptitud.
+
+		\subsection{Estructura General de un Algoritmo Evolutivo}
+
+		Los algoritmos evolutivos siguen una estructura similar, primero crean una población inicial de individuos y se hace evolucionar mediante un proceso con operadores genéticos. Los procesos dependen de la aptitud que un individuo de la población que muestran en el ambiente en que se desarrollan. A continuación detallamos la información de los atributos de un algoritmo genético.
+
+		\textbf{Individuo:} Posible solución a un problema que se está tranado.
+
+		\textbf{Cromosoma:} Representación de un individuo formada por un conjunto de genes.
+
+		\textbf{Gen:} Es una característica de un individuo, cuyo dominio estpa definido por los alelos del dominio de este.
+
+		\textbf{Alelo:} Es un valor posible que puede ser tomado por un gen, y está limitado por el dominio de valores de dicho gen y por el genpotipo del cromosoma.
+
+		\textbf{Genotipo:} Es la codificación utilizada para representar un cromosoma.
+
+		\textbf{Población:} Conjunto de individuos que se desarrollan en el mismo ambiente.
+
+		\textbf{Ambiente:} Problema que se intenta resolver.
+
+		\textbf{Aptitud:} Valor numérico que indica que tan apto es un individudo para ser una solución apropiada.
+
+		\textbf{Función de Aptitud:} Aquella que determina la aptitud de un individuo.
+
+		\textbf{Fenotipo:} Decodificación del cromosoma.
+
+		\textbf{Generación:} Población generada por la aplicación de operadores genéticos en una población previa que susistuyó a esta.
+
+		\textbf{Operadores Genéticos:} Operador que recibe los cromosomas de un conjunto de individuos para generar nuevos.
+
+		\textbf{Cruza:} Operador Genético que genera un nuevo individuo a partir de la combinaciónd e genes de dos o más.
+
+		\textbf{Mutación:} Operador Genético que genera un nuevo individuo a partir de cambios aleatorios y/o controlados en genes del cromosoma de otro individuo.
+
+		\textbf{Selección:} Proceso mediante el cual, un conjunto de individuos de una generación son escogidos para aplicarles operadores genéticos y/o sean parte de la siguiente generación. 
+		\textbf{Entrada:}
+		g: Número de Generaciones
+		a: Aptitud Objetivo
+		\textbf{Salida:}
+		s: Mejor Solución
+
+		p <- inicializaPoblacion() : Generar Población inicial;
+		c <- 1: Inicializar Contador de Población;
+		t <- aleatorio(0,1);
+		\textbf{mientras} (c<=g) V (a x t <= Ma <= a) \textbf{hacer}
+			pP <- seleccionarPadres(p);
+			pT <- operacionesGeneticas(pP);
+			p <- seleccionarNuevaPoblación(p,pT);
+			Ma <- mejorAptitud(p);
+			c <- c+1;
+		s <- mejorIndividua(p);
+		\textbf{devolver} s;	
+
+
+	\section{Otras herramientas}
+		En esta sección se describirán otras herramientas utilizadas para el desarrollo de este trabajo.
+		
+		\textbf{Balsamiq Mockups:} Es una aplicación que facilita y agiliza la creación de bocetos. Esto nos permite crear las interfaces que muestran las gestiones del sistema. Balsamiq cuenta con una aplicación nativa para OS X (también Windows y Linux) y una versión web. La versión de Balsamiq Mockups utilizada es 3.5.15. [3] [4]
+		
+		\textbf{StarUML:} Es una herramienta que permite modelar los estándares UML. StarUML nos permitirá diagramar los casos de uso y crear diagramas de clases del sistema. La versión de StarUML utilizada es 2.8.1 [5]
+		
+		
+	
+	
+
+
+[1] https://www.python.org/
+[2] https://www.latex-project.org/
+[3] https://en.wikipedia.org/wiki/Balsamiq 
+[4] https://www.applesfera.com/aplicaciones-os-x-1/balsamiq-mockup-una-muy-buen-herramienta-para-esbozar-tus-futuras-apps
+[5] https://prezi.com/lxqgnl0h5m/que-es-staruml/

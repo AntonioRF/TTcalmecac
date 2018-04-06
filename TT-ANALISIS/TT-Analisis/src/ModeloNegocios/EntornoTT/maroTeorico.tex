@@ -1,0 +1,83 @@
+\label{sec:marcoTeo}
+	
+	Para abordar el problema de la generación de horarios se utilizará el Cómputo evolutivo lo cual implica varios conceptos que serán abordados a continuación.
+
+	\section{Cómputo Evolutivo}
+		
+		El cómputo evolutivo es definido como la disciplina del enfoque sub-simbólico o Bottom-UP de la Inteligencia Artificial, compuesta por un conjunto de técnicas heurísticas que imita la evolución y otros mecanismos observados en la naturaleza para la resolución de problemas intratables por otras técnicas. Todo el cómputo evolutivo se basa en la teoría de la evolución por selección natural de Darwin, el cómputo evolutivo está deriva así en programación evolutiva, estrategias evolutivas y algoritmos genéticos.
+
+		\subsection{Algoritmos genéticos}
+		Los algoritmos genéticos fueron propuestos por John H. Hollan a principios de la decada de los 60 como: 
+			Un algoritmo matemático altamente paralelo que transforma un conjunto de objetos matemáticos individuales con respecto al tiempo usando operaciones modeladas de acuerdo al principio Darwiniano de reproducción y supervivencia del más apto, y tras haberse presentado de forma natural una serie de operaciones genéticas de entre las que destaca la recombinación sexual. Cada uno de estos objetos matemáticos suele ser una cadena de caracteres (letras o números) de longitud fija que se ajusta el modelo de las cadenas de cromosomas, y se les asocia con una cierta función matemática que refleja su aptitud.
+		\susection{Heurística}
+		
+		Heusítica del griego euriskein, significa encontrar. Se dice que una técnica es heurística si es capaz de encontrar en tiempo razonable y sin hacer usp d emuchos recursos soluciones casi óptimas o muy cercanas a la óptima a un problema intratable, tal es el caso del repartidor de pizzas o la genercaión de horarios, la heurística es una de las características principales de los algoritmos evolutivos. De igual manera se entiende como Metaheurística a aquella técnica heurística que busca maneras más grandes de abarcar su cometido.
+
+		\subsection{Estructura General de un Algoritmo Evolutivo}
+
+		Los algoritmos evolutivos siguen una estructura similar, primero crean una población inicial de individuos y se hace evolucionar mediante un proceso con operadores genéticos. Los procesos dependen de la aptitud que un individuo de la población que muestran en el ambiente en que se desarrollan. A continuación detallamos la información de los atributos de un algoritmo genético.
+
+		\textbf{Individuo:} Posible solución a un problema que se está tranado.
+
+		\textbf{Cromosoma:} Representación de un individuo formada por un conjunto de genes.
+
+		\textbf{Gen:} Es una característica de un individuo, cuyo dominio estpa definido por los alelos del dominio de este.
+
+		\textbf{Alelo:} Es un valor posible que puede ser tomado por un gen, y está limitado por el dominio de valores de dicho gen y por el genpotipo del cromosoma.
+
+		\textbf{Genotipo:} Es la codificación utilizada para representar un cromosoma.
+
+		\textbf{Población:} Conjunto de individuos que se desarrollan en el mismo ambiente.
+
+		\textbf{Ambiente:} Problema que se intenta resolver.
+
+		\textbf{Aptitud:} Valor numérico que indica que tan apto es un individudo para ser una solución apropiada.
+
+		\textbf{Función de Aptitud:} Aquella que determina la aptitud de un individuo.
+
+		\textbf{Fenotipo:} Decodificación del cromosoma.
+
+		\textbf{Generación:} Población generada por la aplicación de operadores genéticos en una población previa que susistuyó a esta.
+
+		\textbf{Operadores Genéticos:} Operador que recibe los cromosomas de un conjunto de individuos para generar nuevos.
+
+		\textbf{Cruza:} Operador Genético que genera un nuevo individuo a partir de la combinaciónd e genes de dos o más.
+
+		\textbf{Mutación:} Operador Genético que genera un nuevo individuo a partir de cambios aleatorios y/o controlados en genes del cromosoma de otro individuo.
+
+		\textbf{Selección:} Proceso mediante el cual, un conjunto de individuos de una generación son escogidos para aplicarles operadores genéticos y/o sean parte de la siguiente generación. \\
+
+		A continuación se presenta la estructura general de un algoritmo evolutivo.\\
+
+		\textbf{Entrada:}\\
+		g: Número de Generaciones\\
+		a: Aptitud Objetivo\\
+		\textbf{Salida:}\\
+		s: Mejor Solución\\
+
+		p <- inicializaPoblacion() : Generar Población inicial;\\
+		c <- 1: Inicializar Contador de Población;\\
+		t <- aleatorio(0,1);\\
+		\textbf{mientras} (c<=g) V (a x t <= Ma <= a) \textbf{hacer}\\
+			pP <- seleccionarPadres(p);\\
+			pT <- operacionesGeneticas(pP);\\
+			p <- seleccionarNuevaPoblación(p,pT);\\
+			Ma <- mejorAptitud(p);\\
+			c <- c+1;\\
+		s <- mejorIndividua(p);\\
+		\textbf{devolver} s;	\\
+
+		\subsection{Ventajas}
+		Los algoritmos evolutivos son comunmente utilizados para resolver problemas de optimización multiobjetivo debido a su gran flexibilidad, adaptabilidad y desempeño. Tienen la capacidad de encontrar diferentes miembros del conjunto de óptimos de Pareto en una sola corrida.
+
+	\section{Algoritmos genéticos propuestos}
+
+		\subsection{Algoritmo Genético Multiobjetivo-MOGA}
+
+		Ideada por Fonseca y Fleming, basada en los óptimos de pareto. Propone que la jerarquía de un individuo está dada por el número de individuos que lo dominan en la población. Aquel individuo que no es dominado tendría la jerarquía 1. La selección del individuo mejor adaptado en este caso se da por selección de torneo, de manera que para verlo de una manera más trivial, el individuo que no es dominado, es el campeón del torneo.
+
+		\subsection{Algoritmo Genético de Ordenamiento No dominado2-NSGA2}
+		La primera versión de este algoritmo fue propuesta por Srinivas y Deb, se basa en la clasificación de la población mediante el uso de varias capas jerárquicas. Los individuos se jerarquizan de acuerdo a su no dominancia, de forma que los no dominados pertenecen a la primera capa. El proceso se repite hasta que sean colocados en sus capas correspondientes de forma que los individuos de las capas más altas son los que tienen mayor probabilidad de ser elegidos para su reproducción. Como su nombre lo indica, el NSGA2 es la segunda versión de este algoritmo, en el que se realizan algunas mejoras y correcciones de las deficiencias de la version inicial.
+
+		\subsection{Micro algoritmo genético}
+		Se refiere a un algoritmo genético con una población muy pequeña. La idea es que solo se necesita una muestra pequeña para converger en la solución. Ya que el algoritmo recibe menor cantidad de información, los resultados son obtenidos de manera más veloz, sin embargo para problemas más complejos o cuya complejidad depende de el tipo de entidades que se tiene, el resultado del algoritmo podría no estar tan cercano al deseado como debería. Para aplicar este algoritmo a un problema NP-Hard como es el de los horarios, el mismo problema debe ser desglozado o minimizado de forma que el algoritmo funcione.
