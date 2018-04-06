@@ -1,6 +1,6 @@
 
 \begin{UseCase}{CUA1.3}{Eliminar espacio}{	
-	Permite al Subdirector Académico eliminar un espacio previamente registrado que haya sido registrado por error o que ya no se desea utilizar.
+	Permite al actor eliminar un espacio previamente registrado que haya sido registrado por error o que ya no se desea utilizar.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -31,8 +31,10 @@
 %-------------------------------------------------------------------
 	\UCsection{Atributos}
 	\UCitem{Actor(es)}{\begin{UClist}
-			\UCli Subdirector Académico
-	\end{UClist} }
+			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
+			\UCli \cdtRef{Actor:C}{Capturista}
+		\end{UClist} 
+	}
 	\UCitem{Propósito}{Eliminar una espacio que fue registrado por error o que no se utilizará más.}
 	\UCitem{Entradas}{
 		\begin{UClist}

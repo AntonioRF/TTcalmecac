@@ -1,5 +1,5 @@
 \begin{UseCase}{CUI1.5.4}{Consultar Espacio}{	
-	Permite al Subdirector Académico consultar la información de un espacio previamente registrado dentro de un edificio de la unidad académica.
+	Permite al actor consultar la información de un espacio previamente registrado dentro de un edificio de la unidad académica.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -30,8 +30,10 @@
 %-------------------------------------------------------------------
 	\UCsection{Atributos}
 	\UCitem{Actor(es)}{\begin{UClist}
-			\UCli Subdirector Académico
-	\end{UClist} }
+			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
+			\UCli \cdtRef{Actor:C}{Capturista}
+		\end{UClist} 
+	}
 	\UCitem{Propósito}{Consultar la información de un espacio registrado dentro de la unidad académica.}
 	\UCitem{Entradas}{
 		\begin{UClist}

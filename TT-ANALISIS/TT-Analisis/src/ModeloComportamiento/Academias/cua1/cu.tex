@@ -1,6 +1,6 @@
 
 \begin{UseCase}{CUA1}{Gestionar academias}{	
-	Permite al \cdtRef{Actor:SP}{Secretaría de Posgrado} registrar una nueva academia, visualizar, modificar y eliminar las academias existentes de la ESCOM. Esto permitirá saber cuales son las academias existentes y asignarlas a las Unidades de Aprendizaje. 
+	Permite al actor registrar una nueva academia, visualizar, modificar y eliminar las academias existentes de la ESCOM. Esto permitirá saber cuales son las academias existentes y asignarlas a las Unidades de Aprendizaje. 
 }
 
 \UCccitem{Versión}{0.1}
@@ -32,7 +32,8 @@
 %-------------------------------------------------------------------
 	\UCsection{Atributos}
 	\UCitem{Actor(es)}{	\begin{UClist}
-			\UCli Subdirector Académico
+			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
+			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
 	\UCitem{Propósito}{Mantener actualizadas las academias disponibles en ESCOM.}
