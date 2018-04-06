@@ -1,0 +1,112 @@
+
+\begin{UseCase}{CUI1.1}{Registrar edificio}{	
+	Permite al actor registrar un nuevo edificio para la infraestructura de la ESCOM.
+}
+\UCccitem{Versión}{0.1}
+\UCccsection{Administración de Requerimientos}
+\UCccitem{Autor}{Brenda Gómez Caballero}
+\UCccitem{Evaluador}{}
+\UCccitem{Operación}{Registro}
+\UCccitem{Prioridad}{Alta}
+\UCccitem{Complejidad}{Baja}
+\UCccitem{Volatilidad}{Muy baja}
+\UCccitem{Madurez}{Alta}
+\UCccitem{Estatus}{Edición}
+\UCccitem{Fecha del último estatus}{01 de Abril de 2018}
+
+% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+% Esta sección la debe llenar solo el Revisor
+%--------------------------------------------------------
+\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+\UCccitem{Fecha}{}
+\UCccitem{Evaluador}{}
+\UCccitem{Resultado}{}
+\UCccitem{Observaciones}{
+	\begin{Titemize}
+		\Titem \DONE 
+		\Titem \DONE 
+		\Titem \DONE 
+	\end{Titemize}   
+}
+%-------------------------------------------------------------------
+	\UCsection{Atributos}
+	\UCitem{Actor(es)}{ \begin{UClist}
+			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
+			\UCli \cdtRef{Actor:C}{Capturista}
+		\end{UClist} 
+	}
+	\UCitem{Propósito}{Llevar un control de la infraestructura de la ESCOM.}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli Nombre: \ioEscribir.
+			\UCli Niveles: \ioSeleccionar.
+		\end{UClist}
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUI1}{Gestionar Edificios} indicando que el registro se realizó correctamente.
+		\end{UClist}
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}	
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli Ninguna	
+		\end{UClist}
+	}
+	%Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli \cdtIdRef{RN-N1}{Número de niveles permitido para un edificio}.
+			\UCli \cdtIdRef{RN-S2}{Unicidad de elementos}.
+		\end{UClist}
+	}
+	\UCitem{Errores}{
+		\begin{UClist}	
+			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio} indicando que faltan campos obligatorios por completar.
+			
+			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio} indicando que el nombre del edificio ya existe.
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Primario}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	\UCpaso [\UCactor] Solicita registrar un edifico dando clic en el ícono IURegistrar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
+	
+	\UCpaso[\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio}.
+	
+	\UCpaso [\UCactor] Completa la información solicitada. \label{CUI1.1:CompletaInfo}
+	
+	\UCpaso [\UCactor] Solicita registrar la información oprimiendo el botón \cdtButton{Aceptar}. \refTray{A}
+	
+	\UCpaso [\UCsist] Verifica que se hayan completado los campos obligatorios con base en la regla de negocios \cdtIdRef{RN-S1}{Datos requeridos}. \refTray{B}
+	
+	\UCpaso [\UCsist] Verifica que el nombre del edificio no se haya registrado previamente, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{C}
+			
+	\UCpaso [\UCsist] Registra el nombre y número de niveles del edificio.
+	
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}, indicando que el edificio se registró correctamente.	
+	
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor desea cancelar la operación.}
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{B}{No se completaron los campos obligatorios.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio}.
+	
+	\UCpaso Regresa al paso \ref{CUI1.1:CompletaInfo} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{C}{El nombre del edificio ya fue registrado.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio}.
+	
+	\UCpaso Regresa al paso \ref{CUI1.1:CompletaInfo} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+
