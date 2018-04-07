@@ -1,6 +1,6 @@
 
-\begin{UseCase}{CUI1}{Gestionar edificios}{	
-	Permite al actor registrar un nuevo edificio, consultar, modificar y eliminar los registros de los edificios ya existentes para la ESCOM. Esto permitirá tener un control de la infraestructura de la escuela.
+\begin{UseCase}{CUOE1.5}{Gestionar unidades de aprendizaje}{	
+	Permite al actor registrar una nueva unidad de aprendizaje, consultar, modificar y eliminar los registros de las unidades de aprendizaje ya existentes para un plan de estudio dado.
 }
 
 \UCccitem{Versión}{0.1}
@@ -37,7 +37,7 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Tener un control de la infraestructura de la ESCOM y asignarla en los horarios.}
+	\UCitem{Propósito}{Tener un control de las unidades de aprendizaje ofertadas para un plan de estudio. Además, estas serán de utilizadas en la generación de los horarios.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -45,7 +45,7 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli Tabla que muestra el Nombre del edificio y el número de niveles que tiene.
+			\UCli Tabla que muestra clave y nombre de la unidad de aprendizaje.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -73,35 +73,37 @@
 
 \begin{UCtrayectoria}
 	
-	\UCpaso [\UCactor] Selecciona la opción ''Edificios'' del menú \textbf{Edificios}. %\cdtIdRef{MN1}{Menú de la Secretaría de Posgrado}.
+	\UCpaso [\UCactor] Selecciona la opción ''Unidades de Aprendizaje'' del menú \textbf{Unidades de Aprendizaje}. %\cdtIdRef{MN1}{Menú de la Secretaría de Posgrado}.
 	
-	\UCpaso [\UCsist] Obtiene el nombre del edificio y el número de niveles.
+	\UCpaso [\UCsist] Obtiene la clave, nombre y nivel de la unidad de aprendizaje.
 	
-	\UCpaso [\UCsist] Ordena alfabéticamente los edificios por el nombre.
+	\UCpaso [\UCsist] Ordena las unidades de aprendizaje por nivel.
 	
-	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUI1}{Gestionar Edificios} con la información de los edificios obtenida e iconos IUModificar, IUEliminar y IURegistrar. 
-	\label{cui1:gestionar}
+	\UCpaso [\UCsist] Ordena alfabéticamente las unidades de aprendizaje por la clave.
+	
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje} con la información de las unidades de aprendizaje obtenida e iconos IUModificar, IUEliminar y IURegistrar. 
+	\label{cuoe1_5:gestionar}
 \end{UCtrayectoria}
 
 \subsection{Puntos de extensión}
 
 \UCExtensionPoint 
-{El actor requiere registrar un nuevo edificio.}
-{Paso \ref{cui1:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUI1.1}{Registrar edificio}}
+{El actor requiere registrar ua nueva unidad de aprendizaje.}
+{Paso \ref{cuoe1_5:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUOE1.5.1}{Registrar unidad de aprendizaje}}
 
 \UCExtensionPoint 
-{El actor requiere modificar un edificio previamente registrado.}
-{Paso \ref{cui1:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUI1.2}{Modificar edificio}}
+{El actor requiere modificar una unidad de aprendizaje previamente registrada.}
+{Paso \ref{cuoe1_5:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUOE1.5.2}{Modificar unidad de aprendizaje}}
 
 \UCExtensionPoint 
-{El actor requiere eliminar un edificio previamente registrado.}
-{Paso \ref{cui1:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUI1.3}{Eliminar edificio}}
+{El actor requiere eliminar una unidad de aprendizaje previamente registrada.}
+{Paso \ref{cuoe1_5:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUOE1.5.3}{Eliminar unidad de aprendizaje}}
 
 \UCExtensionPoint 
-{El actor requiere consultar un edificio previamente registrado.}
-{Paso \ref{cui1:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUI1.4}{Consultar edificio}}
+{El actor requiere consultar una unidad de aprendizaje previamente registrada.}
+{Paso \ref{cuoe1_5:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUOE1.5.4}{Consultar unidad de aprendizaje}}
 

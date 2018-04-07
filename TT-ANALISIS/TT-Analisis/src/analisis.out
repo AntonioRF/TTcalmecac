@@ -109,24 +109,24 @@
 \BOOKMARK [2][-]{subsection.13.5.1}{Resumen}{section.13.5}% 109
 \BOOKMARK [2][-]{subsection.13.5.2}{Descripci\363n}{section.13.5}% 110
 \BOOKMARK [2][-]{subsection.13.5.3}{Trayectorias del caso de uso}{section.13.5}% 111
-\BOOKMARK [1][-]{section.13.6}{CUI1 Gestionar edificios}{chapter.13}% 112
+\BOOKMARK [1][-]{section.13.6}{CUOE1.5 Gestionar unidades de aprendizaje}{chapter.13}% 112
 \BOOKMARK [2][-]{subsection.13.6.1}{Resumen}{section.13.6}% 113
 \BOOKMARK [2][-]{subsection.13.6.2}{Descripci\363n}{section.13.6}% 114
 \BOOKMARK [2][-]{subsection.13.6.3}{Trayectorias del caso de uso}{section.13.6}% 115
 \BOOKMARK [2][-]{subsection.13.6.4}{Puntos de extensi\363n}{section.13.6}% 116
-\BOOKMARK [1][-]{section.13.7}{CUI1.1 Registrar edificio}{chapter.13}% 117
+\BOOKMARK [1][-]{section.13.7}{CUOE1.5.1 Registrar unidad de aprendizaje}{chapter.13}% 117
 \BOOKMARK [2][-]{subsection.13.7.1}{Resumen}{section.13.7}% 118
 \BOOKMARK [2][-]{subsection.13.7.2}{Descripci\363n}{section.13.7}% 119
 \BOOKMARK [2][-]{subsection.13.7.3}{Trayectorias del caso de uso}{section.13.7}% 120
-\BOOKMARK [1][-]{section.13.8}{CUI1.2 Modificar edificio}{chapter.13}% 121
+\BOOKMARK [1][-]{section.13.8}{CUOE1.5.2 Modificar unidad de aprendizaje}{chapter.13}% 121
 \BOOKMARK [2][-]{subsection.13.8.1}{Resumen}{section.13.8}% 122
 \BOOKMARK [2][-]{subsection.13.8.2}{Descripci\363n}{section.13.8}% 123
 \BOOKMARK [2][-]{subsection.13.8.3}{Trayectorias del caso de uso}{section.13.8}% 124
-\BOOKMARK [1][-]{section.13.9}{CUI1.3 Eliminar edificio}{chapter.13}% 125
+\BOOKMARK [1][-]{section.13.9}{CUOE1.5.3 Eliminar unidad de aprendizaje}{chapter.13}% 125
 \BOOKMARK [2][-]{subsection.13.9.1}{Resumen}{section.13.9}% 126
 \BOOKMARK [2][-]{subsection.13.9.2}{Descripci\363n}{section.13.9}% 127
 \BOOKMARK [2][-]{subsection.13.9.3}{Trayectorias del caso de uso}{section.13.9}% 128
-\BOOKMARK [1][-]{section.13.10}{CUI1.4 Consultar edificio}{chapter.13}% 129
+\BOOKMARK [1][-]{section.13.10}{CUOE1.5.4 Consultar unidad de aprendizaje}{chapter.13}% 129
 \BOOKMARK [2][-]{subsection.13.10.1}{Resumen}{section.13.10}% 130
 \BOOKMARK [2][-]{subsection.13.10.2}{Descripci\363n}{section.13.10}% 131
 \BOOKMARK [2][-]{subsection.13.10.3}{Trayectorias del caso de uso}{section.13.10}% 132
@@ -153,10 +153,10 @@
 \BOOKMARK [2][-]{subsection.14.3.4}{IUOE1.2 Modificar Plan de Estudio}{section.14.3}% 153
 \BOOKMARK [2][-]{subsection.14.3.5}{IUOE1.4 Consultar Planes de Estudio}{section.14.3}% 154
 \BOOKMARK [2][-]{subsection.14.3.6}{Unidades de Aprendizaje}{section.14.3}% 155
-\BOOKMARK [2][-]{subsection.14.3.7}{IUI1 Gestionar Unidades de Aprendizaje}{section.14.3}% 156
-\BOOKMARK [2][-]{subsection.14.3.8}{IUI1.1 Registrar Edificio}{section.14.3}% 157
-\BOOKMARK [2][-]{subsection.14.3.9}{IUI1.2 Modificar Edificio}{section.14.3}% 158
-\BOOKMARK [2][-]{subsection.14.3.10}{IUI1.4 Consultar Edificio}{section.14.3}% 159
+\BOOKMARK [2][-]{subsection.14.3.7}{IUOE1.5 Gestionar Unidades de Aprendizaje}{section.14.3}% 156
+\BOOKMARK [2][-]{subsection.14.3.8}{IUOE1.1 Registrar Unidad de Aprendizaje}{section.14.3}% 157
+\BOOKMARK [2][-]{subsection.14.3.9}{IUOE1.2 Modificar Unidad de Aprendizaje}{section.14.3}% 158
+\BOOKMARK [2][-]{subsection.14.3.10}{IUOE1.4 Consultar Unidad de Aprendizaje}{section.14.3}% 159
 \BOOKMARK [1][-]{section.14.4}{Dise\361o de mensajes}{chapter.14}% 160
 \BOOKMARK [1][-]{section.14.5}{Par\341metros comunes}{chapter.14}% 161
 \BOOKMARK [1][-]{section.14.6}{Mensajes a trav\351s de la pantalla}{chapter.14}% 162

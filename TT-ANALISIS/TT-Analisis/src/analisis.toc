@@ -1,245 +1,245 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}Problem\IeC {\'a}tica}{7}{chapter.1}
-\contentsline {chapter}{\numberline {2}Trabajo previo}{9}{chapter.2}
-\contentsline {chapter}{\numberline {3}Soluci\IeC {\'o}n propuesta}{11}{chapter.3}
-\contentsline {chapter}{\numberline {4}Objetivos}{13}{chapter.4}
-\contentsline {chapter}{\numberline {5}Justificaci\IeC {\'o}n}{15}{chapter.5}
-\contentsline {chapter}{\numberline {6}Marco Te\IeC {\'o}rico}{17}{chapter.6}
-\contentsline {section}{\numberline {6.1}C\IeC {\'o}mputo Evolutivo}{17}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Algoritmos gen\IeC {\'e}ticos}{17}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Estructura General de un Algoritmo Evolutivo}{17}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Otras herramientas}{18}{section.6.2}
-\contentsline {chapter}{\numberline {7}Selecci\IeC {\'o}n de herramientas}{19}{chapter.7}
-\contentsline {section}{\numberline {7.1}Lenguaje de programaci\IeC {\'o}n}{19}{section.7.1}
-\contentsline {section}{\numberline {7.2}Otras herramientas}{19}{section.7.2}
-\contentsline {chapter}{\numberline {8}Glosario de t\IeC {\'e}rminos}{21}{chapter.8}
-\contentsline {section}{\numberline {8.1}T\IeC {\'e}rminos t\IeC {\'e}cnicos}{21}{section.8.1}
-\contentsline {chapter}{\numberline {9}Modelo de negocio}{23}{chapter.9}
-\contentsline {section}{\numberline {9.1}Reglas de negocio}{24}{section.9.1}
-\contentsline {subsection}{\numberline {9.1.1}Reglas derivadas del sistema}{24}{subsection.9.1.1}
-\contentsline {subsubsection}{RN-S1 Datos requeridos}{24}{section*.3}
-\contentsline {subsubsection}{RN-S2 Unicidad de elementos}{24}{section*.4}
-\contentsline {subsection}{\numberline {9.1.2}Reglas derivadas del negocio}{24}{subsection.9.1.2}
-\contentsline {subsubsection}{RN-N1 N\IeC {\'u}mero de niveles permitido para un edificio}{24}{section*.5}
-\contentsline {subsubsection}{RN-N2 N\IeC {\'u}mero de espacios permitido para un nivel de edificio}{25}{section*.6}
-\contentsline {subsubsection}{RN-N3 Calculo de la clave de un espacio}{25}{section*.7}
-\contentsline {subsubsection}{RN-N4 Jefe de academia}{25}{section*.8}
-\contentsline {subsubsection}{RN-N5 Capacidad de un espacio}{25}{section*.9}
-\contentsline {subsubsection}{RN-N6 Eliminaci\IeC {\'o}n de un espacio}{26}{section*.10}
-\contentsline {subsubsection}{RN-N7 Eliminaci\IeC {\'o}n de un edificio}{26}{section*.11}
-\contentsline {subsubsection}{RN-N8 Modificaci\IeC {\'o}n de un espacio}{26}{section*.12}
-\contentsline {subsubsection}{RN-N9 Modificaci\IeC {\'o}n de un edificio}{26}{section*.13}
-\contentsline {subsubsection}{RN-N10 Nombre del plan}{27}{section*.14}
-\contentsline {subsubsection}{RN-N11 M\IeC {\'a}quina de estados del plan de estudios}{27}{section*.15}
-\contentsline {subsubsection}{RN-N12 Clave de Unidad de Aprendizaje}{27}{section*.16}
-\contentsline {subsubsection}{RN-N13 Tipo de unidad de aprendizaje}{28}{section*.17}
-\contentsline {subsubsection}{RN-N14 Tipo de formaci\IeC {\'o}n}{28}{section*.18}
-\contentsline {subsubsection}{RN-N15 Tipo de ense\IeC {\~n}anza}{28}{section*.19}
-\contentsline {subsubsection}{RN-N16 Horas de unidad de aprendizaje}{29}{section*.20}
-\contentsline {chapter}{\numberline {10}Modelo de comportamiento}{31}{chapter.10}
-\contentsline {section}{\numberline {10.1}M\IeC {\'o}dulos del sistema}{31}{section.10.1}
-\contentsline {section}{\numberline {10.2}Actores del Sistema}{31}{section.10.2}
-\contentsline {subsection}{\numberline {10.2.1}Subdirector Acad\IeC {\'e}mico}{32}{subsection.10.2.1}
-\contentsline {subsection}{\numberline {10.2.2}Capturista}{32}{subsection.10.2.2}
-\contentsline {subsection}{\numberline {10.2.3}Jefe de Departamento}{33}{subsection.10.2.3}
-\contentsline {section}{\numberline {10.3}Casos de Uso del m\IeC {\'o}dulo de Academias}{34}{section.10.3}
-\contentsline {section}{\numberline {10.4}Casos de Uso del m\IeC {\'o}dulo de Infraestructura}{34}{section.10.4}
-\contentsline {section}{\numberline {10.5}Casos de Uso del m\IeC {\'o}dulo de Oferta Educativa}{34}{section.10.5}
-\contentsline {chapter}{\numberline {11}Modelo de comportamiento del subsistema: Gestionar Academias }{37}{chapter.11}
-\contentsline {section}{\numberline {11.1}CUA1 Gestionar academias}{38}{section.11.1}
-\contentsline {subsection}{\numberline {11.1.1}Resumen}{38}{subsection.11.1.1}
-\contentsline {subsection}{\numberline {11.1.2}Descripci\IeC {\'o}n}{38}{subsection.11.1.2}
-\contentsline {subsection}{\numberline {11.1.3}Trayectorias del caso de uso}{39}{subsection.11.1.3}
-\contentsline {subsection}{\numberline {11.1.4}Puntos de extensi\IeC {\'o}n}{39}{subsection.11.1.4}
-\contentsline {section}{\numberline {11.2}CUA1.1 Registrar academia}{40}{section.11.2}
-\contentsline {subsection}{\numberline {11.2.1}Resumen}{40}{subsection.11.2.1}
-\contentsline {subsection}{\numberline {11.2.2}Descripci\IeC {\'o}n}{40}{subsection.11.2.2}
-\contentsline {subsection}{\numberline {11.2.3}Trayectorias del caso de uso}{41}{subsection.11.2.3}
-\contentsline {section}{\numberline {11.3}CUA1.2 Modificar academia}{43}{section.11.3}
-\contentsline {subsection}{\numberline {11.3.1}Resumen}{43}{subsection.11.3.1}
-\contentsline {subsection}{\numberline {11.3.2}Descripci\IeC {\'o}n}{43}{subsection.11.3.2}
-\contentsline {subsection}{\numberline {11.3.3}Trayectorias del caso de uso}{44}{subsection.11.3.3}
-\contentsline {section}{\numberline {11.4}CUA1.3 Eliminar academia}{46}{section.11.4}
-\contentsline {subsection}{\numberline {11.4.1}Resumen}{46}{subsection.11.4.1}
-\contentsline {subsection}{\numberline {11.4.2}Descripci\IeC {\'o}n}{46}{subsection.11.4.2}
-\contentsline {subsection}{\numberline {11.4.3}Trayectorias del caso de uso}{47}{subsection.11.4.3}
-\contentsline {chapter}{\numberline {12}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Infraestructura }{49}{chapter.12}
-\contentsline {section}{\numberline {12.1}CUI1 Gestionar edificios}{50}{section.12.1}
-\contentsline {subsection}{\numberline {12.1.1}Resumen}{50}{subsection.12.1.1}
-\contentsline {subsection}{\numberline {12.1.2}Descripci\IeC {\'o}n}{50}{subsection.12.1.2}
-\contentsline {subsection}{\numberline {12.1.3}Trayectorias del caso de uso}{51}{subsection.12.1.3}
-\contentsline {subsection}{\numberline {12.1.4}Puntos de extensi\IeC {\'o}n}{51}{subsection.12.1.4}
-\contentsline {section}{\numberline {12.2}CUI1.1 Registrar edificio}{52}{section.12.2}
-\contentsline {subsection}{\numberline {12.2.1}Resumen}{52}{subsection.12.2.1}
-\contentsline {subsection}{\numberline {12.2.2}Descripci\IeC {\'o}n}{52}{subsection.12.2.2}
-\contentsline {subsection}{\numberline {12.2.3}Trayectorias del caso de uso}{53}{subsection.12.2.3}
-\contentsline {section}{\numberline {12.3}CUI1.2 Modificar edificio}{54}{section.12.3}
-\contentsline {subsection}{\numberline {12.3.1}Resumen}{54}{subsection.12.3.1}
-\contentsline {subsection}{\numberline {12.3.2}Descripci\IeC {\'o}n}{54}{subsection.12.3.2}
-\contentsline {subsection}{\numberline {12.3.3}Trayectorias del caso de uso}{55}{subsection.12.3.3}
-\contentsline {section}{\numberline {12.4}CUI1.3 Eliminar edificio}{56}{section.12.4}
-\contentsline {subsection}{\numberline {12.4.1}Resumen}{56}{subsection.12.4.1}
-\contentsline {subsection}{\numberline {12.4.2}Descripci\IeC {\'o}n}{56}{subsection.12.4.2}
-\contentsline {subsection}{\numberline {12.4.3}Trayectorias del caso de uso}{57}{subsection.12.4.3}
-\contentsline {section}{\numberline {12.5}CUI1.4 Consultar edificio}{58}{section.12.5}
-\contentsline {subsection}{\numberline {12.5.1}Resumen}{58}{subsection.12.5.1}
-\contentsline {subsection}{\numberline {12.5.2}Descripci\IeC {\'o}n}{58}{subsection.12.5.2}
-\contentsline {subsection}{\numberline {12.5.3}Trayectorias del caso de uso}{59}{subsection.12.5.3}
-\contentsline {section}{\numberline {12.6}CUI1.5 Gestionar Espacios}{60}{section.12.6}
-\contentsline {subsection}{\numberline {12.6.1}Resumen}{60}{subsection.12.6.1}
-\contentsline {subsection}{\numberline {12.6.2}Descripci\IeC {\'o}n}{60}{subsection.12.6.2}
-\contentsline {subsection}{\numberline {12.6.3}Trayectorias del caso de uso}{61}{subsection.12.6.3}
-\contentsline {subsection}{\numberline {12.6.4}Puntos de extensi\IeC {\'o}n}{61}{subsection.12.6.4}
-\contentsline {section}{\numberline {12.7}CUI1.5.1 Registrar Espacio}{62}{section.12.7}
-\contentsline {subsection}{\numberline {12.7.1}Resumen}{62}{subsection.12.7.1}
-\contentsline {subsection}{\numberline {12.7.2}Descripci\IeC {\'o}n}{62}{subsection.12.7.2}
-\contentsline {subsection}{\numberline {12.7.3}Trayectorias del caso de uso}{63}{subsection.12.7.3}
-\contentsline {section}{\numberline {12.8}CUI1.5.1 Modificar Espacio}{65}{section.12.8}
-\contentsline {subsection}{\numberline {12.8.1}Resumen}{65}{subsection.12.8.1}
-\contentsline {subsection}{\numberline {12.8.2}Descripci\IeC {\'o}n}{65}{subsection.12.8.2}
-\contentsline {subsection}{\numberline {12.8.3}Trayectorias del caso de uso}{66}{subsection.12.8.3}
-\contentsline {section}{\numberline {12.9}CUA1.3 Eliminar espacio}{68}{section.12.9}
-\contentsline {subsection}{\numberline {12.9.1}Resumen}{68}{subsection.12.9.1}
-\contentsline {subsection}{\numberline {12.9.2}Descripci\IeC {\'o}n}{68}{subsection.12.9.2}
-\contentsline {subsection}{\numberline {12.9.3}Trayectorias del caso de uso}{69}{subsection.12.9.3}
-\contentsline {section}{\numberline {12.10}CUI1.5.4 Consultar Espacio}{70}{section.12.10}
-\contentsline {subsection}{\numberline {12.10.1}Resumen}{70}{subsection.12.10.1}
-\contentsline {subsection}{\numberline {12.10.2}Descripci\IeC {\'o}n}{70}{subsection.12.10.2}
-\contentsline {subsection}{\numberline {12.10.3}Trayectorias del caso de uso}{71}{subsection.12.10.3}
-\contentsline {chapter}{\numberline {13}Modelo de comportamiento del subsistema: Gestionar Oferta Educativa }{73}{chapter.13}
-\contentsline {section}{\numberline {13.1}CUOE1 Gestionar planes de estudio}{74}{section.13.1}
-\contentsline {subsection}{\numberline {13.1.1}Resumen}{74}{subsection.13.1.1}
-\contentsline {subsection}{\numberline {13.1.2}Descripci\IeC {\'o}n}{74}{subsection.13.1.2}
-\contentsline {subsection}{\numberline {13.1.3}Trayectorias del caso de uso}{75}{subsection.13.1.3}
-\contentsline {subsection}{\numberline {13.1.4}Puntos de extensi\IeC {\'o}n}{75}{subsection.13.1.4}
-\contentsline {section}{\numberline {13.2}CUOE1.1 Registrar plan de estudio}{76}{section.13.2}
-\contentsline {subsection}{\numberline {13.2.1}Resumen}{76}{subsection.13.2.1}
-\contentsline {subsection}{\numberline {13.2.2}Descripci\IeC {\'o}n}{76}{subsection.13.2.2}
-\contentsline {subsection}{\numberline {13.2.3}Trayectorias del caso de uso}{77}{subsection.13.2.3}
-\contentsline {section}{\numberline {13.3}CUOE1.2 Modificar plan de estudio}{79}{section.13.3}
-\contentsline {subsection}{\numberline {13.3.1}Resumen}{79}{subsection.13.3.1}
-\contentsline {subsection}{\numberline {13.3.2}Descripci\IeC {\'o}n}{79}{subsection.13.3.2}
-\contentsline {subsection}{\numberline {13.3.3}Trayectorias del caso de uso}{80}{subsection.13.3.3}
-\contentsline {section}{\numberline {13.4}CUOE1.3 Eliminar plan de estudio}{82}{section.13.4}
-\contentsline {subsection}{\numberline {13.4.1}Resumen}{82}{subsection.13.4.1}
-\contentsline {subsection}{\numberline {13.4.2}Descripci\IeC {\'o}n}{82}{subsection.13.4.2}
-\contentsline {subsection}{\numberline {13.4.3}Trayectorias del caso de uso}{83}{subsection.13.4.3}
-\contentsline {section}{\numberline {13.5}CUOE1.4 Consultar plan de estudio}{84}{section.13.5}
-\contentsline {subsection}{\numberline {13.5.1}Resumen}{84}{subsection.13.5.1}
-\contentsline {subsection}{\numberline {13.5.2}Descripci\IeC {\'o}n}{84}{subsection.13.5.2}
-\contentsline {subsection}{\numberline {13.5.3}Trayectorias del caso de uso}{85}{subsection.13.5.3}
-\contentsline {section}{\numberline {13.6}CUI1 Gestionar edificios}{86}{section.13.6}
-\contentsline {subsection}{\numberline {13.6.1}Resumen}{86}{subsection.13.6.1}
-\contentsline {subsection}{\numberline {13.6.2}Descripci\IeC {\'o}n}{86}{subsection.13.6.2}
-\contentsline {subsection}{\numberline {13.6.3}Trayectorias del caso de uso}{87}{subsection.13.6.3}
-\contentsline {subsection}{\numberline {13.6.4}Puntos de extensi\IeC {\'o}n}{87}{subsection.13.6.4}
-\contentsline {section}{\numberline {13.7}CUI1.1 Registrar edificio}{88}{section.13.7}
-\contentsline {subsection}{\numberline {13.7.1}Resumen}{88}{subsection.13.7.1}
-\contentsline {subsection}{\numberline {13.7.2}Descripci\IeC {\'o}n}{88}{subsection.13.7.2}
-\contentsline {subsection}{\numberline {13.7.3}Trayectorias del caso de uso}{89}{subsection.13.7.3}
-\contentsline {section}{\numberline {13.8}CUI1.2 Modificar edificio}{90}{section.13.8}
-\contentsline {subsection}{\numberline {13.8.1}Resumen}{90}{subsection.13.8.1}
-\contentsline {subsection}{\numberline {13.8.2}Descripci\IeC {\'o}n}{90}{subsection.13.8.2}
-\contentsline {subsection}{\numberline {13.8.3}Trayectorias del caso de uso}{91}{subsection.13.8.3}
-\contentsline {section}{\numberline {13.9}CUI1.3 Eliminar edificio}{92}{section.13.9}
-\contentsline {subsection}{\numberline {13.9.1}Resumen}{92}{subsection.13.9.1}
-\contentsline {subsection}{\numberline {13.9.2}Descripci\IeC {\'o}n}{92}{subsection.13.9.2}
-\contentsline {subsection}{\numberline {13.9.3}Trayectorias del caso de uso}{93}{subsection.13.9.3}
-\contentsline {section}{\numberline {13.10}CUI1.4 Consultar edificio}{94}{section.13.10}
-\contentsline {subsection}{\numberline {13.10.1}Resumen}{94}{subsection.13.10.1}
-\contentsline {subsection}{\numberline {13.10.2}Descripci\IeC {\'o}n}{94}{subsection.13.10.2}
-\contentsline {subsection}{\numberline {13.10.3}Trayectorias del caso de uso}{95}{subsection.13.10.3}
-\contentsline {chapter}{\numberline {14}Modelo de interacci\IeC {\'o}n con el usuario}{97}{chapter.14}
-\contentsline {section}{\numberline {14.1}Interfaces del m\IeC {\'o}dulo: Academias}{97}{section.14.1}
-\contentsline {subsection}{\numberline {14.1.1}IUA1 Gestionar Academias}{97}{subsection.14.1.1}
-\contentsline {subsubsection}{Objetivo}{97}{section*.21}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{97}{section*.22}
-\contentsline {subsubsection}{Comandos}{97}{section*.23}
-\contentsline {subsection}{\numberline {14.1.2}IUA1.1 Registrar Academia}{97}{subsection.14.1.2}
-\contentsline {subsubsection}{Objetivo}{97}{section*.24}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{98}{section*.25}
-\contentsline {subsubsection}{Comandos}{98}{section*.26}
-\contentsline {subsection}{\numberline {14.1.3}IUA1.2 Modificar Academia}{98}{subsection.14.1.3}
-\contentsline {subsubsection}{Objetivo}{98}{section*.27}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{98}{section*.28}
-\contentsline {subsubsection}{Comandos}{100}{section*.29}
-\contentsline {section}{\numberline {14.2}Interfaces del m\IeC {\'o}dulo: Infraestructura}{100}{section.14.2}
-\contentsline {subsection}{\numberline {14.2.1}Edificios}{100}{subsection.14.2.1}
-\contentsline {subsection}{\numberline {14.2.2}IUI1 Gestionar Edificios}{100}{subsection.14.2.2}
-\contentsline {subsubsection}{Objetivo}{100}{section*.30}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{100}{section*.31}
-\contentsline {subsubsection}{Comandos}{101}{section*.32}
-\contentsline {subsection}{\numberline {14.2.3}IUI1.1 Registrar Edificio}{101}{subsection.14.2.3}
-\contentsline {subsubsection}{Objetivo}{101}{section*.33}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{101}{section*.34}
-\contentsline {subsubsection}{Comandos}{102}{section*.35}
-\contentsline {subsection}{\numberline {14.2.4}IUI1.2 Modificar Edificio}{102}{subsection.14.2.4}
-\contentsline {subsubsection}{Objetivo}{102}{section*.36}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{102}{section*.37}
-\contentsline {subsubsection}{Comandos}{102}{section*.38}
-\contentsline {subsection}{\numberline {14.2.5}IUI1.4 Consultar Edificio}{103}{subsection.14.2.5}
-\contentsline {subsubsection}{Objetivo}{103}{section*.39}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{103}{section*.40}
-\contentsline {subsubsection}{Comandos}{103}{section*.41}
-\contentsline {subsection}{\numberline {14.2.6}Espacios}{103}{subsection.14.2.6}
-\contentsline {subsection}{\numberline {14.2.7}IUI1.5 Gestionar Edificios}{103}{subsection.14.2.7}
-\contentsline {subsubsection}{Objetivo}{103}{section*.42}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{104}{section*.43}
-\contentsline {subsubsection}{Comandos}{104}{section*.44}
-\contentsline {subsection}{\numberline {14.2.8}IUI1.5.1 Registrar Espacio}{104}{subsection.14.2.8}
-\contentsline {subsubsection}{Objetivo}{105}{section*.45}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{105}{section*.46}
-\contentsline {subsubsection}{Comandos}{105}{section*.47}
-\contentsline {subsection}{\numberline {14.2.9}IUI1.5.2 Modificar Espacio}{106}{subsection.14.2.9}
-\contentsline {subsubsection}{Objetivo}{106}{section*.48}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{106}{section*.49}
-\contentsline {subsubsection}{Comandos}{107}{section*.50}
-\contentsline {subsection}{\numberline {14.2.10}IUI1.5.4 Consultar Espacio}{107}{subsection.14.2.10}
-\contentsline {subsubsection}{Objetivo}{107}{section*.51}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{107}{section*.52}
-\contentsline {subsubsection}{Comandos}{107}{section*.53}
-\contentsline {section}{\numberline {14.3}Interfaces del m\IeC {\'o}dulo: Oferta Educativa}{108}{section.14.3}
-\contentsline {subsection}{\numberline {14.3.1}Planes de Estudio}{108}{subsection.14.3.1}
-\contentsline {subsection}{\numberline {14.3.2}IUOE1 Gestionar Planes de Estudio}{108}{subsection.14.3.2}
-\contentsline {subsubsection}{Objetivo}{108}{section*.54}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{108}{section*.55}
-\contentsline {subsubsection}{Comandos}{108}{section*.56}
-\contentsline {subsection}{\numberline {14.3.3}IUOE1.1 Registrar Plan de Estudio}{109}{subsection.14.3.3}
-\contentsline {subsubsection}{Objetivo}{109}{section*.57}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{109}{section*.58}
-\contentsline {subsubsection}{Comandos}{109}{section*.59}
-\contentsline {subsection}{\numberline {14.3.4}IUOE1.2 Modificar Plan de Estudio}{109}{subsection.14.3.4}
-\contentsline {subsubsection}{Objetivo}{109}{section*.60}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{109}{section*.61}
-\contentsline {subsubsection}{Comandos}{109}{section*.62}
-\contentsline {subsection}{\numberline {14.3.5}IUOE1.4 Consultar Planes de Estudio}{109}{subsection.14.3.5}
-\contentsline {subsubsection}{Objetivo}{109}{section*.63}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{112}{section*.64}
-\contentsline {subsubsection}{Comandos}{112}{section*.65}
-\contentsline {subsection}{\numberline {14.3.6}Unidades de Aprendizaje}{112}{subsection.14.3.6}
-\contentsline {subsection}{\numberline {14.3.7}IUI1 Gestionar Unidades de Aprendizaje}{112}{subsection.14.3.7}
-\contentsline {subsubsection}{Objetivo}{112}{section*.66}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{112}{section*.67}
-\contentsline {subsubsection}{Comandos}{113}{section*.68}
-\contentsline {subsection}{\numberline {14.3.8}IUI1.1 Registrar Edificio}{113}{subsection.14.3.8}
-\contentsline {subsubsection}{Objetivo}{113}{section*.69}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{113}{section*.70}
-\contentsline {subsubsection}{Comandos}{114}{section*.71}
-\contentsline {subsection}{\numberline {14.3.9}IUI1.2 Modificar Edificio}{114}{subsection.14.3.9}
-\contentsline {subsubsection}{Objetivo}{114}{section*.72}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{114}{section*.73}
-\contentsline {subsubsection}{Comandos}{114}{section*.74}
-\contentsline {subsection}{\numberline {14.3.10}IUI1.4 Consultar Edificio}{115}{subsection.14.3.10}
-\contentsline {subsubsection}{Objetivo}{115}{section*.75}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{115}{section*.76}
-\contentsline {subsubsection}{Comandos}{115}{section*.77}
-\contentsline {section}{\numberline {14.4}Dise\IeC {\~n}o de mensajes}{115}{section.14.4}
-\contentsline {section}{\numberline {14.5}Par\IeC {\'a}metros comunes}{116}{section.14.5}
-\contentsline {section}{\numberline {14.6}Mensajes a trav\IeC {\'e}s de la pantalla}{117}{section.14.6}
-\contentsline {subsubsection}{{MSG1} {Operaci\IeC {\'o}n exitosa}}{117}{section*.78}
-\contentsline {subsubsection}{{MSG2} {Eliminar Elemento}}{118}{section*.79}
-\contentsline {subsubsection}{{MSG3} {Falta dato obligatorio}}{118}{section*.80}
-\contentsline {subsubsection}{{MSG4} {Formato de campo incorrecto}}{118}{section*.81}
-\contentsline {subsubsection}{{MSG5} {No es posible eliminar un elemento}}{119}{section*.82}
-\contentsline {subsubsection}{{MSG7} {No existe informaci\IeC {\'o}n necesaria en el sistema}}{119}{section*.83}
-\contentsline {chapter}{\numberline {15}Bibliograf\IeC {\'\i }a}{121}{chapter.15}
+\contentsline {chapter}{\numberline {1}Problem\IeC {\'a}tica}{11}{chapter.1}
+\contentsline {chapter}{\numberline {2}Trabajo previo}{13}{chapter.2}
+\contentsline {chapter}{\numberline {3}Soluci\IeC {\'o}n propuesta}{15}{chapter.3}
+\contentsline {chapter}{\numberline {4}Objetivos}{17}{chapter.4}
+\contentsline {chapter}{\numberline {5}Justificaci\IeC {\'o}n}{19}{chapter.5}
+\contentsline {chapter}{\numberline {6}Marco Te\IeC {\'o}rico}{21}{chapter.6}
+\contentsline {section}{\numberline {6.1}C\IeC {\'o}mputo Evolutivo}{21}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Algoritmos gen\IeC {\'e}ticos}{21}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Estructura General de un Algoritmo Evolutivo}{21}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Otras herramientas}{22}{section.6.2}
+\contentsline {chapter}{\numberline {7}Selecci\IeC {\'o}n de herramientas}{23}{chapter.7}
+\contentsline {section}{\numberline {7.1}Lenguaje de programaci\IeC {\'o}n}{23}{section.7.1}
+\contentsline {section}{\numberline {7.2}Otras herramientas}{23}{section.7.2}
+\contentsline {chapter}{\numberline {8}Glosario de t\IeC {\'e}rminos}{25}{chapter.8}
+\contentsline {section}{\numberline {8.1}T\IeC {\'e}rminos t\IeC {\'e}cnicos}{25}{section.8.1}
+\contentsline {chapter}{\numberline {9}Modelo de negocio}{27}{chapter.9}
+\contentsline {section}{\numberline {9.1}Reglas de negocio}{28}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Reglas derivadas del sistema}{28}{subsection.9.1.1}
+\contentsline {subsubsection}{RN-S1 Datos requeridos}{28}{section*.3}
+\contentsline {subsubsection}{RN-S2 Unicidad de elementos}{28}{section*.4}
+\contentsline {subsection}{\numberline {9.1.2}Reglas derivadas del negocio}{28}{subsection.9.1.2}
+\contentsline {subsubsection}{RN-N1 N\IeC {\'u}mero de niveles permitido para un edificio}{28}{section*.5}
+\contentsline {subsubsection}{RN-N2 N\IeC {\'u}mero de espacios permitido para un nivel de edificio}{29}{section*.6}
+\contentsline {subsubsection}{RN-N3 Calculo de la clave de un espacio}{29}{section*.7}
+\contentsline {subsubsection}{RN-N4 Jefe de academia}{29}{section*.8}
+\contentsline {subsubsection}{RN-N5 Capacidad de un espacio}{29}{section*.9}
+\contentsline {subsubsection}{RN-N6 Eliminaci\IeC {\'o}n de un espacio}{30}{section*.10}
+\contentsline {subsubsection}{RN-N7 Eliminaci\IeC {\'o}n de un edificio}{30}{section*.11}
+\contentsline {subsubsection}{RN-N8 Modificaci\IeC {\'o}n de un espacio}{30}{section*.12}
+\contentsline {subsubsection}{RN-N9 Modificaci\IeC {\'o}n de un edificio}{30}{section*.13}
+\contentsline {subsubsection}{RN-N10 Nombre del plan}{31}{section*.14}
+\contentsline {subsubsection}{RN-N11 M\IeC {\'a}quina de estados del plan de estudios}{31}{section*.15}
+\contentsline {subsubsection}{RN-N12 Clave de Unidad de Aprendizaje}{31}{section*.16}
+\contentsline {subsubsection}{RN-N13 Tipo de unidad de aprendizaje}{32}{section*.17}
+\contentsline {subsubsection}{RN-N14 Tipo de formaci\IeC {\'o}n}{32}{section*.18}
+\contentsline {subsubsection}{RN-N15 Tipo de ense\IeC {\~n}anza}{32}{section*.19}
+\contentsline {subsubsection}{RN-N16 Horas de unidad de aprendizaje}{33}{section*.20}
+\contentsline {chapter}{\numberline {10}Modelo de comportamiento}{35}{chapter.10}
+\contentsline {section}{\numberline {10.1}M\IeC {\'o}dulos del sistema}{35}{section.10.1}
+\contentsline {section}{\numberline {10.2}Actores del Sistema}{35}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Subdirector Acad\IeC {\'e}mico}{36}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}Capturista}{36}{subsection.10.2.2}
+\contentsline {subsection}{\numberline {10.2.3}Jefe de Departamento}{37}{subsection.10.2.3}
+\contentsline {section}{\numberline {10.3}Casos de Uso del m\IeC {\'o}dulo de Academias}{38}{section.10.3}
+\contentsline {section}{\numberline {10.4}Casos de Uso del m\IeC {\'o}dulo de Infraestructura}{38}{section.10.4}
+\contentsline {section}{\numberline {10.5}Casos de Uso del m\IeC {\'o}dulo de Oferta Educativa}{38}{section.10.5}
+\contentsline {chapter}{\numberline {11}Modelo de comportamiento del subsistema: Gestionar Academias }{41}{chapter.11}
+\contentsline {section}{\numberline {11.1}CUA1 Gestionar academias}{42}{section.11.1}
+\contentsline {subsection}{\numberline {11.1.1}Resumen}{42}{subsection.11.1.1}
+\contentsline {subsection}{\numberline {11.1.2}Descripci\IeC {\'o}n}{42}{subsection.11.1.2}
+\contentsline {subsection}{\numberline {11.1.3}Trayectorias del caso de uso}{43}{subsection.11.1.3}
+\contentsline {subsection}{\numberline {11.1.4}Puntos de extensi\IeC {\'o}n}{43}{subsection.11.1.4}
+\contentsline {section}{\numberline {11.2}CUA1.1 Registrar academia}{44}{section.11.2}
+\contentsline {subsection}{\numberline {11.2.1}Resumen}{44}{subsection.11.2.1}
+\contentsline {subsection}{\numberline {11.2.2}Descripci\IeC {\'o}n}{44}{subsection.11.2.2}
+\contentsline {subsection}{\numberline {11.2.3}Trayectorias del caso de uso}{45}{subsection.11.2.3}
+\contentsline {section}{\numberline {11.3}CUA1.2 Modificar academia}{47}{section.11.3}
+\contentsline {subsection}{\numberline {11.3.1}Resumen}{47}{subsection.11.3.1}
+\contentsline {subsection}{\numberline {11.3.2}Descripci\IeC {\'o}n}{47}{subsection.11.3.2}
+\contentsline {subsection}{\numberline {11.3.3}Trayectorias del caso de uso}{48}{subsection.11.3.3}
+\contentsline {section}{\numberline {11.4}CUA1.3 Eliminar academia}{50}{section.11.4}
+\contentsline {subsection}{\numberline {11.4.1}Resumen}{50}{subsection.11.4.1}
+\contentsline {subsection}{\numberline {11.4.2}Descripci\IeC {\'o}n}{50}{subsection.11.4.2}
+\contentsline {subsection}{\numberline {11.4.3}Trayectorias del caso de uso}{51}{subsection.11.4.3}
+\contentsline {chapter}{\numberline {12}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Infraestructura }{53}{chapter.12}
+\contentsline {section}{\numberline {12.1}CUI1 Gestionar edificios}{54}{section.12.1}
+\contentsline {subsection}{\numberline {12.1.1}Resumen}{54}{subsection.12.1.1}
+\contentsline {subsection}{\numberline {12.1.2}Descripci\IeC {\'o}n}{54}{subsection.12.1.2}
+\contentsline {subsection}{\numberline {12.1.3}Trayectorias del caso de uso}{55}{subsection.12.1.3}
+\contentsline {subsection}{\numberline {12.1.4}Puntos de extensi\IeC {\'o}n}{55}{subsection.12.1.4}
+\contentsline {section}{\numberline {12.2}CUI1.1 Registrar edificio}{56}{section.12.2}
+\contentsline {subsection}{\numberline {12.2.1}Resumen}{56}{subsection.12.2.1}
+\contentsline {subsection}{\numberline {12.2.2}Descripci\IeC {\'o}n}{56}{subsection.12.2.2}
+\contentsline {subsection}{\numberline {12.2.3}Trayectorias del caso de uso}{57}{subsection.12.2.3}
+\contentsline {section}{\numberline {12.3}CUI1.2 Modificar edificio}{58}{section.12.3}
+\contentsline {subsection}{\numberline {12.3.1}Resumen}{58}{subsection.12.3.1}
+\contentsline {subsection}{\numberline {12.3.2}Descripci\IeC {\'o}n}{58}{subsection.12.3.2}
+\contentsline {subsection}{\numberline {12.3.3}Trayectorias del caso de uso}{59}{subsection.12.3.3}
+\contentsline {section}{\numberline {12.4}CUI1.3 Eliminar edificio}{60}{section.12.4}
+\contentsline {subsection}{\numberline {12.4.1}Resumen}{60}{subsection.12.4.1}
+\contentsline {subsection}{\numberline {12.4.2}Descripci\IeC {\'o}n}{60}{subsection.12.4.2}
+\contentsline {subsection}{\numberline {12.4.3}Trayectorias del caso de uso}{61}{subsection.12.4.3}
+\contentsline {section}{\numberline {12.5}CUI1.4 Consultar edificio}{62}{section.12.5}
+\contentsline {subsection}{\numberline {12.5.1}Resumen}{62}{subsection.12.5.1}
+\contentsline {subsection}{\numberline {12.5.2}Descripci\IeC {\'o}n}{62}{subsection.12.5.2}
+\contentsline {subsection}{\numberline {12.5.3}Trayectorias del caso de uso}{63}{subsection.12.5.3}
+\contentsline {section}{\numberline {12.6}CUI1.5 Gestionar Espacios}{64}{section.12.6}
+\contentsline {subsection}{\numberline {12.6.1}Resumen}{64}{subsection.12.6.1}
+\contentsline {subsection}{\numberline {12.6.2}Descripci\IeC {\'o}n}{64}{subsection.12.6.2}
+\contentsline {subsection}{\numberline {12.6.3}Trayectorias del caso de uso}{65}{subsection.12.6.3}
+\contentsline {subsection}{\numberline {12.6.4}Puntos de extensi\IeC {\'o}n}{65}{subsection.12.6.4}
+\contentsline {section}{\numberline {12.7}CUI1.5.1 Registrar Espacio}{66}{section.12.7}
+\contentsline {subsection}{\numberline {12.7.1}Resumen}{66}{subsection.12.7.1}
+\contentsline {subsection}{\numberline {12.7.2}Descripci\IeC {\'o}n}{66}{subsection.12.7.2}
+\contentsline {subsection}{\numberline {12.7.3}Trayectorias del caso de uso}{67}{subsection.12.7.3}
+\contentsline {section}{\numberline {12.8}CUI1.5.1 Modificar Espacio}{69}{section.12.8}
+\contentsline {subsection}{\numberline {12.8.1}Resumen}{69}{subsection.12.8.1}
+\contentsline {subsection}{\numberline {12.8.2}Descripci\IeC {\'o}n}{69}{subsection.12.8.2}
+\contentsline {subsection}{\numberline {12.8.3}Trayectorias del caso de uso}{70}{subsection.12.8.3}
+\contentsline {section}{\numberline {12.9}CUA1.3 Eliminar espacio}{72}{section.12.9}
+\contentsline {subsection}{\numberline {12.9.1}Resumen}{72}{subsection.12.9.1}
+\contentsline {subsection}{\numberline {12.9.2}Descripci\IeC {\'o}n}{72}{subsection.12.9.2}
+\contentsline {subsection}{\numberline {12.9.3}Trayectorias del caso de uso}{73}{subsection.12.9.3}
+\contentsline {section}{\numberline {12.10}CUI1.5.4 Consultar Espacio}{74}{section.12.10}
+\contentsline {subsection}{\numberline {12.10.1}Resumen}{74}{subsection.12.10.1}
+\contentsline {subsection}{\numberline {12.10.2}Descripci\IeC {\'o}n}{74}{subsection.12.10.2}
+\contentsline {subsection}{\numberline {12.10.3}Trayectorias del caso de uso}{75}{subsection.12.10.3}
+\contentsline {chapter}{\numberline {13}Modelo de comportamiento del subsistema: Gestionar Oferta Educativa }{77}{chapter.13}
+\contentsline {section}{\numberline {13.1}CUOE1 Gestionar planes de estudio}{78}{section.13.1}
+\contentsline {subsection}{\numberline {13.1.1}Resumen}{78}{subsection.13.1.1}
+\contentsline {subsection}{\numberline {13.1.2}Descripci\IeC {\'o}n}{78}{subsection.13.1.2}
+\contentsline {subsection}{\numberline {13.1.3}Trayectorias del caso de uso}{79}{subsection.13.1.3}
+\contentsline {subsection}{\numberline {13.1.4}Puntos de extensi\IeC {\'o}n}{79}{subsection.13.1.4}
+\contentsline {section}{\numberline {13.2}CUOE1.1 Registrar plan de estudio}{80}{section.13.2}
+\contentsline {subsection}{\numberline {13.2.1}Resumen}{80}{subsection.13.2.1}
+\contentsline {subsection}{\numberline {13.2.2}Descripci\IeC {\'o}n}{80}{subsection.13.2.2}
+\contentsline {subsection}{\numberline {13.2.3}Trayectorias del caso de uso}{81}{subsection.13.2.3}
+\contentsline {section}{\numberline {13.3}CUOE1.2 Modificar plan de estudio}{83}{section.13.3}
+\contentsline {subsection}{\numberline {13.3.1}Resumen}{83}{subsection.13.3.1}
+\contentsline {subsection}{\numberline {13.3.2}Descripci\IeC {\'o}n}{83}{subsection.13.3.2}
+\contentsline {subsection}{\numberline {13.3.3}Trayectorias del caso de uso}{84}{subsection.13.3.3}
+\contentsline {section}{\numberline {13.4}CUOE1.3 Eliminar plan de estudio}{86}{section.13.4}
+\contentsline {subsection}{\numberline {13.4.1}Resumen}{86}{subsection.13.4.1}
+\contentsline {subsection}{\numberline {13.4.2}Descripci\IeC {\'o}n}{86}{subsection.13.4.2}
+\contentsline {subsection}{\numberline {13.4.3}Trayectorias del caso de uso}{87}{subsection.13.4.3}
+\contentsline {section}{\numberline {13.5}CUOE1.4 Consultar plan de estudio}{88}{section.13.5}
+\contentsline {subsection}{\numberline {13.5.1}Resumen}{88}{subsection.13.5.1}
+\contentsline {subsection}{\numberline {13.5.2}Descripci\IeC {\'o}n}{88}{subsection.13.5.2}
+\contentsline {subsection}{\numberline {13.5.3}Trayectorias del caso de uso}{89}{subsection.13.5.3}
+\contentsline {section}{\numberline {13.6}CUOE1.5 Gestionar unidades de aprendizaje}{90}{section.13.6}
+\contentsline {subsection}{\numberline {13.6.1}Resumen}{90}{subsection.13.6.1}
+\contentsline {subsection}{\numberline {13.6.2}Descripci\IeC {\'o}n}{90}{subsection.13.6.2}
+\contentsline {subsection}{\numberline {13.6.3}Trayectorias del caso de uso}{91}{subsection.13.6.3}
+\contentsline {subsection}{\numberline {13.6.4}Puntos de extensi\IeC {\'o}n}{91}{subsection.13.6.4}
+\contentsline {section}{\numberline {13.7}CUOE1.5.1 Registrar unidad de aprendizaje}{92}{section.13.7}
+\contentsline {subsection}{\numberline {13.7.1}Resumen}{92}{subsection.13.7.1}
+\contentsline {subsection}{\numberline {13.7.2}Descripci\IeC {\'o}n}{92}{subsection.13.7.2}
+\contentsline {subsection}{\numberline {13.7.3}Trayectorias del caso de uso}{93}{subsection.13.7.3}
+\contentsline {section}{\numberline {13.8}CUOE1.5.2 Modificar unidad de aprendizaje}{95}{section.13.8}
+\contentsline {subsection}{\numberline {13.8.1}Resumen}{95}{subsection.13.8.1}
+\contentsline {subsection}{\numberline {13.8.2}Descripci\IeC {\'o}n}{95}{subsection.13.8.2}
+\contentsline {subsection}{\numberline {13.8.3}Trayectorias del caso de uso}{96}{subsection.13.8.3}
+\contentsline {section}{\numberline {13.9}CUOE1.5.3 Eliminar unidad de aprendizaje}{98}{section.13.9}
+\contentsline {subsection}{\numberline {13.9.1}Resumen}{98}{subsection.13.9.1}
+\contentsline {subsection}{\numberline {13.9.2}Descripci\IeC {\'o}n}{98}{subsection.13.9.2}
+\contentsline {subsection}{\numberline {13.9.3}Trayectorias del caso de uso}{99}{subsection.13.9.3}
+\contentsline {section}{\numberline {13.10}CUOE1.5.4 Consultar unidad de aprendizaje}{100}{section.13.10}
+\contentsline {subsection}{\numberline {13.10.1}Resumen}{100}{subsection.13.10.1}
+\contentsline {subsection}{\numberline {13.10.2}Descripci\IeC {\'o}n}{100}{subsection.13.10.2}
+\contentsline {subsection}{\numberline {13.10.3}Trayectorias del caso de uso}{101}{subsection.13.10.3}
+\contentsline {chapter}{\numberline {14}Modelo de interacci\IeC {\'o}n con el usuario}{103}{chapter.14}
+\contentsline {section}{\numberline {14.1}Interfaces del m\IeC {\'o}dulo: Academias}{103}{section.14.1}
+\contentsline {subsection}{\numberline {14.1.1}IUA1 Gestionar Academias}{103}{subsection.14.1.1}
+\contentsline {subsubsection}{Objetivo}{103}{section*.21}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{103}{section*.22}
+\contentsline {subsubsection}{Comandos}{103}{section*.23}
+\contentsline {subsection}{\numberline {14.1.2}IUA1.1 Registrar Academia}{103}{subsection.14.1.2}
+\contentsline {subsubsection}{Objetivo}{103}{section*.24}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{104}{section*.25}
+\contentsline {subsubsection}{Comandos}{104}{section*.26}
+\contentsline {subsection}{\numberline {14.1.3}IUA1.2 Modificar Academia}{104}{subsection.14.1.3}
+\contentsline {subsubsection}{Objetivo}{104}{section*.27}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{104}{section*.28}
+\contentsline {subsubsection}{Comandos}{106}{section*.29}
+\contentsline {section}{\numberline {14.2}Interfaces del m\IeC {\'o}dulo: Infraestructura}{106}{section.14.2}
+\contentsline {subsection}{\numberline {14.2.1}Edificios}{106}{subsection.14.2.1}
+\contentsline {subsection}{\numberline {14.2.2}IUI1 Gestionar Edificios}{106}{subsection.14.2.2}
+\contentsline {subsubsection}{Objetivo}{106}{section*.30}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{106}{section*.31}
+\contentsline {subsubsection}{Comandos}{107}{section*.32}
+\contentsline {subsection}{\numberline {14.2.3}IUI1.1 Registrar Edificio}{107}{subsection.14.2.3}
+\contentsline {subsubsection}{Objetivo}{107}{section*.33}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{107}{section*.34}
+\contentsline {subsubsection}{Comandos}{108}{section*.35}
+\contentsline {subsection}{\numberline {14.2.4}IUI1.2 Modificar Edificio}{108}{subsection.14.2.4}
+\contentsline {subsubsection}{Objetivo}{108}{section*.36}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{108}{section*.37}
+\contentsline {subsubsection}{Comandos}{108}{section*.38}
+\contentsline {subsection}{\numberline {14.2.5}IUI1.4 Consultar Edificio}{109}{subsection.14.2.5}
+\contentsline {subsubsection}{Objetivo}{109}{section*.39}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{109}{section*.40}
+\contentsline {subsubsection}{Comandos}{109}{section*.41}
+\contentsline {subsection}{\numberline {14.2.6}Espacios}{109}{subsection.14.2.6}
+\contentsline {subsection}{\numberline {14.2.7}IUI1.5 Gestionar Edificios}{109}{subsection.14.2.7}
+\contentsline {subsubsection}{Objetivo}{109}{section*.42}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{110}{section*.43}
+\contentsline {subsubsection}{Comandos}{110}{section*.44}
+\contentsline {subsection}{\numberline {14.2.8}IUI1.5.1 Registrar Espacio}{110}{subsection.14.2.8}
+\contentsline {subsubsection}{Objetivo}{111}{section*.45}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{111}{section*.46}
+\contentsline {subsubsection}{Comandos}{111}{section*.47}
+\contentsline {subsection}{\numberline {14.2.9}IUI1.5.2 Modificar Espacio}{112}{subsection.14.2.9}
+\contentsline {subsubsection}{Objetivo}{112}{section*.48}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{112}{section*.49}
+\contentsline {subsubsection}{Comandos}{113}{section*.50}
+\contentsline {subsection}{\numberline {14.2.10}IUI1.5.4 Consultar Espacio}{113}{subsection.14.2.10}
+\contentsline {subsubsection}{Objetivo}{113}{section*.51}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{113}{section*.52}
+\contentsline {subsubsection}{Comandos}{113}{section*.53}
+\contentsline {section}{\numberline {14.3}Interfaces del m\IeC {\'o}dulo: Oferta Educativa}{114}{section.14.3}
+\contentsline {subsection}{\numberline {14.3.1}Planes de Estudio}{114}{subsection.14.3.1}
+\contentsline {subsection}{\numberline {14.3.2}IUOE1 Gestionar Planes de Estudio}{114}{subsection.14.3.2}
+\contentsline {subsubsection}{Objetivo}{114}{section*.54}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{114}{section*.55}
+\contentsline {subsubsection}{Comandos}{114}{section*.56}
+\contentsline {subsection}{\numberline {14.3.3}IUOE1.1 Registrar Plan de Estudio}{115}{subsection.14.3.3}
+\contentsline {subsubsection}{Objetivo}{115}{section*.57}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{115}{section*.58}
+\contentsline {subsubsection}{Comandos}{115}{section*.59}
+\contentsline {subsection}{\numberline {14.3.4}IUOE1.2 Modificar Plan de Estudio}{115}{subsection.14.3.4}
+\contentsline {subsubsection}{Objetivo}{115}{section*.60}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{115}{section*.61}
+\contentsline {subsubsection}{Comandos}{115}{section*.62}
+\contentsline {subsection}{\numberline {14.3.5}IUOE1.4 Consultar Planes de Estudio}{115}{subsection.14.3.5}
+\contentsline {subsubsection}{Objetivo}{115}{section*.63}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{118}{section*.64}
+\contentsline {subsubsection}{Comandos}{118}{section*.65}
+\contentsline {subsection}{\numberline {14.3.6}Unidades de Aprendizaje}{118}{subsection.14.3.6}
+\contentsline {subsection}{\numberline {14.3.7}IUOE1.5 Gestionar Unidades de Aprendizaje}{118}{subsection.14.3.7}
+\contentsline {subsubsection}{Objetivo}{118}{section*.66}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{118}{section*.67}
+\contentsline {subsubsection}{Comandos}{119}{section*.68}
+\contentsline {subsection}{\numberline {14.3.8}IUOE1.1 Registrar Unidad de Aprendizaje}{119}{subsection.14.3.8}
+\contentsline {subsubsection}{Objetivo}{119}{section*.69}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{119}{section*.70}
+\contentsline {subsubsection}{Comandos}{121}{section*.71}
+\contentsline {subsection}{\numberline {14.3.9}IUOE1.2 Modificar Unidad de Aprendizaje}{121}{subsection.14.3.9}
+\contentsline {subsubsection}{Objetivo}{121}{section*.72}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{121}{section*.73}
+\contentsline {subsubsection}{Comandos}{121}{section*.74}
+\contentsline {subsection}{\numberline {14.3.10}IUOE1.4 Consultar Unidad de Aprendizaje}{121}{subsection.14.3.10}
+\contentsline {subsubsection}{Objetivo}{121}{section*.75}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{121}{section*.76}
+\contentsline {subsubsection}{Comandos}{121}{section*.77}
+\contentsline {section}{\numberline {14.4}Dise\IeC {\~n}o de mensajes}{124}{section.14.4}
+\contentsline {section}{\numberline {14.5}Par\IeC {\'a}metros comunes}{124}{section.14.5}
+\contentsline {section}{\numberline {14.6}Mensajes a trav\IeC {\'e}s de la pantalla}{125}{section.14.6}
+\contentsline {subsubsection}{{MSG1} {Operaci\IeC {\'o}n exitosa}}{125}{section*.78}
+\contentsline {subsubsection}{{MSG2} {Eliminar Elemento}}{125}{section*.79}
+\contentsline {subsubsection}{{MSG3} {Falta dato obligatorio}}{126}{section*.80}
+\contentsline {subsubsection}{{MSG4} {Formato de campo incorrecto}}{126}{section*.81}
+\contentsline {subsubsection}{{MSG5} {No es posible eliminar un elemento}}{126}{section*.82}
+\contentsline {subsubsection}{{MSG7} {No existe informaci\IeC {\'o}n necesaria en el sistema}}{126}{section*.83}
+\contentsline {chapter}{\numberline {15}Bibliograf\IeC {\'\i }a}{127}{chapter.15}

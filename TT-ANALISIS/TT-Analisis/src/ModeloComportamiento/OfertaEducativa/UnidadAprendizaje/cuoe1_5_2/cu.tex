@@ -1,7 +1,7 @@
 
-\begin{UseCase}{CUI1.2}{Modificar edificio}{	
-	Permite al actor modificar un edificio previamente registrado y así mantener actualizada la infraestructura de la ESCOM.
-}
+\begin{UseCase}{CUOE1.5.2}{Modificar unidad de aprendizaje}{	
+		Permite al actor modificar la información de una unidad de aprendizaje que forma parte de un plan de estudio dado.
+	}
 	\UCccitem{Versión}{0.1}
 	\UCccsection{Administración de Requerimientos}
 	\UCccitem{Autor}{Brenda Gómez Caballero}
@@ -35,23 +35,37 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Mantener actualizada la infraestructura de la ESCOM.}
+	\UCitem{Propósito}{Mantener actualizada la información de las unidades de aprendizaje, que serán utilizadas como elementos del algoritmo genético.}
 	\UCitem{Entradas}{
 		\begin{UClist}
+			\UCli Clave: \ioEscribir.
 			\UCli Nombre: \ioEscribir.
-			\UCli Niveles: \ioSeleccionar.
+			\UCli Tipo de unidad de aprendizaje: \ioSeleccionar.
+			\UCli Tipo de formación: \ioSeleccionar.
+			\UCli Academia: \ioSeleccionar.
+			\UCli Nivel: \ioSeleccionar.
+			\UCli Tipo de enseñanza: \ioSeleccionar.
+			\UCli Total de hora teóricas por semana: \ioEscribir.
+			\UCli Total de hora prácticas por semana: \ioEscribir.
 		\end{UClist}
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli Nombre.
-			\UCli Niveles.
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUI1}{Gestionar Edificios} indicando que la modificación se realizó correctamente.
+			\UCli Clave
+			\UCli Nombre
+			\UCli Tipo de unidad de aprendizaje
+			\UCli Tipo de formación
+			\UCli Academia
+			\UCli Nivel
+			\UCli Tipo de enseñanza
+			\UCli Total de hora teóricas por semana
+			\UCli Total de hora prácticas por semana
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje} indicando que la modificación se realizó correctamente.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
 		\begin{UClist}
-			\UCli Ninguna
+			\UCli Que exista información en el catálogo de \textbf{Academia}.
 		\end{UClist}
 	}	
 	\UCitem{Postcondiciones}{
@@ -62,55 +76,63 @@
 	%Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
 	\UCitem{Reglas de negocio}{
 		\begin{UClist}
-			\UCli \cdtIdRef{RN-N1}{Número de niveles permitido para un edificio}.
+			\UCli \cdtIdRef{RN-S1}{Datos requeridos}.
 			\UCli \cdtIdRef{RN-S2}{Unicidad de elementos}.
 		\end{UClist}
 	}
 	\UCitem{Errores}{
 		\begin{UClist}	
-			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUI1.2}{Modificar Edificio} indicando que faltan campos obligatorios por completar.
+			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUOE1.5.2}{Modificar Unidad de Aprendizaje} indicando que faltan campos obligatorios por completar.
 			
-			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUI1.2}{Modificar Edificio} indicando que el nombre del edificio ya existe.
+			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUOE1.5.2}{Modificar Unidad de Aprendizaje} indicando que la clave de la unidad de aprendizaje ya existe.
+			
+			\UCli \cdtIdRef{MSG7}{No existe información necesaria en el sistema}: Se muestra en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje} indicando que no existe información en el catálogo de academia.
 		\end{UClist}
 	}
 	\UCitem{Tipo}{Primario}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita modificar un edifico dando clic en el ícono IUModificar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
+	\UCpaso [\UCactor] Solicita modificar una unidad de aprendizaje dando clic en el ícono IURegistrar de la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}. 
 	
-	\UCpaso [\UCsist] Obtiene el nombre y número de niveles del edificio previamente registrados.
+	\UCpaso [\UCsist] Verifica que exista información en el catálogo \textbf{Academia}. \refTray{A}
 	
-	\UCpaso [\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUI1.2}{Modificar Edificio} con la información obtenida.
+	\UCpaso [\UCsist] Obtiene la información de la unidad de aprendizaje seleccionada.
 	
-	\UCpaso [\UCactor] Completa la información solicitada. \label{CUI1.2:CompletaInfo}
+	\UCpaso [\UCsist] Solicita modificar la información a través de la pantalla \cdtIdRef{IUOE1.5.2}{Modificar Unidad de Aprendizaje} con la información obtenida.
 	
-	\UCpaso [\UCactor] Solicita modificar la información oprimiendo el botón \cdtButton{Aceptar}. \refTray{A}
+	\UCpaso [\UCactor] Actualiza la información solicitada. \label{CUOE1.5.2:CompletaInfo}
 	
-	\UCpaso [\UCsist] Verifica que se hayan completado los campos obligatorios con base en la regla de negocios \cdtIdRef{RN-S1}{Datos requeridos}. \refTray{B}
+	\UCpaso [\UCactor] Solicita modificar la información oprimiendo el botón \cdtButton{Aceptar}. \refTray{B}
 	
-	\UCpaso [\UCsist] Verifica que el nombre del edificio no se haya registrado previamente, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{C}
+	\UCpaso [\UCsist] Verifica que se hayan completado los campos obligatorios con base en la regla de negocios \cdtIdRef{RN-S1}{Datos requeridos}. \refTray{C}
 	
-	\UCpaso [\UCsist] Modifica el nombre y número de niveles del edificio.
+	\UCpaso [\UCsist] Verifica que la clave de la unidad de aprendizaje no se haya registrado previamente, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{D}
 	
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}, indicando que el edificio se modificó correctamente.	
+	\UCpaso [\UCsist] Registra la información de la unidad de aprendizaje.
+	
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}, indicando que la unidad de aprendizaje se modificó correctamente.	
 	
 \end{UCtrayectoria}
 
-\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor desea cancelar la operación.}
-	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El catálogo de Academia no tiene información.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG7}{No existe información necesaria en el sistema} en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}. 
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{No se completaron los campos obligatorios.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUI1.2}{Modificar Edificio}.
-	
-	\UCpaso Regresa al paso \ref{CUI1.2:CompletaInfo} de la trayectoria principal.
+\begin{UCtrayectoriaA}[Fin del caso de uso]{B}{El actor desea cancelar la operación.}
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}.  
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{C}{El nombre del edificio ya fue registrado.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUI1.2}{Modificar Edificio}.
+\begin{UCtrayectoriaA}{C}{No se completaron los campos obligatorios.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUOE1.5.2}{Modificar Unidad de Aprendizaje}. 
 	
-	\UCpaso Regresa al paso \ref{CUI1.2:CompletaInfo} de la trayectoria principal.
+	\UCpaso Regresa al paso \ref{CUOE1.5.2:CompletaInfo} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{D}{La clave de la unidad de aprendizaje ya fue registrada.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUOE1.5.2}{Modificar Unidad de Aprendizaje}.
+	
+	\UCpaso Regresa al paso \ref{CUOE1.5.2:CompletaInfo} de la trayectoria principal.
 \end{UCtrayectoriaA}
 
 

@@ -1,6 +1,6 @@
 
-\begin{UseCase}{CUI1.1}{Registrar edificio}{	
-	Permite al actor registrar un nuevo edificio para la infraestructura de la ESCOM.
+\begin{UseCase}{CUOE1.5.1}{Registrar unidad de aprendizaje}{	
+	Permite al actor registrar una nueva unidad de aprendizaje que forma parte de un plan de estudio dado.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -35,21 +35,28 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Llevar un control de la infraestructura de la ESCOM.}
+	\UCitem{Propósito}{Permitir el uso de las unidades de aprendizaje como elementos que utilizará el algoritmo genético.}
 	\UCitem{Entradas}{
 		\begin{UClist}
+			\UCli Clave: \ioEscribir.
 			\UCli Nombre: \ioEscribir.
-			\UCli Niveles: \ioSeleccionar.
+			\UCli Tipo de unidad de aprendizaje: \ioSeleccionar.
+			\UCli Tipo de formación: \ioSeleccionar.
+			\UCli Academia: \ioSeleccionar.
+			\UCli Nivel: \ioSeleccionar.
+			\UCli Tipo de enseñanza: \ioSeleccionar.
+			\UCli Total de hora teóricas por semana: \ioEscribir.
+			\UCli Total de hora prácticas por semana: \ioEscribir.
 		\end{UClist}
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUI1}{Gestionar Edificios} indicando que el registro se realizó correctamente.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje} indicando que el registro se realizó correctamente.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
 		\begin{UClist}
-			\UCli Ninguna
+			\UCli Que exista información en el catálogo de \textbf{Academia}.
 		\end{UClist}
 	}	
 	\UCitem{Postcondiciones}{
@@ -60,53 +67,61 @@
 	%Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
 	\UCitem{Reglas de negocio}{
 		\begin{UClist}
-			\UCli \cdtIdRef{RN-N1}{Número de niveles permitido para un edificio}.
+			\UCli \cdtIdRef{RN-S1}{Datos requeridos}.
 			\UCli \cdtIdRef{RN-S2}{Unicidad de elementos}.
 		\end{UClist}
 	}
 	\UCitem{Errores}{
 		\begin{UClist}	
-			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio} indicando que faltan campos obligatorios por completar.
+			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUOE1.5.1}{Registrar Unidad de Aprendizaje} indicando que faltan campos obligatorios por completar.
 			
-			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio} indicando que el nombre del edificio ya existe.
+			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUOE1.5.1}{Registrar Unidad de Aprendizaje} indicando que la clave de la unidad de aprendizaje ya existe.
+			
+			\UCli \cdtIdRef{MSG7}{No existe información necesaria en el sistema}: Se muestra en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje} indicando que no existe información en el catálogo de academia.
 		\end{UClist}
 	}
 	\UCitem{Tipo}{Primario}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita registrar un edifico dando clic en el ícono IURegistrar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
+	\UCpaso [\UCactor] Solicita registrar una unidad de aprendizaje dando clic en el ícono IURegistrar de la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}. 
 	
-	\UCpaso[\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio}.
+	\UCpaso[\UCsist] verifica que exista información en el catálogo \textbf{Academia}. \refTray{A}
 	
-	\UCpaso [\UCactor] Completa la información solicitada. \label{CUI1.1:CompletaInfo}
+	\UCpaso[\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUOE1.5.1}{Registrar Unidad de Aprendizaje}.
 	
-	\UCpaso [\UCactor] Solicita registrar la información oprimiendo el botón \cdtButton{Aceptar}. \refTray{A}
+	\UCpaso [\UCactor] Completa la información solicitada. \label{CUOE1.5.1:CompletaInfo}
 	
-	\UCpaso [\UCsist] Verifica que se hayan completado los campos obligatorios con base en la regla de negocios \cdtIdRef{RN-S1}{Datos requeridos}. \refTray{B}
+	\UCpaso [\UCactor] Solicita registrar la información oprimiendo el botón \cdtButton{Aceptar}. \refTray{B}
 	
-	\UCpaso [\UCsist] Verifica que el nombre del edificio no se haya registrado previamente, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{C}
+	\UCpaso [\UCsist] Verifica que se hayan completado los campos obligatorios con base en la regla de negocios \cdtIdRef{RN-S1}{Datos requeridos}. \refTray{C}
+	
+	\UCpaso [\UCsist] Verifica que la clave de la unidad de aprendizaje no se haya registrado previamente, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{D}
 			
-	\UCpaso [\UCsist] Registra el nombre y número de niveles del edificio.
+	\UCpaso [\UCsist] Registra la información de la unidad de aprendizaje.
 	
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}, indicando que el edificio se registró correctamente.	
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}, indicando que la unidad de aprendizaje se registró correctamente.	
 	
 \end{UCtrayectoria}
 
-\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor desea cancelar la operación.}
-	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El catálogo de Academia no tiene información.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG7}{No existe información necesaria en el sistema} en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}. 
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{No se completaron los campos obligatorios.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio}.
-	
-	\UCpaso Regresa al paso \ref{CUI1.1:CompletaInfo} de la trayectoria principal.
+\begin{UCtrayectoriaA}[Fin del caso de uso]{B}{El actor desea cancelar la operación.}
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}.  
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{C}{El nombre del edificio ya fue registrado.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio}.
+\begin{UCtrayectoriaA}{C}{No se completaron los campos obligatorios.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUOE1.5.1}{Registrar Unidad de Aprendizaje}. 
 	
-	\UCpaso Regresa al paso \ref{CUI1.1:CompletaInfo} de la trayectoria principal.
+	\UCpaso Regresa al paso \ref{CUOE1.5.1:CompletaInfo} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{D}{La clave de la unidad de aprendizaje ya fue registrada.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUOE1.5.1}{Registrar Unidad de Aprendizaje}.
+	
+	\UCpaso Regresa al paso \ref{CUOE1.5.1:CompletaInfo} de la trayectoria principal.
 \end{UCtrayectoriaA}
 
 
