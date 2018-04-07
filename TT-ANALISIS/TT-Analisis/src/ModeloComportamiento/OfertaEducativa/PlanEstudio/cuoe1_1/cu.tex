@@ -67,23 +67,22 @@
 	%Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
 	\UCitem{Reglas de negocio}{
 		\begin{UClist}
-			\UCli \cdtIdRef{RN-N1}{Número de niveles permitido para un edificio}.
+			\UCli \cdtIdRef{RN-N10}{Nombre del plan}
 			\UCli \cdtIdRef{RN-S2}{Unicidad de elementos}.
 		\end{UClist}
 	}
 	\UCitem{Errores}{
 		\begin{UClist}	
-			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio} indicando que faltan campos obligatorios por completar.
+			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUOE1.1}{Registrar Plan de Estudio} indicando que faltan campos obligatorios por completar.
 			
-			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio} indicando que el nombre del edificio ya existe.
-			pruebas!
+			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUOE1.1}{Registrar Plan de Estudio} indicando que el nombre del plan de estudio ya existe.
 		\end{UClist}
 	}
 	\UCitem{Tipo}{Primario}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita registrar un edifico dando clic en el ícono IURegistrar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
+	\UCpaso [\UCactor] Solicita registrar un plan de estudio dando clic en el ícono IURegistrar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
 	
 	\UCpaso[\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio}.
 	
