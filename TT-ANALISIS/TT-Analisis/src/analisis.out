@@ -97,15 +97,15 @@
 \BOOKMARK [2][-]{subsection.13.2.1}{Resumen}{section.13.2}% 97
 \BOOKMARK [2][-]{subsection.13.2.2}{Descripci\363n}{section.13.2}% 98
 \BOOKMARK [2][-]{subsection.13.2.3}{Trayectorias del caso de uso}{section.13.2}% 99
-\BOOKMARK [1][-]{section.13.3}{CUI1.2 Modificar edificio}{chapter.13}% 100
+\BOOKMARK [1][-]{section.13.3}{CUOE1.2 Modificar plan de estudio}{chapter.13}% 100
 \BOOKMARK [2][-]{subsection.13.3.1}{Resumen}{section.13.3}% 101
 \BOOKMARK [2][-]{subsection.13.3.2}{Descripci\363n}{section.13.3}% 102
 \BOOKMARK [2][-]{subsection.13.3.3}{Trayectorias del caso de uso}{section.13.3}% 103
-\BOOKMARK [1][-]{section.13.4}{CUI1.3 Eliminar edificio}{chapter.13}% 104
+\BOOKMARK [1][-]{section.13.4}{CUOE1.3 Eliminar plan de estudio}{chapter.13}% 104
 \BOOKMARK [2][-]{subsection.13.4.1}{Resumen}{section.13.4}% 105
 \BOOKMARK [2][-]{subsection.13.4.2}{Descripci\363n}{section.13.4}% 106
 \BOOKMARK [2][-]{subsection.13.4.3}{Trayectorias del caso de uso}{section.13.4}% 107
-\BOOKMARK [1][-]{section.13.5}{CUI1.4 Consultar edificio}{chapter.13}% 108
+\BOOKMARK [1][-]{section.13.5}{CUOE1.4 Consultar plan de estudio}{chapter.13}% 108
 \BOOKMARK [2][-]{subsection.13.5.1}{Resumen}{section.13.5}% 109
 \BOOKMARK [2][-]{subsection.13.5.2}{Descripci\363n}{section.13.5}% 110
 \BOOKMARK [2][-]{subsection.13.5.3}{Trayectorias del caso de uso}{section.13.5}% 111
@@ -147,12 +147,17 @@
 \BOOKMARK [2][-]{subsection.14.2.9}{IUI1.5.2 Modificar Espacio}{section.14.2}% 147
 \BOOKMARK [2][-]{subsection.14.2.10}{IUI1.5.4 Consultar Espacio}{section.14.2}% 148
 \BOOKMARK [1][-]{section.14.3}{Interfaces del m\363dulo: Oferta Educativa}{chapter.14}% 149
-\BOOKMARK [2][-]{subsection.14.3.1}{Unidades de Aprendizaje}{section.14.3}% 150
-\BOOKMARK [2][-]{subsection.14.3.2}{IUI1 Gestionar Unidades de Aprendizaje}{section.14.3}% 151
-\BOOKMARK [2][-]{subsection.14.3.3}{IUI1.1 Registrar Edificio}{section.14.3}% 152
-\BOOKMARK [2][-]{subsection.14.3.4}{IUI1.2 Modificar Edificio}{section.14.3}% 153
-\BOOKMARK [2][-]{subsection.14.3.5}{IUI1.4 Consultar Edificio}{section.14.3}% 154
-\BOOKMARK [1][-]{section.14.4}{Dise\361o de mensajes}{chapter.14}% 155
-\BOOKMARK [1][-]{section.14.5}{Par\341metros comunes}{chapter.14}% 156
-\BOOKMARK [1][-]{section.14.6}{Mensajes a trav\351s de la pantalla}{chapter.14}% 157
-\BOOKMARK [0][-]{chapter.15}{Bibliograf\355a}{}% 158
+\BOOKMARK [2][-]{subsection.14.3.1}{Planes de Estudio}{section.14.3}% 150
+\BOOKMARK [2][-]{subsection.14.3.2}{IUOE1 Gestionar Planes de Estudio}{section.14.3}% 151
+\BOOKMARK [2][-]{subsection.14.3.3}{IUOE1.1 Registrar Plan de Estudio}{section.14.3}% 152
+\BOOKMARK [2][-]{subsection.14.3.4}{IUOE1.2 Modificar Plan de Estudio}{section.14.3}% 153
+\BOOKMARK [2][-]{subsection.14.3.5}{IUOE1.4 Consultar Planes de Estudio}{section.14.3}% 154
+\BOOKMARK [2][-]{subsection.14.3.6}{Unidades de Aprendizaje}{section.14.3}% 155
+\BOOKMARK [2][-]{subsection.14.3.7}{IUI1 Gestionar Unidades de Aprendizaje}{section.14.3}% 156
+\BOOKMARK [2][-]{subsection.14.3.8}{IUI1.1 Registrar Edificio}{section.14.3}% 157
+\BOOKMARK [2][-]{subsection.14.3.9}{IUI1.2 Modificar Edificio}{section.14.3}% 158
+\BOOKMARK [2][-]{subsection.14.3.10}{IUI1.4 Consultar Edificio}{section.14.3}% 159
+\BOOKMARK [1][-]{section.14.4}{Dise\361o de mensajes}{chapter.14}% 160
+\BOOKMARK [1][-]{section.14.5}{Par\341metros comunes}{chapter.14}% 161
+\BOOKMARK [1][-]{section.14.6}{Mensajes a trav\351s de la pantalla}{chapter.14}% 162
+\BOOKMARK [0][-]{chapter.15}{Bibliograf\355a}{}% 163

@@ -1,6 +1,6 @@
 
-\begin{UseCase}{CUI1.4}{Consultar edificio}{	
-	Permite al actor consultar un edificio previamente registrado y los espacios que contiene el edificio. De este modo, el actor podrá ver de modo general el contenido del edificio.
+\begin{UseCase}{CUOE1.4}{Consultar plan de estudio}{	
+	Permite al actor consultar un la información de un plan de estudio previamente registrado.
 }
 	\UCccitem{Versión}{0.1}
 	\UCccsection{Administración de Requerimientos}
@@ -35,7 +35,7 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Permite al actor la consulta de los detalles del edificio y los espacios registrados en el.}
+	\UCitem{Propósito}{Permite que el actor conozca los detalles del plan de estudio.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -43,15 +43,14 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			Información del edificio
-			\UCli Nombre.
-			\UCli Niveles.
-			
-			Información del espacio
-			\UCli Número del nivel
-			\UCli Clave
-			\UCli Nombre
-			\UCli Capacidad
+			\UCli Programa académico
+			\UCli Clave del plan
+			\UCli Nombre plan
+			\UCli Estado
+			\UCli Tipo división
+			\UCli Número de divisiones
+			\UCli Fecha autorización
+			\UCli Fecha entrada en vigor
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -79,17 +78,15 @@
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita consultar un edifico dando clic en el ícono IUConsultar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
+	\UCpaso [\UCactor] Solicita consultar un plan de estudio dando clic en el ícono IUConsultar de la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio}. 
 	
-	\UCpaso [\UCsist] Obtiene el nombre y número de niveles del edificio a consultar.
-	
-	\UCpaso [\UCsist] Obtiene el número de nivel, clave, nombre y capacidad de los espacios asociados al edificio.
-	
-	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUI1.4}{Consultar Edificio} con la información obtenida.
+	\UCpaso [\UCsist] Obtiene la información registrada del plan de estudio.
+			
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUOE1.4}{Consultar Plan de Estudio} con la información obtenida.
 	
 	\UCpaso [\UCactor] Solicita finalizar la consulta oprimiendo el botón \cdtButton{Regresar}. 
 	
-	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}.
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio}.
 	
 \end{UCtrayectoria}
 

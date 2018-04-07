@@ -1,6 +1,6 @@
 
-\begin{UseCase}{CUI1.3}{Eliminar edificio}{	
-	Permite al actor eliminar un edificio que se registró por error o ya no desea utilizarse.
+\begin{UseCase}{CUOE1.3}{Eliminar plan de estudio}{	
+	Permite al actor eliminar un plan de estudio debido a que este se registró por error o ya no se desea utilizar. Sin embargo, un plan de estudio que ya tiene asociada al menos una unidad de aprendizaje no puede ser eliminado.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -36,7 +36,7 @@
 		\end{UClist} 
 	}
 	\UCitem{Propósito}{
-		Eliminar un edificio que fue registrado por error o que ya no será utilizado.
+		Eliminar un plan de estudio que fue registrado por error o que ya no será utilizado, manteniendo así la información actualizada.
 	}
 	\UCitem{Entradas}{
 		\begin{UClist}
@@ -45,12 +45,12 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUI1}{Gestionar Edificios} indicando que el edificio se eliminó correctamente.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUOE1}{Gestionar Plan de Estudio} indicando que el plan de estudio se eliminó correctamente.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
 		\begin{UClist}
-			\UCli Que no se haya registrado algún espacio al edficio.
+			\UCli Que no se haya registrado una o más unidades de aprendizaje al plan de estudio en cuestión.
 		\end{UClist}
 	}	
 	\UCitem{Postcondiciones}{
@@ -73,20 +73,20 @@
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita eliminar un edificio dando clic en el icono IUEliminar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}.
+	\UCpaso [\UCactor] Solicita eliminar un plan de estudio dando clic en el icono IUEliminar de la pantalla \cdtIdRef{IUOE1}{Gestionar Plan de Estudio}.
 	
-	\UCpaso [\UCsist] Verifica que el edificio no tenga un espacio asociado. \refTray{A}
+	\UCpaso [\UCsist] Verifica que el plan de estudio no tenga una o más unidades de aprendizaje asociadas. \refTray{A}
 	
-	\UCpaso [\UCsist] Solicita la confirmación para eliminar el edificio a través del mensaje \cdtIdRef{MSG2}{Eliminar Elemento}.
+	\UCpaso [\UCsist] Solicita la confirmación para eliminar el plan de estudio a través del mensaje \cdtIdRef{MSG2}{Eliminar Elemento}.
 	
-	\UCpaso [\UCactor] Confirma eliminar el espacio oprimiendo el botón \cdtButton{Si}.
+	\UCpaso [\UCactor] Confirma eliminar el plan de estudio oprimiendo el botón \cdtButton{Si}.
 	
-	\UCpaso [\UCsist] Elimina el espacio.
+	\UCpaso [\UCsist] Elimina el plan de estudio.
 	
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUI1}{Gestionar Edificios} indicando que el edificio se eliminó correctamente.	
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio} indicando que el plan de estudio se eliminó correctamente.	
 	
 \end{UCtrayectoria}
 
-\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El edificio ya tiene un espacio registrado.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No es posible eliminar un elemento} en la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}, indicando que el edificio ya tiene un espacio registrado. 
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El plan de estudio ya tiene una o más unidades de aprendizaje asociadas.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No es posible eliminar un elemento} en la pantalla \cdtIdRef{IUOE1}{Gestionar Plan de Estudio}, indicando que el plan de estudio ya tiene una o más unidades de aprendizaje asociadas. 
 \end{UCtrayectoriaA}
