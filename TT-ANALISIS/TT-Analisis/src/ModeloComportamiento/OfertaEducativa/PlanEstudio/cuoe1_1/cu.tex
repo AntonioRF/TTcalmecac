@@ -39,13 +39,12 @@
 	\UCitem{Propósito}{Tener un registro de un plan de estudio que oferta el programa académico Ingeniería en Sistemas Computacionales, dando pauta al registro de las unidades de aprendizaje que lo componen.}
 	\UCitem{Entradas}{
 		\begin{UClist}
-			\UCli Clave del plan: \ioEscribir.
-			\UCli Nombre del plan: \ioEscribir.
-			\UCli Estado: \ioSeleccionar.
-			\UCli Tipo división: \ioSeleccionar.
-			\UCli Fecha autorización: 
-			\UCli Fecha entrada en vigor:
-			\UCli Número de divisiones: \ioSeleccionar.
+			\UCli \cdtRef{planEstudio:nombre}{Nombre del plan}: \ioEscribir.
+			\UCli \cdtRef{estadosPlan:nombreEstado}{Estado}: \ioSeleccionar.
+			\UCli \cdtRef{tipoDivision:nombreDivision}{Tipo división}: \ioSeleccionar.
+			\UCli \cdtRef{planEstudio:fechaAutorizacion}{Fecha autorización}: \ioCalendario.
+			\UCli \cdtRef{planEstudio:fechaEntradaVigor}{Fecha entrada en vigor}:\ioCalendario.
+			\UCli \cdtRef{planEstudio:numeroDivisiones}{Número de divisiones}: \ioSeleccionar.
 		\end{UClist}
 	}
 	\UCitem{Salidas}{

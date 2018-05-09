@@ -38,28 +38,29 @@
 	\UCitem{Propósito}{Mantener actualizada la información de las unidades de aprendizaje, que serán utilizadas como elementos del algoritmo genético.}
 	\UCitem{Entradas}{
 		\begin{UClist}
-			\UCli Clave: \ioEscribir.
-			\UCli Nombre: \ioEscribir.
-			\UCli Tipo de unidad de aprendizaje: \ioSeleccionar.
-			\UCli Tipo de formación: \ioSeleccionar.
-			\UCli Academia: \ioSeleccionar.
-			\UCli Nivel: \ioSeleccionar.
-			\UCli Tipo de enseñanza: \ioSeleccionar.
-			\UCli Total de hora teóricas por semana: \ioEscribir.
-			\UCli Total de hora prácticas por semana: \ioEscribir.
+			\UCli  \cdtRef{unidadAprendizaje:clave}{Clave}: \ioEscribir.
+			\UCli  \cdtRef{unidadAprendizaje:nombre}{Nombre}: \ioEscribir.
+			\UCli  \cdtRef{tipoUA:nombreTipoUA}{Tipo de unidad de aprendizaje}: \ioSeleccionar.
+			\UCli  \cdtRef{tipoFormacion:nombre}{Tipo de formación}: \ioSeleccionar.
+			\UCli  \cdtRef{academia:nombre}{Academia}: \ioSeleccionar.
+			\UCli  \cdtRef{unidadAprendizaje:nivel}{Nivel}: \ioSeleccionar.
+			\UCli  \cdtRef{tipoEnsenanza:nombre}{Tipo de enseñanza}: \ioSeleccionar.
+			\UCli  \cdtRef{unidadAprendizaje:horasTeoricas}{Total de hora teóricas por semana}: \ioEscribir.
+			\UCli  \cdtRef{unidadAprendizaje:horasPracticas}{Total de hora prácticas por semana}: \ioEscribir.
 		\end{UClist}
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli Clave
-			\UCli Nombre
-			\UCli Tipo de unidad de aprendizaje
-			\UCli Tipo de formación
-			\UCli Academia
-			\UCli Nivel
-			\UCli Tipo de enseñanza
-			\UCli Total de hora teóricas por semana
-			\UCli Total de hora prácticas por semana
+			\UCli  \cdtRef{unidadAprendizaje:clave}{Clave}.
+			\UCli  \cdtRef{unidadAprendizaje:nombre}{Nombre}.
+			\UCli  \cdtRef{tipoUA:nombreTipoUA}{Tipo de unidad de aprendizaje}.
+			\UCli  \cdtRef{tipoFormacion:nombre}{Tipo de formación}.
+			\UCli  \cdtRef{academia:nombre}{Academia}.
+			\UCli  \cdtRef{unidadAprendizaje:nivel}{Nivel}.
+			\UCli  \cdtRef{tipoEnsenanza:nombre}{Tipo de enseñanza}.
+			\UCli  \cdtRef{unidadAprendizaje:horasTeoricas}{Total de hora teóricas por semana}.
+			\UCli  \cdtRef{unidadAprendizaje:horasPracticas}{Total de hora prácticas por semana}.
+			
 			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje} indicando que la modificación se realizó correctamente.
 		\end{UClist}
 	}

@@ -38,26 +38,32 @@
 	\UCitem{Propósito}{Modificar un nuevo espacio para poder asignarlo un grupo de Unidades de Aprendizaje.}
 	\UCitem{Entradas}{
 		\begin{UClist}
-			\UCli Número: \ioEscribir.
-			\UCli Nombre: \ioEscribir.
-			\UCli Capacidad: \ioEscribir.
-			\UCli Tipo de espacio: \ioSeleccionar.
-			\UCli Tipo de laboratorio: \ioSeleccionar.
-			\UCli Acceso a discapacitados: \ioSeleccionar.
-			\UCli ¿Puede ser utilizado?: \ioSeleccionar.
-			\UCli Observaciones: \ioEscribir.
+		\UCli \cdtRef{espacio:nivel}{Nivel}: \ioEscribir.
+		\UCli \cdtRef{espacio:numero}{Número}: \ioEscribir.
+		\UCli \cdtRef{espacio:nombre}{Nombre}: \ioEscribir.
+		\UCli \cdtRef{espacio:capacidad}{Capacidad}: \ioEscribir.
+		
+		\UCli \cdtRef{tipoEspacio:nombre}{Tipo de espacio}: \ioSeleccionar.
+		\UCli \cdtRef{tipoLaboratorio:nombreTipoLab}{Tipo de laboratorio}: \ioSeleccionar.
+		\UCli \cdtRef{espacio:accesoDiscapacitados}{Acceso a discapacitados}: \ioSeleccionar.
+		\UCli \cdtRef{espacio:funciona}{¿Puede ser utilizado?}: \ioSeleccionar.
+		
+		\UCli \cdtRef{espacio:observaciones}{Observaciones}: \ioEscribir.
 		\end{UClist}
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli Número 
-			\UCli Nombre 
-			\UCli Capacidad 
-			\UCli Tipo de espacio 
-			\UCli Tipo de laboratorio 
-			\UCli Acceso a discapacitados
-			\UCli ¿Puede ser utilizado? 
-			\UCli Observaciones 
+			\UCli \cdtRef{espacio:nivel}{Nivel}.
+			\UCli \cdtRef{espacio:numero}{Número}.
+			\UCli \cdtRef{espacio:nombre}{Nombre}.
+			\UCli \cdtRef{espacio:capacidad}{Capacidad}.
+			
+			\UCli \cdtRef{tipoEspacio:nombre}{Tipo de espacio}.
+			\UCli \cdtRef{tipoLaboratorio:nombreTipoLab}{Tipo de laboratorio}.
+			\UCli \cdtRef{espacio:accesoDiscapacitados}{Acceso a discapacitados}.
+			\UCli \cdtRef{espacio:funciona}{¿Puede ser utilizado?}.
+			
+			\UCli \cdtRef{espacio:observaciones}{Observaciones}.
 			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios} indicando que el registro se realizó correctamente.
 		\end{UClist}
 	}

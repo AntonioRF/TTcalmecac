@@ -38,14 +38,18 @@
 	\UCitem{Propósito}{Registrar un nuevo espacio para poder asignarlo un grupo de Unidades de Aprendizaje.}
 	\UCitem{Entradas}{
 		\begin{UClist}
-			\UCli Número: \ioEscribir.
-			\UCli Nombre: \ioEscribir.
-			\UCli Capacidad: \ioEscribir.
-			\UCli Tipo de espacio: \ioSeleccionar.
-			\UCli Tipo de laboratorio: \ioSeleccionar.
-			\UCli Acceso a discapacitados: \ioSeleccionar.
-			\UCli ¿Puede ser utilizado?: \ioSeleccionar.
-			\UCli Observaciones: \ioEscribir.
+		
+			\UCli \cdtRef{espacio:nivel}{Nivel}: \ioEscribir.
+			\UCli \cdtRef{espacio:numero}{Número}: \ioEscribir.
+			\UCli \cdtRef{espacio:nombre}{Nombre}: \ioEscribir.
+			\UCli \cdtRef{espacio:capacidad}{Capacidad}: \ioEscribir.
+			
+			\UCli \cdtRef{tipoEspacio:nombre}{Tipo de espacio}: \ioSeleccionar.
+			\UCli \cdtRef{tipoLaboratorio:nombreTipoLab}{Tipo de laboratorio}: \ioSeleccionar.
+			\UCli \cdtRef{espacio:accesoDiscapacitados}{Acceso a discapacitados}: \ioSeleccionar.
+			\UCli \cdtRef{espacio:funciona}{¿Puede ser utilizado?}: \ioSeleccionar.
+			
+			\UCli \cdtRef{espacio:observaciones}{Observaciones}: \ioEscribir.
 		\end{UClist}
 	}
 	\UCitem{Salidas}{
@@ -118,11 +122,11 @@
 \begin{UCtrayectoriaA}{C}{No se completaron los campos obligatorios.}
 	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUI1.5.1}{Registrar Espacio}.
 	
-	\UCpaso Regresa al paso \ref{CUA1.1:CompletaInfo} de la trayectoria principal.
+	\UCpaso Regresa al paso \ref{CUI1.5.1:CompletaInfo} de la trayectoria principal.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{D}{El nombre del espacio ya fue registrado.}
 	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUI1.5.1}{Registrar Espacio}.
 	
-	\UCpaso Regresa al paso \ref{CUA1.1:CompletaInfo} de la trayectoria principal.
+	\UCpaso Regresa al paso \ref{CUI1.5.1:CompletaInfo} de la trayectoria principal.
 \end{UCtrayectoriaA}

@@ -39,25 +39,23 @@
 	\UCitem{Propósito}{Mantener actualizado el registro del plan de estudio, evitando tener información errónea.}
 	\UCitem{Entradas}{
 		\begin{UClist}
-			\UCli Clave del plan: \ioEscribir.
-			\UCli Nombre del plan: \ioEscribir.
-			\UCli Estado: \ioSeleccionar.
-			\UCli Tipo división: \ioSeleccionar.
-			\UCli Fecha autorización: 
-			\UCli Fecha entrada en vigor:
-			\UCli Número de divisiones: \ioSeleccionar.
+			\UCli \cdtRef{planEstudio:nombre}{Nombre del plan}: \ioEscribir.
+			\UCli \cdtRef{estadosPlan:nombreEstado}{Estado}: \ioSeleccionar.
+			\UCli \cdtRef{tipoDivision:nombreDivision}{Tipo división}: \ioSeleccionar.
+			\UCli \cdtRef{planEstudio:fechaAutorizacion}{Fecha autorización}: \ioCalendario.
+			\UCli \cdtRef{planEstudio:fechaEntradaVigor}{Fecha entrada en vigor}:\ioCalendario.
+			\UCli \cdtRef{planEstudio:numeroDivisiones}{Número de divisiones}: \ioSeleccionar.
 		\end{UClist}
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
 			\UCli Programa Académico: Ingeniería en Sistemas Computacionales.
-			\UCli Clave del plan
-			\UCli Nombre del plan
-			\UCli Estado
-			\UCli Tipo división
-			\UCli Fecha autorización
-			\UCli Fecha entrada en vigor
-			\UCli Número de divisiones
+			\UCli \cdtRef{planEstudio:nombre}{Nombre del plan}.
+			\UCli \cdtRef{estadosPlan:nombreEstado}{Estado}.
+			\UCli \cdtRef{tipoDivision:nombreDivision}{Tipo división}.
+			\UCli \cdtRef{planEstudio:fechaAutorizacion}{Fecha autorización}.
+			\UCli \cdtRef{planEstudio:fechaEntradaVigor}{Fecha entrada en vigor}.
+			\UCli \cdtRef{planEstudio:numeroDivisiones}{Número de divisiones}.
 			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio} indicando que el registro se realizó correctamente.
 		\end{UClist}
 	}

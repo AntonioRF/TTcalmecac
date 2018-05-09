@@ -9,30 +9,30 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Academias }}{38}{figure.10.1}
-\contentsline {figure}{\numberline {10.2}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Infraestructura }}{38}{figure.10.2}
-\contentsline {figure}{\numberline {10.3}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Oferta Educativa }}{39}{figure.10.3}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Academias }}{44}{figure.10.1}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Infraestructura }}{44}{figure.10.2}
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Oferta Educativa }}{45}{figure.10.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {14.1}{\ignorespaces IUA1 Gestionar Academias}}{104}{figure.14.1}
-\contentsline {figure}{\numberline {14.2}{\ignorespaces IUA1.1 Registrar Academia}}{105}{figure.14.2}
-\contentsline {figure}{\numberline {14.3}{\ignorespaces IUA1.2 Modificar Academia}}{105}{figure.14.3}
-\contentsline {figure}{\numberline {14.4}{\ignorespaces IUI1 Gestionar Edificios}}{106}{figure.14.4}
-\contentsline {figure}{\numberline {14.5}{\ignorespaces IUI1.1 Registrar Edificio}}{107}{figure.14.5}
-\contentsline {figure}{\numberline {14.6}{\ignorespaces IUI1.2 Modificar Edificio}}{108}{figure.14.6}
-\contentsline {figure}{\numberline {14.7}{\ignorespaces IUI1.4 Consultar Edificio}}{109}{figure.14.7}
-\contentsline {figure}{\numberline {14.8}{\ignorespaces IUI1.5 Gestionar Espacios}}{110}{figure.14.8}
-\contentsline {figure}{\numberline {14.9}{\ignorespaces IUI1.5.1 Registrar Espacio}}{111}{figure.14.9}
-\contentsline {figure}{\numberline {14.10}{\ignorespaces IUI1.5.2 Modificar Espacio}}{112}{figure.14.10}
-\contentsline {figure}{\numberline {14.11}{\ignorespaces IUI1.5.4 Consultar Espacio}}{113}{figure.14.11}
-\contentsline {figure}{\numberline {14.12}{\ignorespaces IUOE1 Gestionar Planes de Estudio}}{114}{figure.14.12}
-\contentsline {figure}{\numberline {14.13}{\ignorespaces IUOE1.1 Registrar Plan de Estudio}}{116}{figure.14.13}
-\contentsline {figure}{\numberline {14.14}{\ignorespaces IUOE1.2 Modificar Plan de Estudio}}{117}{figure.14.14}
-\contentsline {figure}{\numberline {14.15}{\ignorespaces IUOE1.4 Consultar Plan de Estudio}}{118}{figure.14.15}
-\contentsline {figure}{\numberline {14.16}{\ignorespaces IUOE1 Gestionar Unidades de Aprendizaje}}{119}{figure.14.16}
-\contentsline {figure}{\numberline {14.17}{\ignorespaces IUOE1.1 Registrar Unidad de Aprendizaje}}{120}{figure.14.17}
-\contentsline {figure}{\numberline {14.18}{\ignorespaces IUOE1.2 Modificar Unidad de Aprendizaje}}{122}{figure.14.18}
-\contentsline {figure}{\numberline {14.19}{\ignorespaces IUOE1.4 Consultar Unidad de Aprendizaje}}{123}{figure.14.19}
+\contentsline {figure}{\numberline {14.1}{\ignorespaces IUA1 Gestionar Academias}}{108}{figure.14.1}
+\contentsline {figure}{\numberline {14.2}{\ignorespaces IUA1.1 Registrar Academia}}{109}{figure.14.2}
+\contentsline {figure}{\numberline {14.3}{\ignorespaces IUA1.2 Modificar Academia}}{109}{figure.14.3}
+\contentsline {figure}{\numberline {14.4}{\ignorespaces IUI1 Gestionar Edificios}}{110}{figure.14.4}
+\contentsline {figure}{\numberline {14.5}{\ignorespaces IUI1.1 Registrar Edificio}}{111}{figure.14.5}
+\contentsline {figure}{\numberline {14.6}{\ignorespaces IUI1.2 Modificar Edificio}}{112}{figure.14.6}
+\contentsline {figure}{\numberline {14.7}{\ignorespaces IUI1.4 Consultar Edificio}}{113}{figure.14.7}
+\contentsline {figure}{\numberline {14.8}{\ignorespaces IUI1.5 Gestionar Espacios}}{114}{figure.14.8}
+\contentsline {figure}{\numberline {14.9}{\ignorespaces IUI1.5.1 Registrar Espacio}}{115}{figure.14.9}
+\contentsline {figure}{\numberline {14.10}{\ignorespaces IUI1.5.2 Modificar Espacio}}{116}{figure.14.10}
+\contentsline {figure}{\numberline {14.11}{\ignorespaces IUI1.5.4 Consultar Espacio}}{117}{figure.14.11}
+\contentsline {figure}{\numberline {14.12}{\ignorespaces IUOE1 Gestionar Planes de Estudio}}{118}{figure.14.12}
+\contentsline {figure}{\numberline {14.13}{\ignorespaces IUOE1.1 Registrar Plan de Estudio}}{120}{figure.14.13}
+\contentsline {figure}{\numberline {14.14}{\ignorespaces IUOE1.2 Modificar Plan de Estudio}}{121}{figure.14.14}
+\contentsline {figure}{\numberline {14.15}{\ignorespaces IUOE1.4 Consultar Plan de Estudio}}{122}{figure.14.15}
+\contentsline {figure}{\numberline {14.16}{\ignorespaces IUOE1 Gestionar Unidades de Aprendizaje}}{123}{figure.14.16}
+\contentsline {figure}{\numberline {14.17}{\ignorespaces IUOE1.1 Registrar Unidad de Aprendizaje}}{124}{figure.14.17}
+\contentsline {figure}{\numberline {14.18}{\ignorespaces IUOE1.2 Modificar Unidad de Aprendizaje}}{126}{figure.14.18}
+\contentsline {figure}{\numberline {14.19}{\ignorespaces IUOE1.4 Consultar Unidad de Aprendizaje}}{127}{figure.14.19}
 \addvspace {10\p@ }
