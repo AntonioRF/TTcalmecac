@@ -1,64 +1,120 @@
 \label{sec:marcoTeo}
 	
-	Para abordar el problema de la generación de horarios se utilizará el Cómputo evolutivo lo cual implica varios conceptos que serán abordados a continuación.
+	Para abordar el problema de la generación de horarios se utilizará el Cómputo evolutivo lo cual implica varios conceptos que serán abordados a continuación.\\
+
+	\section{Técnicas Heurísticas}
+	
+		Cuando enfrentamos espacios de búsqueda demasiado grandes y que además los algoritmos más eficientes que se conocen para su resolución requieren tiempo exponencial se vuelve evidente que las técnicas clásicas de búsqueda y optimización son insuficientes. La palabra \textbf{heurística} se deriva del griego heuriskein, que \textbf{encontrar} o \textbf{descubrir}. \\
+		
+		Las heurísticas fueron parte de los orígenes de la Inteligencia Artificial aunque algunos autores consideran que no ofrecen garantía de lograr resolver el problema para el que se plantean. Actualmente se relaciona el término con técnicas que mejoran el desempeño. De acuerdo con Reeves: “Una heurística es una técnica que busca soluciones buenas o casi óptimas a un costo computacional razonable, aunque sin garantizar factibilidad u optimalidad de las mismas. En algunos casos ni siquiera puede determinar que tan cerca del óptimo se encuentra una solución factible en particular.” [Colin B. Reeves, editor. Modern Heuristic Techniques for Combinational Problems. John Wiley \& Sons, Great Britain, 1993].\\
 
 	\section{Cómputo Evolutivo}
 		
-		El cómputo evolutivo es definido como la disciplina del enfoque sub-simbólico o Bottom-UP de la Inteligencia Artificial, compuesta por un conjunto de técnicas heurísticas que imita la evolución y otros mecanismos observados en la naturaleza para la resolución de problemas intratables por otras técnicas. Todo el cómputo evolutivo se basa en la teoría de la evolución por selección natural de Darwin, el cómputo evolutivo está deriva así en programación evolutiva, estrategias evolutivas y algoritmos genéticos.
+		El cómputo evolutivo es definido como la disciplina del enfoque sub-simbólico o Bottom-UP de la Inteligencia Artificial, compuesta por un conjunto de técnicas heurísticas que imita la evolución y otros mecanismos observados en la naturaleza para la resolución de problemas intratables por otras técnicas. Todo el cómputo evolutivo se basa en la teoría de la evolución por selección natural de Darwin, el cómputo evolutivo está deriva así en programación evolutiva, estrategias evolutivas y algoritmos genéticos.\\
 
-		\subsection{Algoritmos genéticos}
-		Los algoritmos genéticos fueron propuestos por John H. Hollan a principios de la decada de los 60 como: 
-			Un algoritmo matemático altamente paralelo que transforma un conjunto de objetos matemáticos individuales con respecto al tiempo usando operaciones modeladas de acuerdo al principio Darwiniano de reproducción y supervivencia del más apto, y tras haberse presentado de forma natural una serie de operaciones genéticas de entre las que destaca la recombinación sexual. Cada uno de estos objetos matemáticos suele ser una cadena de caracteres (letras o números) de longitud fija que se ajusta el modelo de las cadenas de cromosomas, y se les asocia con una cierta función matemática que refleja su aptitud.
+		\subsection{Antecedente histórico}
+
+		Las ideas evolucionistas que popularizó Charles Darwin en 1858 y más tarde en 1859 con la publicación de su libro ‘El origen de las especies’.\\
+
+		Entre las teorías evolutivas de la época encontramos teorías como la de la combinación según la cual las características hereditarias de los padres se mezclaban o combinaban de alguna forma en sus hijos, pero contrastaba la teoría de la selección natural dado que de esta manera los cambios adaptativos no se conservarían.\\
+
+		La teoría de la herencia de Mendel en la que habla de genes dominantes y recesivos en las características que los padres aportan a sus hijos de forma que los cambios adaptativos se mantienen y pasan a la siguiente generación.\\
+
+		La teoría de la pangénesis esbozada por Darwin en que sostiene que los órganos producen pequeñas partículas hereditarias llamadas ‘gémulas’ o ‘pangenes’, de acuerdo con esta teoría dichas partículas se transportan a través de la sangre y se recolectan en los gametos(células reproductivas) durante su formación. De acuerdo con esta teoría los padres transmiten sus genes a los hijos directamente mediante la sangre.\\
+
+		La teoría de la mutación de Hugo De Vries, afirma que los cambios en las especies no se dan de manera gradual y adaptativas, sino más bien de manera abrupta y aleatoria, aunque estaba equivocada, la teoría se basaba en la creencia de que las mutaciones generaban nuevas especies y retoma las leyes de herencia de Mendel.\\
+
+		La teoría cromosómica de la herencia de Walter Sutton en 1903 quien determinó correctamente que los cromosomas en el núcleo de las células eran el lugar donde se almacenaban las características hereditarias, afirmó que el comportamiento de los cromosomas en las células sexuales era la base de las leyes de Mendel, indicó también que los cromosomas contienen genes y los genes de un cromosoma están ligados y se heredan juntos.\\
+
+		Finalmente el neodarwinismo afirma que hay 4 procesos que actúan sobre las poblaciones, dichos procesos son: Reproducción, mutación, competencia y selección. Cualquier forma de vida en el planeta cuenta con un mecanismo de reproducción que es la manera en que se asegura la continuidad de la especie, al proceso de reproducción de un sistema se le agrega casi de manera implícita una mutación. El hecho que estas reproducciones se lleven a cabo en un espacio finito obliga a que haya competencia entre los individuos y como consecuencia que haya una selección de los más aptos. De esta manera, la evolución es el resultado de estos procesos que interactúan en las poblaciones generación tras generación.\\
+
+		De esta manera, analizando la evolución como un proceso de optimización, los padres de la computación como es Alan Turing por poner un ejemplo, estudiaron dicho proceso y la posibilidad de aplicarlo a la computación como una manera de resolver problemas lo cual dio paso a las técnicas de cómputo evolutivo que conocemos hoy en día, desde las optimizaciones hasta la inteligencia artificial.\\
 
 		\subsection{Estructura General de un Algoritmo Evolutivo}
 
-		Los algoritmos evolutivos siguen una estructura similar, primero crean una población inicial de individuos y se hace evolucionar mediante un proceso con operadores genéticos. Los procesos dependen de la aptitud que un individuo de la población que muestran en el ambiente en que se desarrollan. A continuación detallamos la información de los atributos de un algoritmo genético.
+		Los algoritmos evolutivos siguen una estructura similar, primero crean una población inicial de individuos y se hace evolucionar mediante un proceso con operadores genéticos. Los procesos dependen de la aptitud que un individuo de la población que muestran en el ambiente en que se desarrollan. A continuación detallamos la información de los atributos de un algoritmo genético.\\
 
-		\textbf{Individuo:} Posible solución a un problema que se está tranado.
+		\textbf{Individuo:} Posible solución a un problema que se está tranado.\\
 
-		\textbf{Cromosoma:} Representación de un individuo formada por un conjunto de genes.
+		\textbf{Cromosoma:} Representación de un individuo formada por un conjunto de genes.\\
 
-		\textbf{Gen:} Es una característica de un individuo, cuyo dominio estpa definido por los alelos del dominio de este.
+		\textbf{Gen:} Es una característica de un individuo, cuyo dominio estpa definido por los alelos del dominio de este.\\
 
-		\textbf{Alelo:} Es un valor posible que puede ser tomado por un gen, y está limitado por el dominio de valores de dicho gen y por el genpotipo del cromosoma.
+		\textbf{Alelo:} Es un valor posible que puede ser tomado por un gen, y está limitado por el dominio de valores de dicho gen y por el genpotipo del cromosoma.\\
 
-		\textbf{Genotipo:} Es la codificación utilizada para representar un cromosoma.
+		\textbf{Genotipo:} Es la codificación utilizada para representar un cromosoma.\\
 
-		\textbf{Población:} Conjunto de individuos que se desarrollan en el mismo ambiente.
+		\textbf{Población:} Conjunto de individuos que se desarrollan en el mismo ambiente.\\
 
-		\textbf{Ambiente:} Problema que se intenta resolver.
+		\textbf{Ambiente:} Problema que se intenta resolver.\\
 
-		\textbf{Aptitud:} Valor numérico que indica que tan apto es un individudo para ser una solución apropiada.
+		\textbf{Aptitud:} Valor numérico que indica que tan apto es un individudo para ser una solución apropiada.\\
 
-		\textbf{Función de Aptitud:} Aquella que determina la aptitud de un individuo.
+		\textbf{Función de Aptitud:} Aquella que determina la aptitud de un individuo.\\
 
-		\textbf{Fenotipo:} Decodificación del cromosoma.
+		\textbf{Fenotipo:} Decodificación del cromosoma.\\
 
-		\textbf{Generación:} Población generada por la aplicación de operadores genéticos en una población previa que susistuyó a esta.
+		\textbf{Generación:} Población generada por la aplicación de operadores genéticos en una población previa que susistuyó a esta.\\
 
-		\textbf{Operadores Genéticos:} Operador que recibe los cromosomas de un conjunto de individuos para generar nuevos.
+		\textbf{Operadores Genéticos:} Operador que recibe los cromosomas de un conjunto de individuos para generar nuevos.\\
 
-		\textbf{Cruza:} Operador Genético que genera un nuevo individuo a partir de la combinaciónd e genes de dos o más.
+		\textbf{Cruza:} Operador Genético que genera un nuevo individuo a partir de la combinaciónd e genes de dos o más.\\
 
-		\textbf{Mutación:} Operador Genético que genera un nuevo individuo a partir de cambios aleatorios y/o controlados en genes del cromosoma de otro individuo.
+		\textbf{Mutación:} Operador Genético que genera un nuevo individuo a partir de cambios aleatorios y/o controlados en genes del cromosoma de otro individuo.\\
 
-		\textbf{Selección:} Proceso mediante el cual, un conjunto de individuos de una generación son escogidos para aplicarles operadores genéticos y/o sean parte de la siguiente generación. 
-		\textbf{Entrada:}
-		g: Número de Generaciones
-		a: Aptitud Objetivo
-		\textbf{Salida:}
-		s: Mejor Solución
+		\textbf{Selección:} Proceso mediante el cual, un conjunto de individuos de una generación son escogidos para aplicarles operadores genéticos y/o sean parte de la siguiente generación. \\
+		
+		\textbf{Entrada:}\\
+		g: Número de Generaciones\\
+		a: Aptitud Objetivo\\
+		\textbf{Salida:}\\
+		s: Mejor Solución\\
 
-		p <- inicializaPoblacion() : Generar Población inicial;
-		c <- 1: Inicializar Contador de Población;
-		t <- aleatorio(0,1);
-		\textbf{mientras} (c<=g) V (a x t <= Ma <= a) \textbf{hacer}
-			pP <- seleccionarPadres(p);
-			pT <- operacionesGeneticas(pP);
-			p <- seleccionarNuevaPoblación(p,pT);
-			Ma <- mejorAptitud(p);
-			c <- c+1;
-		s <- mejorIndividua(p);
-		\textbf{devolver} s;	
+		p <- inicializaPoblacion() : Generar Población inicial;\\
+		c <- 1: Inicializar Contador de Población;\\
+		t <- aleatorio(0,1);\\
+		\textbf{mientras} (c<=g) V (a x t <= Ma <= a) \textbf{hacer}\\
+			pP <- seleccionarPadres(p);\\
+			pT <- operacionesGeneticas(pP);\\
+			p <- seleccionarNuevaPoblación(p,pT);\\
+			Ma <- mejorAptitud(p);\\
+			c <- c+1;\\
+		s <- mejorIndividua(p);\\
+		\textbf{devolver} s;\\	
+
+		\subsection{Principales paradigmas del cómputo evolutivo}
+
+		El término de cómputo evolutivo engloba las técnicas inspiradas en la evolución biológica del Neo-Darwinismo. En términos generales la computadora requiere los siguientes procesos para simular la evolución: Codificar las estructuras, operaciones que afectan a los individuos, función de aptitud y mecanismo de selección.\\
+
+			\paragraph{Programación evolutiva}
+			Lawrence J. Fogel y otros autores plantearon la posibilidad del uso de la evolución simulada en la solución de problemas. La programación evolutiva consistía en hacer evolucionar autómatas de estados finitos que recibían símbolos, Fogel usaba una función para indicar que tan bueno era un autómata en particular para predecir un símbolo y utilizó el operador de mutación para efectuar cambios en las transiciones y estados de los autómatas para volverlos más aptos. Se aplicó principalmente a problemas de predicción y teoría de juegos entre otros.\\
+
+			Es una técnica en la cual la inteligencia se ve como un comportamiento adaptativo, enfatiza los nexos de comportamiento entre padres e hijos en vez de buscar  emular operadores genéticos.\\
+			
+			En su estructura básica el algoritmo de la programación evolutiva contempla: Generar aleatoriamente una población inicial, aplicar mutación, calcular aptitud de cada hijo y se usa un proceso de selección mediante torneo para determinar que soluciones son las que se van a retener.\\
+
+			Como la programación evolutiva abstrae la evolución a nivel especie no requiere de una cruza entre especies distintas, sólo una selección y recombinación entre sí.\\
 
 
+			\paragraph{Estaregias evolutivas}
+			Desarrolladas por primera vez como una solución a un problema imposible de optimizar analíticamente o utilizando métodos tradicionales para un túnel de viento por Ingo Rechenberg. Implementaban un mecanismo de mutación basándose en el de la naturaleza para generar cambios discretos aleatorios para llegar a la mejor solución posible.\\
+
+			La versión original usaba solo un padre para generar un solo hijo que se mantenía sólo si era mejor que el padre, este tipo de selección se llama extintiva ya que los peores individuos nunca serán seleccionados. En las estrategias se debe evolucionar a las variables del problema así como los parámetros de la técnica.\\
+			
+			En contraste con la programación evolutiva que utiliza una selección de torneo, las estrategias evolutivas usan una selección determinística. Ambas técnicas operan a nivel fenotípico que no necesita la codificación de las variables. La programación evolutiva es una abstracción de la evolución al nivel de las especies por lo que no necesita una cruza mientras que las estrategias abstraen la evolución a nivel individuo por lo que es posible hacer una recombinación.\\
+
+			Contempla la adaptación como un proceso poblacional en un ambiente, que los comportamientos individuales pueden representarse mediante programas, que pueden generarse nuevos comportamientos mediante variaciones aleatorias de los programas y las salidas de dos programas normalmente están relacionadas si sus estructuras lo están también. De forma que la adaptación se podía reducir a un formalismo en que los programas interactúan y mejoran con base en un ambiente que determina la adaptación del comportamiento, concebido en el contexto de aprendizaje de máquina, se utiliza de manera muy popular en optimización.\\
+
+
+			\paragraph{Algoritmos genéticos}
+			Los algoritmos genéticos fueron propuestos por John H. Hollan a principios de la decada de los 60 como: \\
+				Un algoritmo matemático altamente paralelo que transforma un conjunto de objetos matemáticos individuales con respecto al tiempo usando operaciones modeladas de acuerdo al principio Darwiniano de reproducción y supervivencia del más apto, y tras haberse presentado de forma natural una serie de operaciones genéticas de entre las que destaca la  recombinación sexual. Cada uno de estos objetos matemáticos suele ser una cadena de caracteres (letras o números) de longitud fija que se ajusta el modelo de las cadenas de cromosomas, y se les asocia con una cierta función matemática que refleja su aptitud.\\
+
+			Originalmente planes reproductivos genéticos tienen como motivación resolver problemas de aprendizaje de máquina. Los algoritmos genéticos enfatizan la importancia de la cruza sexual sobre el de la mutación y usa una selección probabilística.\\
+			
+			Aunque los AGs pueden encontrar óptimos globales de problemas de alta complejidad, la realidad es que muchas veces el costo computacional que requiere es prohibitivamente alto, y se le da prioridad para encontrar una solución razonable, ya que eso suelen poder hacerlo en un tiempo relativamente corto.\\
+
+			Generar población inicial, calcular aptitud de cada individuo, seleccionar con base en la aptitud, aplicar operadores de cruza para generar la siguiente población, ciclar hasta que cierta condición se satisfaga.\\
+
+			\paragraph{Programación genética}
+			Discute la combinación de segmentos de programas mediante el copiado de subárboles de un individuo a otro y plantea el uso de mutación para introducir nuevos árboles en la población. Posteriormente consideran un operador de cruza para intercambiar sub-árboles entre los programas de una población generada al azar. Se utilizaba también una función de aptitud para definir que tan buena es una población para resolver el problema.\\
