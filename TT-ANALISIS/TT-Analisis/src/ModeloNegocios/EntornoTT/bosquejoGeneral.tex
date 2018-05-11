@@ -6,10 +6,8 @@
 	
 	\begin{itemize}
 		\item \textbf{Sistema de Gestión de Información (SGI)}: Es el sistema encargado de gestionar la información requerida por el siguiente sistema.
-		
-		\item \textbf{Sistema Experto (SE)}: En este se encuentra el algoritmo que se ejecutará para crear los horarios correspondientes. Una vez que se obtienen las posibles soluciones, estas se verán en el siguiente sistema.
-		
-		\item \textbf{Sistema de Soporte a las Decisiones (DSS)}: Finalmente, este sistema muestra los resultados del algoritmo permitiendo al responsable tomar la decisión de utilizar esta opción de horario o generar una nueva.
+				
+		\item \textbf{Sistema de Soporte a las Decisiones (DSS)}: Este sistema muestra los resultados del algoritmo permitiendo al responsable tomar la decisión de utilizar esta opción de horario o generar una nueva.
 	\end{itemize}
 	
 	En la figura~\ref{fig:sistemaT} se muestra la estructura de los sistemas que conforman al sistema en conjunto.
@@ -38,10 +36,11 @@
 	
 
 \section{Requerimientos}
-	
+
 	Los requerimientos de un sistema de software son frecuentemente clasificados como requerimientos funcionales y requerimientos no funcionales: 
 
 \subsection{Requerimientos funcionales}
+
 	Estos son sentencias de los servicios que el sistema debería proporcionar, como el sistema debería reaccionar para entradas particulares, y como el sistema debería comportarse en situaciones particulares. En algunos casos, los requerimientos funcionales pueden decir explícitamente lo que el sistema no debe hacer. \\
 	
 	A continuación se enlistan los requerimientos funcionales identificados para el sistema.	
@@ -76,18 +75,77 @@
 	Estas son restricciones en los servicios o funciones que ofrece el sistema. Estos incluyen restricciones de tiempo, restricciones del proceso de desarrollo, y restricciones impuestas por estándares. Estos frecuentemente aplican a los sistemas como un todo, en vez de aplicar a características o servicios individuales del sistema. \\
 	
 	A continuación se enlistan los requerimientos no funcionales con los que cumplirá el sistema.
-
+	
+	\subsubsection{Diseño}
+	
 	\begin{itemize}
-		\item Escalabilidad.
+		\item \textbf{LaTeX:} El documento en donde se concentrará todo el análisis de este trabajo será LaTeX, desarrollado por Leslie Lamport en 1984. LaTeX es multiplataforma y está orientado a la creación de documentos escritos, de modo que, estos  presentan una alta calidad tipográfica. La versión de LaTeX utilizada es LaTeX2e News Issue 27. [2]
 		
-		\item Adaptabilidad.
+		\item \textbf{Balsamiq Mockups:} Es una aplicación que facilita y agiliza la creación de bocetos. Esto nos permite crear las interfaces que muestran las gestiones del sistema. Balsamiq cuenta con una aplicación nativa para OS X (también Windows y Linux) y una versión web. La versión de Balsamiq Mockups utilizada es 3.5.15 para Windows. [3] [4]
 		
-		\item Legibilidad.
+		\item \textbf{StarUML:} Es una herramienta que permite modelar los estándares UML. StarUML nos permitirá diagramar los casos de uso y diagramas de paquetes del sistema. La versión de StarUML utilizada es 2.8.1 para Windows. [5]
 		
-		\item Trazabilidad.
+		\item \textbf{HTML5:} (HyperText Markup Language) desarrollo a cargo del Consorcio W3C. El término representa dos conceptos diferentes: Se trata de una nueva versión de HTML, con nuevos elementos, atributos y comportamientos. Contiene un conjunto más amplio de tecnologías que permite a los sitios Web y a las aplicaciones ser más diversas y de gran alcance. [7]
 		
-		\item Facilidad de uso.
+		\item \textbf{CSS3:} Es la última evolución del lenguaje de las Hojas de Estilo en Cascada (Cascading Style Sheets). Trae consigo muchas novedades como las esquinas redondeadas, sombras, gradientes , transiciones o animaciones, y nuevos layouts como multi-columnas, cajas flexibles o maquetas de diseño en cuadrícula (grid layouts). [8]
 		
-		\item Documentación.
+		\item \textbf{JavaScript:}
+		
+		\item \textbf{Identidad gráfica:}
 		
 	\end{itemize}
+	
+	\subsubsection{Construcción}
+	
+	\begin{itemize}
+		\item \textbf{Phyton:} En este lenguaje de programación diseñado por Guido Van Rossum en 1991, se desarrollará el algoritmo genético. Una de las ventajas que nos proporciona phyton es que es multiplataforma, es decir, puede implementarse e interoperar en múltiples plataformas. La versión de phyton utilizada es 2.7. [1] 
+		
+		\item \textbf{DJango:} Es un framework de desarrollo web que respeta el patrón de diseño conocido como Modelo–vista–template. Django pone énfasis en el re-uso, la conectividad y extensibilidad de componentes, el desarrollo rápido y el principio No te repitas (DRY, del inglés Don't Repeat Yourself) que promueve la reducción de la duplicación. [6]
+		
+	\end{itemize}
+	
+		
+	\subsubsection{Validación}
+	
+		\textbf{Sistema de servidores:}
+		
+		\textbf{Sistema operativo usuarios:} 
+		
+		En la figura~\ref{fig:so} muestra que windows está posicionado como el sistema operativo más utilizado con un 81.73\%. Se elige windows 10 de 64 bits como sistema operativo en el que será instalado el sistema debido a la popularidad que tiene y que dentro de la ESCOM es utilizado en su mayoría por el personal administrativo, nuestro principal usuario.
+				
+		\begin{figure}[htbp!]
+			\begin{center}
+				\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/so.png}}
+				\caption{Estadística de los sistemas operativos utilizados en México}
+				\label{fig:so}
+			\end{center}
+		\end{figure}
+				
+				
+		\textbf{Navegadores:} Se han elegido los siguientes navegadores con base en la estadística tomada de StatCounter. [9] \\
+
+		\begin{figure}[htbp!]
+			\begin{center}
+				\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/navegadores.png}}
+				\caption{Estadística de los navegadores utilizados en México}
+				\label{fig:navegadores}
+			\end{center}
+		\end{figure}
+		
+		En la figura~\ref{fig:navegadores} muestra que \textbf{Chrome} es el navegador más utilizado en México con un 76.05\% y se ha elegido por la popularidad que tiene. Por otro lado, se eligió como navegador alterno \textbf{IE} con una utilización del 2.08\%, aunque este no es el más utilizado es el navegador que viene instalado por defecto en Windows.
+		
+	
+	\subsubsection{Propiedades no funcionales}
+		\begin{itemize}
+			\item Complejidad
+			
+			\item Portabilidad
+						
+			\item Escalabilidad.
+			
+			\item Documentación.
+			
+			\item Trazabilidad.
+			
+			\item Heterogeneidad.	
+		\end{itemize}
