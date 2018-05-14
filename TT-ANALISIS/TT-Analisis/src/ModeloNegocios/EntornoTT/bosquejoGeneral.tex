@@ -2,7 +2,7 @@
 
 \section{Arquitectura general}
 
-	Con base en la teoría general de los sistemas según Ludwig von Bertalanffy, el sistema TLAMATINIME está conformado por tres sistemas. A continuación se detallan estos sistemas:
+	Con base en la teoría general de los sistemas según Ludwig von Bertalanffy, el sistema TLAMATINIME está conformado por dos sistemas. A continuación se detallan estos sistemas:
 	
 	\begin{itemize}
 		\item \textbf{Sistema de Gestión de Información (SGI)}: Es el sistema encargado de gestionar la información requerida por el siguiente sistema.
@@ -14,7 +14,7 @@
 
 	\begin{figure}[htbp!]
 		\begin{center}
-			\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/TLAMATINIME.png}}
+			\fbox{\includegraphics[width=.7\textwidth]{images/entornoTT/TLAMATINIME.png}}
 			\caption{Modelo del sistema.}
 			\label{fig:sistemaT}
 		\end{center}
@@ -24,12 +24,12 @@
 
 \section{Componentes}
 
-	En la figura~\ref{fig:paquetes} se muestra el diagrama de paquetes que conforman al sistema.
+	En la figura~\ref{fig:paquetes} se muestra el diagrama de paquetes que conforman el sistema.
 	
 	\begin{figure}[htbp!]
 		\begin{center}
-			\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/paquetes.png}}
-			\caption{Diagrama de paquetes del sistemas.}
+			\fbox{\includegraphics[width=.7\textwidth]{images/entornoTT/paquetes.png}}
+			\caption{Diagrama de paquetes del sistema.}
 			\label{fig:paquetes}
 		\end{center}
 	\end{figure}
@@ -89,63 +89,87 @@
 		
 		\item \textbf{CSS3:} Es la última evolución del lenguaje de las Hojas de Estilo en Cascada (Cascading Style Sheets). Trae consigo muchas novedades como las esquinas redondeadas, sombras, gradientes , transiciones o animaciones, y nuevos layouts como multi-columnas, cajas flexibles o maquetas de diseño en cuadrícula (grid layouts). [8]
 		
-		\item \textbf{JavaScript:}
+		\item \textbf{JavaScript:} Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se utiliza principalmente en su forma del lado del cliente (client-side). Para interactuar con una página web se provee al lenguaje JavaScript de una implementación del Document Object Model (DOM). La versión de JS utilizada es ECMAScript 2016. [11]
+				
+		\item \textbf{Identidad gráfica:} En la figura~\ref{fig:entornoTrabajo} se muestra el entorno sobre el que se trabajan las pantallas del sistema.
 		
-		\item \textbf{Identidad gráfica:}
+		\begin{figure}[htbp!]
+			\begin{center}
+				\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/entornoTrabajo.png}}
+				\caption{Entorno de trabajo del sistema}
+				\label{fig:entornoTrabajo}
+			\end{center}
+		\end{figure}
+		
+		
 		
 	\end{itemize}
 	
 	\subsubsection{Construcción}
 	
 	\begin{itemize}
-		\item \textbf{Phyton:} En este lenguaje de programación diseñado por Guido Van Rossum en 1991, se desarrollará el algoritmo genético. Una de las ventajas que nos proporciona phyton es que es multiplataforma, es decir, puede implementarse e interoperar en múltiples plataformas. La versión de phyton utilizada es 2.7. [1] 
+		\item \textbf{Phyton:} En este lenguaje de programación diseñado por Guido Van Rossum en 1991, se desarrollará el algoritmo genético. Una de las ventajas que nos proporciona phyton es que es multiplataforma, es decir, puede implementarse e interoperar en múltiples plataformas. La versión de phyton utilizada es 3.5.0 [1] 
 		
-		\item \textbf{DJango:} Es un framework de desarrollo web que respeta el patrón de diseño conocido como Modelo–vista–template. Django pone énfasis en el re-uso, la conectividad y extensibilidad de componentes, el desarrollo rápido y el principio No te repitas (DRY, del inglés Don't Repeat Yourself) que promueve la reducción de la duplicación. [6]
+		\item \textbf{DJango:} Es un framework de desarrollo web que respeta el patrón de diseño conocido como Modelo–vista–template. Django pone énfasis en el re-uso, la conectividad y extensibilidad de componentes, el desarrollo rápido y el principio No te repitas (DRY, del inglés Don't Repeat Yourself) que promueve la reducción de la duplicación. La versión de django utilizada es 2.0.2 [6]
 		
 	\end{itemize}
 	
 		
 	\subsubsection{Validación}
 	
-		\textbf{Sistema de servidores:}
+		\begin{itemize}
+			\item \textbf{Sistema de servidores:}
+			
+			\item \textbf{Sistema operativo usuarios:} 
+			
+			En la figura~\ref{fig:so} muestra que windows está posicionado como el sistema operativo más utilizado con un 81.73\%. Se elige windows 10 de 64 bits como sistema operativo en el que será instalado el sistema debido a la popularidad que tiene y que dentro de la ESCOM es utilizado en su mayoría por el personal administrativo, nuestro principal usuario.
+			
+			\begin{figure}[htbp!]
+				\begin{center}
+					\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/so.png}}
+					\caption{Estadística de los sistemas operativos utilizados en México}
+					\label{fig:so}
+				\end{center}
+			\end{figure}
 		
-		\textbf{Sistema operativo usuarios:} 
-		
-		En la figura~\ref{fig:so} muestra que windows está posicionado como el sistema operativo más utilizado con un 81.73\%. Se elige windows 10 de 64 bits como sistema operativo en el que será instalado el sistema debido a la popularidad que tiene y que dentro de la ESCOM es utilizado en su mayoría por el personal administrativo, nuestro principal usuario.
-				
-		\begin{figure}[htbp!]
-			\begin{center}
-				\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/so.png}}
-				\caption{Estadística de los sistemas operativos utilizados en México}
-				\label{fig:so}
-			\end{center}
-		\end{figure}
-				
-				
-		\textbf{Navegadores:} Se han elegido los siguientes navegadores con base en la estadística tomada de StatCounter. [9] \\
-
-		\begin{figure}[htbp!]
-			\begin{center}
-				\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/navegadores.png}}
-				\caption{Estadística de los navegadores utilizados en México}
-				\label{fig:navegadores}
-			\end{center}
-		\end{figure}
-		
-		En la figura~\ref{fig:navegadores} muestra que \textbf{Chrome} es el navegador más utilizado en México con un 76.05\% y se ha elegido por la popularidad que tiene. Por otro lado, se eligió como navegador alterno \textbf{IE} con una utilización del 2.08\%, aunque este no es el más utilizado es el navegador que viene instalado por defecto en Windows.
-		
+			\item \textbf{Navegadores:} Se han elegido los siguientes navegadores con base en la estadística tomada de StatCounter. [9] 
+			
+			\begin{figure}[htbp!]
+				\begin{center}
+					\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/navegadores.png}}
+					\caption{Estadística de los navegadores utilizados en México}
+					\label{fig:navegadores}
+				\end{center}
+			\end{figure}
+			
+			En la figura~\ref{fig:navegadores} muestra que \textbf{Chrome} es el navegador más utilizado en México con un 76.05\% y se ha elegido por la popularidad que tiene. Por otro lado, se eligió como navegador alterno \textbf{IE} con una utilización del 2.08\%, aunque este no es el más utilizado es el navegador que viene instalado por defecto en Windows.
+		\end{itemize}
 	
 	\subsubsection{Propiedades no funcionales}
 		\begin{itemize}
-			\item Complejidad
+			\item \textbf{Complejidad}
 			
-			\item Portabilidad
+				En la figura~\ref{fig:vistalogica} muestra que windows está posicionado como el sistema operativo más utilizado con un 81.73\%. Se elige windows 10 de 64 bits como sistema operativo en el que será instalado el sistema debido a la popularidad que tiene y que dentro de la ESCOM es utilizado en su mayoría por el personal administrativo, nuestro principal usuario.
+				
+				\begin{figure}[htbp!]
+					\begin{center}
+						\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/vistalogica.png}}
+						\caption{Estadística de los sistemas operativos utilizados en México}
+						\label{fig:vistalogica}
+					\end{center}
+				\end{figure}
+			
+			
+			\item \textbf{Portabilidad}
 						
-			\item Escalabilidad.
+			\item \textbf{Escalabilidad}
 			
-			\item Documentación.
+			\item \textbf{Documentación}
 			
-			\item Trazabilidad.
+			\item \textbf{Trazabilidad}
 			
-			\item Heterogeneidad.	
+			\item \textbf{Heterogeneidad}
 		\end{itemize}
+	
+	
+[11]	https://www.javascript.com/
