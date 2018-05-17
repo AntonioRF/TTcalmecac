@@ -99,9 +99,7 @@
 				\caption{Entorno de trabajo del sistema}
 				\label{fig:entornoTrabajo}
 			\end{center}
-		\end{figure}
-		
-		
+		\end{figure}		
 		
 	\end{itemize}
 	
@@ -110,7 +108,17 @@
 	\begin{itemize}
 		\item \textbf{Phyton:} En este lenguaje de programación diseñado por Guido Van Rossum en 1991, se desarrollará el algoritmo genético. Una de las ventajas que nos proporciona phyton es que es multiplataforma, es decir, puede implementarse e interoperar en múltiples plataformas. La versión de phyton utilizada es 3.5.0 [1] 
 		
-		\item \textbf{DJango:} Es un framework de desarrollo web que respeta el patrón de diseño conocido como Modelo–vista–template. Django pone énfasis en el re-uso, la conectividad y extensibilidad de componentes, el desarrollo rápido y el principio No te repitas (DRY, del inglés Don't Repeat Yourself) que promueve la reducción de la duplicación. La versión de django utilizada es 2.0.2 [6]
+		\item \textbf{Django:} Es un framework de desarrollo web que respeta el patrón de diseño conocido como Modelo–vista–template. Django pone énfasis en el re-uso, la conectividad y extensibilidad de componentes, el desarrollo rápido y el principio No te repitas (DRY, del inglés Don't Repeat Yourself) que promueve la reducción de la duplicación. La versión de django utilizada es 2.0.2 [6] \\
+		
+		En la figura~\ref{fig:django} se muestra la arquitectura utilizada por el framework Django.
+		
+		\begin{figure}[htbp!]
+			\begin{center}
+				\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/django.png}}
+				\caption{Arquitectura Django}
+				\label{fig:django}
+			\end{center}
+		\end{figure}
 		
 	\end{itemize}
 	
@@ -118,11 +126,19 @@
 	\subsubsection{Validación}
 	
 		\begin{itemize}
-			\item \textbf{Sistema de servidores:}
+			\item \textbf{Sistema de servidores:} En la figura~\ref{fig:servidor} muestra la comunicación entre la interacción del cliente con el sistema alojado en el servidor y la base de datos.
 			
-			\item \textbf{Sistema operativo usuarios:} 
+			\begin{figure}[htbp!]
+				\begin{center}
+					\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/servidor.png}}
+					\caption{Comunicación del sistema}
+					\label{fig:servidor}
+				\end{center}
+			\end{figure}
 			
-			En la figura~\ref{fig:so} muestra que windows está posicionado como el sistema operativo más utilizado con un 81.73\%. Se elige windows 10 de 64 bits como sistema operativo en el que será instalado el sistema debido a la popularidad que tiene y que dentro de la ESCOM es utilizado en su mayoría por el personal administrativo, nuestro principal usuario.
+			
+			
+			\item \textbf{Sistema operativo usuarios:} En la figura~\ref{fig:so} muestra que windows está posicionado como el sistema operativo más utilizado con un 81.73\%. Se elige windows 10 de 64 bits como sistema operativo en el que será instalado el sistema debido a la popularidad que tiene y que dentro de la ESCOM es utilizado en su mayoría por el personal administrativo, nuestro principal usuario.
 			
 			\begin{figure}[htbp!]
 				\begin{center}
@@ -147,29 +163,24 @@
 	
 	\subsubsection{Propiedades no funcionales}
 		\begin{itemize}
-			\item \textbf{Complejidad}
-			
-				En la figura~\ref{fig:vistalogica} muestra que windows está posicionado como el sistema operativo más utilizado con un 81.73\%. Se elige windows 10 de 64 bits como sistema operativo en el que será instalado el sistema debido a la popularidad que tiene y que dentro de la ESCOM es utilizado en su mayoría por el personal administrativo, nuestro principal usuario.
+			\item \textbf{Complejidad:}	En la figura~\ref{fig:vistalogica} muestra la forma en que se comunican los diferentes paquetes del sistema.
 				
 				\begin{figure}[htbp!]
 					\begin{center}
 						\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/vistalogica.png}}
-						\caption{Estadística de los sistemas operativos utilizados en México}
+						\caption{Comunicación entre paquetes}
 						\label{fig:vistalogica}
 					\end{center}
 				\end{figure}
 			
-			
-			\item \textbf{Portabilidad}
+		%	\item \textbf{Portabilidad:} El sistema diseñado y sus componentes deben ser portables en plataformas GNU/Linux y Windows, con máquinas que presentan arquitecturas de 64 bits. 
 						
-			\item \textbf{Escalabilidad}
+			\item \textbf{Escalabilidad:} Hace referencia a la capacidad del sistema de crecer sin desmejorar la calidad del servicio que presta. Debido al diseño por módulos del sistema permite que el sistema sea escalable.
 			
-			\item \textbf{Documentación}
+			\item \textbf{Documentación:} Se especificará el análisis y especificaciones de diseño en la documentación técnica, de modo que, esto permitirá que el sistema pueda ser mantenible.
 			
-			\item \textbf{Trazabilidad}
-			
-			\item \textbf{Heterogeneidad}
+			\item \textbf{Trazabilidad:} La información permite que se encuentren dependencias entre los requisitos y los componentes del diseño del
+			sistema y la documentación. Así, la información permitirá evaluar los cambios de requerimientos.
+		%	\item \textbf{Heterogeneidad}
 		\end{itemize}
 	
-	
-[11]	https://www.javascript.com/

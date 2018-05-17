@@ -28,9 +28,10 @@
 % Propósito: Definir los datos de la contraparte
 % Ejemplo: \organizacion[DGEI--SEP]{Dirección General de Educación Indígena, SEP}
 %=====================================================
-\newcommand{\varOrganizacion}{ Gómez Caballero Brenda, Larios Moguel Carlos Aníbal , Ricardo Flores José Antonio \\
-Directores: \\ M. en C. José David Ortega Pacheco, M. en C. Mario Augusto Ramírez Morales
-}
+%Gómez Caballero Brenda, Larios Moguel Carlos Aníbal , Ricardo Flores José Antonio \\
+%Directores: \\ M. en C. José David Ortega Pacheco, M. en C. Mario Augusto Ramírez Morales
+
+\newcommand{\varOrganizacion}{Nadie}
 \newcommand{\varCveOrganizacion}{?}
 \newcommand{\organizacion}[2][]{%
 	\renewcommand{\varCveOrganizacion}{{#1}}%
@@ -54,6 +55,13 @@ Directores: \\ M. en C. José David Ortega Pacheco, M. en C. Mario Augusto Ramí
 	\renewcommand{\varCveAutor}{{#1}}
 	\varAuthor{\color{colorSecundario}{{#2}}\\ {\color{colorGris}{\varOrganizacion}}}%
 }
+
+\newcommand{\varAlumnoUno}{Gómez Caballero Brenda}
+\newcommand{\varAlumnoDos}{Larios Moguel Carlos Aníbal}
+\newcommand{\varAlumnoTres}{Ricardo Flores José Antonio}
+\newcommand{\varDirectorUno}{M. en C. José David Ortega Pacheco}
+\newcommand{\varDirectorDos}{M. en C. Mario Augusto Ramírez Morales}
+%
 %\newcommand{\varAuthor}[1]{Escuela Superior de Cómputo, IPN}
 %	\let\varAuthor=\author
 %	\renewcommand{\author}[1]{%
@@ -132,20 +140,41 @@ Directores: \\ M. en C. José David Ortega Pacheco, M. en C. Mario Augusto Ramí
 \newcommand{\varTitle}[1]{}
 \let\varTitle=\title
 \newcommand{\varSubTitle}{}
-\renewcommand{\title}[1]{%	
+%\renewcommand{\title}[1]{%	
+%	\varTitle{%
+%		\includegraphics[width=\textwidth]{cdt/theme/agua}}
+%		{\Huge\color{colorPrincipal}{#1}}\\\bigskip{\LARGE \color{colorSecundario}\varSubTitle~{}}
+%		
+%
+%}%
+%%		\\\bigskip {\LARGE \color{colorSecundario}\varSubTitle~{}%
+%%			\bigskip\\%
+%			%
+%%		}
+%		%\rule{\textwidth}{1mm}%
+%		%\color{colorSecundario}\fbox{\color{colorPrincipal}%
+%		%\varDocumento
+%		%}
+%%	}%
+%%}
+
+\renewcommand{\title}[1]{%
 	\varTitle{%
-		\includegraphics[scale=0.27]{cdt/theme/agua}
-		{\Huge\color{colorPrincipal}{#1}}%
-		\\\bigskip {\LARGE \color{colorSecundario}\varSubTitle~{}%
-			\bigskip\\%
-			%
-		}
-		%\rule{\textwidth}{1mm}%
-		%\color{colorSecundario}\fbox{\color{colorPrincipal}%
-		\varDocumento
-		%}
+		\includegraphics[width=\textwidth]{cdt/theme/agua}\\\bigskip%
+		{\Huge\color{colorPrincipal}{#1}}\\%
+		\bigskip%
+		{\LARGE \color{colorSecundario}\varSubTitle~{}
+			\bigskip\\%	
+		}%
+		{\color{colorSecundario}Presentan:}\\%
+		\bigskip%
+		{\varAlumnoUno\\\varAlumnoDos\\\varAlumnoTres}\\%
+		\bigskip%
+		{\color{colorSecundario}Directores:}\\%
+		\bigskip%
+		{\varDirectorUno\\\varDirectorDos}
 	}%
-}
+}%
 
 % Valor por defecto para el documento.
 \title{\varEntregable}

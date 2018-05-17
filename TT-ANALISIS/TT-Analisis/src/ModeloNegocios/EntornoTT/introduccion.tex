@@ -61,6 +61,18 @@
 
 \section{Objetivos}
 	Desarrollar una herramienta que permita generar una o varias opciones de configuración de horarios, tomando en cuenta las restricciones derivadas del análisis del proceso de generación de horarios de la Escuela Superior de Cómputo.
+	
+	\begin{itemize}
+		\item Seleccionar las restricciones a tomar en cuenta para la generación de horarios y definir así el alcance del proyecto.
+		
+		\item Identificar que técnica meta-heurística debe ser utilizada y adaptar las restricciones disponibles, para el  desarrollo del algoritmo que genera la o las propuestas de horario. 
+		
+		\item Diseñar la función a optimizar, la cual modela el problema de la generación de propuesta de horario.
+	
+		\item Desarrollar un sistema que nos permita la visualización de los resultados que arroja el algoritmo, así como la gestión de los datos necesarios que se requieren para llevar a cabo la operación.
+		
+	\end{itemize}
+	
 
 \section{Justificación}
 	Para comprender mejor el proceso que la estructura educativa conlleva, nos entrevistamos con el subdirector académico M. en C. Iván Giovanny Mosso García, quien nos explicó los diferentes aspectos aquí expuestos. \\
@@ -73,45 +85,54 @@
 	De acuerdo a lo anterior la importancia del proyecto radica, esencialmente, en la asignación de recursos y tiempo que representaría dentro del proceso de generación de horarios, ya que se plantea que el proceso concluya con opciones viables de horarios de acuerdo a las características que se tienen en la escuela debido a que no solo se tiene que generar una propuesta de los horarios y esto no implica únicamente agrupar clases en bloques sino que el problema escala hasta la asociación de grupos, profesores, materias, salones, laboratorios y horas mismos que en conjunto son denominados horarios.
 	
 \section{Estado del arte}
-	
-	Software comercial
-	
-	\resizebox*{15cm}{8cm}{
-	\begin{tabular}{|c |c |l|}
-		\hline
-		Nombre & Compañía & Descripción\\
-		\hline
-		GHC & Peñalara & Gestión completa de horarios escolares y universitarios.\\
-			&&Presentes en 25 países, en más de 3500 centros de enseñanza.\\
-			&&Aplicación de paga.\\
-		\hline
-		UnitsExpress & Units Grubbers \& Petters & Aplicación de escritorio.\\
-		&&Generación de horarios de acuerdo a los criterios pedagógicos que se seleccionen.\\
-		&&Posibilidad de visualización y cambios del resultado.\\
-		&&Aplicación de paga. \\
-		\hline
-		Timetable & Timetable web & Aplicación en línea. \\
-		&&Aplicación de paga. \\
-		&&Funciona en cualquier sistema operativo. \\
-		&&Velocidad de respuesta. \\
-		&&Inserción de restricciones. \\
-		&&Impresión en pdf. \\
-		\hline
-		HorarioFacil & Horário Fácil & Aplicación en línea. \\
-		&&Aplicación de paga.\\
-		&&Proceso de 6 pasos.\\
-		&&Impresión en pdf.\\
-		&&Licencia por tiempo. \\	
-		\hline
-		Wisetimetable & Wisetimetable & Aplicación de escritorio o móvil. \\
-		&&Distintos lenguajes \\
-		&&Posibilidad de trabajar manualmente, generar automáticamente o mixto. \\
-		\hline
-	\end{tabular}}
-	
-	
-	Tesis
-	
+
+	\begin{itemize}
+		\item \textbf{Software comercial} \\ \\
+		
+		
+			\resizebox*{15cm}{8cm}{
+			\begin{tabular}{|c |c |l|}
+				\hline
+				Nombre & Compañía & Descripción\\
+				\hline
+				GHC & Peñalara & Gestión completa de horarios escolares y universitarios.\\
+				&&Presentes en 25 países, en más de 3500 centros de enseñanza.\\
+				&&Aplicación de paga.\\
+				\hline
+				UnitsExpress & Units Grubbers \& Petters & Aplicación de escritorio.\\
+				&&Generación de horarios de acuerdo a los criterios pedagógicos que se seleccionen.\\
+				&&Posibilidad de visualización y cambios del resultado.\\
+				&&Aplicación de paga. \\
+				\hline
+				Timetable & Timetable web & Aplicación en línea. \\
+				&&Aplicación de paga. \\
+				&&Funciona en cualquier sistema operativo. \\
+				&&Velocidad de respuesta. \\
+				&&Inserción de restricciones. \\
+				&&Impresión en pdf. \\
+				\hline
+				HorarioFacil & Horário Fácil & Aplicación en línea. \\
+				&&Aplicación de paga.\\
+				&&Proceso de 6 pasos.\\
+				&&Impresión en pdf.\\
+				&&Licencia por tiempo. \\	
+				\hline
+				Wisetimetable & Wisetimetable & Aplicación de escritorio o móvil. \\
+				&&Distintos lenguajes \\
+				&&Posibilidad de trabajar manualmente, generar automáticamente o mixto. \\
+				\hline
+		\end{tabular}}\\ \\
+
+		\item \textbf{Tesis} \\ \\
+		
+		\begin{figure}[htbp!]
+			\begin{center}
+				\includegraphics[width=1.05\textwidth]{images/entornoTT/estadoArteTesis.png}
+				
+			\end{center}
+		\end{figure}
+	\end{itemize}
+		
 
 		%\begin{tabulary}{10 cm}{|J|J|J|}
 %			\hline
@@ -134,7 +155,7 @@
 	
 	
 
-\section{Metodología}
+
 	
 	
 	
