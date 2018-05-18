@@ -121,63 +121,78 @@
 %=====================MODELO DE NEGOCIO==============================================================
 \chapter{Modelo de negocio}\label{chp:modeloNegocios} 
 \cfinput{ModeloNegocios/modelo}
-\cfinput{ModeloNegocios/Academias}
-\cfinput{ModeloNegocios/Infraestructura}
-\cfinput{ModeloNegocios/OfertaEducativa}
-
-
 \cfinput{ModeloNegocios/reglas}
+
 
 %=====================MODELO DE COMPORTAMIENTO=======================================================
 \chapter{Modelo de comportamiento}\label{chp:modeloComportamiento}
 \cfinput{ModeloComportamiento/comportamiento}
 %\cfinput{ModeloComportamiento/InicioSesion/modelo-comportamiento}
 
+
+%=====================Prototipo 1=======================================================
 %=================================ACADEMIAS====================================
-\cfinput{ModeloComportamiento/Academias/modelo-comportamiento}
+\chapter{Prototipo 1: Academias}\label{chp:prototipo1}
+%	\section{Modelo de negocio}
+	\cfinput{ModeloNegocios/Academias}
+	
+%	\section{Modelo de comportamiento}
+	\cfinput{ModeloComportamiento/Academias/modelo-comportamiento}
+	
+%	\section{Interfaces del módulo}
+	\cfinput{ModeloInteraccion/Academias/AsistenciaAlumnos}
+	
 
+%=====================Prototipo 2=======================================================
 %=================================INFRAESTRUCTURA==============================
-\cfinput{ModeloComportamiento/Infraestructura/modelo-comportamiento}
+\chapter{Prototipo 2: Infraestructura}\label{chp:prototipo2}
+%	\section{Modelo de negocio}
+	\cfinput{ModeloNegocios/Infraestructura}
+	
+%	\section{Modelo de comportamiento}
+	\cfinput{ModeloComportamiento/Infraestructura/modelo-comportamiento}
+	
+%	\section{Interfaces del módulo}
+	%	\subsection{Edificios}
+		\cfinput{ModeloInteraccion/Infraestructura/Edificios}
+		
+	%	\subsection{Espacios}
+		\cfinput{ModeloInteraccion/Infraestructura/Espacios}
+	
 
+%=====================Prototipo 1=======================================================
 %=================================OFERTA EDUCATIVA=============================
-\cfinput{ModeloComportamiento/OfertaEducativa/modelo-comportamiento}
+\chapter{Prototipo 3: Oferta educativa}\label{chp:prototipo3}
+%	\section{Modelo de negocio}
+	\cfinput{ModeloNegocios/OfertaEducativa}
 
+%	\section{Modelo de comportamiento}
+	\cfinput{ModeloComportamiento/OfertaEducativa/modelo-comportamiento}
+	
+	%\section{Interfaces del módulo}
+	%	\subsection{Planes de Estudio}
+		\cfinput{ModeloInteraccion/OfertaEducativa/PlanesEstudio}
+		
+	%	\subsection{Unidades de Aprendizaje}
+		\cfinput{ModeloInteraccion/OfertaEducativa/UnidadesAprendizaje}
 
 
 %=====================MODELO DE INTERACCIÓN======================================
 \chapter{Modelo de interacción con el usuario}\label{chp:modeloInteraccionUsuario}
-%\cfinput{ModeloInteraccion/interaccion}
 
-\section{Interfaces del módulo: Academias}
-\cfinput{ModeloInteraccion/Academias/AsistenciaAlumnos}
-
-\section{Interfaces del módulo: Infraestructura}
-\subsection{Edificios}
-\cfinput{ModeloInteraccion/Infraestructura/Edificios}
-
-\subsection{Espacios}
-\cfinput{ModeloInteraccion/Infraestructura/Espacios}
-
-\section{Interfaces del módulo: Oferta Educativa}
-\subsection{Planes de Estudio}
-\cfinput{ModeloInteraccion/OfertaEducativa/PlanesEstudio}
-
-\subsection{Unidades de Aprendizaje}
-\cfinput{ModeloInteraccion/OfertaEducativa/UnidadesAprendizaje}
-
-\section{Diseño de mensajes}
-\cfinput{ModeloInteraccion/mensajes}
+	\section{Diseño de mensajes}
+	\cfinput{ModeloInteraccion/mensajes}
 
 %=========================================================
-\chapter{Módulo de Optimización}\label{chp:moduloOpt}
+%\chapter{Módulo de Optimización}\label{chp:moduloOpt}
 %\cfinput{ModeloNegocios/EntornoTT/bosquejoGeneral}
 
 %=========================================================
-\chapter{Pruebas de Integración}\label{chp:pruebasIntegracion}
+%\chapter{Pruebas de Integración}\label{chp:pruebasIntegracion}
 %\cfinput{ModeloNegocios/EntornoTT/bosquejoGeneral}
 
 %=========================================================
-\chapter{Trabajo futuro}\label{chp:trabajoFuturo}
+%\chapter{Trabajo futuro}\label{chp:trabajoFuturo}
 %\cfinput{ModeloNegocios/EntornoTT/bosquejoGeneral}
 
 \chapter{Bibliografía}\label{chp:bibliografia}
