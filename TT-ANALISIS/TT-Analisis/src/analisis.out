@@ -58,135 +58,142 @@
 \BOOKMARK [2][-]{subsection.7.7.1}{IUA1 Gestionar Academias}{section.7.7}% 58
 \BOOKMARK [2][-]{subsection.7.7.2}{IUA1.1 Registrar Academia}{section.7.7}% 59
 \BOOKMARK [2][-]{subsection.7.7.3}{IUA1.2 Modificar Academia}{section.7.7}% 60
-\BOOKMARK [0][-]{chapter.8}{Prototipo 2: Infraestructura}{}% 61
-\BOOKMARK [1][-]{section.8.1}{Modelo de informaci\363n: M\363dulo Infraestructura}{chapter.8}% 62
-\BOOKMARK [2][-]{subsection.8.1.1}{M\363dulo Edificios: Descripci\363n general}{section.8.1}% 63
-\BOOKMARK [2][-]{subsection.8.1.2}{Edificio}{section.8.1}% 64
-\BOOKMARK [2][-]{subsection.8.1.3}{M\363dulo Espacios: Descripci\363n general}{section.8.1}% 65
-\BOOKMARK [2][-]{subsection.8.1.4}{Espacio}{section.8.1}% 66
-\BOOKMARK [2][-]{subsection.8.1.5}{Tipo de laboratorio}{section.8.1}% 67
-\BOOKMARK [2][-]{subsection.8.1.6}{Tipo de espacio}{section.8.1}% 68
-\BOOKMARK [1][-]{section.8.2}{Modelo de comportamiento del m\363dulo: Gestionar Infraestructura }{chapter.8}% 69
-\BOOKMARK [1][-]{section.8.3}{CUI1 Gestionar edificios}{chapter.8}% 70
-\BOOKMARK [2][-]{subsection.8.3.1}{Resumen}{section.8.3}% 71
-\BOOKMARK [2][-]{subsection.8.3.2}{Descripci\363n}{section.8.3}% 72
-\BOOKMARK [2][-]{subsection.8.3.3}{Trayectorias del caso de uso}{section.8.3}% 73
-\BOOKMARK [2][-]{subsection.8.3.4}{Puntos de extensi\363n}{section.8.3}% 74
-\BOOKMARK [1][-]{section.8.4}{CUI1.1 Registrar edificio}{chapter.8}% 75
-\BOOKMARK [2][-]{subsection.8.4.1}{Resumen}{section.8.4}% 76
-\BOOKMARK [2][-]{subsection.8.4.2}{Descripci\363n}{section.8.4}% 77
-\BOOKMARK [2][-]{subsection.8.4.3}{Trayectorias del caso de uso}{section.8.4}% 78
-\BOOKMARK [1][-]{section.8.5}{CUI1.2 Modificar edificio}{chapter.8}% 79
-\BOOKMARK [2][-]{subsection.8.5.1}{Resumen}{section.8.5}% 80
-\BOOKMARK [2][-]{subsection.8.5.2}{Descripci\363n}{section.8.5}% 81
-\BOOKMARK [2][-]{subsection.8.5.3}{Trayectorias del caso de uso}{section.8.5}% 82
-\BOOKMARK [1][-]{section.8.6}{CUI1.3 Eliminar edificio}{chapter.8}% 83
-\BOOKMARK [2][-]{subsection.8.6.1}{Resumen}{section.8.6}% 84
-\BOOKMARK [2][-]{subsection.8.6.2}{Descripci\363n}{section.8.6}% 85
-\BOOKMARK [2][-]{subsection.8.6.3}{Trayectorias del caso de uso}{section.8.6}% 86
-\BOOKMARK [1][-]{section.8.7}{CUI1.4 Consultar edificio}{chapter.8}% 87
-\BOOKMARK [2][-]{subsection.8.7.1}{Resumen}{section.8.7}% 88
-\BOOKMARK [2][-]{subsection.8.7.2}{Descripci\363n}{section.8.7}% 89
-\BOOKMARK [2][-]{subsection.8.7.3}{Trayectorias del caso de uso}{section.8.7}% 90
-\BOOKMARK [1][-]{section.8.8}{CUI1.5 Gestionar Espacios}{chapter.8}% 91
-\BOOKMARK [2][-]{subsection.8.8.1}{Resumen}{section.8.8}% 92
-\BOOKMARK [2][-]{subsection.8.8.2}{Descripci\363n}{section.8.8}% 93
-\BOOKMARK [2][-]{subsection.8.8.3}{Trayectorias del caso de uso}{section.8.8}% 94
-\BOOKMARK [2][-]{subsection.8.8.4}{Puntos de extensi\363n}{section.8.8}% 95
-\BOOKMARK [1][-]{section.8.9}{CUI1.5.1 Registrar Espacio}{chapter.8}% 96
-\BOOKMARK [2][-]{subsection.8.9.1}{Resumen}{section.8.9}% 97
-\BOOKMARK [2][-]{subsection.8.9.2}{Descripci\363n}{section.8.9}% 98
-\BOOKMARK [2][-]{subsection.8.9.3}{Trayectorias del caso de uso}{section.8.9}% 99
-\BOOKMARK [1][-]{section.8.10}{CUI1.5.1 Modificar Espacio}{chapter.8}% 100
-\BOOKMARK [2][-]{subsection.8.10.1}{Resumen}{section.8.10}% 101
-\BOOKMARK [2][-]{subsection.8.10.2}{Descripci\363n}{section.8.10}% 102
-\BOOKMARK [2][-]{subsection.8.10.3}{Trayectorias del caso de uso}{section.8.10}% 103
-\BOOKMARK [1][-]{section.8.11}{CUA1.3 Eliminar espacio}{chapter.8}% 104
-\BOOKMARK [2][-]{subsection.8.11.1}{Resumen}{section.8.11}% 105
-\BOOKMARK [2][-]{subsection.8.11.2}{Descripci\363n}{section.8.11}% 106
-\BOOKMARK [2][-]{subsection.8.11.3}{Trayectorias del caso de uso}{section.8.11}% 107
-\BOOKMARK [1][-]{section.8.12}{CUI1.5.4 Consultar Espacio}{chapter.8}% 108
-\BOOKMARK [2][-]{subsection.8.12.1}{Resumen}{section.8.12}% 109
-\BOOKMARK [2][-]{subsection.8.12.2}{Descripci\363n}{section.8.12}% 110
-\BOOKMARK [2][-]{subsection.8.12.3}{Trayectorias del caso de uso}{section.8.12}% 111
-\BOOKMARK [1][-]{section.8.13}{Interfaces del m\363dulo}{chapter.8}% 112
-\BOOKMARK [2][-]{subsection.8.13.1}{Edificios}{section.8.13}% 113
-\BOOKMARK [2][-]{subsection.8.13.2}{IUI1 Gestionar Edificios}{section.8.13}% 114
-\BOOKMARK [2][-]{subsection.8.13.3}{IUI1.1 Registrar Edificio}{section.8.13}% 115
-\BOOKMARK [2][-]{subsection.8.13.4}{IUI1.2 Modificar Edificio}{section.8.13}% 116
-\BOOKMARK [2][-]{subsection.8.13.5}{IUI1.4 Consultar Edificio}{section.8.13}% 117
-\BOOKMARK [2][-]{subsection.8.13.6}{Espacios}{section.8.13}% 118
-\BOOKMARK [2][-]{subsection.8.13.7}{IUI1.5 Gestionar Edificios}{section.8.13}% 119
-\BOOKMARK [2][-]{subsection.8.13.8}{IUI1.5.1 Registrar Espacio}{section.8.13}% 120
-\BOOKMARK [2][-]{subsection.8.13.9}{IUI1.5.2 Modificar Espacio}{section.8.13}% 121
-\BOOKMARK [2][-]{subsection.8.13.10}{IUI1.5.4 Consultar Espacio}{section.8.13}% 122
-\BOOKMARK [0][-]{chapter.9}{Prototipo 3: Oferta educativa}{}% 123
-\BOOKMARK [1][-]{section.9.1}{Modelo de informaci\363n: M\363dulo Oferta Educativa}{chapter.9}% 124
-\BOOKMARK [2][-]{subsection.9.1.1}{M\363dulo Plan de Estudio: Descripci\363n general}{section.9.1}% 125
-\BOOKMARK [2][-]{subsection.9.1.2}{Plan de estudio}{section.9.1}% 126
-\BOOKMARK [2][-]{subsection.9.1.3}{Estado del plan de estudio}{section.9.1}% 127
-\BOOKMARK [2][-]{subsection.9.1.4}{Tipo de division}{section.9.1}% 128
-\BOOKMARK [2][-]{subsection.9.1.5}{M\363dulo Unidad de Aprendizaje: Descripci\363n general}{section.9.1}% 129
-\BOOKMARK [2][-]{subsection.9.1.6}{Unidad de aprendizaje}{section.9.1}% 130
-\BOOKMARK [2][-]{subsection.9.1.7}{Tipo de unidad de aprendizaje}{section.9.1}% 131
-\BOOKMARK [2][-]{subsection.9.1.8}{Tipo de formaci\363n}{section.9.1}% 132
-\BOOKMARK [2][-]{subsection.9.1.9}{Tipo de ense\361anza}{section.9.1}% 133
-\BOOKMARK [1][-]{section.9.2}{Modelo de comportamiento del m\363dulo: Gestionar Oferta Educativa }{chapter.9}% 134
-\BOOKMARK [1][-]{section.9.3}{CUOE1 Gestionar planes de estudio}{chapter.9}% 135
-\BOOKMARK [2][-]{subsection.9.3.1}{Resumen}{section.9.3}% 136
-\BOOKMARK [2][-]{subsection.9.3.2}{Descripci\363n}{section.9.3}% 137
-\BOOKMARK [2][-]{subsection.9.3.3}{Trayectorias del caso de uso}{section.9.3}% 138
-\BOOKMARK [2][-]{subsection.9.3.4}{Puntos de extensi\363n}{section.9.3}% 139
-\BOOKMARK [1][-]{section.9.4}{CUOE1.1 Registrar plan de estudio}{chapter.9}% 140
-\BOOKMARK [2][-]{subsection.9.4.1}{Resumen}{section.9.4}% 141
-\BOOKMARK [2][-]{subsection.9.4.2}{Descripci\363n}{section.9.4}% 142
-\BOOKMARK [2][-]{subsection.9.4.3}{Trayectorias del caso de uso}{section.9.4}% 143
-\BOOKMARK [1][-]{section.9.5}{CUOE1.2 Modificar plan de estudio}{chapter.9}% 144
-\BOOKMARK [2][-]{subsection.9.5.1}{Resumen}{section.9.5}% 145
-\BOOKMARK [2][-]{subsection.9.5.2}{Descripci\363n}{section.9.5}% 146
-\BOOKMARK [2][-]{subsection.9.5.3}{Trayectorias del caso de uso}{section.9.5}% 147
-\BOOKMARK [1][-]{section.9.6}{CUOE1.3 Eliminar plan de estudio}{chapter.9}% 148
-\BOOKMARK [2][-]{subsection.9.6.1}{Resumen}{section.9.6}% 149
-\BOOKMARK [2][-]{subsection.9.6.2}{Descripci\363n}{section.9.6}% 150
-\BOOKMARK [2][-]{subsection.9.6.3}{Trayectorias del caso de uso}{section.9.6}% 151
-\BOOKMARK [1][-]{section.9.7}{CUOE1.4 Consultar plan de estudio}{chapter.9}% 152
-\BOOKMARK [2][-]{subsection.9.7.1}{Resumen}{section.9.7}% 153
-\BOOKMARK [2][-]{subsection.9.7.2}{Descripci\363n}{section.9.7}% 154
-\BOOKMARK [2][-]{subsection.9.7.3}{Trayectorias del caso de uso}{section.9.7}% 155
-\BOOKMARK [1][-]{section.9.8}{CUOE1.5 Gestionar unidades de aprendizaje}{chapter.9}% 156
-\BOOKMARK [2][-]{subsection.9.8.1}{Resumen}{section.9.8}% 157
-\BOOKMARK [2][-]{subsection.9.8.2}{Descripci\363n}{section.9.8}% 158
-\BOOKMARK [2][-]{subsection.9.8.3}{Trayectorias del caso de uso}{section.9.8}% 159
-\BOOKMARK [2][-]{subsection.9.8.4}{Puntos de extensi\363n}{section.9.8}% 160
-\BOOKMARK [1][-]{section.9.9}{CUOE1.5.1 Registrar unidad de aprendizaje}{chapter.9}% 161
-\BOOKMARK [2][-]{subsection.9.9.1}{Resumen}{section.9.9}% 162
-\BOOKMARK [2][-]{subsection.9.9.2}{Descripci\363n}{section.9.9}% 163
-\BOOKMARK [2][-]{subsection.9.9.3}{Trayectorias del caso de uso}{section.9.9}% 164
-\BOOKMARK [1][-]{section.9.10}{CUOE1.5.2 Modificar unidad de aprendizaje}{chapter.9}% 165
-\BOOKMARK [2][-]{subsection.9.10.1}{Resumen}{section.9.10}% 166
-\BOOKMARK [2][-]{subsection.9.10.2}{Descripci\363n}{section.9.10}% 167
-\BOOKMARK [2][-]{subsection.9.10.3}{Trayectorias del caso de uso}{section.9.10}% 168
-\BOOKMARK [1][-]{section.9.11}{CUOE1.5.3 Eliminar unidad de aprendizaje}{chapter.9}% 169
-\BOOKMARK [2][-]{subsection.9.11.1}{Resumen}{section.9.11}% 170
-\BOOKMARK [2][-]{subsection.9.11.2}{Descripci\363n}{section.9.11}% 171
-\BOOKMARK [2][-]{subsection.9.11.3}{Trayectorias del caso de uso}{section.9.11}% 172
-\BOOKMARK [1][-]{section.9.12}{CUOE1.5.4 Consultar unidad de aprendizaje}{chapter.9}% 173
-\BOOKMARK [2][-]{subsection.9.12.1}{Resumen}{section.9.12}% 174
-\BOOKMARK [2][-]{subsection.9.12.2}{Descripci\363n}{section.9.12}% 175
-\BOOKMARK [2][-]{subsection.9.12.3}{Trayectorias del caso de uso}{section.9.12}% 176
-\BOOKMARK [1][-]{section.9.13}{Interfaces del m\363dulo}{chapter.9}% 177
-\BOOKMARK [2][-]{subsection.9.13.1}{Plan de Estudio}{section.9.13}% 178
-\BOOKMARK [2][-]{subsection.9.13.2}{IUOE1 Gestionar Planes de Estudio}{section.9.13}% 179
-\BOOKMARK [2][-]{subsection.9.13.3}{IUOE1.1 Registrar Plan de Estudio}{section.9.13}% 180
-\BOOKMARK [2][-]{subsection.9.13.4}{IUOE1.2 Modificar Plan de Estudio}{section.9.13}% 181
-\BOOKMARK [2][-]{subsection.9.13.5}{IUOE1.4 Consultar Planes de Estudio}{section.9.13}% 182
-\BOOKMARK [2][-]{subsection.9.13.6}{Unidad de Aprendizaje}{section.9.13}% 183
-\BOOKMARK [2][-]{subsection.9.13.7}{IUOE1.5 Gestionar Unidades de Aprendizaje}{section.9.13}% 184
-\BOOKMARK [2][-]{subsection.9.13.8}{IUOE1.1 Registrar Unidad de Aprendizaje}{section.9.13}% 185
-\BOOKMARK [2][-]{subsection.9.13.9}{IUOE1.2 Modificar Unidad de Aprendizaje}{section.9.13}% 186
-\BOOKMARK [2][-]{subsection.9.13.10}{IUOE1.4 Consultar Unidad de Aprendizaje}{section.9.13}% 187
-\BOOKMARK [0][-]{chapter.10}{Modelo de interacci\363n con el usuario}{}% 188
-\BOOKMARK [1][-]{section.10.1}{Dise\361o de mensajes}{chapter.10}% 189
-\BOOKMARK [1][-]{section.10.2}{Par\341metros comunes}{chapter.10}% 190
-\BOOKMARK [1][-]{section.10.3}{Mensajes a trav\351s de la pantalla}{chapter.10}% 191
-\BOOKMARK [0][-]{chapter.11}{Bibliograf\355a}{}% 192
+\BOOKMARK [1][-]{section.7.8}{Pruebas del m\363dulo: Academias}{chapter.7}% 61
+\BOOKMARK [0][-]{chapter.8}{Prototipo 2: Infraestructura}{}% 62
+\BOOKMARK [1][-]{section.8.1}{Modelo de informaci\363n: M\363dulo Infraestructura}{chapter.8}% 63
+\BOOKMARK [2][-]{subsection.8.1.1}{M\363dulo Edificios: Descripci\363n general}{section.8.1}% 64
+\BOOKMARK [2][-]{subsection.8.1.2}{Edificio}{section.8.1}% 65
+\BOOKMARK [2][-]{subsection.8.1.3}{M\363dulo Espacios: Descripci\363n general}{section.8.1}% 66
+\BOOKMARK [2][-]{subsection.8.1.4}{Espacio}{section.8.1}% 67
+\BOOKMARK [2][-]{subsection.8.1.5}{Tipo de laboratorio}{section.8.1}% 68
+\BOOKMARK [2][-]{subsection.8.1.6}{Tipo de espacio}{section.8.1}% 69
+\BOOKMARK [1][-]{section.8.2}{Modelo de comportamiento del m\363dulo: Gestionar Infraestructura }{chapter.8}% 70
+\BOOKMARK [1][-]{section.8.3}{CUI1 Gestionar edificios}{chapter.8}% 71
+\BOOKMARK [2][-]{subsection.8.3.1}{Resumen}{section.8.3}% 72
+\BOOKMARK [2][-]{subsection.8.3.2}{Descripci\363n}{section.8.3}% 73
+\BOOKMARK [2][-]{subsection.8.3.3}{Trayectorias del caso de uso}{section.8.3}% 74
+\BOOKMARK [2][-]{subsection.8.3.4}{Puntos de extensi\363n}{section.8.3}% 75
+\BOOKMARK [1][-]{section.8.4}{CUI1.1 Registrar edificio}{chapter.8}% 76
+\BOOKMARK [2][-]{subsection.8.4.1}{Resumen}{section.8.4}% 77
+\BOOKMARK [2][-]{subsection.8.4.2}{Descripci\363n}{section.8.4}% 78
+\BOOKMARK [2][-]{subsection.8.4.3}{Trayectorias del caso de uso}{section.8.4}% 79
+\BOOKMARK [1][-]{section.8.5}{CUI1.2 Modificar edificio}{chapter.8}% 80
+\BOOKMARK [2][-]{subsection.8.5.1}{Resumen}{section.8.5}% 81
+\BOOKMARK [2][-]{subsection.8.5.2}{Descripci\363n}{section.8.5}% 82
+\BOOKMARK [2][-]{subsection.8.5.3}{Trayectorias del caso de uso}{section.8.5}% 83
+\BOOKMARK [1][-]{section.8.6}{CUI1.3 Eliminar edificio}{chapter.8}% 84
+\BOOKMARK [2][-]{subsection.8.6.1}{Resumen}{section.8.6}% 85
+\BOOKMARK [2][-]{subsection.8.6.2}{Descripci\363n}{section.8.6}% 86
+\BOOKMARK [2][-]{subsection.8.6.3}{Trayectorias del caso de uso}{section.8.6}% 87
+\BOOKMARK [1][-]{section.8.7}{CUI1.4 Consultar edificio}{chapter.8}% 88
+\BOOKMARK [2][-]{subsection.8.7.1}{Resumen}{section.8.7}% 89
+\BOOKMARK [2][-]{subsection.8.7.2}{Descripci\363n}{section.8.7}% 90
+\BOOKMARK [2][-]{subsection.8.7.3}{Trayectorias del caso de uso}{section.8.7}% 91
+\BOOKMARK [1][-]{section.8.8}{CUI1.5 Gestionar Espacios}{chapter.8}% 92
+\BOOKMARK [2][-]{subsection.8.8.1}{Resumen}{section.8.8}% 93
+\BOOKMARK [2][-]{subsection.8.8.2}{Descripci\363n}{section.8.8}% 94
+\BOOKMARK [2][-]{subsection.8.8.3}{Trayectorias del caso de uso}{section.8.8}% 95
+\BOOKMARK [2][-]{subsection.8.8.4}{Puntos de extensi\363n}{section.8.8}% 96
+\BOOKMARK [1][-]{section.8.9}{CUI1.5.1 Registrar Espacio}{chapter.8}% 97
+\BOOKMARK [2][-]{subsection.8.9.1}{Resumen}{section.8.9}% 98
+\BOOKMARK [2][-]{subsection.8.9.2}{Descripci\363n}{section.8.9}% 99
+\BOOKMARK [2][-]{subsection.8.9.3}{Trayectorias del caso de uso}{section.8.9}% 100
+\BOOKMARK [1][-]{section.8.10}{CUI1.5.2 Modificar Espacio}{chapter.8}% 101
+\BOOKMARK [2][-]{subsection.8.10.1}{Resumen}{section.8.10}% 102
+\BOOKMARK [2][-]{subsection.8.10.2}{Descripci\363n}{section.8.10}% 103
+\BOOKMARK [2][-]{subsection.8.10.3}{Trayectorias del caso de uso}{section.8.10}% 104
+\BOOKMARK [1][-]{section.8.11}{CUI1.5.3 Eliminar espacio}{chapter.8}% 105
+\BOOKMARK [2][-]{subsection.8.11.1}{Resumen}{section.8.11}% 106
+\BOOKMARK [2][-]{subsection.8.11.2}{Descripci\363n}{section.8.11}% 107
+\BOOKMARK [2][-]{subsection.8.11.3}{Trayectorias del caso de uso}{section.8.11}% 108
+\BOOKMARK [1][-]{section.8.12}{CUI1.5.4 Consultar Espacio}{chapter.8}% 109
+\BOOKMARK [2][-]{subsection.8.12.1}{Resumen}{section.8.12}% 110
+\BOOKMARK [2][-]{subsection.8.12.2}{Descripci\363n}{section.8.12}% 111
+\BOOKMARK [2][-]{subsection.8.12.3}{Trayectorias del caso de uso}{section.8.12}% 112
+\BOOKMARK [1][-]{section.8.13}{Interfaces del m\363dulo}{chapter.8}% 113
+\BOOKMARK [2][-]{subsection.8.13.1}{Edificios}{section.8.13}% 114
+\BOOKMARK [2][-]{subsection.8.13.2}{IUI1 Gestionar Edificios}{section.8.13}% 115
+\BOOKMARK [2][-]{subsection.8.13.3}{IUI1.1 Registrar Edificio}{section.8.13}% 116
+\BOOKMARK [2][-]{subsection.8.13.4}{IUI1.2 Modificar Edificio}{section.8.13}% 117
+\BOOKMARK [2][-]{subsection.8.13.5}{IUI1.4 Consultar Edificio}{section.8.13}% 118
+\BOOKMARK [2][-]{subsection.8.13.6}{Espacios}{section.8.13}% 119
+\BOOKMARK [2][-]{subsection.8.13.7}{IUI1.5 Gestionar Edificios}{section.8.13}% 120
+\BOOKMARK [2][-]{subsection.8.13.8}{IUI1.5.1 Registrar Espacio}{section.8.13}% 121
+\BOOKMARK [2][-]{subsection.8.13.9}{IUI1.5.2 Modificar Espacio}{section.8.13}% 122
+\BOOKMARK [2][-]{subsection.8.13.10}{IUI1.5.4 Consultar Espacio}{section.8.13}% 123
+\BOOKMARK [1][-]{section.8.14}{Pruebas del m\363dulo: Infraestructura}{chapter.8}% 124
+\BOOKMARK [2][-]{subsection.8.14.1}{Edificio}{section.8.14}% 125
+\BOOKMARK [2][-]{subsection.8.14.2}{Espacio}{section.8.14}% 126
+\BOOKMARK [0][-]{chapter.9}{Prototipo 3: Oferta educativa}{}% 127
+\BOOKMARK [1][-]{section.9.1}{Modelo de informaci\363n: M\363dulo Oferta Educativa}{chapter.9}% 128
+\BOOKMARK [2][-]{subsection.9.1.1}{M\363dulo Plan de Estudio: Descripci\363n general}{section.9.1}% 129
+\BOOKMARK [2][-]{subsection.9.1.2}{Plan de estudio}{section.9.1}% 130
+\BOOKMARK [2][-]{subsection.9.1.3}{Estado del plan de estudio}{section.9.1}% 131
+\BOOKMARK [2][-]{subsection.9.1.4}{Tipo de division}{section.9.1}% 132
+\BOOKMARK [2][-]{subsection.9.1.5}{M\363dulo Unidad de Aprendizaje: Descripci\363n general}{section.9.1}% 133
+\BOOKMARK [2][-]{subsection.9.1.6}{Unidad de aprendizaje}{section.9.1}% 134
+\BOOKMARK [2][-]{subsection.9.1.7}{Tipo de unidad de aprendizaje}{section.9.1}% 135
+\BOOKMARK [2][-]{subsection.9.1.8}{Tipo de formaci\363n}{section.9.1}% 136
+\BOOKMARK [2][-]{subsection.9.1.9}{Tipo de ense\361anza}{section.9.1}% 137
+\BOOKMARK [1][-]{section.9.2}{Modelo de comportamiento del m\363dulo: Gestionar Oferta Educativa }{chapter.9}% 138
+\BOOKMARK [1][-]{section.9.3}{CUOE1 Gestionar planes de estudio}{chapter.9}% 139
+\BOOKMARK [2][-]{subsection.9.3.1}{Resumen}{section.9.3}% 140
+\BOOKMARK [2][-]{subsection.9.3.2}{Descripci\363n}{section.9.3}% 141
+\BOOKMARK [2][-]{subsection.9.3.3}{Trayectorias del caso de uso}{section.9.3}% 142
+\BOOKMARK [2][-]{subsection.9.3.4}{Puntos de extensi\363n}{section.9.3}% 143
+\BOOKMARK [1][-]{section.9.4}{CUOE1.1 Registrar plan de estudio}{chapter.9}% 144
+\BOOKMARK [2][-]{subsection.9.4.1}{Resumen}{section.9.4}% 145
+\BOOKMARK [2][-]{subsection.9.4.2}{Descripci\363n}{section.9.4}% 146
+\BOOKMARK [2][-]{subsection.9.4.3}{Trayectorias del caso de uso}{section.9.4}% 147
+\BOOKMARK [1][-]{section.9.5}{CUOE1.2 Modificar plan de estudio}{chapter.9}% 148
+\BOOKMARK [2][-]{subsection.9.5.1}{Resumen}{section.9.5}% 149
+\BOOKMARK [2][-]{subsection.9.5.2}{Descripci\363n}{section.9.5}% 150
+\BOOKMARK [2][-]{subsection.9.5.3}{Trayectorias del caso de uso}{section.9.5}% 151
+\BOOKMARK [1][-]{section.9.6}{CUOE1.3 Eliminar plan de estudio}{chapter.9}% 152
+\BOOKMARK [2][-]{subsection.9.6.1}{Resumen}{section.9.6}% 153
+\BOOKMARK [2][-]{subsection.9.6.2}{Descripci\363n}{section.9.6}% 154
+\BOOKMARK [2][-]{subsection.9.6.3}{Trayectorias del caso de uso}{section.9.6}% 155
+\BOOKMARK [1][-]{section.9.7}{CUOE1.4 Consultar plan de estudio}{chapter.9}% 156
+\BOOKMARK [2][-]{subsection.9.7.1}{Resumen}{section.9.7}% 157
+\BOOKMARK [2][-]{subsection.9.7.2}{Descripci\363n}{section.9.7}% 158
+\BOOKMARK [2][-]{subsection.9.7.3}{Trayectorias del caso de uso}{section.9.7}% 159
+\BOOKMARK [1][-]{section.9.8}{CUOE1.5 Gestionar unidades de aprendizaje}{chapter.9}% 160
+\BOOKMARK [2][-]{subsection.9.8.1}{Resumen}{section.9.8}% 161
+\BOOKMARK [2][-]{subsection.9.8.2}{Descripci\363n}{section.9.8}% 162
+\BOOKMARK [2][-]{subsection.9.8.3}{Trayectorias del caso de uso}{section.9.8}% 163
+\BOOKMARK [2][-]{subsection.9.8.4}{Puntos de extensi\363n}{section.9.8}% 164
+\BOOKMARK [1][-]{section.9.9}{CUOE1.5.1 Registrar unidad de aprendizaje}{chapter.9}% 165
+\BOOKMARK [2][-]{subsection.9.9.1}{Resumen}{section.9.9}% 166
+\BOOKMARK [2][-]{subsection.9.9.2}{Descripci\363n}{section.9.9}% 167
+\BOOKMARK [2][-]{subsection.9.9.3}{Trayectorias del caso de uso}{section.9.9}% 168
+\BOOKMARK [1][-]{section.9.10}{CUOE1.5.2 Modificar unidad de aprendizaje}{chapter.9}% 169
+\BOOKMARK [2][-]{subsection.9.10.1}{Resumen}{section.9.10}% 170
+\BOOKMARK [2][-]{subsection.9.10.2}{Descripci\363n}{section.9.10}% 171
+\BOOKMARK [2][-]{subsection.9.10.3}{Trayectorias del caso de uso}{section.9.10}% 172
+\BOOKMARK [1][-]{section.9.11}{CUOE1.5.3 Eliminar unidad de aprendizaje}{chapter.9}% 173
+\BOOKMARK [2][-]{subsection.9.11.1}{Resumen}{section.9.11}% 174
+\BOOKMARK [2][-]{subsection.9.11.2}{Descripci\363n}{section.9.11}% 175
+\BOOKMARK [2][-]{subsection.9.11.3}{Trayectorias del caso de uso}{section.9.11}% 176
+\BOOKMARK [1][-]{section.9.12}{CUOE1.5.4 Consultar unidad de aprendizaje}{chapter.9}% 177
+\BOOKMARK [2][-]{subsection.9.12.1}{Resumen}{section.9.12}% 178
+\BOOKMARK [2][-]{subsection.9.12.2}{Descripci\363n}{section.9.12}% 179
+\BOOKMARK [2][-]{subsection.9.12.3}{Trayectorias del caso de uso}{section.9.12}% 180
+\BOOKMARK [1][-]{section.9.13}{Interfaces del m\363dulo}{chapter.9}% 181
+\BOOKMARK [2][-]{subsection.9.13.1}{Plan de Estudio}{section.9.13}% 182
+\BOOKMARK [2][-]{subsection.9.13.2}{IUOE1 Gestionar Planes de Estudio}{section.9.13}% 183
+\BOOKMARK [2][-]{subsection.9.13.3}{IUOE1.1 Registrar Plan de Estudio}{section.9.13}% 184
+\BOOKMARK [2][-]{subsection.9.13.4}{IUOE1.2 Modificar Plan de Estudio}{section.9.13}% 185
+\BOOKMARK [2][-]{subsection.9.13.5}{IUOE1.4 Consultar Planes de Estudio}{section.9.13}% 186
+\BOOKMARK [2][-]{subsection.9.13.6}{Unidad de Aprendizaje}{section.9.13}% 187
+\BOOKMARK [2][-]{subsection.9.13.7}{IUOE1.5 Gestionar Unidades de Aprendizaje}{section.9.13}% 188
+\BOOKMARK [2][-]{subsection.9.13.8}{IUOE1.1 Registrar Unidad de Aprendizaje}{section.9.13}% 189
+\BOOKMARK [2][-]{subsection.9.13.9}{IUOE1.2 Modificar Unidad de Aprendizaje}{section.9.13}% 190
+\BOOKMARK [2][-]{subsection.9.13.10}{IUOE1.4 Consultar Unidad de Aprendizaje}{section.9.13}% 191
+\BOOKMARK [1][-]{section.9.14}{Pruebas del m\363dulo: Infraestructura}{chapter.9}% 192
+\BOOKMARK [2][-]{subsection.9.14.1}{Edificio}{section.9.14}% 193
+\BOOKMARK [2][-]{subsection.9.14.2}{Espacio}{section.9.14}% 194
+\BOOKMARK [0][-]{chapter.10}{Modelo de interacci\363n con el usuario}{}% 195
+\BOOKMARK [1][-]{section.10.1}{Dise\361o de mensajes}{chapter.10}% 196
+\BOOKMARK [1][-]{section.10.2}{Par\341metros comunes}{chapter.10}% 197
+\BOOKMARK [1][-]{section.10.3}{Mensajes a trav\351s de la pantalla}{chapter.10}% 198
+\BOOKMARK [0][-]{chapter.11}{Bibliograf\355a}{}% 199
