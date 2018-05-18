@@ -95,7 +95,7 @@
 		
 		\begin{figure}[htbp!]
 			\begin{center}
-				\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/entornoTrabajo.png}}
+				\fbox{\includegraphics[width=.8\textwidth]{images/entornoTT/entornoTrabajo.png}}
 				\caption{Entorno de trabajo del sistema}
 				\label{fig:entornoTrabajo}
 			\end{center}
@@ -199,7 +199,7 @@
 		
 		\begin{figure}[htbp!]
 			\begin{center}
-				\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/django.png}}
+				\fbox{\includegraphics[width=.55\textwidth]{images/entornoTT/django.png}}
 				\caption{Arquitectura Django}
 				\label{fig:django}
 			\end{center}
@@ -207,15 +207,48 @@
 		
 	\end{itemize}
 	
+	La aplicación ocupa el patrón MTV (Modelo-Platilla-Vista), a continuación de describe en que consiste.
+	
+	\begin{itemize}
+		\item \textbf{Modelo:} Es la fuente única y definitiva de los datos de nuestra aplicación que nos permite realizar operaciones con ellos.
+		Dicho de otra forma, un modelo se entiende como una tabla de la base de datos que soporta nuestra aplicación.
+		El gran beneficio que tenemos es el ORM (Object-Relational mapping), es decir, el mapeo objeto–relacional, del cual ya no tendremos que ocuparnos.
+		Todos nuestros modelos extienden (heredan) de la clase django.db.models.Model
+		Los modelos tienen atributos que se convierten en campos en las tablas de la base de datos.
+		
+		\item \textbf{Vista:} Es el elemento de nuestra aplicación donde ponemos la lógica de negocio así como las funciones necesarias de apoyo.
+		Aquí se procesan las peticiones o solicitudes (request) que accederán al Modelo para poder obtener o entregar datos.
+		La vista genera una respuesta, para el caso de Django se utiliza el método render para establecer la plantilla (template) de destino hacia dónde irán los datos.
+		Dicho de otra forma, aquí se establece la lógica necesaria para devolver una respuesta (y que datos conforma dicha respuesta) hacia el cliente que la solicita.
+		
+		\item \textbf{Plantilla:} Es el elemento (documento HTML) que decide CÓMO se van a mostrar los datos devueltos por la vista.
+		Cada plantilla obtiene una respuesta proveniente de la vista correspondiente y contiene la estructura necesaria para presentar los datos en la forma necesaria utilizando estilos CSS o brindando dinamismo a través de JavaScript.
+	\end{itemize}
+	
+	
+	
 		
 	\subsubsection{Validación}
 	
 		\begin{itemize}
+			
+			\item \textbf{Navegadores:} Se han elegido los siguientes navegadores con base en la estadística tomada de StatCounter. [9] 
+			
+			\begin{figure}[htbp!]
+				\begin{center}
+					\fbox{\includegraphics[width=.8\textwidth]{images/entornoTT/navegadores.png}}
+					\caption{Estadística de los navegadores utilizados en México}
+					\label{fig:navegadores}
+				\end{center}
+			\end{figure}
+			
+			En la figura~\ref{fig:navegadores} muestra que \textbf{Chrome} es el navegador más utilizado en México con un 76.05\% y se ha elegido por la popularidad que tiene. Por otro lado, se eligió como navegador alterno \textbf{IE} con una utilización del 2.08\%, aunque este no es el más utilizado es el navegador que viene instalado por defecto en Windows.
+			
 			\item \textbf{Sistema de servidores:} En la figura~\ref{fig:servidor} muestra la comunicación entre la interacción del cliente con el sistema alojado en el servidor y la base de datos.
 			
 			\begin{figure}[htbp!]
 				\begin{center}
-					\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/servidor.png}}
+					\fbox{\includegraphics[width=.8\textwidth]{images/entornoTT/servidor.png}}
 					\caption{Comunicación del sistema}
 					\label{fig:servidor}
 				\end{center}
@@ -227,23 +260,13 @@
 			
 			\begin{figure}[htbp!]
 				\begin{center}
-					\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/so.png}}
+					\fbox{\includegraphics[width=.8\textwidth]{images/entornoTT/so.png}}
 					\caption{Estadística de los sistemas operativos utilizados en México}
 					\label{fig:so}
 				\end{center}
 			\end{figure}
 		
-			\item \textbf{Navegadores:} Se han elegido los siguientes navegadores con base en la estadística tomada de StatCounter. [9] 
 			
-			\begin{figure}[htbp!]
-				\begin{center}
-					\fbox{\includegraphics[width=.5\textwidth]{images/entornoTT/navegadores.png}}
-					\caption{Estadística de los navegadores utilizados en México}
-					\label{fig:navegadores}
-				\end{center}
-			\end{figure}
-			
-			En la figura~\ref{fig:navegadores} muestra que \textbf{Chrome} es el navegador más utilizado en México con un 76.05\% y se ha elegido por la popularidad que tiene. Por otro lado, se eligió como navegador alterno \textbf{IE} con una utilización del 2.08\%, aunque este no es el más utilizado es el navegador que viene instalado por defecto en Windows.
 		\end{itemize}
 	
 	\subsubsection{Propiedades no funcionales}
