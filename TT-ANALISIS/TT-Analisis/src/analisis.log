@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.23)  18 MAY 2018 02:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.23)  18 MAY 2018 02:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2479,12 +2479,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-<images/entornoTT/entornoTrabajo.png, id=1178, 903.375pt x 656.4525pt>
+<images/entornoTT/entornoTrabajo.png, id=1178, 677.53125pt x 492.33937pt>
 File: images/entornoTT/entornoTrabajo.png Graphic file (type png)
 <use images/entornoTT/entornoTrabajo.png>
 Package pdftex.def Info: images/entornoTT/entornoTrabajo.png  used on input lin
 e 98.
-(pdftex.def)             Requested size: 221.78923pt x 161.16782pt.
+(pdftex.def)             Requested size: 221.78923pt x 161.16531pt.
 File: cdt/theme/logoInp.png Graphic file (type png)
 <use cdt/theme/logoInp.png>
 Package pdftex.def Info: cdt/theme/logoInp.png  used on input line 108.
@@ -10960,7 +10960,7 @@ fbrsl10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/hfbright/hfbrsl8.pfb
 ><c:/texlive/2017/texmf-dist/fonts/type1/public/hfbright/hfbrsl9.pfb><c:/texliv
 e/2017/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb><c:/texlive/2017/tex
 mf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on analisis.pdf (141 pages, 2091015 bytes).
+Output written on analisis.pdf (141 pages, 2090579 bytes).
 PDF statistics:
  3307 PDF objects out of 3580 (max. 8388607)
  3025 compressed objects within 31 object streams
