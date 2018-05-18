@@ -5,23 +5,23 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Modelo del sistema.}}{23}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de paquetes del sistema.}}{24}{figure.3.2}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Entorno de trabajo del sistema}}{26}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Arquitectura Django}}{26}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Comunicaci\IeC {\'o}n del sistema}}{27}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Estad\IeC {\'\i }stica de los sistemas operativos utilizados en M\IeC {\'e}xico}}{27}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Estad\IeC {\'\i }stica de los navegadores utilizados en M\IeC {\'e}xico}}{27}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Comunicaci\IeC {\'o}n entre paquetes}}{28}{figure.3.8}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Arquitectura Django}}{27}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Comunicaci\IeC {\'o}n del sistema}}{28}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Estad\IeC {\'\i }stica de los sistemas operativos utilizados en M\IeC {\'e}xico}}{28}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Estad\IeC {\'\i }stica de los navegadores utilizados en M\IeC {\'e}xico}}{28}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Comunicaci\IeC {\'o}n entre paquetes}}{29}{figure.3.8}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Modelo Entidad Relaci\IeC {\'o}n del sistema.}}{32}{figure.5.1}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Modelo Entidad Relaci\IeC {\'o}n del sistema.}}{34}{figure.5.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Academias }}{42}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Infraestructura }}{42}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Oferta Educativa }}{43}{figure.6.3}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Academias }}{44}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Infraestructura }}{44}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Oferta Educativa }}{45}{figure.6.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Academias.}}{45}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces IUA1 Gestionar Academias}}{56}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces IUA1.1 Registrar Academia}}{57}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces IUA1.2 Modificar Academia}}{58}{figure.7.4}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Academias.}}{47}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces IUA1 Gestionar Academias}}{58}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces IUA1.1 Registrar Academia}}{59}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces IUA1.2 Modificar Academia}}{60}{figure.7.4}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {8.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Edificios.}}{61}{figure.8.1}
 \contentsline {figure}{\numberline {8.2}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo de Espacios.}}{62}{figure.8.2}
