@@ -1,0 +1,90 @@
+
+\begin{UseCase}{CUP1.4}{Consultar profesor}{	
+	Permite al actor consultar la información registrada de un profesor en caso de que se desee ver más detalles de este.
+}
+\UCccitem{Versión}{0.1}
+\UCccsection{Administración de Requerimientos}
+\UCccitem{Autor}{Brenda Gómez Caballero}
+\UCccitem{Evaluador}{}
+\UCccitem{Operación}{Consultar}
+\UCccitem{Prioridad}{Media}
+\UCccitem{Complejidad}{Baja}
+\UCccitem{Volatilidad}{Muy baja}
+\UCccitem{Madurez}{Alta}
+\UCccitem{Estatus}{Edición}
+\UCccitem{Fecha del último estatus}{}
+
+% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+% Esta sección la debe llenar solo el Revisor
+%--------------------------------------------------------
+\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+\UCccitem{Fecha}{}
+\UCccitem{Evaluador}{}
+\UCccitem{Resultado}{}
+\UCccitem{Observaciones}{
+	\begin{Titemize}
+		\Titem \DONE 
+		\Titem \DONE 
+		\Titem \DONE 
+	\end{Titemize}   
+}
+%-------------------------------------------------------------------
+\UCsection{Atributos}
+	\UCitem{Actor(es)}{
+		\begin{UClist}
+			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
+			\UCli \cdtRef{Actor:C}{Capturista}
+	\end{UClist} }
+	\UCitem{Propósito}{Consultar la información de un profesor y así obtener mayor detalle del registro.}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}	
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli Ninguna	
+		\end{UClist}
+	}
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Errores}{
+		\begin{UClist}
+			\UCli Ninguno
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Secundaria}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	\UCpaso [\UCactor] Solicita eliminar una academia dando clic en el icono %\IUEliminar 
+	de la pantalla \cdtIdRef{IUA1}{Gestionar Academias}
+	
+	\UCpaso [\UCsist] Verifica que la academia no haya sido asociada a una o más Unidades de Aprendizaje. \refTray{A}
+	
+	\UCpaso [\UCsist] Solicita la confirmación a través del mensaje \cdtIdRef{MSG2}{Eliminar Elemento}.
+	
+	\UCpaso [\UCactor] Confirma eliminar la academia oprimiendo el botón \cdtButton{Si}.
+	
+	\UCpaso [\UCsist] Elimina la academia.
+	
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUA1}{Gestionar Academias} indicando que la academia se eliminó correctamente.	
+	
+\end{UCtrayectoria}
+
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{La academia ya fue asociada a una Unidad de Aprendizaje.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No es posible eliminar un elemento} en la pantalla \cdtIdRef{IUA1}{Gestionar Academias}. 
+\end{UCtrayectoriaA}

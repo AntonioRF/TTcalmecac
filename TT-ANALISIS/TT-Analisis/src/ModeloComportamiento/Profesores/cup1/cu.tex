@@ -1,0 +1,100 @@
+
+\begin{UseCase}{CUA1}{Gestionar academias}{	
+	Permite al actor registrar una nueva academia, visualizar, modificar y eliminar las academias existentes de la ESCOM. Esto permitirá saber cuales son las academias existentes y asignarlas a las Unidades de Aprendizaje. 
+}
+
+\UCccitem{Versión}{0.1}
+\UCccsection{Administración de Requerimientos}
+\UCccitem{Autor}{Brenda Gómez Caballero}
+\UCccitem{Evaluador}{}
+\UCccitem{Operación}{Gestión}
+\UCccitem{Prioridad}{Alta}
+\UCccitem{Complejidad}{Baja}
+\UCccitem{Volatilidad}{Muy baja}
+\UCccitem{Madurez}{Alta}
+\UCccitem{Estatus}{Edición}
+\UCccitem{Fecha del último estatus}{01 de Abril de 2018}
+
+% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+% Esta sección la debe llenar solo el Revisor
+%--------------------------------------------------------
+\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+\UCccitem{Fecha}{}
+\UCccitem{Evaluador}{}
+\UCccitem{Resultado}{}
+\UCccitem{Observaciones}{
+	\begin{Titemize}
+		\Titem \DONE 
+		\Titem \DONE 
+		\Titem \DONE 
+	\end{Titemize}   
+}
+%-------------------------------------------------------------------
+	\UCsection{Atributos}
+	\UCitem{Actor(es)}{	\begin{UClist}
+			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
+			\UCli \cdtRef{Actor:C}{Capturista}
+		\end{UClist} 
+	}
+	\UCitem{Propósito}{Mantener actualizadas las academias disponibles en ESCOM.}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli Tabla que muestra el Nombre de la academia y el nombre del jefe de academia.
+		\end{UClist}
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			\UCli Se debe tener al menos un profesor registrado.
+		\end{UClist}
+	}
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli Ninguna	
+		\end{UClist}
+	}
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Errores}{
+		\begin{UClist}
+			\UCli Ninguno
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Primario}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	
+	\UCpaso [\UCactor] Selecciona la opción ''Academias'' del menú \textbf{Academias}. %\cdtIdRef{MN1}{Menú de la Secretaría de Posgrado}.
+	\UCpaso [\UCsist] Obtiene el nombre de la academia y el nombre del jefe de academia.
+	\UCpaso [\UCsist] Ordena alfabéticamente las academias por el nombre.
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA1}{Gestionar Academias} con la información de las academias obtenidas e iconos %\IUModificar, \IUEliminar y \IURegistrar. 
+	\label{cua1:gestionar}
+\end{UCtrayectoria}
+
+\subsection{Puntos de extensión}
+
+\UCExtensionPoint 
+{El actor requiere registrar una nueva academia.}
+{Paso \ref{cua1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUA1.1}{Registrar academia}}
+
+\UCExtensionPoint 
+{El actor requiere modificar una academia previamente registrada.}
+{Paso \ref{cua1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUA1.2}{Modificar academia}}
+
+\UCExtensionPoint 
+{El actor requiere eliminar una academia previamente registrada.}
+{Paso \ref{cua1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUA1.3}{Eliminar academia}}
+
+
+
