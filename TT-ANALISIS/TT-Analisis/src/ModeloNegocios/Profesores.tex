@@ -1,0 +1,31 @@
+
+%
+%%----------------------------------------------------------------
+
+
+\section{Modelo de información: Módulo Profesores}
+\subsection{Módulo Profesores: Descripción general}
+En la figura~\ref{fig:profesores} se muestra la estructura de información que manejará el módulo Profesores.
+
+\begin{figure}[htbp!]
+	\begin{center}
+		\fbox{\includegraphics[width=.5\textwidth]{images/clases/Profesores.png}}
+		\caption{Modelo de información del módulo Profesores.}
+		\label{fig:profesores}
+	\end{center}
+\end{figure}
+
+%--------------------------------------------------------------------------------
+\begin{BusinessEntity}{profesor}{Profesor}
+	
+	\Battr{nombre}{Nombre}{\tdFrase}{Es el nombre o nombres del profesor con el que se registrará}{\requerido}{\longitudMax{50}{caracteres}}{Caracteres admitidos: [A-Z] $|$ [a-z] $|$ $-$ $|$ \textvisiblespace.}
+	
+	\Battr{primerApellido}{Primer Apellido}{\tdFrase}{Es el primer apellido del profesor con el que se registrará}{\requerido}{\longitudMax{50}{caracteres}}{Caracteres admitidos: [A-Z] $|$ [a-z] $|$ $-$ $|$ \textvisiblespace.}
+
+	\Battr{segundoApellido}{Segundo Apellido}{\tdFrase}{Es el segundo apellido del profesor con el que se registrará}{\opcional}{\longitudMax{50}{caracteres}}{Caracteres admitidos: [A-Z] $|$ [a-z] $|$ $-$ $|$ \textvisiblespace.}
+	
+	\Battr{rfc}{RFC}{\tdPalabra}{Es la clave del Registro Federal de Contribuyentes del profesor}{\requerido}{\longitudMax{13}{caracteres}}{Caracteres admitidos: [A-Z] $|$ [a-z] $|$ [1-9].}
+
+	\Battr{cargoEspecial}{Cargo Especial}{\tdBooleano}{Indica si el profesor en cuestión tiene un cargo especial.}{\requerido}
+	
+\end{BusinessEntity}

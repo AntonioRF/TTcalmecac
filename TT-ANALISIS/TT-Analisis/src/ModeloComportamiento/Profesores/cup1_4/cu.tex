@@ -43,7 +43,11 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli Ninguna
+			\UCli \cdtRef{profesor:nombre}{Nombre}: \ioObtener.
+			\UCli \cdtRef{profesor:primerApellido}{Primer apellido}: \ioObtener.
+			\UCli \cdtRef{profesor:segundoApellido}{Segundo apellido}: \ioObtener.
+			\UCli \cdtRef{profesor:rfc}{RFC}: \ioObtener.
+			\UCli \cdtRef{profesor:cargoEspecial}{Cargo especial}: \ioObtener.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -66,25 +70,19 @@
 			\UCli Ninguno
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Secundaria}
+	\UCitem{Tipo}{Secundario}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita eliminar una academia dando clic en el icono %\IUEliminar 
-	de la pantalla \cdtIdRef{IUA1}{Gestionar Academias}
+	\UCpaso [\UCactor] Solicita consultar la información de un profesor dando clic en el icono %\IUEliminar 
+	de la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}.
 	
-	\UCpaso [\UCsist] Verifica que la academia no haya sido asociada a una o más Unidades de Aprendizaje. \refTray{A}
+	\UCpaso [\UCsist] Obtiene el nombre, primer apellido, segundo apellido, RFC y si tiene un cargo especial el profesor seleccionado.
 	
-	\UCpaso [\UCsist] Solicita la confirmación a través del mensaje \cdtIdRef{MSG2}{Eliminar Elemento}.
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUP1.4}{Consultar Profesor} con la información obtenida.
 	
-	\UCpaso [\UCactor] Confirma eliminar la academia oprimiendo el botón \cdtButton{Si}.
+	\UCpaso [\UCactor] Solicita terminar la consulta oprimiendo el botón \cdtButton{Regresar} de la pantalla \cdtIdRef{IUP1.4}{Consultar Profesor}.
 	
-	\UCpaso [\UCsist] Elimina la academia.
-	
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUA1}{Gestionar Academias} indicando que la academia se eliminó correctamente.	
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}.
 	
 \end{UCtrayectoria}
-
-\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{La academia ya fue asociada a una Unidad de Aprendizaje.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No es posible eliminar un elemento} en la pantalla \cdtIdRef{IUA1}{Gestionar Academias}. 
-\end{UCtrayectoriaA}

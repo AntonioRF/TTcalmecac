@@ -192,8 +192,43 @@
 \BOOKMARK [1][-]{section.9.14}{Pruebas del m\363dulo: Infraestructura}{chapter.9}% 192
 \BOOKMARK [2][-]{subsection.9.14.1}{Edificio}{section.9.14}% 193
 \BOOKMARK [2][-]{subsection.9.14.2}{Espacio}{section.9.14}% 194
-\BOOKMARK [0][-]{chapter.10}{Modelo de interacci\363n con el usuario}{}% 195
-\BOOKMARK [1][-]{section.10.1}{Dise\361o de mensajes}{chapter.10}% 196
-\BOOKMARK [1][-]{section.10.2}{Par\341metros comunes}{chapter.10}% 197
-\BOOKMARK [1][-]{section.10.3}{Mensajes a trav\351s de la pantalla}{chapter.10}% 198
-\BOOKMARK [0][-]{chapter.11}{Bibliograf\355a}{}% 199
+\BOOKMARK [0][-]{chapter.10}{Prototipo 4: Profesores}{}% 195
+\BOOKMARK [1][-]{section.10.1}{Modelo de informaci\363n: M\363dulo Profesores}{chapter.10}% 196
+\BOOKMARK [2][-]{subsection.10.1.1}{M\363dulo Profesores: Descripci\363n general}{section.10.1}% 197
+\BOOKMARK [2][-]{subsection.10.1.2}{Profesor}{section.10.1}% 198
+\BOOKMARK [1][-]{section.10.2}{Modelo de comportamiento del m\363dulo: Gestionar Profesores }{chapter.10}% 199
+\BOOKMARK [1][-]{section.10.3}{CUA1 Gestionar academias}{chapter.10}% 200
+\BOOKMARK [2][-]{subsection.10.3.1}{Resumen}{section.10.3}% 201
+\BOOKMARK [2][-]{subsection.10.3.2}{Descripci\363n}{section.10.3}% 202
+\BOOKMARK [2][-]{subsection.10.3.3}{Trayectorias del caso de uso}{section.10.3}% 203
+\BOOKMARK [2][-]{subsection.10.3.4}{Puntos de extensi\363n}{section.10.3}% 204
+\BOOKMARK [1][-]{section.10.4}{CUP1.1 Registrar profesor}{chapter.10}% 205
+\BOOKMARK [2][-]{subsection.10.4.1}{Resumen}{section.10.4}% 206
+\BOOKMARK [2][-]{subsection.10.4.2}{Descripci\363n}{section.10.4}% 207
+\BOOKMARK [2][-]{subsection.10.4.3}{Trayectorias del caso de uso}{section.10.4}% 208
+\BOOKMARK [1][-]{section.10.5}{CUP1.2 Modificar profesor}{chapter.10}% 209
+\BOOKMARK [2][-]{subsection.10.5.1}{Resumen}{section.10.5}% 210
+\BOOKMARK [2][-]{subsection.10.5.2}{Descripci\363n}{section.10.5}% 211
+\BOOKMARK [2][-]{subsection.10.5.3}{Trayectorias del caso de uso}{section.10.5}% 212
+\BOOKMARK [1][-]{section.10.6}{CUP1.3 Eliminar profesor}{chapter.10}% 213
+\BOOKMARK [2][-]{subsection.10.6.1}{Resumen}{section.10.6}% 214
+\BOOKMARK [2][-]{subsection.10.6.2}{Descripci\363n}{section.10.6}% 215
+\BOOKMARK [2][-]{subsection.10.6.3}{Trayectorias del caso de uso}{section.10.6}% 216
+\BOOKMARK [1][-]{section.10.7}{CUP1.4 Consultar profesor}{chapter.10}% 217
+\BOOKMARK [2][-]{subsection.10.7.1}{Resumen}{section.10.7}% 218
+\BOOKMARK [2][-]{subsection.10.7.2}{Descripci\363n}{section.10.7}% 219
+\BOOKMARK [2][-]{subsection.10.7.3}{Trayectorias del caso de uso}{section.10.7}% 220
+\BOOKMARK [1][-]{section.10.8}{Interfaces del m\363dulo}{chapter.10}% 221
+\BOOKMARK [2][-]{subsection.10.8.1}{Profesores}{section.10.8}% 222
+\BOOKMARK [2][-]{subsection.10.8.2}{IUP1 Gestionar Profesores}{section.10.8}% 223
+\BOOKMARK [2][-]{subsection.10.8.3}{IUP1.1 Registrar Academia}{section.10.8}% 224
+\BOOKMARK [2][-]{subsection.10.8.4}{IUP1.2 Modificar Profesor}{section.10.8}% 225
+\BOOKMARK [2][-]{subsection.10.8.5}{IUP1.4 Consultar Profesor}{section.10.8}% 226
+\BOOKMARK [1][-]{section.10.9}{Pruebas del m\363dulo: Infraestructura}{chapter.10}% 227
+\BOOKMARK [2][-]{subsection.10.9.1}{Edificio}{section.10.9}% 228
+\BOOKMARK [2][-]{subsection.10.9.2}{Espacio}{section.10.9}% 229
+\BOOKMARK [0][-]{chapter.11}{Modelo de interacci\363n con el usuario}{}% 230
+\BOOKMARK [1][-]{section.11.1}{Dise\361o de mensajes}{chapter.11}% 231
+\BOOKMARK [1][-]{section.11.2}{Par\341metros comunes}{chapter.11}% 232
+\BOOKMARK [1][-]{section.11.3}{Mensajes a trav\351s de la pantalla}{chapter.11}% 233
+\BOOKMARK [0][-]{chapter.12}{Bibliograf\355a}{}% 234
