@@ -20,10 +20,12 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\providecommand \oddpage@label [2]{}
 \babel@aux{spanish}{}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{11}{chapter.1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{chp:introduccion}{{1}{11}{Introducción}{chapter.1}{}}
 \newlabel{sec:introduccion}{{1}{11}{Introducción}{chapter.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Antecedentes}{11}{section.1.1}}
@@ -35,575 +37,589 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}Marco Te\IeC {\'o}rico}{17}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{chp:marcoTeo}{{2}{17}{Marco Teórico}{chapter.2}{}}
 \newlabel{sec:marcoTeo}{{2}{17}{Marco Teórico}{chapter.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}T\IeC {\'e}cnicas Heur\IeC {\'\i }sticas}{17}{section.2.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}C\IeC {\'o}mputo Evolutivo}{17}{section.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Antecedente hist\IeC {\'o}rico}{18}{subsection.2.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Estructura General de un Algoritmo Evolutivo}{19}{subsection.2.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Principales paradigmas del c\IeC {\'o}mputo evolutivo}{20}{subsection.2.2.3}}
-\@writefile{toc}{\contentsline {paragraph}{Programaci\IeC {\'o}n evolutiva}{20}{section*.3}}
-\@writefile{toc}{\contentsline {paragraph}{Estaregias evolutivas}{20}{section*.4}}
-\@writefile{toc}{\contentsline {paragraph}{Algoritmos gen\IeC {\'e}ticos}{21}{section*.5}}
-\@writefile{toc}{\contentsline {paragraph}{Programaci\IeC {\'o}n gen\IeC {\'e}tica}{21}{section*.6}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Bosquejo General}{23}{chapter.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Clasificaci\IeC {\'o}n del problema de acuerdo a sus caracter\IeC {\'\i }sticas}{17}{section.2.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Clasificaci\IeC {\'o}n del problema de acuerdo a su complejidad}{18}{section.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}T\IeC {\'e}cnicas Heur\IeC {\'\i }sticas}{18}{section.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}C\IeC {\'o}mputo Evolutivo}{19}{section.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Antecedente hist\IeC {\'o}rico}{19}{subsection.2.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Estructura General de un Algoritmo Evolutivo}{20}{subsection.2.4.2}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Estructura general de un algoritmo evolutivo}}{21}{algocf.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Principales paradigmas del c\IeC {\'o}mputo evolutivo}{21}{subsection.2.4.3}}
+\@writefile{toc}{\contentsline {paragraph}{Programaci\IeC {\'o}n evolutiva}{21}{section*.3}}
+\@writefile{toc}{\contentsline {paragraph}{Estaregias evolutivas}{22}{section*.4}}
+\@writefile{toc}{\contentsline {paragraph}{Algoritmos gen\IeC {\'e}ticos}{22}{section*.5}}
+\@writefile{toc}{\contentsline {paragraph}{Programaci\IeC {\'o}n gen\IeC {\'e}tica}{23}{section*.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Bosquejo General}{25}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chp:bosquejoGeneral}{{3}{23}{Bosquejo General}{chapter.3}{}}
-\newlabel{sec:bosquejoGeneral}{{3}{23}{Bosquejo General}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Arquitectura general}{23}{section.3.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Modelo del sistema.}}{23}{figure.3.1}}
-\newlabel{fig:sistemaT}{{3.1}{23}{Modelo del sistema}{figure.3.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Componentes}{24}{section.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de paquetes del sistema.}}{24}{figure.3.2}}
-\newlabel{fig:paquetes}{{3.2}{24}{Diagrama de paquetes del sistema}{figure.3.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Requerimientos}{24}{section.3.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Requerimientos funcionales}{24}{subsection.3.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Requerimientos no funcionales}{25}{subsection.3.3.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{25}{section*.7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Entorno de trabajo del sistema}}{26}{figure.3.3}}
-\newlabel{fig:entornoTrabajo}{{3.3}{26}{Entorno de trabajo del sistema}{figure.3.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Construcci\IeC {\'o}n}{26}{section*.8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Arquitectura Django}}{27}{figure.3.4}}
-\newlabel{fig:django}{{3.4}{27}{Arquitectura Django}{figure.3.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Validaci\IeC {\'o}n}{28}{section*.9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Estad\IeC {\'\i }stica de los navegadores utilizados en M\IeC {\'e}xico}}{28}{figure.3.5}}
-\newlabel{fig:navegadores}{{3.5}{28}{Estadística de los navegadores utilizados en México}{figure.3.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Comunicaci\IeC {\'o}n del sistema}}{29}{figure.3.6}}
-\newlabel{fig:servidor}{{3.6}{29}{Comunicación del sistema}{figure.3.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Estad\IeC {\'\i }stica de los sistemas operativos utilizados en M\IeC {\'e}xico}}{29}{figure.3.7}}
-\newlabel{fig:so}{{3.7}{29}{Estadística de los sistemas operativos utilizados en México}{figure.3.7}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Propiedades no funcionales}{29}{section*.10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Comunicaci\IeC {\'o}n entre paquetes}}{30}{figure.3.8}}
-\newlabel{fig:vistalogica}{{3.8}{30}{Comunicación entre paquetes}{figure.3.8}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Glosario de t\IeC {\'e}rminos}{31}{chapter.4}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chp:bosquejoGeneral}{{3}{25}{Bosquejo General}{chapter.3}{}}
+\newlabel{sec:bosquejoGeneral}{{3}{25}{Bosquejo General}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Arquitectura general}{25}{section.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Modelo del sistema.}}{25}{figure.3.1}}
+\newlabel{fig:sistemaT}{{3.1}{25}{Modelo del sistema}{figure.3.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Componentes}{26}{section.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de paquetes del sistema.}}{26}{figure.3.2}}
+\newlabel{fig:paquetes}{{3.2}{26}{Diagrama de paquetes del sistema}{figure.3.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Requerimientos}{26}{section.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Requerimientos funcionales}{26}{subsection.3.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Requerimientos no funcionales}{27}{subsection.3.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{27}{section*.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Entorno de trabajo del sistema}}{28}{figure.3.3}}
+\newlabel{fig:entornoTrabajo}{{3.3}{28}{Entorno de trabajo del sistema}{figure.3.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Construcci\IeC {\'o}n}{28}{section*.8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Arquitectura Django}}{29}{figure.3.4}}
+\newlabel{fig:django}{{3.4}{29}{Arquitectura Django}{figure.3.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Validaci\IeC {\'o}n}{30}{section*.9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Estad\IeC {\'\i }stica de los navegadores utilizados en M\IeC {\'e}xico}}{30}{figure.3.5}}
+\newlabel{fig:navegadores}{{3.5}{30}{Estadística de los navegadores utilizados en México}{figure.3.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Comunicaci\IeC {\'o}n del sistema}}{31}{figure.3.6}}
+\newlabel{fig:servidor}{{3.6}{31}{Comunicación del sistema}{figure.3.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Estad\IeC {\'\i }stica de los sistemas operativos utilizados en M\IeC {\'e}xico}}{31}{figure.3.7}}
+\newlabel{fig:so}{{3.7}{31}{Estadística de los sistemas operativos utilizados en México}{figure.3.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Propiedades no funcionales}{31}{section*.10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Comunicaci\IeC {\'o}n entre paquetes}}{32}{figure.3.8}}
+\newlabel{fig:vistalogica}{{3.8}{32}{Comunicación entre paquetes}{figure.3.8}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Glosario de t\IeC {\'e}rminos}{33}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chp:glosarioTerminos}{{4}{31}{Glosario de términos}{chapter.4}{}}
-\newlabel{sec:glosario}{{4}{31}{Glosario de términos}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}T\IeC {\'e}rminos t\IeC {\'e}cnicos}{31}{section.4.1}}
-\newlabel{gls:terminosTecnicos}{{4.1}{31}{Términos técnicos}{section.4.1}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Modelo de negocio}{33}{chapter.5}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chp:glosarioTerminos}{{4}{33}{Glosario de términos}{chapter.4}{}}
+\newlabel{sec:glosario}{{4}{33}{Glosario de términos}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}T\IeC {\'e}rminos t\IeC {\'e}cnicos}{33}{section.4.1}}
+\newlabel{gls:terminosTecnicos}{{4.1}{33}{Términos técnicos}{section.4.1}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Modelo de negocio}{35}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chp:modeloNegocios}{{5}{33}{Modelo de negocio}{chapter.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Modelo Entidad Relaci\IeC {\'o}n del sistema.}}{34}{figure.5.1}}
-\newlabel{fig:modeloER}{{5.1}{34}{Modelo Entidad Relación del sistema}{figure.5.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Reglas de negocio}{35}{section.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Reglas derivadas del sistema}{35}{subsection.5.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-S1 Datos requeridos}{35}{section*.11}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-S2 Unicidad de elementos}{35}{section*.12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Reglas derivadas del negocio}{35}{subsection.5.1.2}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N1 N\IeC {\'u}mero de niveles permitido para un edificio}{35}{section*.13}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N2 N\IeC {\'u}mero de espacios permitido para un nivel de edificio}{36}{section*.14}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N3 Calculo de la clave de un espacio}{36}{section*.15}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N4 Jefe de academia}{36}{section*.16}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N5 Capacidad de un espacio}{36}{section*.17}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N6 Eliminaci\IeC {\'o}n de un espacio}{37}{section*.18}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N7 Eliminaci\IeC {\'o}n de un edificio}{37}{section*.19}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N8 Modificaci\IeC {\'o}n de un espacio}{37}{section*.20}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N9 Modificaci\IeC {\'o}n de un edificio}{37}{section*.21}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N10 Nombre del plan}{38}{section*.22}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N11 M\IeC {\'a}quina de estados del plan de estudios}{38}{section*.23}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N12 Clave de Unidad de Aprendizaje}{38}{section*.24}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N13 Tipo de unidad de aprendizaje}{39}{section*.25}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N14 Tipo de formaci\IeC {\'o}n}{39}{section*.26}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N15 Tipo de ense\IeC {\~n}anza}{39}{section*.27}}
-\@writefile{toc}{\contentsline {subsubsection}{RN-N16 Horas de unidad de aprendizaje}{40}{section*.28}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Modelo de comportamiento}{41}{chapter.6}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chp:modeloNegocios}{{5}{35}{Modelo de negocio}{chapter.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Modelo Entidad Relaci\IeC {\'o}n del sistema.}}{36}{figure.5.1}}
+\newlabel{fig:modeloER}{{5.1}{36}{Modelo Entidad Relación del sistema}{figure.5.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Reglas de negocio}{37}{section.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Reglas derivadas del sistema}{37}{subsection.5.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-S1 Datos requeridos}{37}{section*.11}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-S2 Unicidad de elementos}{37}{section*.12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Reglas derivadas del negocio}{37}{subsection.5.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N1 N\IeC {\'u}mero de niveles permitido para un edificio}{37}{section*.13}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N2 N\IeC {\'u}mero de espacios permitido para un nivel de edificio}{38}{section*.14}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N3 Calculo de la clave de un espacio}{38}{section*.15}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N4 Jefe de academia}{38}{section*.16}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N5 Capacidad de un espacio}{38}{section*.17}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N6 Eliminaci\IeC {\'o}n de un espacio}{39}{section*.18}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N7 Eliminaci\IeC {\'o}n de un edificio}{39}{section*.19}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N8 Modificaci\IeC {\'o}n de un espacio}{39}{section*.20}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N9 Modificaci\IeC {\'o}n de un edificio}{39}{section*.21}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N10 Nombre del plan}{40}{section*.22}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N11 M\IeC {\'a}quina de estados del plan de estudios}{40}{section*.23}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N12 Clave de Unidad de Aprendizaje}{40}{section*.24}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N13 Tipo de unidad de aprendizaje}{41}{section*.25}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N14 Tipo de formaci\IeC {\'o}n}{41}{section*.26}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N15 Tipo de ense\IeC {\~n}anza}{41}{section*.27}}
+\@writefile{toc}{\contentsline {subsubsection}{RN-N16 Horas de unidad de aprendizaje}{42}{section*.28}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Modelo de comportamiento}{43}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chp:modeloComportamiento}{{6}{41}{Modelo de comportamiento}{chapter.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}M\IeC {\'o}dulos del sistema}{41}{section.6.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Actores del Sistema}{41}{section.6.2}}
-\newlabel{sec:Comportamiento:ActoresSistema}{{6.2}{41}{Actores del Sistema}{section.6.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Subdirector Acad\IeC {\'e}mico}{42}{subsection.6.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Capturista}{42}{subsection.6.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Jefe de Departamento}{43}{subsection.6.2.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Casos de Uso del m\IeC {\'o}dulo de Academias}{44}{section.6.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Academias }}{44}{figure.6.1}}
-\newlabel{fig:casosUso:gestionarAcademias}{{6.1}{44}{Diagrama de casos de uso del módulo Academias}{figure.6.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}Casos de Uso del m\IeC {\'o}dulo de Infraestructura}{44}{section.6.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Infraestructura }}{44}{figure.6.2}}
-\newlabel{fig:casosUso:gestionarInfraestructura}{{6.2}{44}{Diagrama de casos de uso del módulo Infraestructura}{figure.6.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.5}Casos de Uso del m\IeC {\'o}dulo de Oferta Educativa}{44}{section.6.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Oferta Educativa }}{45}{figure.6.3}}
-\newlabel{fig:casosUso:gestionarOfertaEducativa}{{6.3}{45}{Diagrama de casos de uso del módulo Oferta Educativa}{figure.6.3}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Prototipo 1: Academias}{47}{chapter.7}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chp:modeloComportamiento}{{6}{43}{Modelo de comportamiento}{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}M\IeC {\'o}dulos del sistema}{43}{section.6.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Actores del Sistema}{43}{section.6.2}}
+\newlabel{sec:Comportamiento:ActoresSistema}{{6.2}{43}{Actores del Sistema}{section.6.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Subdirector Acad\IeC {\'e}mico}{44}{subsection.6.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Capturista}{44}{subsection.6.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Jefe de Departamento}{45}{subsection.6.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Casos de Uso del m\IeC {\'o}dulo de Academias}{46}{section.6.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Academias }}{46}{figure.6.1}}
+\newlabel{fig:casosUso:gestionarAcademias}{{6.1}{46}{Diagrama de casos de uso del módulo Academias}{figure.6.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Casos de Uso del m\IeC {\'o}dulo de Infraestructura}{46}{section.6.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Infraestructura }}{46}{figure.6.2}}
+\newlabel{fig:casosUso:gestionarInfraestructura}{{6.2}{46}{Diagrama de casos de uso del módulo Infraestructura}{figure.6.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Casos de Uso del m\IeC {\'o}dulo de Oferta Educativa}{46}{section.6.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Oferta Educativa }}{47}{figure.6.3}}
+\newlabel{fig:casosUso:gestionarOfertaEducativa}{{6.3}{47}{Diagrama de casos de uso del módulo Oferta Educativa}{figure.6.3}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Prototipo 1: Academias}{49}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chp:prototipo1}{{7}{47}{Prototipo 1: Academias}{chapter.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}Modelo de informaci\IeC {\'o}n: M\IeC {\'o}dulo Academias}{47}{section.7.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.1}Descripci\IeC {\'o}n general}{47}{subsection.7.1.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Academias.}}{47}{figure.7.1}}
-\newlabel{fig:academias}{{7.1}{47}{Modelo de información del módulo Academias}{figure.7.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.2}Academia}{47}{subsection.7.1.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Atributos}{48}{section*.29}}
-\newlabel{chp:gestionarAcademias}{{7.2}{49}{Modelo de comportamiento del módulo: Gestionar Academias}{section.7.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Academias }{49}{section.7.2}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chp:prototipo1}{{7}{49}{Prototipo 1: Academias}{chapter.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Modelo de informaci\IeC {\'o}n: M\IeC {\'o}dulo Academias}{49}{section.7.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.1}Descripci\IeC {\'o}n general}{49}{subsection.7.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Academias.}}{49}{figure.7.1}}
+\newlabel{fig:academias}{{7.1}{49}{Modelo de información del módulo Academias}{figure.7.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.2}Academia}{49}{subsection.7.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Atributos}{50}{section*.29}}
+\newlabel{chp:gestionarAcademias}{{7.2}{51}{Modelo de comportamiento del módulo: Gestionar Academias}{section.7.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Academias }{51}{section.7.2}}
 \gdef \LT@i {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.3}CUA1 Gestionar academias}{50}{section.7.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Resumen}{50}{subsection.7.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Descripci\IeC {\'o}n}{50}{subsection.7.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.3}Trayectorias del caso de uso}{51}{subsection.7.3.3}}
-\newlabel{cua1:gestionar}{{4}{51}{Modelo de comportamiento del módulo: Gestionar Academias}{Item.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.4}Puntos de extensi\IeC {\'o}n}{51}{subsection.7.3.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}CUA1 Gestionar academias}{52}{section.7.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Resumen}{52}{subsection.7.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Descripci\IeC {\'o}n}{52}{subsection.7.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.3}Trayectorias del caso de uso}{53}{subsection.7.3.3}}
+\newlabel{cua1:gestionar}{{4}{53}{Modelo de comportamiento del módulo: Gestionar Academias}{Item.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.4}Puntos de extensi\IeC {\'o}n}{53}{subsection.7.3.4}}
 \gdef \LT@ii {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.4}CUA1.1 Registrar academia}{52}{section.7.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.1}Resumen}{52}{subsection.7.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.2}Descripci\IeC {\'o}n}{52}{subsection.7.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.3}Trayectorias del caso de uso}{53}{subsection.7.4.3}}
-\newlabel{CUA1.1:CompletaInfo}{{3}{53}{Puntos de extensión}{Item.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}CUA1.1 Registrar academia}{54}{section.7.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.1}Resumen}{54}{subsection.7.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.2}Descripci\IeC {\'o}n}{54}{subsection.7.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.3}Trayectorias del caso de uso}{55}{subsection.7.4.3}}
+\newlabel{CUA1.1:CompletaInfo}{{3}{55}{Puntos de extensión}{Item.7}{}}
 \gdef \LT@iii {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.5}CUA1.2 Modificar academia}{54}{section.7.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.1}Resumen}{54}{subsection.7.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.2}Descripci\IeC {\'o}n}{54}{subsection.7.5.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.3}Trayectorias del caso de uso}{55}{subsection.7.5.3}}
-\newlabel{CUA1.1:CompletaInfo}{{4}{55}{Puntos de extensión}{Item.21}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.5}CUA1.2 Modificar academia}{56}{section.7.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.1}Resumen}{56}{subsection.7.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.2}Descripci\IeC {\'o}n}{56}{subsection.7.5.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.3}Trayectorias del caso de uso}{57}{subsection.7.5.3}}
+\newlabel{CUA1.1:CompletaInfo}{{4}{57}{Puntos de extensión}{Item.21}{}}
 \gdef \LT@iv {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.6}CUA1.3 Eliminar academia}{56}{section.7.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.6.1}Resumen}{56}{subsection.7.6.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.6.2}Descripci\IeC {\'o}n}{56}{subsection.7.6.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.6.3}Trayectorias del caso de uso}{57}{subsection.7.6.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.7}Interfaces del m\IeC {\'o}dulo}{58}{section.7.7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.7.1}IUA1 Gestionar Academias}{58}{subsection.7.7.1}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{58}{section*.30}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{58}{section*.31}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces IUA1 Gestionar Academias}}{58}{figure.7.2}}
-\newlabel{IUA1}{{7.2}{58}{IUA1 Gestionar Academias}{figure.7.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{58}{section*.32}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.7.2}IUA1.1 Registrar Academia}{59}{subsection.7.7.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{59}{section*.33}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{59}{section*.34}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces IUA1.1 Registrar Academia}}{59}{figure.7.3}}
-\newlabel{IUA1.1}{{7.3}{59}{IUA1.1 Registrar Academia}{figure.7.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{59}{section*.35}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.7.3}IUA1.2 Modificar Academia}{59}{subsection.7.7.3}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{59}{section*.36}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{60}{section*.37}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces IUA1.2 Modificar Academia}}{60}{figure.7.4}}
-\newlabel{IUA1.2}{{7.4}{60}{IUA1.2 Modificar Academia}{figure.7.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{60}{section*.38}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.8}Pruebas del m\IeC {\'o}dulo: Academias}{61}{section.7.8}}
-\newlabel{chp:pruebasAcademias}{{7.8}{61}{Pruebas del módulo: Academias}{section.7.8}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Prototipo 2: Infraestructura}{63}{chapter.8}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.6}CUA1.3 Eliminar academia}{58}{section.7.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6.1}Resumen}{58}{subsection.7.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6.2}Descripci\IeC {\'o}n}{58}{subsection.7.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6.3}Trayectorias del caso de uso}{59}{subsection.7.6.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.7}Interfaces del m\IeC {\'o}dulo}{60}{section.7.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.7.1}IUA1 Gestionar Academias}{60}{subsection.7.7.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{60}{section*.30}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{60}{section*.31}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces IUA1 Gestionar Academias}}{60}{figure.7.2}}
+\newlabel{IUA1}{{7.2}{60}{IUA1 Gestionar Academias}{figure.7.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{60}{section*.32}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.7.2}IUA1.1 Registrar Academia}{61}{subsection.7.7.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{61}{section*.33}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{61}{section*.34}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces IUA1.1 Registrar Academia}}{61}{figure.7.3}}
+\newlabel{IUA1.1}{{7.3}{61}{IUA1.1 Registrar Academia}{figure.7.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{61}{section*.35}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.7.3}IUA1.2 Modificar Academia}{61}{subsection.7.7.3}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{61}{section*.36}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{62}{section*.37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces IUA1.2 Modificar Academia}}{62}{figure.7.4}}
+\newlabel{IUA1.2}{{7.4}{62}{IUA1.2 Modificar Academia}{figure.7.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{62}{section*.38}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.8}Pruebas del m\IeC {\'o}dulo: Academias}{63}{section.7.8}}
+\newlabel{chp:pruebasAcademias}{{7.8}{63}{Pruebas del módulo: Academias}{section.7.8}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Prototipo 2: Infraestructura}{65}{chapter.8}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chp:prototipo2}{{8}{63}{Prototipo 2: Infraestructura}{chapter.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.1}Modelo de informaci\IeC {\'o}n: M\IeC {\'o}dulo Infraestructura}{63}{section.8.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.1}M\IeC {\'o}dulo Edificios: Descripci\IeC {\'o}n general}{63}{subsection.8.1.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Edificios.}}{63}{figure.8.1}}
-\newlabel{fig:edificio}{{8.1}{63}{Modelo de información del módulo Edificios}{figure.8.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.2}Edificio}{63}{subsection.8.1.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Atributos}{64}{section*.39}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.3}M\IeC {\'o}dulo Espacios: Descripci\IeC {\'o}n general}{64}{subsection.8.1.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.2}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo de Espacios.}}{64}{figure.8.2}}
-\newlabel{fig:espacios}{{8.2}{64}{Modelo de información del módulo de Espacios}{figure.8.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.4}Espacio}{64}{subsection.8.1.4}}
-\@writefile{toc}{\contentsline {subsubsection}{Atributos}{64}{section*.40}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.5}Tipo de laboratorio}{65}{subsection.8.1.5}}
-\@writefile{toc}{\contentsline {subsubsection}{Atributos}{65}{section*.41}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.6}Tipo de espacio}{65}{subsection.8.1.6}}
-\@writefile{toc}{\contentsline {subsubsection}{Atributos}{65}{section*.42}}
-\newlabel{chp:gestionarInfraestructura}{{8.2}{66}{Modelo de comportamiento del módulo: Gestionar Infraestructura}{section.8.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.2}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Infraestructura }{66}{section.8.2}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chp:prototipo2}{{8}{65}{Prototipo 2: Infraestructura}{chapter.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.1}Modelo de informaci\IeC {\'o}n: M\IeC {\'o}dulo Infraestructura}{65}{section.8.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.1}M\IeC {\'o}dulo Edificios: Descripci\IeC {\'o}n general}{65}{subsection.8.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Edificios.}}{65}{figure.8.1}}
+\newlabel{fig:edificio}{{8.1}{65}{Modelo de información del módulo Edificios}{figure.8.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.2}Edificio}{65}{subsection.8.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Atributos}{66}{section*.39}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.3}M\IeC {\'o}dulo Espacios: Descripci\IeC {\'o}n general}{66}{subsection.8.1.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.2}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo de Espacios.}}{66}{figure.8.2}}
+\newlabel{fig:espacios}{{8.2}{66}{Modelo de información del módulo de Espacios}{figure.8.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.4}Espacio}{66}{subsection.8.1.4}}
+\@writefile{toc}{\contentsline {subsubsection}{Atributos}{66}{section*.40}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.5}Tipo de laboratorio}{67}{subsection.8.1.5}}
+\@writefile{toc}{\contentsline {subsubsection}{Atributos}{67}{section*.41}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.6}Tipo de espacio}{67}{subsection.8.1.6}}
+\@writefile{toc}{\contentsline {subsubsection}{Atributos}{67}{section*.42}}
+\newlabel{chp:gestionarInfraestructura}{{8.2}{68}{Modelo de comportamiento del módulo: Gestionar Infraestructura}{section.8.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.2}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Infraestructura }{68}{section.8.2}}
 \gdef \LT@v {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.3}CUI1 Gestionar edificios}{67}{section.8.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.1}Resumen}{67}{subsection.8.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.2}Descripci\IeC {\'o}n}{67}{subsection.8.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.3}Trayectorias del caso de uso}{68}{subsection.8.3.3}}
-\newlabel{cui1:gestionar}{{4}{68}{Modelo de comportamiento del módulo: Gestionar Infraestructura}{Item.42}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.4}Puntos de extensi\IeC {\'o}n}{68}{subsection.8.3.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.3}CUI1 Gestionar edificios}{69}{section.8.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.1}Resumen}{69}{subsection.8.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.2}Descripci\IeC {\'o}n}{69}{subsection.8.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.3}Trayectorias del caso de uso}{70}{subsection.8.3.3}}
+\newlabel{cui1:gestionar}{{4}{70}{Modelo de comportamiento del módulo: Gestionar Infraestructura}{Item.42}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.4}Puntos de extensi\IeC {\'o}n}{70}{subsection.8.3.4}}
 \gdef \LT@vi {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.4}CUI1.1 Registrar edificio}{69}{section.8.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.4.1}Resumen}{69}{subsection.8.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.4.2}Descripci\IeC {\'o}n}{69}{subsection.8.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.4.3}Trayectorias del caso de uso}{70}{subsection.8.4.3}}
-\newlabel{CUI1.1:CompletaInfo}{{3}{70}{Puntos de extensión}{Item.45}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.4}CUI1.1 Registrar edificio}{71}{section.8.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4.1}Resumen}{71}{subsection.8.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4.2}Descripci\IeC {\'o}n}{71}{subsection.8.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4.3}Trayectorias del caso de uso}{72}{subsection.8.4.3}}
+\newlabel{CUI1.1:CompletaInfo}{{3}{72}{Puntos de extensión}{Item.45}{}}
 \gdef \LT@vii {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.5}CUI1.2 Modificar edificio}{71}{section.8.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.5.1}Resumen}{71}{subsection.8.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.5.2}Descripci\IeC {\'o}n}{71}{subsection.8.5.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.5.3}Trayectorias del caso de uso}{72}{subsection.8.5.3}}
-\newlabel{CUI1.2:CompletaInfo}{{4}{72}{Puntos de extensión}{Item.59}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.5}CUI1.2 Modificar edificio}{73}{section.8.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.5.1}Resumen}{73}{subsection.8.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.5.2}Descripci\IeC {\'o}n}{73}{subsection.8.5.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.5.3}Trayectorias del caso de uso}{74}{subsection.8.5.3}}
+\newlabel{CUI1.2:CompletaInfo}{{4}{74}{Puntos de extensión}{Item.59}{}}
 \gdef \LT@viii {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.6}CUI1.3 Eliminar edificio}{73}{section.8.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.6.1}Resumen}{73}{subsection.8.6.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.6.2}Descripci\IeC {\'o}n}{73}{subsection.8.6.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.6.3}Trayectorias del caso de uso}{74}{subsection.8.6.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.6}CUI1.3 Eliminar edificio}{75}{section.8.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.6.1}Resumen}{75}{subsection.8.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.6.2}Descripci\IeC {\'o}n}{75}{subsection.8.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.6.3}Trayectorias del caso de uso}{76}{subsection.8.6.3}}
 \gdef \LT@ix {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.7}CUI1.4 Consultar edificio}{75}{section.8.7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.7.1}Resumen}{75}{subsection.8.7.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.7.2}Descripci\IeC {\'o}n}{75}{subsection.8.7.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.7.3}Trayectorias del caso de uso}{76}{subsection.8.7.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.7}CUI1.4 Consultar edificio}{77}{section.8.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.7.1}Resumen}{77}{subsection.8.7.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.7.2}Descripci\IeC {\'o}n}{77}{subsection.8.7.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.7.3}Trayectorias del caso de uso}{78}{subsection.8.7.3}}
 \gdef \LT@x {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.8}CUI1.5 Gestionar Espacios}{77}{section.8.8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.8.1}Resumen}{77}{subsection.8.8.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.8.2}Descripci\IeC {\'o}n}{77}{subsection.8.8.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.8.3}Trayectorias del caso de uso}{78}{subsection.8.8.3}}
-\newlabel{cui1.5:gestionar}{{4}{78}{Puntos de extensión}{Item.86}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.8.4}Puntos de extensi\IeC {\'o}n}{78}{subsection.8.8.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.8}CUI1.5 Gestionar Espacios}{79}{section.8.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.8.1}Resumen}{79}{subsection.8.8.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.8.2}Descripci\IeC {\'o}n}{79}{subsection.8.8.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.8.3}Trayectorias del caso de uso}{80}{subsection.8.8.3}}
+\newlabel{cui1.5:gestionar}{{4}{80}{Puntos de extensión}{Item.86}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.8.4}Puntos de extensi\IeC {\'o}n}{80}{subsection.8.8.4}}
 \gdef \LT@xi {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.9}CUI1.5.1 Registrar Espacio}{79}{section.8.9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.9.1}Resumen}{79}{subsection.8.9.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.9.2}Descripci\IeC {\'o}n}{79}{subsection.8.9.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.9.3}Trayectorias del caso de uso}{80}{subsection.8.9.3}}
-\newlabel{CUI1.5.1:CompletaInfo}{{4}{80}{Puntos de extensión}{Item.90}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.9}CUI1.5.1 Registrar Espacio}{81}{section.8.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.9.1}Resumen}{81}{subsection.8.9.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.9.2}Descripci\IeC {\'o}n}{81}{subsection.8.9.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.9.3}Trayectorias del caso de uso}{82}{subsection.8.9.3}}
+\newlabel{CUI1.5.1:CompletaInfo}{{4}{82}{Puntos de extensión}{Item.90}{}}
 \gdef \LT@xii {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.10}CUI1.5.2 Modificar Espacio}{82}{section.8.10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.10.1}Resumen}{82}{subsection.8.10.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.10.2}Descripci\IeC {\'o}n}{82}{subsection.8.10.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.10.3}Trayectorias del caso de uso}{83}{subsection.8.10.3}}
-\newlabel{CUI1.5.1:CompletaInfo}{{5}{83}{Puntos de extensión}{Item.106}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.10}CUI1.5.2 Modificar Espacio}{84}{section.8.10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.10.1}Resumen}{84}{subsection.8.10.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.10.2}Descripci\IeC {\'o}n}{84}{subsection.8.10.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.10.3}Trayectorias del caso de uso}{85}{subsection.8.10.3}}
+\newlabel{CUI1.5.1:CompletaInfo}{{5}{85}{Puntos de extensión}{Item.106}{}}
 \gdef \LT@xiii {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.11}CUI1.5.3 Eliminar espacio}{85}{section.8.11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.11.1}Resumen}{85}{subsection.8.11.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.11.2}Descripci\IeC {\'o}n}{85}{subsection.8.11.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.11.3}Trayectorias del caso de uso}{86}{subsection.8.11.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.11}CUI1.5.3 Eliminar espacio}{87}{section.8.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.11.1}Resumen}{87}{subsection.8.11.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.11.2}Descripci\IeC {\'o}n}{87}{subsection.8.11.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.11.3}Trayectorias del caso de uso}{88}{subsection.8.11.3}}
 \gdef \LT@xiv {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.12}CUI1.5.4 Consultar Espacio}{87}{section.8.12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.12.1}Resumen}{87}{subsection.8.12.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.12.2}Descripci\IeC {\'o}n}{87}{subsection.8.12.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.12.3}Trayectorias del caso de uso}{88}{subsection.8.12.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.13}Interfaces del m\IeC {\'o}dulo}{89}{section.8.13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.1}Edificios}{89}{subsection.8.13.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.2}IUI1 Gestionar Edificios}{89}{subsection.8.13.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{89}{section*.43}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{89}{section*.44}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.3}{\ignorespaces IUI1 Gestionar Edificios}}{89}{figure.8.3}}
-\newlabel{IUI1}{{8.3}{89}{IUI1 Gestionar Edificios}{figure.8.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{89}{section*.45}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.3}IUI1.1 Registrar Edificio}{90}{subsection.8.13.3}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{90}{section*.46}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{90}{section*.47}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.4}{\ignorespaces IUI1.1 Registrar Edificio}}{90}{figure.8.4}}
-\newlabel{IUI1.1}{{8.4}{90}{IUI1.1 Registrar Edificio}{figure.8.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{90}{section*.48}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.4}IUI1.2 Modificar Edificio}{90}{subsection.8.13.4}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{91}{section*.49}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{91}{section*.50}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.5}{\ignorespaces IUI1.2 Modificar Edificio}}{91}{figure.8.5}}
-\newlabel{IUI1.2}{{8.5}{91}{IUI1.2 Modificar Edificio}{figure.8.5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{91}{section*.51}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.5}IUI1.4 Consultar Edificio}{91}{subsection.8.13.5}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{91}{section*.52}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{92}{section*.53}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.6}{\ignorespaces IUI1.4 Consultar Edificio}}{92}{figure.8.6}}
-\newlabel{IUI1.4}{{8.6}{92}{IUI1.4 Consultar Edificio}{figure.8.6}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{92}{section*.54}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.6}Espacios}{92}{subsection.8.13.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.7}IUI1.5 Gestionar Edificios}{92}{subsection.8.13.7}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{92}{section*.55}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{92}{section*.56}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.7}{\ignorespaces IUI1.5 Gestionar Espacios}}{93}{figure.8.7}}
-\newlabel{IUI1.5}{{8.7}{93}{IUI1.5 Gestionar Espacios}{figure.8.7}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{93}{section*.57}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.8}IUI1.5.1 Registrar Espacio}{93}{subsection.8.13.8}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{93}{section*.58}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{93}{section*.59}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.8}{\ignorespaces IUI1.5.1 Registrar Espacio}}{94}{figure.8.8}}
-\newlabel{IUI1.5.1}{{8.8}{94}{IUI1.5.1 Registrar Espacio}{figure.8.8}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{95}{section*.60}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.9}IUI1.5.2 Modificar Espacio}{95}{subsection.8.13.9}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{95}{section*.61}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{95}{section*.62}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{95}{section*.63}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.10}IUI1.5.4 Consultar Espacio}{95}{subsection.8.13.10}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{95}{section*.64}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{95}{section*.65}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{95}{section*.66}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.9}{\ignorespaces IUI1.5.2 Modificar Espacio}}{96}{figure.8.9}}
-\newlabel{IUI1.5.2}{{8.9}{96}{IUI1.5.2 Modificar Espacio}{figure.8.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.10}{\ignorespaces IUI1.5.4 Consultar Espacio}}{97}{figure.8.10}}
-\newlabel{IUI1.5.4}{{8.10}{97}{IUI1.5.4 Consultar Espacio}{figure.8.10}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.14}Pruebas del m\IeC {\'o}dulo: Infraestructura}{97}{section.8.14}}
-\newlabel{chp:pruebasAcademias}{{8.14}{97}{Pruebas del módulo: Infraestructura}{section.8.14}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.14.1}Edificio}{97}{subsection.8.14.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.14.2}Espacio}{97}{subsection.8.14.2}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {9}Prototipo 3: Oferta educativa}{99}{chapter.9}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.12}CUI1.5.4 Consultar Espacio}{89}{section.8.12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.12.1}Resumen}{89}{subsection.8.12.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.12.2}Descripci\IeC {\'o}n}{89}{subsection.8.12.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.12.3}Trayectorias del caso de uso}{90}{subsection.8.12.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.13}Interfaces del m\IeC {\'o}dulo}{91}{section.8.13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.1}Edificios}{91}{subsection.8.13.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.2}IUI1 Gestionar Edificios}{91}{subsection.8.13.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{91}{section*.43}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{91}{section*.44}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.3}{\ignorespaces IUI1 Gestionar Edificios}}{91}{figure.8.3}}
+\newlabel{IUI1}{{8.3}{91}{IUI1 Gestionar Edificios}{figure.8.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{91}{section*.45}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.3}IUI1.1 Registrar Edificio}{92}{subsection.8.13.3}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{92}{section*.46}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{92}{section*.47}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.4}{\ignorespaces IUI1.1 Registrar Edificio}}{92}{figure.8.4}}
+\newlabel{IUI1.1}{{8.4}{92}{IUI1.1 Registrar Edificio}{figure.8.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{92}{section*.48}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.4}IUI1.2 Modificar Edificio}{92}{subsection.8.13.4}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{93}{section*.49}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{93}{section*.50}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.5}{\ignorespaces IUI1.2 Modificar Edificio}}{93}{figure.8.5}}
+\newlabel{IUI1.2}{{8.5}{93}{IUI1.2 Modificar Edificio}{figure.8.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{93}{section*.51}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.5}IUI1.4 Consultar Edificio}{93}{subsection.8.13.5}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{93}{section*.52}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{94}{section*.53}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.6}{\ignorespaces IUI1.4 Consultar Edificio}}{94}{figure.8.6}}
+\newlabel{IUI1.4}{{8.6}{94}{IUI1.4 Consultar Edificio}{figure.8.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{94}{section*.54}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.6}Espacios}{94}{subsection.8.13.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.7}IUI1.5 Gestionar Edificios}{94}{subsection.8.13.7}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{94}{section*.55}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{94}{section*.56}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.7}{\ignorespaces IUI1.5 Gestionar Espacios}}{95}{figure.8.7}}
+\newlabel{IUI1.5}{{8.7}{95}{IUI1.5 Gestionar Espacios}{figure.8.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{95}{section*.57}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.8}IUI1.5.1 Registrar Espacio}{95}{subsection.8.13.8}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{95}{section*.58}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{95}{section*.59}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.8}{\ignorespaces IUI1.5.1 Registrar Espacio}}{96}{figure.8.8}}
+\newlabel{IUI1.5.1}{{8.8}{96}{IUI1.5.1 Registrar Espacio}{figure.8.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{97}{section*.60}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.9}IUI1.5.2 Modificar Espacio}{97}{subsection.8.13.9}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{97}{section*.61}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{97}{section*.62}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{97}{section*.63}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.13.10}IUI1.5.4 Consultar Espacio}{97}{subsection.8.13.10}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{97}{section*.64}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{97}{section*.65}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{97}{section*.66}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.9}{\ignorespaces IUI1.5.2 Modificar Espacio}}{98}{figure.8.9}}
+\newlabel{IUI1.5.2}{{8.9}{98}{IUI1.5.2 Modificar Espacio}{figure.8.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.10}{\ignorespaces IUI1.5.4 Consultar Espacio}}{99}{figure.8.10}}
+\newlabel{IUI1.5.4}{{8.10}{99}{IUI1.5.4 Consultar Espacio}{figure.8.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.14}Pruebas del m\IeC {\'o}dulo: Infraestructura}{99}{section.8.14}}
+\newlabel{chp:pruebasAcademias}{{8.14}{99}{Pruebas del módulo: Infraestructura}{section.8.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.14.1}Edificio}{99}{subsection.8.14.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.14.2}Espacio}{99}{subsection.8.14.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}Prototipo 3: Oferta educativa}{101}{chapter.9}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chp:prototipo3}{{9}{99}{Prototipo 3: Oferta educativa}{chapter.9}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.1}Modelo de informaci\IeC {\'o}n: M\IeC {\'o}dulo Oferta Educativa}{99}{section.9.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.1}M\IeC {\'o}dulo Plan de Estudio: Descripci\IeC {\'o}n general}{99}{subsection.9.1.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Plan de estudio.}}{99}{figure.9.1}}
-\newlabel{fig:planEstudio}{{9.1}{99}{Modelo de información del módulo Plan de estudio}{figure.9.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.2}Plan de estudio}{100}{subsection.9.1.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Atributos}{100}{section*.67}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.3}Estado del plan de estudio}{100}{subsection.9.1.3}}
-\@writefile{toc}{\contentsline {subsubsection}{Atributos}{100}{section*.68}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.4}Tipo de division}{100}{subsection.9.1.4}}
-\@writefile{toc}{\contentsline {subsubsection}{Atributos}{100}{section*.69}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.5}M\IeC {\'o}dulo Unidad de Aprendizaje: Descripci\IeC {\'o}n general}{100}{subsection.9.1.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.6}Unidad de aprendizaje}{100}{subsection.9.1.6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.2}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Unidad de Aprendizaje.}}{101}{figure.9.2}}
-\newlabel{fig:unidadAprendizaje}{{9.2}{101}{Modelo de información del módulo Unidad de Aprendizaje}{figure.9.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Atributos}{101}{section*.70}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.7}Tipo de unidad de aprendizaje}{101}{subsection.9.1.7}}
-\@writefile{toc}{\contentsline {subsubsection}{Atributos}{101}{section*.71}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.8}Tipo de formaci\IeC {\'o}n}{102}{subsection.9.1.8}}
-\@writefile{toc}{\contentsline {subsubsection}{Atributos}{102}{section*.72}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.9}Tipo de ense\IeC {\~n}anza}{102}{subsection.9.1.9}}
-\@writefile{toc}{\contentsline {subsubsection}{Atributos}{102}{section*.73}}
-\newlabel{chp:gestionarInterfe}{{9.2}{103}{Modelo de comportamiento del módulo: Gestionar Oferta Educativa}{section.9.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.2}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Oferta Educativa }{103}{section.9.2}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chp:prototipo3}{{9}{101}{Prototipo 3: Oferta educativa}{chapter.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.1}Modelo de informaci\IeC {\'o}n: M\IeC {\'o}dulo Oferta Educativa}{101}{section.9.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.1}M\IeC {\'o}dulo Plan de Estudio: Descripci\IeC {\'o}n general}{101}{subsection.9.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Plan de estudio.}}{101}{figure.9.1}}
+\newlabel{fig:planEstudio}{{9.1}{101}{Modelo de información del módulo Plan de estudio}{figure.9.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.2}Plan de estudio}{102}{subsection.9.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Atributos}{102}{section*.67}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.3}Estado del plan de estudio}{102}{subsection.9.1.3}}
+\@writefile{toc}{\contentsline {subsubsection}{Atributos}{102}{section*.68}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.4}Tipo de division}{102}{subsection.9.1.4}}
+\@writefile{toc}{\contentsline {subsubsection}{Atributos}{102}{section*.69}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.5}M\IeC {\'o}dulo Unidad de Aprendizaje: Descripci\IeC {\'o}n general}{102}{subsection.9.1.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.6}Unidad de aprendizaje}{102}{subsection.9.1.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.2}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Unidad de Aprendizaje.}}{103}{figure.9.2}}
+\newlabel{fig:unidadAprendizaje}{{9.2}{103}{Modelo de información del módulo Unidad de Aprendizaje}{figure.9.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Atributos}{103}{section*.70}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.7}Tipo de unidad de aprendizaje}{103}{subsection.9.1.7}}
+\@writefile{toc}{\contentsline {subsubsection}{Atributos}{103}{section*.71}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.8}Tipo de formaci\IeC {\'o}n}{104}{subsection.9.1.8}}
+\@writefile{toc}{\contentsline {subsubsection}{Atributos}{104}{section*.72}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.9}Tipo de ense\IeC {\~n}anza}{104}{subsection.9.1.9}}
+\@writefile{toc}{\contentsline {subsubsection}{Atributos}{104}{section*.73}}
+\newlabel{chp:gestionarInterfe}{{9.2}{105}{Modelo de comportamiento del módulo: Gestionar Oferta Educativa}{section.9.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.2}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Oferta Educativa }{105}{section.9.2}}
 \gdef \LT@xv {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.3}CUOE1 Gestionar planes de estudio}{104}{section.9.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.3.1}Resumen}{104}{subsection.9.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.3.2}Descripci\IeC {\'o}n}{104}{subsection.9.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.3.3}Trayectorias del caso de uso}{105}{subsection.9.3.3}}
-\newlabel{cuoe1:gestionar}{{4}{105}{Modelo de comportamiento del módulo: Gestionar Oferta Educativa}{Item.131}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.3.4}Puntos de extensi\IeC {\'o}n}{105}{subsection.9.3.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.3}CUOE1 Gestionar planes de estudio}{106}{section.9.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3.1}Resumen}{106}{subsection.9.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3.2}Descripci\IeC {\'o}n}{106}{subsection.9.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3.3}Trayectorias del caso de uso}{107}{subsection.9.3.3}}
+\newlabel{cuoe1:gestionar}{{4}{107}{Modelo de comportamiento del módulo: Gestionar Oferta Educativa}{Item.131}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3.4}Puntos de extensi\IeC {\'o}n}{107}{subsection.9.3.4}}
 \gdef \LT@xvi {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.4}CUOE1.1 Registrar plan de estudio}{106}{section.9.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.4.1}Resumen}{106}{subsection.9.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.4.2}Descripci\IeC {\'o}n}{106}{subsection.9.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.4.3}Trayectorias del caso de uso}{107}{subsection.9.4.3}}
-\newlabel{CUOE1.1:CompletaInfo}{{3}{107}{Puntos de extensión}{Item.134}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.4}CUOE1.1 Registrar plan de estudio}{108}{section.9.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.4.1}Resumen}{108}{subsection.9.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.4.2}Descripci\IeC {\'o}n}{108}{subsection.9.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.4.3}Trayectorias del caso de uso}{109}{subsection.9.4.3}}
+\newlabel{CUOE1.1:CompletaInfo}{{3}{109}{Puntos de extensión}{Item.134}{}}
 \gdef \LT@xvii {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.5}CUOE1.2 Modificar plan de estudio}{109}{section.9.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.5.1}Resumen}{109}{subsection.9.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.5.2}Descripci\IeC {\'o}n}{109}{subsection.9.5.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.5.3}Trayectorias del caso de uso}{110}{subsection.9.5.3}}
-\newlabel{CUOE1.2:CompletaInfo}{{4}{110}{Puntos de extensión}{Item.151}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.5}CUOE1.2 Modificar plan de estudio}{111}{section.9.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.5.1}Resumen}{111}{subsection.9.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.5.2}Descripci\IeC {\'o}n}{111}{subsection.9.5.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.5.3}Trayectorias del caso de uso}{112}{subsection.9.5.3}}
+\newlabel{CUOE1.2:CompletaInfo}{{4}{112}{Puntos de extensión}{Item.151}{}}
 \gdef \LT@xviii {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.6}CUOE1.3 Eliminar plan de estudio}{112}{section.9.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.6.1}Resumen}{112}{subsection.9.6.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.6.2}Descripci\IeC {\'o}n}{112}{subsection.9.6.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.6.3}Trayectorias del caso de uso}{113}{subsection.9.6.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.6}CUOE1.3 Eliminar plan de estudio}{114}{section.9.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.6.1}Resumen}{114}{subsection.9.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.6.2}Descripci\IeC {\'o}n}{114}{subsection.9.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.6.3}Trayectorias del caso de uso}{115}{subsection.9.6.3}}
 \gdef \LT@xix {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.7}CUOE1.4 Consultar plan de estudio}{114}{section.9.7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.7.1}Resumen}{114}{subsection.9.7.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.7.2}Descripci\IeC {\'o}n}{114}{subsection.9.7.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.7.3}Trayectorias del caso de uso}{115}{subsection.9.7.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.7}CUOE1.4 Consultar plan de estudio}{116}{section.9.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.7.1}Resumen}{116}{subsection.9.7.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.7.2}Descripci\IeC {\'o}n}{116}{subsection.9.7.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.7.3}Trayectorias del caso de uso}{117}{subsection.9.7.3}}
 \gdef \LT@xx {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.8}CUOE1.5 Gestionar unidades de aprendizaje}{116}{section.9.8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.8.1}Resumen}{116}{subsection.9.8.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.8.2}Descripci\IeC {\'o}n}{116}{subsection.9.8.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.8.3}Trayectorias del caso de uso}{117}{subsection.9.8.3}}
-\newlabel{cuoe1_5:gestionar}{{5}{117}{Puntos de extensión}{Item.181}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.8.4}Puntos de extensi\IeC {\'o}n}{117}{subsection.9.8.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.8}CUOE1.5 Gestionar unidades de aprendizaje}{118}{section.9.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.8.1}Resumen}{118}{subsection.9.8.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.8.2}Descripci\IeC {\'o}n}{118}{subsection.9.8.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.8.3}Trayectorias del caso de uso}{119}{subsection.9.8.3}}
+\newlabel{cuoe1_5:gestionar}{{5}{119}{Puntos de extensión}{Item.181}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.8.4}Puntos de extensi\IeC {\'o}n}{119}{subsection.9.8.4}}
 \gdef \LT@xxi {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.9}CUOE1.5.1 Registrar unidad de aprendizaje}{118}{section.9.9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.9.1}Resumen}{118}{subsection.9.9.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.9.2}Descripci\IeC {\'o}n}{118}{subsection.9.9.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.9.3}Trayectorias del caso de uso}{119}{subsection.9.9.3}}
-\newlabel{CUOE1.5.1:CompletaInfo}{{4}{119}{Puntos de extensión}{Item.185}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.9}CUOE1.5.1 Registrar unidad de aprendizaje}{120}{section.9.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.9.1}Resumen}{120}{subsection.9.9.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.9.2}Descripci\IeC {\'o}n}{120}{subsection.9.9.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.9.3}Trayectorias del caso de uso}{121}{subsection.9.9.3}}
+\newlabel{CUOE1.5.1:CompletaInfo}{{4}{121}{Puntos de extensión}{Item.185}{}}
 \gdef \LT@xxii {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.10}CUOE1.5.2 Modificar unidad de aprendizaje}{121}{section.9.10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.10.1}Resumen}{121}{subsection.9.10.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.10.2}Descripci\IeC {\'o}n}{121}{subsection.9.10.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.10.3}Trayectorias del caso de uso}{122}{subsection.9.10.3}}
-\newlabel{CUOE1.5.2:CompletaInfo}{{5}{122}{Puntos de extensión}{Item.201}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.10}CUOE1.5.2 Modificar unidad de aprendizaje}{123}{section.9.10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.10.1}Resumen}{123}{subsection.9.10.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.10.2}Descripci\IeC {\'o}n}{123}{subsection.9.10.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.10.3}Trayectorias del caso de uso}{124}{subsection.9.10.3}}
+\newlabel{CUOE1.5.2:CompletaInfo}{{5}{124}{Puntos de extensión}{Item.201}{}}
 \gdef \LT@xxiii {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.11}CUOE1.5.3 Eliminar unidad de aprendizaje}{124}{section.9.11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.11.1}Resumen}{124}{subsection.9.11.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.11.2}Descripci\IeC {\'o}n}{124}{subsection.9.11.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.11.3}Trayectorias del caso de uso}{125}{subsection.9.11.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.11}CUOE1.5.3 Eliminar unidad de aprendizaje}{126}{section.9.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.11.1}Resumen}{126}{subsection.9.11.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.11.2}Descripci\IeC {\'o}n}{126}{subsection.9.11.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.11.3}Trayectorias del caso de uso}{127}{subsection.9.11.3}}
 \gdef \LT@xxiv {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.12}CUOE1.5.4 Consultar unidad de aprendizaje}{126}{section.9.12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.12.1}Resumen}{126}{subsection.9.12.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.12.2}Descripci\IeC {\'o}n}{126}{subsection.9.12.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.12.3}Trayectorias del caso de uso}{127}{subsection.9.12.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.13}Interfaces del m\IeC {\'o}dulo}{128}{section.9.13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.1}Plan de Estudio}{128}{subsection.9.13.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.2}IUOE1 Gestionar Planes de Estudio}{128}{subsection.9.13.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{128}{section*.74}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{128}{section*.75}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.3}{\ignorespaces IUOE1 Gestionar Planes de Estudio}}{128}{figure.9.3}}
-\newlabel{IUOE1}{{9.3}{128}{IUOE1 Gestionar Planes de Estudio}{figure.9.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{128}{section*.76}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.3}IUOE1.1 Registrar Plan de Estudio}{129}{subsection.9.13.3}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{129}{section*.77}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{129}{section*.78}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{129}{section*.79}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.4}IUOE1.2 Modificar Plan de Estudio}{129}{subsection.9.13.4}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{129}{section*.80}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{129}{section*.81}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{129}{section*.82}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.5}IUOE1.4 Consultar Planes de Estudio}{129}{subsection.9.13.5}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{129}{section*.83}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.4}{\ignorespaces IUOE1.1 Registrar Plan de Estudio}}{130}{figure.9.4}}
-\newlabel{IUOE1.1}{{9.4}{130}{IUOE1.1 Registrar Plan de Estudio}{figure.9.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.5}{\ignorespaces IUOE1.2 Modificar Plan de Estudio}}{131}{figure.9.5}}
-\newlabel{IUOE1.2}{{9.5}{131}{IUOE1.2 Modificar Plan de Estudio}{figure.9.5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{132}{section*.84}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.6}{\ignorespaces IUOE1.4 Consultar Plan de Estudio}}{132}{figure.9.6}}
-\newlabel{IUOE1.4}{{9.6}{132}{IUOE1.4 Consultar Plan de Estudio}{figure.9.6}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{132}{section*.85}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.6}Unidad de Aprendizaje}{132}{subsection.9.13.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.7}IUOE1.5 Gestionar Unidades de Aprendizaje}{132}{subsection.9.13.7}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{132}{section*.86}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{132}{section*.87}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.7}{\ignorespaces IUOE1 Gestionar Unidades de Aprendizaje}}{133}{figure.9.7}}
-\newlabel{IUOE1}{{9.7}{133}{IUOE1 Gestionar Unidades de Aprendizaje}{figure.9.7}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{133}{section*.88}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.8}IUOE1.1 Registrar Unidad de Aprendizaje}{133}{subsection.9.13.8}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{133}{section*.89}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{133}{section*.90}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.8}{\ignorespaces IUOE1.1 Registrar Unidad de Aprendizaje}}{134}{figure.9.8}}
-\newlabel{IUOE1.1}{{9.8}{134}{IUOE1.1 Registrar Unidad de Aprendizaje}{figure.9.8}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{135}{section*.91}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.9}IUOE1.2 Modificar Unidad de Aprendizaje}{135}{subsection.9.13.9}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{135}{section*.92}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{135}{section*.93}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{135}{section*.94}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.10}IUOE1.4 Consultar Unidad de Aprendizaje}{135}{subsection.9.13.10}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{135}{section*.95}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{135}{section*.96}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{135}{section*.97}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.9}{\ignorespaces IUOE1.2 Modificar Unidad de Aprendizaje}}{136}{figure.9.9}}
-\newlabel{IUOE1.2}{{9.9}{136}{IUOE1.2 Modificar Unidad de Aprendizaje}{figure.9.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.10}{\ignorespaces IUOE1.4 Consultar Unidad de Aprendizaje}}{137}{figure.9.10}}
-\newlabel{IUOE1.4}{{9.10}{137}{IUOE1.4 Consultar Unidad de Aprendizaje}{figure.9.10}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.14}Pruebas del m\IeC {\'o}dulo: Infraestructura}{138}{section.9.14}}
-\newlabel{chp:pruebasAcademias}{{9.14}{138}{Pruebas del módulo: Infraestructura}{section.9.14}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.14.1}Edificio}{138}{subsection.9.14.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.14.2}Espacio}{138}{subsection.9.14.2}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {10}Prototipo 4: Profesores}{139}{chapter.10}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.12}CUOE1.5.4 Consultar unidad de aprendizaje}{128}{section.9.12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.12.1}Resumen}{128}{subsection.9.12.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.12.2}Descripci\IeC {\'o}n}{128}{subsection.9.12.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.12.3}Trayectorias del caso de uso}{129}{subsection.9.12.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.13}Interfaces del m\IeC {\'o}dulo}{130}{section.9.13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.1}Plan de Estudio}{130}{subsection.9.13.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.2}IUOE1 Gestionar Planes de Estudio}{130}{subsection.9.13.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{130}{section*.74}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{130}{section*.75}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.3}{\ignorespaces IUOE1 Gestionar Planes de Estudio}}{130}{figure.9.3}}
+\newlabel{IUOE1}{{9.3}{130}{IUOE1 Gestionar Planes de Estudio}{figure.9.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{130}{section*.76}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.3}IUOE1.1 Registrar Plan de Estudio}{131}{subsection.9.13.3}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{131}{section*.77}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{131}{section*.78}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{131}{section*.79}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.4}IUOE1.2 Modificar Plan de Estudio}{131}{subsection.9.13.4}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{131}{section*.80}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{131}{section*.81}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{131}{section*.82}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.5}IUOE1.4 Consultar Planes de Estudio}{131}{subsection.9.13.5}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{131}{section*.83}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.4}{\ignorespaces IUOE1.1 Registrar Plan de Estudio}}{132}{figure.9.4}}
+\newlabel{IUOE1.1}{{9.4}{132}{IUOE1.1 Registrar Plan de Estudio}{figure.9.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.5}{\ignorespaces IUOE1.2 Modificar Plan de Estudio}}{133}{figure.9.5}}
+\newlabel{IUOE1.2}{{9.5}{133}{IUOE1.2 Modificar Plan de Estudio}{figure.9.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{134}{section*.84}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.6}{\ignorespaces IUOE1.4 Consultar Plan de Estudio}}{134}{figure.9.6}}
+\newlabel{IUOE1.4}{{9.6}{134}{IUOE1.4 Consultar Plan de Estudio}{figure.9.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{134}{section*.85}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.6}Unidad de Aprendizaje}{134}{subsection.9.13.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.7}IUOE1.5 Gestionar Unidades de Aprendizaje}{134}{subsection.9.13.7}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{134}{section*.86}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{134}{section*.87}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.7}{\ignorespaces IUOE1 Gestionar Unidades de Aprendizaje}}{135}{figure.9.7}}
+\newlabel{IUOE1}{{9.7}{135}{IUOE1 Gestionar Unidades de Aprendizaje}{figure.9.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{135}{section*.88}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.8}IUOE1.1 Registrar Unidad de Aprendizaje}{135}{subsection.9.13.8}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{135}{section*.89}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{135}{section*.90}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.8}{\ignorespaces IUOE1.1 Registrar Unidad de Aprendizaje}}{136}{figure.9.8}}
+\newlabel{IUOE1.1}{{9.8}{136}{IUOE1.1 Registrar Unidad de Aprendizaje}{figure.9.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{137}{section*.91}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.9}IUOE1.2 Modificar Unidad de Aprendizaje}{137}{subsection.9.13.9}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{137}{section*.92}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{137}{section*.93}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{137}{section*.94}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.13.10}IUOE1.4 Consultar Unidad de Aprendizaje}{137}{subsection.9.13.10}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{137}{section*.95}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{137}{section*.96}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{137}{section*.97}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.9}{\ignorespaces IUOE1.2 Modificar Unidad de Aprendizaje}}{138}{figure.9.9}}
+\newlabel{IUOE1.2}{{9.9}{138}{IUOE1.2 Modificar Unidad de Aprendizaje}{figure.9.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.10}{\ignorespaces IUOE1.4 Consultar Unidad de Aprendizaje}}{139}{figure.9.10}}
+\newlabel{IUOE1.4}{{9.10}{139}{IUOE1.4 Consultar Unidad de Aprendizaje}{figure.9.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.14}Pruebas del m\IeC {\'o}dulo: Infraestructura}{140}{section.9.14}}
+\newlabel{chp:pruebasAcademias}{{9.14}{140}{Pruebas del módulo: Infraestructura}{section.9.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.14.1}Edificio}{140}{subsection.9.14.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.14.2}Espacio}{140}{subsection.9.14.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {10}Prototipo 4: Profesores}{141}{chapter.10}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chp:prototipo4}{{10}{139}{Prototipo 4: Profesores}{chapter.10}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.1}Modelo de informaci\IeC {\'o}n: M\IeC {\'o}dulo Profesores}{139}{section.10.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.1.1}M\IeC {\'o}dulo Profesores: Descripci\IeC {\'o}n general}{139}{subsection.10.1.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Profesores.}}{139}{figure.10.1}}
-\newlabel{fig:profesores}{{10.1}{139}{Modelo de información del módulo Profesores}{figure.10.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.1.2}Profesor}{140}{subsection.10.1.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Atributos}{140}{section*.98}}
-\newlabel{chp:gestionarProfesores}{{10.2}{141}{Modelo de comportamiento del módulo: Gestionar Profesores}{section.10.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.2}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Profesores }{141}{section.10.2}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chp:prototipo4}{{10}{141}{Prototipo 4: Profesores}{chapter.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.1}Modelo de informaci\IeC {\'o}n: M\IeC {\'o}dulo Profesores}{141}{section.10.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.1.1}M\IeC {\'o}dulo Profesores: Descripci\IeC {\'o}n general}{141}{subsection.10.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Profesores.}}{141}{figure.10.1}}
+\newlabel{fig:profesores}{{10.1}{141}{Modelo de información del módulo Profesores}{figure.10.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.1.2}Profesor}{142}{subsection.10.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Atributos}{142}{section*.98}}
+\newlabel{chp:gestionarProfesores}{{10.2}{143}{Modelo de comportamiento del módulo: Gestionar Profesores}{section.10.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.2}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Profesores }{143}{section.10.2}}
 \gdef \LT@xxv {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.3}CUA1 Gestionar academias}{142}{section.10.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.3.1}Resumen}{142}{subsection.10.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.3.2}Descripci\IeC {\'o}n}{142}{subsection.10.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.3.3}Trayectorias del caso de uso}{143}{subsection.10.3.3}}
-\newlabel{cua1:gestionar}{{4}{143}{Modelo de comportamiento del módulo: Gestionar Profesores}{Item.230}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.3.4}Puntos de extensi\IeC {\'o}n}{143}{subsection.10.3.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.3}CUA1 Gestionar academias}{144}{section.10.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.3.1}Resumen}{144}{subsection.10.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.3.2}Descripci\IeC {\'o}n}{144}{subsection.10.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.3.3}Trayectorias del caso de uso}{145}{subsection.10.3.3}}
+\newlabel{cua1:gestionar}{{4}{145}{Modelo de comportamiento del módulo: Gestionar Profesores}{Item.230}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.3.4}Puntos de extensi\IeC {\'o}n}{145}{subsection.10.3.4}}
 \gdef \LT@xxvi {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.4}CUP1.1 Registrar profesor}{144}{section.10.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.4.1}Resumen}{144}{subsection.10.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.4.2}Descripci\IeC {\'o}n}{144}{subsection.10.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.4.3}Trayectorias del caso de uso}{145}{subsection.10.4.3}}
-\newlabel{CUP1.1:CompletaInfo}{{3}{145}{Puntos de extensión}{Item.233}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.4}CUP1.1 Registrar profesor}{146}{section.10.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.4.1}Resumen}{146}{subsection.10.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.4.2}Descripci\IeC {\'o}n}{146}{subsection.10.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.4.3}Trayectorias del caso de uso}{147}{subsection.10.4.3}}
+\newlabel{CUP1.1:CompletaInfo}{{3}{147}{Puntos de extensión}{Item.233}{}}
 \gdef \LT@xxvii {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.5}CUP1.2 Modificar profesor}{146}{section.10.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.1}Resumen}{146}{subsection.10.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.2}Descripci\IeC {\'o}n}{146}{subsection.10.5.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.3}Trayectorias del caso de uso}{147}{subsection.10.5.3}}
-\newlabel{CUP1.2:CompletaInfo}{{4}{147}{Puntos de extensión}{Item.247}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.5}CUP1.2 Modificar profesor}{148}{section.10.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.1}Resumen}{148}{subsection.10.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.2}Descripci\IeC {\'o}n}{148}{subsection.10.5.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.5.3}Trayectorias del caso de uso}{149}{subsection.10.5.3}}
+\newlabel{CUP1.2:CompletaInfo}{{4}{149}{Puntos de extensión}{Item.247}{}}
 \gdef \LT@xxviii {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.6}CUP1.3 Eliminar profesor}{149}{section.10.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.6.1}Resumen}{149}{subsection.10.6.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.6.2}Descripci\IeC {\'o}n}{149}{subsection.10.6.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.6.3}Trayectorias del caso de uso}{150}{subsection.10.6.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.6}CUP1.3 Eliminar profesor}{151}{section.10.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.6.1}Resumen}{151}{subsection.10.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.6.2}Descripci\IeC {\'o}n}{151}{subsection.10.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.6.3}Trayectorias del caso de uso}{152}{subsection.10.6.3}}
 \gdef \LT@xxix {\LT@entry 
     {1}{88.2075pt}\LT@entry 
     {1}{345.08385pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.7}CUP1.4 Consultar profesor}{151}{section.10.7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.7.1}Resumen}{151}{subsection.10.7.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.7.2}Descripci\IeC {\'o}n}{151}{subsection.10.7.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.7.3}Trayectorias del caso de uso}{152}{subsection.10.7.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.8}Interfaces del m\IeC {\'o}dulo}{153}{section.10.8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.1}Profesores}{153}{subsection.10.8.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.2}IUP1 Gestionar Profesores}{153}{subsection.10.8.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{153}{section*.99}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{153}{section*.100}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.2}{\ignorespaces IUP1 Gestionar Profesores}}{153}{figure.10.2}}
-\newlabel{IUP1}{{10.2}{153}{IUP1 Gestionar Profesores}{figure.10.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{153}{section*.101}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.3}IUP1.1 Registrar Academia}{154}{subsection.10.8.3}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{154}{section*.102}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{154}{section*.103}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.3}{\ignorespaces IUP1.1 Registrar Profesor}}{154}{figure.10.3}}
-\newlabel{IUP1.1}{{10.3}{154}{IUP1.1 Registrar Profesor}{figure.10.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{154}{section*.104}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.4}IUP1.2 Modificar Profesor}{154}{subsection.10.8.4}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{154}{section*.105}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{155}{section*.106}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.4}{\ignorespaces IUP1.2 Modificar Profesor}}{155}{figure.10.4}}
-\newlabel{IUP1.2}{{10.4}{155}{IUP1.2 Modificar Profesor}{figure.10.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{155}{section*.107}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.5}IUP1.4 Consultar Profesor}{155}{subsection.10.8.5}}
-\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{155}{section*.108}}
-\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{155}{section*.109}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.5}{\ignorespaces IUP1.4 Consultar Profesor}}{156}{figure.10.5}}
-\newlabel{IUP1.4}{{10.5}{156}{IUP1.4 Consultar Profesor}{figure.10.5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Comandos}{156}{section*.110}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.9}Pruebas del m\IeC {\'o}dulo: Infraestructura}{157}{section.10.9}}
-\newlabel{chp:pruebasAcademias}{{10.9}{157}{Pruebas del módulo: Infraestructura}{section.10.9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.9.1}Edificio}{157}{subsection.10.9.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.9.2}Espacio}{157}{subsection.10.9.2}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {11}Modelo de interacci\IeC {\'o}n con el usuario}{159}{chapter.11}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.7}CUP1.4 Consultar profesor}{153}{section.10.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.7.1}Resumen}{153}{subsection.10.7.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.7.2}Descripci\IeC {\'o}n}{153}{subsection.10.7.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.7.3}Trayectorias del caso de uso}{154}{subsection.10.7.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.8}Interfaces del m\IeC {\'o}dulo}{155}{section.10.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.1}Profesores}{155}{subsection.10.8.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.2}IUP1 Gestionar Profesores}{155}{subsection.10.8.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{155}{section*.99}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{155}{section*.100}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.2}{\ignorespaces IUP1 Gestionar Profesores}}{155}{figure.10.2}}
+\newlabel{IUP1}{{10.2}{155}{IUP1 Gestionar Profesores}{figure.10.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{155}{section*.101}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.3}IUP1.1 Registrar Academia}{156}{subsection.10.8.3}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{156}{section*.102}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{156}{section*.103}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.3}{\ignorespaces IUP1.1 Registrar Profesor}}{156}{figure.10.3}}
+\newlabel{IUP1.1}{{10.3}{156}{IUP1.1 Registrar Profesor}{figure.10.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{156}{section*.104}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.4}IUP1.2 Modificar Profesor}{156}{subsection.10.8.4}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{156}{section*.105}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{157}{section*.106}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.4}{\ignorespaces IUP1.2 Modificar Profesor}}{157}{figure.10.4}}
+\newlabel{IUP1.2}{{10.4}{157}{IUP1.2 Modificar Profesor}{figure.10.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{157}{section*.107}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.8.5}IUP1.4 Consultar Profesor}{157}{subsection.10.8.5}}
+\@writefile{toc}{\contentsline {subsubsection}{Objetivo}{157}{section*.108}}
+\@writefile{toc}{\contentsline {subsubsection}{Dise\IeC {\~n}o}{157}{section*.109}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.5}{\ignorespaces IUP1.4 Consultar Profesor}}{158}{figure.10.5}}
+\newlabel{IUP1.4}{{10.5}{158}{IUP1.4 Consultar Profesor}{figure.10.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Comandos}{158}{section*.110}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.9}Pruebas del m\IeC {\'o}dulo: Infraestructura}{159}{section.10.9}}
+\newlabel{chp:pruebasAcademias}{{10.9}{159}{Pruebas del módulo: Infraestructura}{section.10.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.9.1}Edificio}{159}{subsection.10.9.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.9.2}Espacio}{159}{subsection.10.9.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {11}Modelo de interacci\IeC {\'o}n con el usuario}{161}{chapter.11}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chp:modeloInteraccionUsuario}{{11}{159}{Modelo de interacción con el usuario}{chapter.11}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {11.1}Dise\IeC {\~n}o de mensajes}{159}{section.11.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {11.2}Par\IeC {\'a}metros comunes}{159}{section.11.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {11.3}Mensajes a trav\IeC {\'e}s de la pantalla}{160}{section.11.3}}
-\@writefile{toc}{\contentsline {subsubsection}{{MSG1} {Operaci\IeC {\'o}n exitosa}}{160}{section*.111}}
-\@writefile{toc}{\contentsline {subsubsection}{{MSG2} {Eliminar Elemento}}{161}{section*.112}}
-\@writefile{toc}{\contentsline {subsubsection}{{MSG3} {Falta dato obligatorio}}{161}{section*.113}}
-\@writefile{toc}{\contentsline {subsubsection}{{MSG4} {Formato de campo incorrecto}}{161}{section*.114}}
-\@writefile{toc}{\contentsline {subsubsection}{{MSG5} {No es posible eliminar un elemento}}{162}{section*.115}}
-\@writefile{toc}{\contentsline {subsubsection}{{MSG7} {No existe informaci\IeC {\'o}n necesaria en el sistema}}{162}{section*.116}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {12}Bibliograf\IeC {\'\i }a}{163}{chapter.12}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chp:modeloInteraccionUsuario}{{11}{161}{Modelo de interacción con el usuario}{chapter.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.1}Dise\IeC {\~n}o de mensajes}{161}{section.11.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.2}Par\IeC {\'a}metros comunes}{161}{section.11.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.3}Mensajes a trav\IeC {\'e}s de la pantalla}{162}{section.11.3}}
+\@writefile{toc}{\contentsline {subsubsection}{{MSG1} {Operaci\IeC {\'o}n exitosa}}{162}{section*.111}}
+\@writefile{toc}{\contentsline {subsubsection}{{MSG2} {Eliminar Elemento}}{163}{section*.112}}
+\@writefile{toc}{\contentsline {subsubsection}{{MSG3} {Falta dato obligatorio}}{163}{section*.113}}
+\@writefile{toc}{\contentsline {subsubsection}{{MSG4} {Formato de campo incorrecto}}{163}{section*.114}}
+\@writefile{toc}{\contentsline {subsubsection}{{MSG5} {No es posible eliminar un elemento}}{164}{section*.115}}
+\@writefile{toc}{\contentsline {subsubsection}{{MSG7} {No existe informaci\IeC {\'o}n necesaria en el sistema}}{164}{section*.116}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {12}Bibliograf\IeC {\'\i }a}{165}{chapter.12}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chp:bibliografia}{{12}{163}{Bibliografía}{chapter.12}{}}
-\newlabel{sec:bibliografia}{{12}{163}{Bibliografía}{chapter.12}{}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chp:bibliografia}{{12}{165}{Bibliografía}{chapter.12}{}}
+\newlabel{sec:bibliografia}{{12}{165}{Bibliografía}{chapter.12}{}}

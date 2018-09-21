@@ -1,15 +1,15 @@
 \label{sec:introduccion}
 
 \section{Antecedentes}
+	El problema de la calendarización de actividades es ampliamente conocido y estudiado, el mismo tiene sus distintas divisiones, existen problemas de calendarización de actividades, de juntas, de servicios de transporte y de actividades escolares, a lo largo de el siguiente documento nos vamos a enfocar en el último tipo. La calendarización de actividades escolares ha sido ampliamente estudiada por su complejidad particular puesto que se tienen que considerar varias restricciones y distintos recursos.\\
+	
+	Actualmente hay varios artículos que hablan al respecto, para el presente trabajo tomamos particularmente tres en cuenta:\\
+	
 	\textbf{Survey on University Timetabling Problem} \\
 	
-	El problema de organización de tiempo de un curso en una universidad se cataloga como NP Hard, lo que significa que el problema se vuelve más difícil a medida que se aumenta el número de instancias aumenta, y disminuye la posibilidad de que exista una solución óptima. \\
+	De este artículo destacamos la explicación de las clasificaciones de problemas de calendarización de actividades universitarias. \\
 	
-	Se tienen restricciones que siempre deben cumplirse a toda costa tales como: el horario y los salones, pero se tienen condiciones que se pueden violar aunque sea penalizado como las preferencias de los profesores. \\ 
-	
-	Dadas sus características el problema puede ser abordado de distintas maneras entre ellas el uso de algoritmos basados en la naturaleza, simulaciones, distribuciones de colores y algoritmos genéticos. \\
-	
-	Categorías de problemas para su solución:
+	Categorías de problemas de acuerdo a sus características:
 		
 		\begin{itemize}
 			\item UTTP: Problema de Horarios de Universidades
@@ -23,41 +23,35 @@
 			
 			\item ETTP: Problema de horarios por examinación
 			Contiene una gran cantidad de situaciones propias de los demás problemas. La capacidad de los salones y el horario de profesores y alumnos debe ser tomado en cuenta.
+			
 		\end{itemize}
+	\textbf{Modelling constraints in school timetabling using Integer linear programming} \\
+	
+	En este artículo encontramos mencionado que existe una categoría para los problemas de calendarización de actividades escolares, este se conoce como STTP: School Timetabling Problem. Los problemas de tipo STTP son aquellos que toman el cuenta el caso de preparatorias y secundarias donde se imparte determinado número de clases por día pero durante todo un período escolar es el mismo profesor quien imparte la misma materia en el mismo grupo en dichos días y horarios.  
 		
-		Se han propuesto varias posibles soluciones para el problema tales como:
-		
-		\begin{itemize}
-			
-			\item PROGRAMACIÓN LINEAL(1989,1996,1997): Implementación secuencial de las restricciones del conflicto
-			
-			\item SATISFACCION DE RESTRICCIONES(1998): Se resuelven las restricciones con retroalimentación y consistencia.
-			
-			\item SOLUCIÓN DE COLOREADO DE GRAFOS(1974): Basado en la teoría de grafos se reduce el problema a el vértices y lados. Los eventos en forma de vértices y los lados en forma de condiciones.
-			
-			\item SOLUCIÓN METAHEURÍSTICA: Proceso de generación iterativa que utiliza varios conceptos de inteligencia para explorar las opciones viables del espacio de búsqueda mientras usa estrategias de aprendizaje para llevar a cabo un ordenamiento y encontrar de forma eficiente las soluciones óptimas
-			
-			\item ALGORITMO GENÉTICO: Algoritmo genético usado en combinación con búsqueda secuencial local que usa una fase de construcción y una fase de mejora. Donde cada posible juego de soluciones es conocida como población y cada posible solución es conocida como cromosoma. Se lleva una mejora con el algotimo híbrido con el algoritmo genético y de búsqueda local.
-		\end{itemize}
-
-
+	\textbf{Applying evolutionary computation to the school timetabling problem: The Greek case} \\
+	
+	De este artículo es interesante resaltar su aproximación al problema. Definen el problema como uno de minimización con penalizaciones, esto significa que para determinar que una solución es buena se deben violar el menor número de restricciones posible.\\
+	
+	Las restricciones del problema dan paso a las penalizaciones pero hay restricciones escenciales(hard constraints) y resctricciones no escenciales(soft constraints). El artículo indica que las restricciones escenciales son aquellas que deben ser cumplidas en todo momento para que las solución sea considerada viable y como tal deben tener una penalización bastante mayor a las no escenciales de manera que se favorezca a las soluciones viables. Las restricciones no escenciales son aquellas que ayudan a discriminar entre dos soluciones viables aquella que es mejor. De esta manera la función objetivo es una sumatoria entre las penalizaciones de las restricciones escenciales y no escenciales.
+	   
 \section{Problema de negocio}
-	En la Escuela Superior de Cómputo la generación de la estructura educativa requiere de aproximadamente 2 meses, durante este tiempo se pueden realizar cambios en la asignación realizada incluso momentos antes de que aparezcan en el SAES. El tiempo estimado para la asignación manual de horarios equivale a 10 profesores por cada dos días, este proceso lo llevan a cabo los jefes de departamento y presidentes de academia. \\
+	En la Escuela Superior de Cómputo la generación de la estructura educativa requiere de aproximadamente 3 meses, durante este tiempo se pueden realizar cambios en la asignación realizada incluso momentos antes de que aparezcan en el SAES. El tiempo estimado para la asignación manual de horarios equivale a 10 profesores por cada dos días, este proceso lo llevan a cabo los jefes de departamento y presidentes de academia. \\
 	
 	Con base en lo anterior, la forma en la que se genera la estructura educativa requiere de tiempo excesivo debido a que la asignación se hace de manera manual. Esta solución se considera la mejor desde el punto de vista de los jefes de academia, y depende totalmente de la perspectiva de cada uno de ellos.
 
 \section{Solución}
-	A fin de abordar el problema presentado, se propone la utilización de cómputo evolutivo. Es importante recalcar que si bien, puede existir una solución única, el espacio de la búsqueda es exponencial, por lo tanto encontrar esta solución podría tardar mucho tiempo o incluso podría darse el caso que no se llegue a la mejor solución. \\
+	A fin de abordar el problema presentado, se propone la utilización de cómputo evolutivo. Es importante recalcar que si bien, puede existir una solución ideal, el espacio de la búsqueda es exponencial en función al número de atributos que utilicemos, por lo tanto encontrar esta solución podría tardar mucho tiempo o incluso podría darse el caso que no se encuentre nunca. \\
 	
-	Este problema de asignación de horarios está relacionado con la complejidad de algoritmos NP-hard, esto es, el tiempo y los recursos computacionales necesarios para llegar a la solución óptima se elevan de manera exponencial de aceurdo al número de variables, esto por el tamaño del espacio de búsqueda. Para el caso de la ESCOM, se cuentan con las variables: espacios (salones-laboratorios), profesores, unidades de aprendizaje, grupos, horarios. Con este conjunto de variables se estudiarán los diferentes algoritmos relacionas a los problemas NP-hard para obtener la función que nos permitirá ofrecer una solución al problema.\\
+	Este problema de asignación de horarios está relacionado con la complejidad temporal NP-hard, esto es, el tiempo necesario para llegar a la solución óptima se eleva de manera exponencial de aceurdo al número de variables, esto por el tamaño del espacio de búsqueda. Para el caso de la ESCOM, se cuentan con las variables: espacios (salones-laboratorios), profesores, unidades de aprendizaje, grupos, horarios. Con este conjunto de variables se estudiarán los diferentes algoritmos relacionados a los problemas NP-hard para obtener la función que nos permitirá ofrecer una solución al problema.\\
 	
-	Debido a la complejidad particular del caso ESCOM en que se tienen alrededor de 200 profesores que son los que se tienen en la nómina, número que puede aumentar o disminuir de acuerdo a las necesidades de la escuela cada semestre, 88 unidades de aprendizaje que son el total de las aprobadas dentro del plan de estudios aunque se pueden o no impartir durante dicho semestre, 14 posibles horarios debido a que en ESCOM ya que casi todas las unidades de aprendizaje duran una hora y media y se imparten 3 días a la semana por lo que se han configurado los horarios en 14 posibles combinaciones de tres sesiones a la semana. Se tienen también al rededor de 86 salones aunque no todos sean utilizables para impartir clase, finalmente se generan al rededor de 82 grupos al semestre, atacando este problema por fuerza bruta, el total de posibles opciones es aproximadamente 1,737,612,800 combinaciones lo cuál lo vuelve un espacio de búsqueda demasiado grande como para poder atacarlo de manera tradicional. \\
+	Debido a la complejidad particular del caso ESCOM en que se tienen alrededor de 200 profesores que son los que se tienen en la nómina, número que puede aumentar o disminuir de acuerdo a las necesidades de la escuela cada semestre, 84 unidades de aprendizaje que son el total de las aprobadas dentro del plan de estudios aunque se pueden o no impartir durante dicho semestre, 14 posibles horarios debido a que en ESCOM ya que casi todas las unidades de aprendizaje duran una hora y media y se imparten 3 días a la semana por lo que se han configurado los horarios en 14 posibles combinaciones de tres sesiones a la semana. Se tienen también al rededor de 36 salones utilizables para impartir clase, finalmente se generan al rededor de 72 grupos al semestre, atacando este problema por fuerza bruta, el total de posibles opciones es aproximadamente 609,638,400 combinaciones lo cuál lo vuelve un espacio de búsqueda demasiado grande como para poder atacarlo de manera tradicional o por fuerza bruta. \\
 	
-	Como parte de la solución, la primer aproximación será dividir el espacio de búsqueda de acuerdo a las restricciones de ESCOM, en primer lugar los profesores solo imparten un número finito de unidades de aprendizaje al semestre, en segundo lugar los grupos se asocian directamente a un salón, en tercer lugar las unidades de aprendizaje y grupos se dividen por nivel y finalmente los horarios de clase así como los profesores pueden ser matutinos o vespertinos. De esta manera cada particular espacio de búsqueda se reduce a alrededor de 54,600 posibilidades, de esta forma aún es un espacio demasiado grande para métodos tradicionales pero disminuye.\\
+	Como parte de la solución, la primer aproximación será dividir el espacio de búsqueda de acuerdo a las restricciones de ESCOM, en primer lugar los profesores solo imparten un número finito de unidades de aprendizaje al semestre, en segundo lugar los grupos se asocian directamente a un salón, en tercer lugar las unidades de aprendizaje y grupos se dividen por nivel y finalmente los horarios de clase así como los profesores pueden ser matutinos o vespertinos. De esta manera cada particular espacio de búsqueda se reduce a alrededor de 54,600 posibilidades, de esta forma aún es un espacio demasiado grande para métodos tradicionales pero disminuye lo cual aumenta la posibilidad de encontrar una solución viable.\\
 	
 	Entre las posibles soluciones usuales para este tipo de problemas se propone el uso de algoritmos genéticos sin embargo para este caso en particular la probabilidad de que el algoritmo llegue a la solución óptima es muy baja, podría ser también que la solución final no sea viable, sin mencionar tanto el costo en tiempo como el costo computacional de esto.\\
 	
-	Finalmente después de analizarlo, se decidió que la mejor aproximación es utilizar programación genética con el operador de cruce en permutación, debido a que de esta manera al evaluar la viabilidad de la solución mientras está siendo creada se asegura llegar a una solución viable, que quizás no sea la mejor, pero al crear soluciones viables aseguramos que se soluciona el problema, y la segunda parte del algoritmo se enfoca a evaluar la solución de forma que se pueda definir con base en los criterios definidos por el usuario cuál es la mejor solución de entre las propuestas.\\
+	Finalmente después de analizarlo, y siguiendo las bases de uno de los artículos ya mencionados, se decidió que la mejor aproximación es utilizar programación genética con el operador de mutación, debido a que de esta manera al evaluar la viabilidad de la solución mientras está siendo creada se asegura llegar a una solución viable, que quizás no sea la mejor, pero al crear soluciones viables aseguramos que se resuelva el problema, y la segunda parte del algoritmo se enfoca a evaluar la solución de forma que se pueda definir con base en los criterios definidos por el usuario cual es la mejor solución de entre las propuestas.\\
 
 \section{Objetivos}
 	Desarrollar una herramienta que permita generar una o varias opciones de configuración de horarios, tomando en cuenta las restricciones derivadas del análisis del proceso de generación de horarios de la Escuela Superior de Cómputo.

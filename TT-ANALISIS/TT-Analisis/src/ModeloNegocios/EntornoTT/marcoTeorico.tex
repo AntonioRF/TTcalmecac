@@ -1,6 +1,47 @@
 \label{sec:marcoTeo}
 	
-	Para abordar el problema de la generación de horarios se utilizará el Cómputo evolutivo lo cual implica varios conceptos que serán abordados a continuación.\\
+	\section{Clasificación del problema de acuerdo a sus características}
+	Tal como lo mencionan los antecedentes citados, de acuerdo a sus características y a las restricciones que manejan los problemas de calendarización de actividades escolares se pueden dividir en las siguientes categorías.
+	
+		Categorías de problemas de acuerdo a sus características:
+	
+	\begin{itemize}
+		\item UTTP: Problema de Horarios de Universidades
+		en cuyo caso las clases son asignadas de forma semanal y se tienen que asignar materias a las clases dentro de un horario.
+		
+		\item CTTP: Problema de Horarios por Curso
+		Se refiere al problema de las clases impartidas de un curso/materia a la semana en que el problema incluye asignarles salones y profesores a las materias dentro de un horario.
+		
+		\item LTTP: Problema de horarios por clase
+		Se refiere al problema de asignar una sola clase de un curso por día en la universidad sin que se translapen unas con otras.
+		
+		\item ETTP: Problema de horarios por examinación
+		Contiene una gran cantidad de situaciones propias de los demás problemas. La capacidad de los salones y el horario de profesores y alumnos debe ser tomado en cuenta.
+		
+		\item STTP: School Timetabling Problem. Los problemas de tipo STTP son aquellos que toman el cuenta el caso de preparatorias y secundarias donde se imparte determinado número de clases por día pero durante todo un período escolar es el mismo profesor quien imparte la misma materia en el mismo grupo en dichos días y horarios.  
+	\end{itemize}
+
+	De acuerdo a dichas categorías, el problema que abordamos para el caso ESCOM recae en la categoría de STTP puesto que si bien ESCOM no es una preparatoria o secundaria, las restricciones y características se asemejan más a las que corresponden a esta categoría. De esta manera, las clases duran lo mismo y se imparten siempre en el mismo horario los mismos días sin mencionar que siempre es el mismo profesor quien la imparte y en el mismo salón.
+	
+	\section{Clasificación del problema de acuerdo a su complejidad}
+	
+	La complejidad en cuanto a computación tiene dos consideraciones, complejidad temporal y complejidad espacial. La complejidad temporal se basa en el concepto que cada operación que lleva a cabo la computadora requiere cierto tiempo, si bien las capacidades de las computadoras actuales permiten realizar múltiples operaciones en fracciones de segundos, cuando un problema requiere realizar demasiadas operaciones el tiempo que tarda una computadora en ejecutarlas aumenta. La complejidad espacial se refiere a los espacios en memoria que se necesitan para manejar toda la información de un problema, sin embargo las computadoras han avanzado a un nivel en que es difícil encontrar problemas que causen un conflicto con el espacio de una computadora.\\
+	
+	De esta manera nos enfocamos en la complejidad temporal. La complejidad temporal de un problema se puede clasificar de la siguiente manera: 
+	
+		\begin{itemize}
+			\item P- Problemas que pueden ser resueltos en un tiempo polinomial de forma determinista
+			
+			\item NP- Problemas de decisión, de carácter no determinista que tienen alguna solución alcanzable en tiempo polinomial. Y que dada una solución es posible comprobar si corresponde o no en tiempo polinomial.
+			
+			\item NP-Complete - Problemas NP para los cuales ninguna solución ha sido alcanzada en un tiempo polinomial sin poder afirmar que no pueda ser alcanzada.
+			
+			\item NP-Hard - Problemas con una complejidad al menos tan grande como NP-Complete sin tener que ser necesariamente de tipo NP, la mayoría de los cuáles se considera indescifrable en tiempo polinomial. No son de Decisión.
+			
+		\end{itemize}
+	De acuerdo a esto entendemos que el problema de la calendarización de actividades no puede ser considerado como problema de decisión sin embargo dependiendo del tamaño del espacio de búsqueda es posible no llegar a encontrar una solución o tardar demasiado en hacerlo.\\
+	
+	De esta manera, el problema de organización de tiempo en una escuela se cataloga como NP Hard, lo que significa que el problema se vuelve más difícil a medida que se aumenta el número de instancias aumenta, y disminuye la posibilidad de que exista una solución óptima.\\
 
 	\section{Técnicas Heurísticas}
 	
@@ -64,24 +105,30 @@
 
 		\textbf{Selección:} Proceso mediante el cual, un conjunto de individuos de una generación son escogidos para aplicarles operadores genéticos y/o sean parte de la siguiente generación. \\
 		
-		\textbf{Entrada:}\\
-		g: Número de Generaciones\\
-		a: Aptitud Objetivo\\
-		\textbf{Salida:}\\
-		s: Mejor Solución\\
+		\begin{algorithm}[H]
+			\DontPrintSemicolon
+			\SetAlgoLined
+		\textbf{Entrada:}
+		g = Número de Generaciones\;
+		a = Aptitud Objetivo\;
+		\textbf{Salida:}
+		s = Mejor Solución
 
-		p <- inicializaPoblacion() : Generar Población inicial;\\
-		c <- 1: Inicializar Contador de Población;\\
-		t <- aleatorio(0,1);\\
-		\textbf{mientras} (c<=g) V (a x t <= Ma <= a) \textbf{hacer}\\
-			pP <- seleccionarPadres(p);\\
-			pT <- operacionesGeneticas(pP);\\
-			p <- seleccionarNuevaPoblación(p,pT);\\
-			Ma <- mejorAptitud(p);\\
-			c <- c+1;\\
-		s <- mejorIndividua(p);\\
-		\textbf{devolver} s;\\	
-
+		p = inicializaPoblacion() : Generar Población inicial\;
+		c = 1: Inicializar Contador de Población\;
+		t = aleatorio(0,1)\;
+		\While{$c<=g and a x t <= Ma <= a$}{
+			pP = seleccionarPadres(p)\;
+			pT = operacionesGeneticas(pP)\;
+			p = seleccionarNuevaPoblación(p,pT)\;
+			Ma = mejorAptitud(p)\;
+			c = c+1\;
+		s = mejorIndividuo(p)\;
+		}
+		return s\;	
+		\caption{Estructura general de un algoritmo evolutivo}
+		\end{algorithm}
+	
 		\subsection{Principales paradigmas del cómputo evolutivo}
 
 		El término de cómputo evolutivo engloba las técnicas inspiradas en la evolución biológica del Neo-Darwinismo. En términos generales la computadora requiere los siguientes procesos para simular la evolución: Codificar las estructuras, operaciones que afectan a los individuos, función de aptitud y mecanismo de selección.\\
@@ -118,3 +165,5 @@
 
 			\paragraph{Programación genética}
 			Discute la combinación de segmentos de programas mediante el copiado de subárboles de un individuo a otro y plantea el uso de mutación para introducir nuevos árboles en la población. Posteriormente consideran un operador de cruza para intercambiar sub-árboles entre los programas de una población generada al azar. Se utilizaba también una función de aptitud para definir que tan buena es una población para resolver el problema.\\
+			
+		Par nuestro proyecto hemos tomado la decisión de utilizar programación evolutiva, esto debido a los resultados mostrados en distintos artículos donde el cómputo evolutivo supera a otras técnicas y dentro del cómputo evolutivo, nosotros no necesitamos usar una cruza entre especies si no mutar dentro de los individuos del mismo tipo, en este caso al sólo utilizar el operador de mutación estamos haciendo uso de programación evolutiva en su definición sin mencionar que su estructura nos permite eficientar el proceso.	
