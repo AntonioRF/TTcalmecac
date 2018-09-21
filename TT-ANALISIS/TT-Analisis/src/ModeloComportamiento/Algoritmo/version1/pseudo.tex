@@ -38,6 +38,8 @@ Siguiendo el pseudocódigo del algoritmo, después de inicializar las variables 
 
 \subsection{Funci\'on: generar Poblacion}
 
+Esta función genera una población inicial, tradicionalmente la población inicial debe ser completamente aleatoria, sin embargo esto podría significar nunca encontrar una solución viable a partir de la misma. La función deifinida genera una población viable cuidando  las restricciones escenciales y utilizando todas los atributos contenidos en el arreglo MP asegurando que todos los profesores impartan todas sus clases a pesar de las mutaciones, mientras se verifica que los profesores no tengan traslapes.
+
 \begin{algorithm}[H]
 	\DontPrintSemicolon
 	\SetAlgoLined
@@ -80,6 +82,26 @@ Siguiendo el pseudocódigo del algoritmo, después de inicializar las variables 
 \end{algorithm}
 
 \subsection{Funci\'on: evalua}
+
+Para evaluar a un individuo tomamos en cuenta las siguientes restricciones con su respectiva penalizacion. La penalizacion es mayor cuando se viola una restriccion escencial(hard constraint) y menor cuando se viola una restriccion no escencial(soft constraint).
+
+\begin{itemize}
+	\item Un profesor no puede dar clase en dos grupos al mismo tiempo. Penalizacion = 30
+	
+	\item No se pueden impartir dos clases al mismo tiempo en un grupo. Penalizacion = 30
+	
+	\item No se debe impartir dos veces la misma materia en un grupo. Penalizacion = 10
+	
+	\item El horario de un grupo debe tener los menos huecos posibles. Penalizacion = 2
+	
+	\item El horario de un profesor debe tener los menos huecos posibles. Penalizacion = 2
+	
+	\item Se debe evitar que un profesor imparta dos materias distintas en el mismo grupo. Penalizacion = 1
+	
+	La calificación que devuelve esta función es una sumatoria de todas las penalizaciones que se dan por infringir alguna restricción.
+	
+\end{itemize}
+
 
 \begin{algorithm}[H]
 	\DontPrintSemicolon
@@ -134,6 +156,10 @@ Siguiendo el pseudocódigo del algoritmo, después de inicializar las variables 
 \end{algorithm}
 
 \subsection{Mutaci\'on}
+
+Se definieron dos funciones de mutación, en ambos casos estamos considerando que dado el espacio limitado que tenemos para generar dichos cambios, aplicamos la mutación al mismo tiempo en dos cromosomas distintos de esta manera se busca mantener la viabilidad del resultado. La primera función de mutación  actúa sobre el gen GS de manera que el profesor sigue impartiendo una materia en el mismo horario pero en un grupo distinto, lo cual mitiga los casos en que un profesor imparte dos materias distintas en el mismo grupo o los casos en que una materia se imparte dos veces en el mismo grupo.\\ 
+
+
 \begin{algorithm}[H]
 	\DontPrintSemicolon
 	\SetAlgoLined
@@ -152,6 +178,8 @@ Siguiendo el pseudocódigo del algoritmo, después de inicializar las variables 
 	return poblacion \;
 	\caption{mutacionGrupos(poblacion)}
 \end{algorithm}
+
+La segunda función actua sobre el gen H manteniendo los profesores y las materias en el mismo grupo pero modificando de esta manera el horario en que la imparten, con esto se busca mitigar los traslapes en grupos y profesores a demás de reducir los huecos en los horarios de los profesores.\\
 
 \begin{algorithm}[H]
 	\DontPrintSemicolon
