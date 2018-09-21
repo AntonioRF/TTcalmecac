@@ -1,5 +1,6 @@
 
 \begin{UseCase}{CUA1}{Gestionar academias}{	
+		
 	Permite al actor registrar una nueva academia, visualizar, modificar y eliminar las academias existentes de la ESCOM. Esto permitirá saber cuales son las academias existentes y asignarlas a las Unidades de Aprendizaje. 
 }
 
@@ -44,12 +45,12 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli Tabla que muestra el Nombre de la academia y el nombre del jefe de academia.
+			\UCli Tabla que muestra el Nombre de la academia.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
 		\begin{UClist}
-			\UCli Se debe tener al menos un profesor registrado.
+			\UCli Ninguna.
 		\end{UClist}
 	}
 	\UCitem{Postcondiciones}{
@@ -73,7 +74,7 @@
 \begin{UCtrayectoria}
 	
 	\UCpaso [\UCactor] Selecciona la opción ''Academias'' del menú \textbf{Academias}. %\cdtIdRef{MN1}{Menú de la Secretaría de Posgrado}.
-	\UCpaso [\UCsist] Obtiene el nombre de la academia y el nombre del jefe de academia.
+	\UCpaso [\UCsist] Obtiene el nombre de la academia.
 	\UCpaso [\UCsist] Ordena alfabéticamente las academias por el nombre.
 	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA1}{Gestionar Academias} con la información de las academias obtenidas e iconos %\IUModificar, \IUEliminar y \IURegistrar. 
 	\label{cua1:gestionar}

@@ -1,6 +1,6 @@
 
 \begin{UseCase}{CUA1.3}{Eliminar academia}{	
-	Permite al actor eliminar una academia previamente registrada que se registro por error o ya no desea utilizarse.
+	Permite al actor eliminar una academia previamente registrada que se registro por error o ya no desea utilizarse. Así, los registros de academias se mantendrán actualizados.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -55,7 +55,6 @@
 			\UCli Ninguna	
 		\end{UClist}
 	}
-	%Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
 	\UCitem{Reglas de negocio}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -66,11 +65,11 @@
 			\UCli Ninguno
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUA1}{Gestionar academias}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita eliminar una academia dando clic en el icono %\IUEliminar 
+	\UCpaso [\UCactor] Solicita eliminar una academia dando clic en el botón \cdtButton{Eliminar}
 	de la pantalla \cdtIdRef{IUA1}{Gestionar Academias}
 	
 	\UCpaso [\UCsist] Verifica que la academia no haya sido asociada a una o más Unidades de Aprendizaje. \refTray{A}
