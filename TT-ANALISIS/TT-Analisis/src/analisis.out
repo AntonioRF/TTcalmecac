@@ -233,4 +233,11 @@
 \BOOKMARK [1][-]{section.11.1}{Dise\361o de mensajes}{chapter.11}% 233
 \BOOKMARK [1][-]{section.11.2}{Par\341metros comunes}{chapter.11}% 234
 \BOOKMARK [1][-]{section.11.3}{Mensajes a trav\351s de la pantalla}{chapter.11}% 235
-\BOOKMARK [0][-]{chapter.12}{Bibliograf\355a}{}% 236
+\BOOKMARK [0][-]{chapter.12}{M\363dulo de Optimizaci\363n}{}% 236
+\BOOKMARK [1][-]{section.12.1}{Modelo de comportamiento del m\363dulo: SistemaM\363dulo de Optimizaci\363n}{chapter.12}% 237
+\BOOKMARK [2][-]{subsection.12.1.1}{Prototipo versi\363n 1 del alogritmo de optimizaci\363n}{section.12.1}% 238
+\BOOKMARK [2][-]{subsection.12.1.2}{Funci\363n: generar Poblacion}{section.12.1}% 239
+\BOOKMARK [2][-]{subsection.12.1.3}{Funci\363n: evalua}{section.12.1}% 240
+\BOOKMARK [2][-]{subsection.12.1.4}{Mutaci\363n}{section.12.1}% 241
+\BOOKMARK [2][-]{subsection.12.1.5}{Pruebas de la versi\363n: 1}{section.12.1}% 242
+\BOOKMARK [0][-]{chapter.13}{Bibliograf\355a}{}% 243

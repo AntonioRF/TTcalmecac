@@ -1,0 +1,173 @@
+\subsection{Prototipo versión 1 del alogritmo de optimización}
+
+Tenemos que nuestras variables son Materia, Profesor, Grupo, Salón y Horario. Consideramos que no todos los profesores pueden impartir todas las materias por lo que se toma una variable MP la cuál es un arreglo de Tuplas Materia-Profesor que indica las materias que imparte cada profesor, de igual manera sabemos que los grupos son asignados a un salón de manera previa por lo que tenemos la variable GS la cuál lleva el Id de la tupla Grupo-Salón.\\
+
+Teniendo en cuenta lo anterior y los conceptos de cómputo evolutivo expresados con anterioridad, tenemos que el cromosoma de los individuos que comprenden a nuestra población serán construidos con las tres variables mencionadas. De esta manera el cromosoma se puede representar de esta manera : (MP,GS,H).\\
+
+Como se explicó anteriormente los algoritmos evolutivos tienen una estructura similar por lo que tenemos el siguiente pseudocódigo para representar nuestro algoritmo.\\
+
+\begin{algorithm}[H]
+	\DontPrintSemicolon
+	\SetAlgoLined
+	%\KwResult{Write here the result }
+	inicializar los arreglos globales de valores MP, GS y H\;
+	inicializar el numero de iteraciones N\;
+	inicializar poblacionaux\;
+	poblacion = generarPoblacion()\;
+	y = 1\;
+	calificacion = 0 \;
+	calificacionaux = 0 \;
+	\While{$y < = N$}{
+		calificacion = evalua(poblacion)\;
+		poblacionaux = poblacion\;
+		ran = random(0,1)\;
+		\eIf{ran == 1}{
+			poblacionaux = mutarHorarios(poblacionaux)\;
+		}{
+			poblacionaux = mutarGrupos(poblacionaux)\;
+		}
+		calificacionaux = evalua(poblacionaux)\;
+		\If{$calificacionaux < = calificacion$}{poblacion = poblacionaux\;}
+		incrementar $y$ en $1$\;
+	}
+	
+	\caption{Algoritmo Principal Tlamantinime}
+\end{algorithm}
+
+Siguiendo el pseudocódigo del algoritmo, después de inicializar las variables con la información que utilizaremos para crear la estructura educativa, utilizamos la función generarPoblacion() para crear la población inicial con la cual trabajaremos. A continuación entramos a un ciclo que se detiene con el criterio de paro que hemos definido experimentalmente como un número de iteraciones, dentro del ciclo evaluamos la población inicial y creamos una copia de la misma, seleccionamos de manera aleatoria cualquiera de los dos operadores de mutación que hemos definido y operamos dicha mutación sobre la copia de la población inicial. Evaluamos la población mutada y comparamos contra la población inicial, la que sea determinada como mejor adaptada o, lo que es lo mismo, con la mejor calificación, será aquella con la que realizaremos la mutación en la siguiente iteración de forma que obtengamos el mejor resultado posible antes de alcanzar el número de iteraciones definido como criterio de paro.
+
+\subsection{Funci\'on: generar Poblacion}
+
+\begin{algorithm}[H]
+	\DontPrintSemicolon
+	\SetAlgoLined
+	%\KwResult{Write here the result }
+	inicializar variable Tamanio con el n\'umero de individuos que debe tener la poblaci\'on\;
+	inicializar matrices binarias MG, PH, GH\;
+	inicializar variable poblacion y la variable individuo como arreglos\;
+	K = 1\;
+	pmi = [0,0] \;
+	t = 0\;
+	g = 0\;
+	profesor = 0\;
+	materia = 0\;
+	condicion = 0\;
+	\While{$k < = Tamanio$}{
+		$pmi \leftarrow $ individuo del arreglo MP sin repeticion \;
+		materia = pmi[0]\;
+		profesor = pmi[1]\;
+		\While{$condicion  != 1$ }{
+			$t \leftarrow $ individuo del arreglo H\;
+			$g \leftarrow $	individuo del arreglo GS\;
+			\If{MG[materia][g] == 0}{
+				\If{PH[profesor][t] == 0}{
+					\If{GH[g][t] == 0}{
+						PH[profesor][t] = 1\;	
+						MG[materia][g] = 1\;
+						GH[g][t] = 1\;
+						condicion = 1\;
+						individuo = [pmi,g,t]\;
+						poblacion[k]= individuo\;
+					}
+				}
+			}
+			incrementar $k$ en $1$\;
+		}
+		return poblacion\;	
+	}
+	
+	\caption{generarPoblacion()}
+\end{algorithm}
+
+\subsection{Funci\'on: evalua}
+
+\begin{algorithm}[H]
+	\DontPrintSemicolon
+	\SetAlgoLined
+	\SetKwBlock{Begin}{While}{}
+	\SetAlgoLined
+	
+	%\KwResult{Write here the result }
+	inicializar variable Tamanio con el n\'umero de individuos de la poblaci\'on que recibe\;
+	inicializar matrices binarias MGE, PHE, GHE,PGE\;
+	inicializar variable individuo como arreglo\;
+	calificacion = 0\;
+	profesor = 0\;
+	materia = 0\;
+	grupo = 0\;
+	horario = 0\;
+	k = 0\;
+	\SetAlgoVlined \While{$k < = Tamanio$}{
+		$individuo \leftarrow $ individuo de la población de individuos \;
+		materia = individuo[0][0]\;
+		profesor = individuo[0][1]\;
+		grupo = individuo[1]\;
+		horario = individuo[2]\;
+		incrementar $phe[profesor][hora]$ en  $1$\;
+		incrementar $mge[materia][grupo]$ en  $1$\;
+		incrementar $ghe[grupo][hora]$ en $1$\;
+		incrementar $pge[profesor][grupo]$ en $1$\;
+		
+		\If{PHE[profesor][horario] $>$ 1  }{incrementar $calificacion$ en $30$}
+		\If{GHE[grupo][hora] $>$ 1}{incrementar $calificacion$ en $16$}
+		\If{MGE[materia][grupo] $>$ 1}{incrementar $calificacion$ en $10$}
+		\If{PGE[profesor][grupo]}{incrementar $calificacion$ en $1$}
+		\If{PHE[profesor][1]==1}{\If{PHE[profesor][2]==0}{\If{PHE[profesor][3]==0}{incrementar $calificacion$ en $2$}}}	
+		\If{PHE[profesor][2]==1}{\If{PHE[profesor][3]==0}{\If{PHE[profesor][4]==0}{incrementar $calificacion$ en $2$}}}
+		\If{PHE[profesor][3]==1}{\If{PHE[profesor][4]==0}{\If{PHE[profesor][5]==0}{incrementar $calificacion$ en $2$}}} \If{PHE[profesor][4]==1}{\If{PHE[profesor][5]==0}{\If{PHE[profesor][6]==0}{incrementar $calificacion$ en $2$}}}
+	}
+\end{algorithm}
+
+\begin{algorithm}
+	\setcounter{AlgoLine}{44}
+	\SetKwBlock{While}{}{end}
+	\SetAlgoVlined
+	%HUECOS GRUPO
+	\While{
+		\If{GHE[grupo][1]==1}{\If{GHE[grupo][2]==0}{\If{GHE[grupo][3]==0}{incrementar $calificacion$ en $2$}}}	
+		\If{GHE[grupo][2]==1}{\If{GHE[grupo][3]==0}{\If{GHE[grupo][4]==0}{incrementar $calificacion$ en $2$}}}
+		\If{GHE[grupo][3]==1}{\If{GHE[grupo][4]==0}{\If{GHE[grupo][5]==0}{incrementar $calificacion$ en $2$}}}
+		\If{GHE[grupo][4]==1}{\If{GHE[grupo][5]==0}{\If{GHE[grupo][6]==0}{incrementar $calificacion$ en $2$}}}
+	}
+	return calificacion\;	
+	\caption{evalua(individuos)}
+\end{algorithm}
+
+\subsection{Mutaci\'on}
+\begin{algorithm}[H]
+	\DontPrintSemicolon
+	\SetAlgoLined
+	%\KwResult{Write here the result }
+	inicializar variable aux1 y aux2 como arreglos\;
+	grupo1 = 0\;
+	grupo2 = 0\;
+	$aux1 \leftarrow $ individuo de la poblacion\;
+	$aux2 \leftarrow $ individuo de la poblacion\;
+	grupo1 = aux1[1]\;
+	grupo2 = aux2[1]\;
+	aux1[1] = grupo2\;
+	aux2[1] = grupo1\;
+	poblacion[aux1] = aux1\;
+	poblacion[aux2] = aux2\;
+	return poblacion \;
+	\caption{mutacionGrupos(poblacion)}
+\end{algorithm}
+
+\begin{algorithm}[H]
+	\DontPrintSemicolon
+	\SetAlgoLined
+	%\KwResult{Write here the result }
+	inicializar variable aux1 y aux2 como arreglos\;
+	horario1 = 0\;
+	horario2 = 0\;
+	$aux1 \leftarrow $ individuo de la poblacion\;
+	$aux2 \leftarrow $ individuo de la poblacion\;
+	horario1 = aux1[2]\;
+	horario2 = aux2[2]\;
+	aux1[2] = horario2\;
+	aux2[2] = horario1\;
+	poblacion[aux1] = aux1\;
+	poblacion[aux2] = aux2\;
+	return poblacion \;
+	\caption{mutacionHorarios(poblacion)}
+	\end{algorithm}  
