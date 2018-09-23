@@ -1,6 +1,6 @@
 
 \begin{UseCase}{CUI1.1}{Registrar edificio}{	
-	Permite al actor registrar un nuevo edificio para la infraestructura de la ESCOM.
+	Permite al actor registrar un nuevo edificio que forma parte de la infraestructura de la ESCOM.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -35,7 +35,7 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Llevar un control de la infraestructura de la ESCOM.}
+	\UCitem{Propósito}{Registrar un edificio que nos permitirá registrar los espacios.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli \cdtRef{edificio:nombre}{Nombre}: \ioEscribir.
@@ -57,10 +57,9 @@
 			\UCli Ninguna	
 		\end{UClist}
 	}
-	%Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
 	\UCitem{Reglas de negocio}{
 		\begin{UClist}
-			\UCli \cdtIdRef{RN-N1}{Número de niveles permitido para un edificio}.
+			\UCli \cdtIdRef{RN-S1}{Datos requeridos}
 			\UCli \cdtIdRef{RN-S2}{Unicidad de elementos}.
 		\end{UClist}
 	}
@@ -71,11 +70,11 @@
 			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio} indicando que el nombre del edificio ya existe.
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUI1}{Gestionar Edificios}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita registrar un edifico dando clic en el ícono IURegistrar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
+	\UCpaso [\UCactor] Solicita registrar un edifico dando clic en el ícono \btnRegistrar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
 	
 	\UCpaso[\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUI1.1}{Registrar Edificio}.
 	
@@ -93,7 +92,10 @@
 	
 \end{UCtrayectoria}
 
+
 \begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor desea cancelar la operación.}
+	\UCpaso [\UCactor] Solicita cancelar la operación oprimiendo el botón \cdtButton{Cancelar}.
+	
 	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
 \end{UCtrayectoriaA}
 

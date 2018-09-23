@@ -18,7 +18,7 @@ En la figura~\ref{fig:edificio} se muestra la estructura de información que man
 %--------------------------------------------------------------------------------
 \begin{BusinessEntity}{edificio}{Edificio}
 	
-	\Battr{nombre}{Nombre}{\tdFrase}{Es el nombre con el que se registra el edificio}{\requerido}{\longitudMax{50}{caracteres}}{Caracteres admitidos: [A-Z] $|$ [a-z] $|$ [1-9] $|$ \_ $|$ $-$ $|$ \textvisiblespace.}
+	\Battr{nombre}{Nombre}{\tdFrase}{Es el nombre con el que se registra el edificio}{\requerido}{\longitudMax{50}{caracteres}}{Caracteres admitidos: [A-Z] $|$ [a-z] $|$ [1-9] $|$ [á,é,é,ó,ú]  $|$ [Á,É,Í,Ó,Ú] $|$ \_ $|$ $-$ $|$ \textvisiblespace.}
 	
 	\Battr{nivel}{Nivel}{\tdNumerico}{Es el número de niveles totales que tiene el edificio}{\requerido}{\longitudMinMax{1}{caracteres}{2}{caracteres}}{Caracteres admitidos: [0-9].}
 	

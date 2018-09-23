@@ -1,6 +1,7 @@
 
-\begin{UseCase}{CUI1}{Gestionar edificios}{	
-	Permite al actor registrar un nuevo edificio, consultar, modificar y eliminar los registros de los edificios ya existentes para la ESCOM. Esto permitirá tener un control de la infraestructura de la escuela.
+\begin{UseCase}{CUI1}{Gestionar edificios}{
+				
+	Permite al actor registrar un nuevo edificio, consultar, modificar y eliminar los registros de los edificios ya existentes para la ESCOM. Esto permitirá tener un control de la infraestructura de la escuela, y posteriormente se podrán registrar los espacios existentes.
 }
 
 \UCccitem{Versión}{0.1}
@@ -37,7 +38,7 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Tener un control de la infraestructura de la ESCOM y asignarla en los horarios.}
+	\UCitem{Propósito}{Tener un control de la infraestructura de la ESCOM y registrar los espacios existentes.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -45,7 +46,7 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli Tabla que muestra el Nombre del edificio y el número de niveles que tiene.
+			\UCli Tabla que muestra: \cdtRef{edificio:nombre}{Nombre} y \cdtRef{edificio:nivel}{Número de niveles} del edificio.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -73,13 +74,13 @@
 
 \begin{UCtrayectoria}
 	
-	\UCpaso [\UCactor] Selecciona la opción ''Edificios'' del menú \textbf{Edificios}. %\cdtIdRef{MN1}{Menú de la Secretaría de Posgrado}.
+	\UCpaso [\UCactor] Selecciona la opción ''Edificios'' del menú \textbf{Edificios}.
 	
-	\UCpaso [\UCsist] Obtiene el nombre del edificio y el número de niveles.
+	\UCpaso [\UCsist] Obtiene el nombre y número de niveles del edificio.
 	
-	\UCpaso [\UCsist] Ordena alfabéticamente los edificios por el nombre.
+	\UCpaso [\UCsist] Ordena alfabéticamente los edificios por nombre.
 	
-	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUI1}{Gestionar Edificios} con la información de los edificios obtenida e iconos IUModificar, IUEliminar y IURegistrar. 
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUI1}{Gestionar Edificios} con la información de los edificios obtenida con los botones \cdtButton{Modificar}, \cdtButton{Eliminar}, \cdtButton{Consultar} y \cdtButton{Espacios}, y con el ícono \btnRegistrar. 
 	\label{cui1:gestionar}
 \end{UCtrayectoria}
 
@@ -105,3 +106,7 @@
 {Paso \ref{cui1:gestionar} de la Trayectoria Principal}
 {\cdtIdRef{CUI1.4}{Consultar edificio}}
 
+\UCExtensionPoint 
+{El actor requiere gestionar los espacios del edificio en cuestión.}
+{Paso \ref{cui1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUI1.5}{Gestionar espacios}}

@@ -69,19 +69,19 @@
 			\UCli Ninguno
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUI1}{Gestionar Edificios}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita eliminar un edificio dando clic en el icono IUEliminar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}.
+	\UCpaso [\UCactor] Solicita eliminar un edificio oprimiendo el botón \cdtButton{Eliminar} de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}.
 	
 	\UCpaso [\UCsist] Verifica que el edificio no tenga un espacio asociado. \refTray{A}
 	
 	\UCpaso [\UCsist] Solicita la confirmación para eliminar el edificio a través del mensaje \cdtIdRef{MSG2}{Eliminar Elemento}.
 	
-	\UCpaso [\UCactor] Confirma eliminar el espacio oprimiendo el botón \cdtButton{Si}.
+	\UCpaso [\UCactor] Confirma eliminar el edificio oprimiendo el botón \cdtButton{Si}.
 	
-	\UCpaso [\UCsist] Elimina el espacio.
+	\UCpaso [\UCsist] Elimina el edificio
 	
 	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUI1}{Gestionar Edificios} indicando que el edificio se eliminó correctamente.	
 	

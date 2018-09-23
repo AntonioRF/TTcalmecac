@@ -35,7 +35,7 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Mantener actualizada la infraestructura de la ESCOM.}
+	\UCitem{Propósito}{Mantener actualizada la información de la infraestructura de la ESCOM.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli \cdtRef{edificio:nombre}{Nombre}: \ioEscribir.
@@ -44,8 +44,8 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli \cdtRef{edificio:nombre}{Nombre}.
-			\UCli \cdtRef{edificio:nivel}{Niveles}. 
+			\UCli \cdtRef{edificio:nombre}{Nombre}: \ioObtener.
+			\UCli \cdtRef{edificio:nivel}{Niveles}: \ioObtener.
 			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUI1}{Gestionar Edificios} indicando que la modificación se realizó correctamente.
 		\end{UClist}
 	}
@@ -62,7 +62,7 @@
 	%Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
 	\UCitem{Reglas de negocio}{
 		\begin{UClist}
-			\UCli \cdtIdRef{RN-N1}{Número de niveles permitido para un edificio}.
+			\UCli \cdtIdRef{RN-S1}{Datos requeridos}
 			\UCli \cdtIdRef{RN-S2}{Unicidad de elementos}.
 		\end{UClist}
 	}
@@ -73,11 +73,11 @@
 			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUI1.2}{Modificar Edificio} indicando que el nombre del edificio ya existe.
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUI1}{Gestionar Edificios}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita modificar un edifico dando clic en el ícono IUModificar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
+	\UCpaso [\UCactor] Solicita modificar un edifico oprimiendo el botón \cdtButton{Modificar} de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
 	
 	\UCpaso [\UCsist] Obtiene el nombre y número de niveles del edificio previamente registrados.
 	
@@ -97,7 +97,10 @@
 	
 \end{UCtrayectoria}
 
+
 \begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor desea cancelar la operación.}
+	\UCpaso [\UCactor] Solicita cancelar la operación oprimiendo el botón \cdtButton{Cancelar}.
+	
 	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
 \end{UCtrayectoriaA}
 

@@ -35,7 +35,7 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Permite al actor la consulta de los detalles del edificio y los espacios registrados en el.}
+	\UCitem{Propósito}{Permite al actor la consulta de los detalles del edificio y los espacios registrados en él.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -44,11 +44,11 @@
 	\UCitem{Salidas}{
 		\begin{UClist}
 			
-			Información del edificio 
+			Información del edificio:
 			\UCli \cdtRef{edificio:nombre}{Nombre}.
 			\UCli \cdtRef{edificio:nivel}{Niveles}.
 			
-			Información del espacio
+			Información del espacio:
 			\UCli \cdtRef{espacio:nivel}{Nivel}.
 			\UCli \cdtRef{espacio:clave}{Clave}.
 			\UCli \cdtRef{espacio:nombre}{Nombre}.
@@ -77,11 +77,11 @@
 			\UCli Ninguno
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUI1}{Gestionar Edificios}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita consultar un edifico dando clic en el ícono IUConsultar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
+	\UCpaso [\UCactor] Solicita consultar un edifico oprimiendo el botón \cdtButton{Consultar} de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. 
 	
 	\UCpaso [\UCsist] Obtiene el nombre y número de niveles del edificio a consultar.
 	
