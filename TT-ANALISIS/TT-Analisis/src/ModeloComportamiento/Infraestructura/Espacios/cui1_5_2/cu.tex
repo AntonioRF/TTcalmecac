@@ -1,6 +1,6 @@
 
 \begin{UseCase}{CUI1.5.2}{Modificar Espacio}{	
-	Permite al actor modificar un nuevo espacio de un edificio de la ESCOM.
+	Permite al actor modificar un espacio previamente registrado en un nivel de un edificio de la ESCOM.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -35,41 +35,40 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Modificar un nuevo espacio para poder asignarlo un grupo de Unidades de Aprendizaje.}
+	\UCitem{Propósito}{Modificar la información de un espacio a fin de que este actualizada para poder asignarlo a un grupo.}
 	\UCitem{Entradas}{
 		\begin{UClist}
-		\UCli \cdtRef{espacio:nivel}{Nivel}: \ioEscribir.
-		\UCli \cdtRef{espacio:numero}{Número}: \ioEscribir.
-		\UCli \cdtRef{espacio:nombre}{Nombre}: \ioEscribir.
-		\UCli \cdtRef{espacio:capacidad}{Capacidad}: \ioEscribir.
-		
-		\UCli \cdtRef{tipoEspacio:nombre}{Tipo de espacio}: \ioSeleccionar.
-		\UCli \cdtRef{tipoLaboratorio:nombreTipoLab}{Tipo de laboratorio}: \ioSeleccionar.
-		\UCli \cdtRef{espacio:accesoDiscapacitados}{Acceso a discapacitados}: \ioSeleccionar.
-		\UCli \cdtRef{espacio:funciona}{¿Puede ser utilizado?}: \ioSeleccionar.
-		
-		\UCli \cdtRef{espacio:observaciones}{Observaciones}: \ioEscribir.
+			\UCli \cdtRef{espacio:nivel}{Nivel}: \ioSeleccionar.
+			\UCli \cdtRef{espacio:numero}{Número}: \ioSeleccionar.
+			\UCli \cdtRef{espacio:nombre}{Nombre}: \ioEscribir.
+			\UCli \cdtRef{espacio:capacidad}{Capacidad}: \ioSeleccionar.
+			\UCli \cdtRef{tipoEspacio:nombre}{Tipo de espacio}: \ioSeleccionar.
+			\UCli \cdtRef{tipoLaboratorio:nombreTipoLab}{Tipo de laboratorio}: \ioSeleccionar.
+			\UCli \cdtRef{espacio:accesoDiscapacitados}{Acceso a discapacitados}: \ioSeleccionar.
+			\UCli \cdtRef{espacio:funciona}{¿Puede ser utilizado?}: \ioSeleccionar.
+			\UCli \cdtRef{espacio:observaciones}{Observaciones}: \ioEscribir.
 		\end{UClist}
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli \cdtRef{espacio:nivel}{Nivel}.
-			\UCli \cdtRef{espacio:numero}{Número}.
-			\UCli \cdtRef{espacio:nombre}{Nombre}.
-			\UCli \cdtRef{espacio:capacidad}{Capacidad}.
+			\UCli Edificio: \cdtRef{edificio:nombre}{Nombre} del edificio.
 			
-			\UCli \cdtRef{tipoEspacio:nombre}{Tipo de espacio}.
-			\UCli \cdtRef{tipoLaboratorio:nombreTipoLab}{Tipo de laboratorio}.
-			\UCli \cdtRef{espacio:accesoDiscapacitados}{Acceso a discapacitados}.
-			\UCli \cdtRef{espacio:funciona}{¿Puede ser utilizado?}.
+			\UCli \cdtRef{espacio:nivel}{Nivel}: \ioObtener.
+			\UCli \cdtRef{espacio:numero}{Número}: \ioObtener.
+			\UCli \cdtRef{espacio:nombre}{Nombre}: \ioObtener.
+			\UCli \cdtRef{espacio:capacidad}{Capacidad}: \ioObtener.
+			\UCli \cdtRef{tipoEspacio:nombre}{Tipo de espacio}: \ioObtener.
+			\UCli \cdtRef{tipoLaboratorio:nombreTipoLab}{Tipo de laboratorio}: \ioObtener.
+			\UCli \cdtRef{espacio:accesoDiscapacitados}{Acceso a discapacitados}: \ioObtener.
+			\UCli \cdtRef{espacio:funciona}{¿Puede ser utilizado?}: \ioObtener.
+			\UCli \cdtRef{espacio:observaciones}{Observaciones}: \ioObtener.
 			
-			\UCli \cdtRef{espacio:observaciones}{Observaciones}.
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios} indicando que el registro se realizó correctamente.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios} indicando que se modificó correctamente.	
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
 		\begin{UClist}
-			\UCli Que se haya registrado al menos un edificio.
+			\UCli Ninguna
 		\end{UClist}
 	}
 	
@@ -92,30 +91,28 @@
 			
 			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUI1.5.2}{Modificar Espacio} indicando que el nombre de espacio ya existe.
 			
-			
 			\UCli \cdtIdRef{MSG7}{No existe información necesaria en el sistema}: Se muestra en la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios} indicando que no se puede modificar un espacio debido a que no se ha registrado al menos un tipo de laboratorio.
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUI1.5}{Gestionar espacios}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita modificar un espacio dando clic en el ícono  IUmodificar 
-	de la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios}. 
+	\UCpaso [\UCactor] Solicita modificar un espacio oprimiendo el botón \cdtButton{Modificar} de la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios}. 
 	
 	\UCpaso [\UCsist] Verifica que exista al menos un tipo de laboratorio registrado. \refTray{A}
 
-	\UCpaso [\UCsist] Carga la información previamente registrada de la Unidad de Aprendizaje.
+	\UCpaso [\UCsist] Carga la información previamente registrada del espacio seleccionado.
 
 	\UCpaso[\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUI1.5.1}{Modificar Espacio}.
 	
-	\UCpaso [\UCactor] Completa la información solicitada. \label{CUI1.5.1:CompletaInfo}
+	\UCpaso [\UCactor] Completa la información solicitada. \label{CUI1.5.2:CompletaInfo}
 	
 	\UCpaso [\UCactor] Solicita modificar la información oprimiendo el botón \cdtButton{Aceptar}. \refTray{B}
 	
 	\UCpaso [\UCsist] Verifica que se hayan completado los campos obligatorios con base en la regla de negocios \cdtIdRef{RN-S1}{Datos requeridos}. \refTray{C}
 		
-	\UCpaso [\UCsist] Verifica que no haya otro Espacio registrado con el mismo nombre, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{D}
+	\UCpaso [\UCsist] Verifica que no exista un espacio registrado con el mismo nombre, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{D}
 	
 	\UCpaso [\UCsist] Modifica la información del espacio.
 	
@@ -123,22 +120,24 @@
 	
 \end{UCtrayectoria}
 
-\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El catálogo tipo de laboratorio no tiene información.}
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El catálogo 'Tipo de laboratorio' no tiene información.}
 	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG7}{No existe información necesaria en el sistema} en la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios}. 
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}[Fin del caso de uso]{B}{El actor desea cancelar la operación.}
+	\UCpaso [\UCactor] Solicita cancelar la operación oprimiendo el botón \cdtButton{Cancelar}.
+	
 	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios}. 
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{No se completaron los campos obligatorios.}
 	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUI1.5.2}{Modificar Espacio}.
 	
-	\UCpaso Regresa al paso \ref{CUA1.1:CompletaInfo} de la trayectoria principal.
+	\UCpaso Regresa al paso \ref{CUI1.5.2:CompletaInfo} de la trayectoria principal.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{D}{El nombre del espacio ya fue registrado.}
 	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUI1.5.2}{Modificar Espacio}.
 	
-	\UCpaso Regresa al paso \ref{CUA1.1:CompletaInfo} de la trayectoria principal.
+	\UCpaso Regresa al paso \ref{CUI1.5.2:CompletaInfo} de la trayectoria principal.
 \end{UCtrayectoriaA}

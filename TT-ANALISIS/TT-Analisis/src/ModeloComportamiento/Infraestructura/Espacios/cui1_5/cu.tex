@@ -36,7 +36,7 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Mantener actualizados los espacios disponibles en ESCOM.}
+	\UCitem{Propósito}{Mantener actualizados los espacios disponibles en ESCOM para asociarlos a los grupos.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -44,12 +44,16 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli Tabla que muestra el Nombre, la Clave y la Capacidad del Espacio.
+			\UCli Edificio: \cdtRef{edificio:nombre}{Nombre} del edificio.
+			
+			\UCli Nivel: \cdtRef{edificio:nivel}{Niveles} del edificio.
+			
+			\UCli Tabla que muestra: \cdtRef{espacio:clave}{Clave}, \cdtRef{espacio:nombre}{Nombre},  y \cdtRef{espacio:capacidad}{Capacidad} del espacio.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
 		\begin{UClist}
-			\UCli Se debe tener al menos un edificio.
+			\UCli Ninguna.
 		\end{UClist}
 	}
 	\UCitem{Postcondiciones}{
@@ -72,10 +76,15 @@
 
 \begin{UCtrayectoria}
 	
-	\UCpaso [\UCactor] Selecciona IUConsultar de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}. %\cdtIdRef{MN1}{Menú de la Secretaría de Posgrado}.
-	\UCpaso [\UCsist] Obtiene el nombre del edificio y su número de niveles.
+	\UCpaso [\UCactor] Solicita gestionar los espacios oprimiendo el botón \cdtButton{Espacios} de la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}.
+	
+	\UCpaso [\UCsist] Obtiene el nombre y número de niveles del edificio.
+	
+	\UCpaso [\UCsist] Obtiene la clave, nombre y capacidad de los espacios contenidos en dicho edificio y nivel.
+	
 	\UCpaso [\UCsist] Ordena los espacios de forma ascendente de acuerdo a su clave.
-	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUI1.5}{Gestionar Edificios} con la información de los edificios obtenidos y los iconos IU Modificar, IUEliminar, IURegistrar y IUConsultar. 
+	
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios} con la información de los espacios obtenidos y los botones \cdtButton{Modificar}, \cdtButton{Eliminar} y \cdtButton{Consultar}, y el ícono \btnRegistrar. 
 	\label{cui1.5:gestionar}
 \end{UCtrayectoria}
 
@@ -84,21 +93,21 @@
 \UCExtensionPoint 
 {El actor requiere registrar un nuevo espacio.}
 {Paso \ref{cui1.5:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUA1.5.1}{Registrar espacio}}
+{\cdtIdRef{CUI1.5.1}{Registrar espacio}}
 
 \UCExtensionPoint 
 {El actor requiere modificar un espacio previamente registrado.}
 {Paso \ref{cui1.5:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUA1.5.2}{Modificar espacio}}
+{\cdtIdRef{CUI1.5.2}{Modificar espacio}}
 
 \UCExtensionPoint 
 {El actor requiere eliminar un espacio previamente registrado.}
 {Paso \ref{cui1.5:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUA1.5.3}{Eliminar espacio}}
+{\cdtIdRef{CUI1.5.3}{Eliminar espacio}}
 
 \UCExtensionPoint 
 {El actor requiere consultar la información de un espacio previamente registrado.}
 {Paso \ref{cui1.5:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUA1.5.4}{Consultar espacio}}
+{\cdtIdRef{CUI1.5.4}{Consultar espacio}}
 
 

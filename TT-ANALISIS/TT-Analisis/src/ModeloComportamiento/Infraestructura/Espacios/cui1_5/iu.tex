@@ -2,23 +2,23 @@
 
 \subsubsection{Objetivo}
 	
-Esta pantalla permite al actor visualizar los espacios disponibles en la ESCOM, teniendo la posibilidad de registrar uno nuevo o modificar y eliminar los disponibles.
+Esta pantalla permite al actor visualizar los espacios disponibles en un edificio de la ESCOM, teniendo la posibilidad de registrar uno nuevo o modificar y eliminar los disponibles.
 
 \subsubsection{Diseño}
 
-    En la figura \ref{IUI1.5} se muestra la pantalla ''Gestionar Espacios '', por medio de la cual se muestra la información de los diferentes espacios registrados. La pantalla muestra el nombre del edificio al que pertenecen la clave, el nombre y la capacidad del espacio, ordenados de mayor a menor por su clave.
+    En la figura \ref{IUI1.5} se muestra la pantalla ''Gestionar Espacios'', por medio de la cual se muestra la información de los diferentes espacios registrados. La pantalla muestra el nombre del edificio al que pertenecen, el nivel en el que se encuentra y la clave, nombre y capacidad del espacio, ordenados de forma ascendente por su clave.
  
   \IUfig[.8]{../ModeloComportamiento/Infraestructura/Espacios/cui1_5/images/IUI1_5.png}{IUI1.5}{Gestionar Espacios}
 
 \subsubsection{Comandos}
     \begin{itemize}
-	\item IURegistrar: Permite al actor registrar un nuevo espacio, dirige a la pantalla \cdtIdRef{IUI1.5.1}{Registrar Espacios}.
+	\item \btnRegistrar: Permite al actor registrar un nuevo espacio, dirige a la pantalla \cdtIdRef{IUI1.5.1}{Registrar Espacio}.
 	
-	\item IUModificar: Permite al actor modificar el contenido de un espacio previamente registrado, dirige a la pantalla \cdtIdRef{IUI1.5.2}{Modificar Espacio}.
+	\item \cdtButton{Modificar}: Permite al actor modificar el contenido de un espacio previamente registrado, dirige a la pantalla \cdtIdRef{IUI1.5.2}{Modificar Espacio}.
 	
-	\item IUEliminar: Permite al actor eliminar un espacio previamente registrado, dirige a la pantalla \cdtIdRef{IUI1.5.3}{Eliminar Espacio}.
+	\item \cdtButton{Eliminar}: Permite al actor eliminar un espacio previamente registrado, dirige a la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios}.
 
-	\item IUConsultar: Permite al actor consultar la información de un espacio previamente registrado, dirige a la pantalla \cdtIdRef{IUI1.5.4}{Consultar Espacio}.
+	\item \cdtButton{Consultar}: Permite al actor consultar la información de un espacio previamente registrado, dirige a la pantalla \cdtIdRef{IUI1.5.4}{Consultar Espacio}.
 
 	\item \cdtButton{Regresar}: Permite al actor volver a la gestión de edificios, dirige a la pantalla \cdtIdRef{IUI1}{Gestionar Edificios}.
 

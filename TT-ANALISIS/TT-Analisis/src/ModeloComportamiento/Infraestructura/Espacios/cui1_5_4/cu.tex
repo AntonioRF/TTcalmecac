@@ -1,5 +1,5 @@
-\begin{UseCase}{CUI1.5.4}{Consultar Espacio}{	
-	Permite al actor consultar la información de un espacio previamente registrado dentro de un edificio de la unidad académica.
+\begin{UseCase}{CUI1.5.4}{Consultar espacio}{	
+	Permite al actor consultar la información de un espacio previamente registrado para un nivel de un edificio.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -34,7 +34,7 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Consultar la información de un espacio registrado dentro de la unidad académica.}
+	\UCitem{Propósito}{Consultar la información de un espacio registrado.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli No aplica
@@ -42,6 +42,7 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
+			\UCli \cdtRef{edificio:nombre}{Nombre}.
 			\UCli \cdtRef{espacio:nivel}{Nivel}.
 			\UCli \cdtRef{espacio:numero}{Número}.
 			\UCli \cdtRef{espacio:clave}{Clave}.
@@ -58,7 +59,7 @@
 	}
 	\UCitem{Precondiciones}{
 		\begin{UClist}
-			\UCli Que se haya registrado al menos un espacio de un edificio.
+			\UCli Ninguna
 		\end{UClist}
 	}
 	\UCitem{Postcondiciones}{
@@ -77,14 +78,15 @@
 			\UCli No aplica.
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUI1.5}{Gestionar espacios}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita consultar un espacio dando clic en el ícono IUConsultar
-	de la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios}. 
+	\UCpaso [\UCactor] Solicita consultar un espacio oprimiendo el botón \cdtButton{Consultar} de la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios}. 
 	
-	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUI1.5.4}{Consultar Espacio} con la información del espacio seleccionado.
+	\UCpaso[\UCsist] Obtiene el nombre del edificio, toda la información de la entidad \cdtRef{espacio}{Espacio}, \cdtRef{tipoLaboratorio}{Tipo laboratorio} y \cdtRef{tipoEspacio}{Espacio}.
 	
-	\UCpaso [\UCactor] Oprime el botón \cdtButton{Regresar}. 
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUI1.5.4}{Consultar Espacio} con la información obtenida.
+	
+	\UCpaso [\UCactor] Solicita terminar la consulta oprimiendo el botón \cdtButton{Regresar}. 
 \end{UCtrayectoria}

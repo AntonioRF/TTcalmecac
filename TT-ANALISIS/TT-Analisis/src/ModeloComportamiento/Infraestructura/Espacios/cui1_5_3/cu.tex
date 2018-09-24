@@ -43,12 +43,12 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUI1.5}{Gestionar espacios} indicando que el espacio se eliminó correctamente.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios} indicando que el espacio se eliminó correctamente.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
 		\begin{UClist}
-			\UCli Que el espacio no haya sido asociado a algún grupo o estructura educativa.
+			\UCli Que el espacio no haya sido asociado a algún grupo.
 		\end{UClist}
 	}	
 	\UCitem{Postcondiciones}{
@@ -67,14 +67,14 @@
 			\UCli Ninguno
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUI1.5}{Gestionar espacios}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita eliminar un espacio dando clic en el icono IUEliminar 
-	de la pantalla \cdtIdRef{IUI1.5}{Gestionar espacios}
+	\UCpaso [\UCactor] Solicita eliminar un espacio oprimiendo el botón \cdtButton{Eliminar}
+	de la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios}
 	
-	\UCpaso [\UCsist] Verifica que el espacio no haya sido asociado a uno o más grupos o estructuras académicas. \refTray{A}
+	\UCpaso [\UCsist] Verifica que el espacio no haya sido asociado a uno o más grupos. \refTray{A}
 	
 	\UCpaso [\UCsist] Solicita la confirmación a través del mensaje \cdtIdRef{MSG2}{Eliminar Elemento}.
 	
@@ -82,10 +82,11 @@
 	
 	\UCpaso [\UCsist] Elimina el espacio.
 	
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUI1.5}{Gestionar espacios} indicando que el espacio se eliminó correctamente.	
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios} indicando que el espacio se eliminó correctamente.	
 	
 \end{UCtrayectoria}
 
-\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{La espacio ya fue asociada a una Unidad de Aprendizaje.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No es posible eliminar un elemento} en la pantalla \cdtIdRef{IUA1}{Gestionar espacios}. 
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El espacio ya fue asociado a un grupo.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No es posible eliminar un elemento} en la pantalla \cdtIdRef{IUI1.5}{Gestionar Espacios}. 
+	
 \end{UCtrayectoriaA}
