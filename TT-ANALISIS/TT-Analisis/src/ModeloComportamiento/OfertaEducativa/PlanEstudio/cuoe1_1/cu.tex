@@ -50,6 +50,7 @@
 	\UCitem{Salidas}{
 		\begin{UClist}
 			\UCli Programa Académico: Ingeniería en Sistemas Computacionales.
+			
 			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio} indicando que el registro se realizó correctamente.
 		\end{UClist}
 	}
@@ -66,7 +67,6 @@
 	%Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
 	\UCitem{Reglas de negocio}{
 		\begin{UClist}
-			\UCli \cdtIdRef{RN-N10}{Nombre del plan}.
 			\UCli \cdtIdRef{RN-S2}{Unicidad de elementos}.
 		\end{UClist}
 	}
@@ -77,11 +77,11 @@
 			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUOE1.1}{Registrar Plan de Estudio} indicando que el nombre del plan de estudio ya existe.
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUOE1}{Gestionar planes de estudio}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita registrar un plan de estudio dando clic en el ícono IURegistrar de la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio}. 
+	\UCpaso [\UCactor] Solicita registrar un plan de estudio dando clic en el ícono \btnRegistrar de la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio}. 
 	
 	\UCpaso[\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUOE1.1}{Registrar Plan de Estudio}.
 	
@@ -90,10 +90,8 @@
 	\UCpaso [\UCactor] Solicita registrar la información oprimiendo el botón \cdtButton{Aceptar}. \refTray{A}
 	
 	\UCpaso [\UCsist] Verifica que se hayan completado los campos obligatorios con base en la regla de negocios \cdtIdRef{RN-S1}{Datos requeridos}. \refTray{B}
-	
-	\UCpaso [\UCsist] Verifica que el nombre del plan de estudio tenga el formato especificado en la regla de negocios \cdtIdRef{RN-N10}{Nombre del plan}. \refTray{C}
-	
-	\UCpaso [\UCsist] Verifica que el nombre del plan de estudio no se haya registrado previamente, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{D}
+		
+	\UCpaso [\UCsist] Verifica que el nombre del plan de estudio no se haya registrado previamente, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{C}
 			
 	\UCpaso [\UCsist] Registra la información del plan de estudio.
 	
@@ -102,6 +100,8 @@
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor desea cancelar la operación.}
+	\UCpaso [\UCactor] Solicita cancelar la operación oprimiendo el botón \cdtButton{Cancelar}.
+	
 	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio}. 
 \end{UCtrayectoriaA}
 
@@ -111,14 +111,7 @@
 	\UCpaso Regresa al paso \ref{CUOE1.1:CompletaInfo} de la trayectoria principal.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{C}{El nombre del plan de estudio no corresponde a lo señalado.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG4}{Formato de campo incorrecto} en la pantalla \cdtIdRef{IUOE1.1}{Registrar Plan de Estudio}.
-	
-	\UCpaso 
-	Regresa al paso \ref{CUOE1.1:CompletaInfo} de la trayectoria principal.
-\end{UCtrayectoriaA}
-
-\begin{UCtrayectoriaA}{D}{El nombre del plan de estudio ya fue registrado.}
+\begin{UCtrayectoriaA}{C}{El nombre del plan de estudio ya fue registrado.}
 	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUOE1.1}{Registrar Plan de Estudio}.
 	
 	\UCpaso Regresa al paso \ref{CUOE1.1:CompletaInfo} de la trayectoria principal.

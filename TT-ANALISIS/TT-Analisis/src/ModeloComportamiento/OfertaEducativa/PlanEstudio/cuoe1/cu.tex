@@ -45,7 +45,7 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli Tabla que muestra el Nombre del plan de estudio.
+			\UCli Tabla que muestra: \cdtRef{planEstudio:nombre}{Nombre} del plan de estudio.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -73,15 +73,16 @@
 
 \begin{UCtrayectoria}
 	
-	\UCpaso [\UCactor] Selecciona la opción ''Planes de Estudio'' del menú \textbf{Planes de estudio}. %\cdtIdRef{MN1}{Menú de la Secretaría de Posgrado}.
+	\UCpaso [\UCactor] Selecciona la opción ''Planes de Estudio'' del menú \textbf{Planes de estudio}.
 	
 	\UCpaso [\UCsist] Obtiene el nombre de los planes de estudio registrados en el sistema.
 	
 	\UCpaso [\UCsist] Ordena alfabéticamente los planes de estudio por medio del nombre.
 	
-	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio} con la información obtenida e iconos IUModificar, IUConsultar, IUEliminar y IURegistrar. 
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio} con la información obtenida con los botones \cdtButton{Modificar}, \cdtButton{Eliminar}, \cdtButton{Consultar} y \cdtButton{Unidades Aprendizaje}, y el ícono \btnRegistrar.
 	\label{cuoe1:gestionar}
 \end{UCtrayectoria}
+
 
 \subsection{Puntos de extensión}
 
@@ -105,3 +106,7 @@
 {Paso \ref{cuoe1:gestionar} de la Trayectoria Principal}
 {\cdtIdRef{CUOE1.4}{Consultar plan de estudio}}
 
+\UCExtensionPoint 
+{El actor requiere gestionar unidades de aprendizaje de un plan de estudio.}
+{Paso \ref{cuoe1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUOE1.5}{Gestionar unidades de aprendizaje}}

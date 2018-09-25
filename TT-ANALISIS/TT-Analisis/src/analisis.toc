@@ -186,21 +186,19 @@
 \contentsline {chapter}{\numberline {9}Prototipo 3: Oferta educativa}{97}{chapter.9}
 \contentsline {section}{\numberline {9.1}Modelo de informaci\IeC {\'o}n: M\IeC {\'o}dulo Oferta Educativa}{97}{section.9.1}
 \contentsline {subsection}{\numberline {9.1.1}M\IeC {\'o}dulo Plan de Estudio: Descripci\IeC {\'o}n general}{97}{subsection.9.1.1}
-\contentsline {subsection}{\numberline {9.1.2}Plan de estudio}{98}{subsection.9.1.2}
-\contentsline {subsubsection}{Atributos}{98}{section*.64}
-\contentsline {subsection}{\numberline {9.1.3}Estado del plan de estudio}{98}{subsection.9.1.3}
-\contentsline {subsubsection}{Atributos}{98}{section*.65}
-\contentsline {subsection}{\numberline {9.1.4}Tipo de division}{98}{subsection.9.1.4}
-\contentsline {subsubsection}{Atributos}{98}{section*.66}
-\contentsline {subsection}{\numberline {9.1.5}M\IeC {\'o}dulo Unidad de Aprendizaje: Descripci\IeC {\'o}n general}{98}{subsection.9.1.5}
-\contentsline {subsection}{\numberline {9.1.6}Unidad de aprendizaje}{98}{subsection.9.1.6}
-\contentsline {subsubsection}{Atributos}{99}{section*.67}
-\contentsline {subsection}{\numberline {9.1.7}Tipo de unidad de aprendizaje}{99}{subsection.9.1.7}
-\contentsline {subsubsection}{Atributos}{99}{section*.68}
-\contentsline {subsection}{\numberline {9.1.8}Tipo de formaci\IeC {\'o}n}{100}{subsection.9.1.8}
+\contentsline {subsection}{\numberline {9.1.2}Plan de estudio}{97}{subsection.9.1.2}
+\contentsline {subsubsection}{Atributos}{97}{section*.64}
+\contentsline {subsection}{\numberline {9.1.3}Tipo de division}{97}{subsection.9.1.3}
+\contentsline {subsubsection}{Atributos}{99}{section*.65}
+\contentsline {subsection}{\numberline {9.1.4}M\IeC {\'o}dulo Unidad de Aprendizaje: Descripci\IeC {\'o}n general}{99}{subsection.9.1.4}
+\contentsline {subsection}{\numberline {9.1.5}Unidad de aprendizaje}{99}{subsection.9.1.5}
+\contentsline {subsubsection}{Atributos}{99}{section*.66}
+\contentsline {subsection}{\numberline {9.1.6}Tipo de unidad de aprendizaje}{100}{subsection.9.1.6}
+\contentsline {subsubsection}{Atributos}{100}{section*.67}
+\contentsline {subsection}{\numberline {9.1.7}Tipo de formaci\IeC {\'o}n}{100}{subsection.9.1.7}
+\contentsline {subsubsection}{Atributos}{100}{section*.68}
+\contentsline {subsection}{\numberline {9.1.8}Tipo de ense\IeC {\~n}anza}{100}{subsection.9.1.8}
 \contentsline {subsubsection}{Atributos}{100}{section*.69}
-\contentsline {subsection}{\numberline {9.1.9}Tipo de ense\IeC {\~n}anza}{100}{subsection.9.1.9}
-\contentsline {subsubsection}{Atributos}{100}{section*.70}
 \contentsline {section}{\numberline {9.2}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Oferta Educativa }{101}{section.9.2}
 \contentsline {section}{\numberline {9.3}CUOE1 Gestionar planes de estudio}{102}{section.9.3}
 \contentsline {subsection}{\numberline {9.3.1}Resumen}{102}{subsection.9.3.1}
@@ -247,38 +245,38 @@
 \contentsline {section}{\numberline {9.13}Interfaces del m\IeC {\'o}dulo}{126}{section.9.13}
 \contentsline {subsection}{\numberline {9.13.1}Plan de Estudio}{126}{subsection.9.13.1}
 \contentsline {subsection}{\numberline {9.13.2}IUOE1 Gestionar Planes de Estudio}{126}{subsection.9.13.2}
-\contentsline {subsubsection}{Objetivo}{126}{section*.71}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{126}{section*.72}
-\contentsline {subsubsection}{Comandos}{126}{section*.73}
+\contentsline {subsubsection}{Objetivo}{126}{section*.70}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{126}{section*.71}
+\contentsline {subsubsection}{Comandos}{126}{section*.72}
 \contentsline {subsection}{\numberline {9.13.3}IUOE1.1 Registrar Plan de Estudio}{127}{subsection.9.13.3}
-\contentsline {subsubsection}{Objetivo}{127}{section*.74}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{127}{section*.75}
-\contentsline {subsubsection}{Comandos}{127}{section*.76}
+\contentsline {subsubsection}{Objetivo}{127}{section*.73}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{127}{section*.74}
+\contentsline {subsubsection}{Comandos}{127}{section*.75}
 \contentsline {subsection}{\numberline {9.13.4}IUOE1.2 Modificar Plan de Estudio}{127}{subsection.9.13.4}
-\contentsline {subsubsection}{Objetivo}{127}{section*.77}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{127}{section*.78}
-\contentsline {subsubsection}{Comandos}{127}{section*.79}
-\contentsline {subsection}{\numberline {9.13.5}IUOE1.4 Consultar Planes de Estudio}{127}{subsection.9.13.5}
-\contentsline {subsubsection}{Objetivo}{127}{section*.80}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{130}{section*.81}
-\contentsline {subsubsection}{Comandos}{130}{section*.82}
+\contentsline {subsubsection}{Objetivo}{127}{section*.76}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{127}{section*.77}
+\contentsline {subsubsection}{Comandos}{127}{section*.78}
+\contentsline {subsection}{\numberline {9.13.5}IUOE1.4 Consultar Plan de Estudio}{130}{subsection.9.13.5}
+\contentsline {subsubsection}{Objetivo}{130}{section*.79}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{130}{section*.80}
+\contentsline {subsubsection}{Comandos}{130}{section*.81}
 \contentsline {subsection}{\numberline {9.13.6}Unidad de Aprendizaje}{130}{subsection.9.13.6}
 \contentsline {subsection}{\numberline {9.13.7}IUOE1.5 Gestionar Unidades de Aprendizaje}{130}{subsection.9.13.7}
-\contentsline {subsubsection}{Objetivo}{130}{section*.83}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{130}{section*.84}
-\contentsline {subsubsection}{Comandos}{131}{section*.85}
-\contentsline {subsection}{\numberline {9.13.8}IUOE1.5.1 Registrar Unidad de Aprendizaje}{131}{subsection.9.13.8}
-\contentsline {subsubsection}{Objetivo}{131}{section*.86}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{131}{section*.87}
-\contentsline {subsubsection}{Comandos}{133}{section*.88}
+\contentsline {subsubsection}{Objetivo}{131}{section*.82}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{131}{section*.83}
+\contentsline {subsubsection}{Comandos}{131}{section*.84}
+\contentsline {subsection}{\numberline {9.13.8}IUOE1.5.1 Registrar Unidad de Aprendizaje}{132}{subsection.9.13.8}
+\contentsline {subsubsection}{Objetivo}{132}{section*.85}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{132}{section*.86}
+\contentsline {subsubsection}{Comandos}{133}{section*.87}
 \contentsline {subsection}{\numberline {9.13.9}IUOE1.5.2 Modificar Unidad de Aprendizaje}{133}{subsection.9.13.9}
-\contentsline {subsubsection}{Objetivo}{133}{section*.89}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{133}{section*.90}
-\contentsline {subsubsection}{Comandos}{133}{section*.91}
+\contentsline {subsubsection}{Objetivo}{133}{section*.88}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{133}{section*.89}
+\contentsline {subsubsection}{Comandos}{133}{section*.90}
 \contentsline {subsection}{\numberline {9.13.10}IUOE1.5.4 Consultar Unidad de Aprendizaje}{133}{subsection.9.13.10}
-\contentsline {subsubsection}{Objetivo}{133}{section*.92}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{133}{section*.93}
-\contentsline {subsubsection}{Comandos}{133}{section*.94}
+\contentsline {subsubsection}{Objetivo}{133}{section*.91}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{133}{section*.92}
+\contentsline {subsubsection}{Comandos}{133}{section*.93}
 \contentsline {section}{\numberline {9.14}Pruebas del m\IeC {\'o}dulo: Infraestructura}{136}{section.9.14}
 \contentsline {subsection}{\numberline {9.14.1}Edificio}{136}{subsection.9.14.1}
 \contentsline {subsection}{\numberline {9.14.2}Espacio}{136}{subsection.9.14.2}
@@ -286,7 +284,7 @@
 \contentsline {section}{\numberline {10.1}Modelo de informaci\IeC {\'o}n: M\IeC {\'o}dulo Profesores}{137}{section.10.1}
 \contentsline {subsection}{\numberline {10.1.1}M\IeC {\'o}dulo Profesores: Descripci\IeC {\'o}n general}{137}{subsection.10.1.1}
 \contentsline {subsection}{\numberline {10.1.2}Profesor}{138}{subsection.10.1.2}
-\contentsline {subsubsection}{Atributos}{138}{section*.95}
+\contentsline {subsubsection}{Atributos}{138}{section*.94}
 \contentsline {section}{\numberline {10.2}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Profesores }{139}{section.10.2}
 \contentsline {section}{\numberline {10.3}CUA1 Gestionar academias}{140}{section.10.3}
 \contentsline {subsection}{\numberline {10.3.1}Resumen}{140}{subsection.10.3.1}
@@ -312,21 +310,21 @@
 \contentsline {section}{\numberline {10.8}Interfaces del m\IeC {\'o}dulo}{151}{section.10.8}
 \contentsline {subsection}{\numberline {10.8.1}Profesores}{151}{subsection.10.8.1}
 \contentsline {subsection}{\numberline {10.8.2}IUP1 Gestionar Profesores}{151}{subsection.10.8.2}
-\contentsline {subsubsection}{Objetivo}{151}{section*.96}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{151}{section*.97}
-\contentsline {subsubsection}{Comandos}{151}{section*.98}
+\contentsline {subsubsection}{Objetivo}{151}{section*.95}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{151}{section*.96}
+\contentsline {subsubsection}{Comandos}{151}{section*.97}
 \contentsline {subsection}{\numberline {10.8.3}IUP1.1 Registrar Academia}{152}{subsection.10.8.3}
-\contentsline {subsubsection}{Objetivo}{152}{section*.99}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{152}{section*.100}
-\contentsline {subsubsection}{Comandos}{152}{section*.101}
+\contentsline {subsubsection}{Objetivo}{152}{section*.98}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{152}{section*.99}
+\contentsline {subsubsection}{Comandos}{152}{section*.100}
 \contentsline {subsection}{\numberline {10.8.4}IUP1.2 Modificar Profesor}{152}{subsection.10.8.4}
-\contentsline {subsubsection}{Objetivo}{152}{section*.102}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{153}{section*.103}
-\contentsline {subsubsection}{Comandos}{153}{section*.104}
+\contentsline {subsubsection}{Objetivo}{152}{section*.101}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{153}{section*.102}
+\contentsline {subsubsection}{Comandos}{153}{section*.103}
 \contentsline {subsection}{\numberline {10.8.5}IUP1.4 Consultar Profesor}{153}{subsection.10.8.5}
-\contentsline {subsubsection}{Objetivo}{153}{section*.105}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{153}{section*.106}
-\contentsline {subsubsection}{Comandos}{154}{section*.107}
+\contentsline {subsubsection}{Objetivo}{153}{section*.104}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{153}{section*.105}
+\contentsline {subsubsection}{Comandos}{154}{section*.106}
 \contentsline {section}{\numberline {10.9}Pruebas del m\IeC {\'o}dulo: Infraestructura}{155}{section.10.9}
 \contentsline {subsection}{\numberline {10.9.1}Edificio}{155}{subsection.10.9.1}
 \contentsline {subsection}{\numberline {10.9.2}Espacio}{155}{subsection.10.9.2}
@@ -334,12 +332,12 @@
 \contentsline {section}{\numberline {11.1}Dise\IeC {\~n}o de mensajes}{157}{section.11.1}
 \contentsline {section}{\numberline {11.2}Par\IeC {\'a}metros comunes}{157}{section.11.2}
 \contentsline {section}{\numberline {11.3}Mensajes a trav\IeC {\'e}s de la pantalla}{158}{section.11.3}
-\contentsline {subsubsection}{{MSG1} {Operaci\IeC {\'o}n exitosa}}{158}{section*.108}
-\contentsline {subsubsection}{{MSG2} {Eliminar Elemento}}{159}{section*.109}
-\contentsline {subsubsection}{{MSG3} {Falta dato obligatorio}}{159}{section*.110}
-\contentsline {subsubsection}{{MSG4} {Formato de campo incorrecto}}{159}{section*.111}
-\contentsline {subsubsection}{{MSG5} {No es posible eliminar un elemento}}{160}{section*.112}
-\contentsline {subsubsection}{{MSG7} {No existe informaci\IeC {\'o}n necesaria en el sistema}}{160}{section*.113}
+\contentsline {subsubsection}{{MSG1} {Operaci\IeC {\'o}n exitosa}}{158}{section*.107}
+\contentsline {subsubsection}{{MSG2} {Eliminar Elemento}}{159}{section*.108}
+\contentsline {subsubsection}{{MSG3} {Falta dato obligatorio}}{159}{section*.109}
+\contentsline {subsubsection}{{MSG4} {Formato de campo incorrecto}}{159}{section*.110}
+\contentsline {subsubsection}{{MSG5} {No es posible eliminar un elemento}}{160}{section*.111}
+\contentsline {subsubsection}{{MSG7} {No existe informaci\IeC {\'o}n necesaria en el sistema}}{160}{section*.112}
 \contentsline {chapter}{\numberline {12}M\IeC {\'o}dulo de Optimizaci\IeC {\'o}n}{161}{chapter.12}
 \contentsline {section}{\numberline {12.1}Modelo de comportamiento del m\IeC {\'o}dulo: Sistema{M\IeC {\'o}dulo de Optimizaci\IeC {\'o}n}}{162}{section.12.1}
 \contentsline {subsection}{\numberline {12.1.1}Prototipo versi\IeC {\'o}n 1 del alogritmo de optimizaci\IeC {\'o}n}{162}{subsection.12.1.1}
@@ -347,5 +345,5 @@
 \contentsline {subsection}{\numberline {12.1.3}Funci\'on: evalua}{164}{subsection.12.1.3}
 \contentsline {subsection}{\numberline {12.1.4}Mutaci\'on}{169}{subsection.12.1.4}
 \contentsline {subsection}{\numberline {12.1.5}Pruebas de la versi\IeC {\'o}n: 1}{170}{subsection.12.1.5}
-\contentsline {subsubsection}{Pruebas realizadas}{170}{section*.114}
+\contentsline {subsubsection}{Pruebas realizadas}{170}{section*.113}
 \contentsline {chapter}{\numberline {13}Bibliograf\IeC {\'\i }a}{173}{chapter.13}

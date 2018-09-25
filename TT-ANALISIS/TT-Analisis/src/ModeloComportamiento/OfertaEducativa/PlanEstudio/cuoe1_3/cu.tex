@@ -45,7 +45,7 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUOE1}{Gestionar Plan de Estudio} indicando que el plan de estudio se eliminó correctamente.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio} indicando que el plan de estudio se eliminó correctamente.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -69,11 +69,11 @@
 			\UCli Ninguno
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUOE1}{Gestionar planes de estudio}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita eliminar un plan de estudio dando clic en el icono IUEliminar de la pantalla \cdtIdRef{IUOE1}{Gestionar Plan de Estudio}.
+	\UCpaso [\UCactor] Solicita eliminar un plan de estudio oprimiendo el botón \cdtButton{Eliminar} de la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio}.
 	
 	\UCpaso [\UCsist] Verifica que el plan de estudio no tenga una o más unidades de aprendizaje asociadas. \refTray{A}
 	
@@ -88,5 +88,5 @@
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El plan de estudio ya tiene una o más unidades de aprendizaje asociadas.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No es posible eliminar un elemento} en la pantalla \cdtIdRef{IUOE1}{Gestionar Plan de Estudio}, indicando que el plan de estudio ya tiene una o más unidades de aprendizaje asociadas. 
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No es posible eliminar un elemento} en la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio}, indicando que el plan de estudio ya tiene una o más unidades de aprendizaje asociadas. 
 \end{UCtrayectoriaA}

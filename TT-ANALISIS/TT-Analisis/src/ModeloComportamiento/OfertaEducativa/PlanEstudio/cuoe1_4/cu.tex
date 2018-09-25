@@ -73,13 +73,13 @@
 			\UCli Ninguno
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUOE1}{Gestionar planes de estudio}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita consultar un plan de estudio dando clic en el ícono IUConsultar de la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio}. 
+	\UCpaso [\UCactor] Solicita consultar un plan de estudio oprimiendo el botón \cdtButton{Consultar} de la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio}. 
 	
-	\UCpaso [\UCsist] Obtiene la información registrada del plan de estudio.
+	\UCpaso [\UCsist] Obtiene la información registrada para el plan de estudio.
 			
 	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUOE1.4}{Consultar Plan de Estudio} con la información obtenida.
 	
