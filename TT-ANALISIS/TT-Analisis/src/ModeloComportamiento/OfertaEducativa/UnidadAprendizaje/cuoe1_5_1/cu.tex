@@ -77,16 +77,16 @@
 			
 			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUOE1.5.1}{Registrar Unidad de Aprendizaje} indicando que la clave de la unidad de aprendizaje ya existe.
 			
-			\UCli \cdtIdRef{MSG7}{No existe información necesaria en el sistema}: Se muestra en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje} indicando que no existe información en el catálogo de academia.
+			\UCli \cdtIdRef{MSG7}{No existe información necesaria en el sistema}: Se muestra en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje} indicando que no existe información en el catálogo 'Academia'.
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Terciario, extiende del caso de uso \cdtIdRef{CUOE1.5}{Gestionar unidades de aprendizaje}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita registrar una unidad de aprendizaje dando clic en el ícono IURegistrar de la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}. 
+	\UCpaso [\UCactor] Solicita registrar una unidad de aprendizaje dando clic en el ícono \btnRegistrar de la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}. 
 	
-	\UCpaso[\UCsist] verifica que exista información en el catálogo \textbf{Academia}. \refTray{A}
+	\UCpaso[\UCsist] Verifica que exista información en el catálogo \textbf{Academia}. \refTray{A}
 	
 	\UCpaso[\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUOE1.5.1}{Registrar Unidad de Aprendizaje}.
 	
@@ -104,11 +104,14 @@
 	
 \end{UCtrayectoria}
 
-\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El catálogo de Academia no tiene información.}
+
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El catálogo de 'Academia' no tiene información.}
 	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG7}{No existe información necesaria en el sistema} en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}. 
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}[Fin del caso de uso]{B}{El actor desea cancelar la operación.}
+	\UCpaso [\UCactor] Solicita cancelar la operación oprimiendo el botón \cdtButton{Cancelar}.
+	
 	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}.  
 \end{UCtrayectoriaA}
 

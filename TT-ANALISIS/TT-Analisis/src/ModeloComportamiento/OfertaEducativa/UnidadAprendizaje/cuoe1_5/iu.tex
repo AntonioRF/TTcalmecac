@@ -2,21 +2,21 @@
 
 \subsubsection{Objetivo}
 	
-	Esta pantalla permite al actor visualizar las unidades de aprendizaje registrados para la ESCOM, teniendo la posibilidad de registrar una nueva o modificar, consultar y eliminar las disponibles.
+	Esta pantalla permite al actor visualizar las unidades de aprendizaje registrados para un plan de estudio, teniendo la posibilidad de registrar una nueva o modificar, consultar y eliminar las disponibles.
 
 \subsubsection{Diseño}
 
-    En la figura \ref{IUOE1.5} se muestra la pantalla ''Gestionar Unidades de Aprendizaje'', por medio de la cual se muestra la información de las diferentes unidades de aprendizaje registradas. La pantalla muestra la clave, el nombre y el nivel de la unidad de aprendizaje, ordenadas alfabéticamente por el nombre de la unidad.
+    En la figura \ref{IUOE1.5} se muestra la pantalla ''Gestionar Unidades de Aprendizaje'', por medio de la cual se muestra la información de las diferentes unidades de aprendizaje registradas. La pantalla muestra la clave, nombre y nivel de la unidad de aprendizaje, ordenadas de forma ascendente por la clave de esta.
  
-  \IUfig[.8]{../ModeloComportamiento/OfertaEducativa/UnidadAprendizaje/cuoe1_5/images/IUOE1_5}{IUOE1}{Gestionar Unidades de Aprendizaje}
+  \IUfig[.8]{../ModeloComportamiento/OfertaEducativa/UnidadAprendizaje/cuoe1_5/images/IUOE1_5}{IUOE1.5}{Gestionar Unidades de Aprendizaje}
 
 \subsubsection{Comandos}
     \begin{itemize}
-	\item IURegistrar: Permite al actor registrar una nueva unidad de aprendizaje, dirige a la pantalla \cdtIdRef{IUOE1.1}{Registrar Unidad de Aprendizaje}.
+	\item \btnRegistrar: Permite al actor registrar una nueva unidad de aprendizaje, dirige a la pantalla \cdtIdRef{IUOE1.5.1}{Registrar Unidad de Aprendizaje}.
 	
-	\item IUModificar: Permite al actor modificar el contenido de una unidad de aprendizaje previamente registrada, dirige a la pantalla \cdtIdRef{IUOE1.2}{Modificar Unidad de Aprendizaje}.
+	\item \cdtButton{Modificar}: Permite al actor modificar el contenido de una unidad de aprendizaje previamente registrada, dirige a la pantalla \cdtIdRef{IUOE1.5.2}{Modificar Unidad de Aprendizaje}.
 	
-	\item IUEliminar: Permite al actor eliminar una unidad de aprendizaje previamente registrada, dirige a la pantalla {IUOE1}{Gestionar Unidades de Aprendizaje}.
+	\item \cdtButton{Eliminar}: Permite al actor eliminar una unidad de aprendizaje previamente registrada, dirige a la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}.
 	
-	\item IUConsultar: Permite al actor consultar la información de una unidad de aprendizaje previamente registrada, dirige a la pantalla {IUOE1.4}{Consultar Unidad de Aprendizaje}.
+	\item \cdtButton{Consultar}: Permite al actor consultar la información de una unidad de aprendizaje previamente registrada, dirige a la pantalla \cdtIdRef{IUOE1.5.4}{Consultar Unidad de Aprendizaje}.
     \end{itemize}

@@ -37,7 +37,7 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Tener un control de las unidades de aprendizaje ofertadas para un plan de estudio. Además, estas serán de utilizadas en la generación de los horarios.}
+	\UCitem{Propósito}{Tener un control de las unidades de aprendizaje ofertadas para un plan de estudio. Además, estas serán asociadas a los profesores, de modo que, se generen los horarios.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -45,7 +45,7 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli Tabla que muestra clave y nombre de la unidad de aprendizaje.
+			\UCli Tabla que muestra: \cdtRef{unidadAprendizaje:clave}{Clave}, \cdtRef{unidadAprendizaje:nombre}{Nombre},  y \cdtRef{unidadAprendizaje:nivel}{Nivel} de la unidad de aprendizaje.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -68,27 +68,27 @@
 			\UCli Ninguno
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUOE1}{Gestionar planes de estudio}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
 	
-	\UCpaso [\UCactor] Selecciona la opción ''Unidades de Aprendizaje'' del menú \textbf{Unidades de Aprendizaje}. %\cdtIdRef{MN1}{Menú de la Secretaría de Posgrado}.
+	\UCpaso [\UCactor] Solicita gestionar las unidades de aprendizaje oprimiendo el botón \cdtButton{Unidades Aprendizaje} de la pantalla \cdtIdRef{IUOE1}{Gestionar Planes de Estudio}
 	
 	\UCpaso [\UCsist] Obtiene la clave, nombre y nivel de la unidad de aprendizaje.
 	
 	\UCpaso [\UCsist] Ordena las unidades de aprendizaje por nivel.
 	
-	\UCpaso [\UCsist] Ordena alfabéticamente las unidades de aprendizaje por la clave.
+	\UCpaso [\UCsist] Ordena de forma ascendente las unidades de aprendizaje por la clave.
 	
-	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje} con la información de las unidades de aprendizaje obtenida e iconos IUModificar, IUEliminar y IURegistrar. 
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje} con la información obtenida con los botones\cdtButton{Modificar}, \cdtButton{Eliminar} y \cdtButton{Consultar}, y el ícono \btnRegistrar. 
 	\label{cuoe1_5:gestionar}
 \end{UCtrayectoria}
 
 \subsection{Puntos de extensión}
 
 \UCExtensionPoint 
-{El actor requiere registrar ua nueva unidad de aprendizaje.}
+{El actor requiere registrar una nueva unidad de aprendizaje.}
 {Paso \ref{cuoe1_5:gestionar} de la Trayectoria Principal}
 {\cdtIdRef{CUOE1.5.1}{Registrar unidad de aprendizaje}}
 

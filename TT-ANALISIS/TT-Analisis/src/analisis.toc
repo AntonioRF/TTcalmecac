@@ -267,15 +267,15 @@
 \contentsline {subsubsection}{Objetivo}{130}{section*.83}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{130}{section*.84}
 \contentsline {subsubsection}{Comandos}{131}{section*.85}
-\contentsline {subsection}{\numberline {9.13.8}IUOE1.1 Registrar Unidad de Aprendizaje}{131}{subsection.9.13.8}
+\contentsline {subsection}{\numberline {9.13.8}IUOE1.5.1 Registrar Unidad de Aprendizaje}{131}{subsection.9.13.8}
 \contentsline {subsubsection}{Objetivo}{131}{section*.86}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{131}{section*.87}
 \contentsline {subsubsection}{Comandos}{133}{section*.88}
-\contentsline {subsection}{\numberline {9.13.9}IUOE1.2 Modificar Unidad de Aprendizaje}{133}{subsection.9.13.9}
+\contentsline {subsection}{\numberline {9.13.9}IUOE1.5.2 Modificar Unidad de Aprendizaje}{133}{subsection.9.13.9}
 \contentsline {subsubsection}{Objetivo}{133}{section*.89}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{133}{section*.90}
 \contentsline {subsubsection}{Comandos}{133}{section*.91}
-\contentsline {subsection}{\numberline {9.13.10}IUOE1.4 Consultar Unidad de Aprendizaje}{133}{subsection.9.13.10}
+\contentsline {subsection}{\numberline {9.13.10}IUOE1.5.4 Consultar Unidad de Aprendizaje}{133}{subsection.9.13.10}
 \contentsline {subsubsection}{Objetivo}{133}{section*.92}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{133}{section*.93}
 \contentsline {subsubsection}{Comandos}{133}{section*.94}

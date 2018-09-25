@@ -51,15 +51,23 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli  \cdtRef{unidadAprendizaje:clave}{Clave}.
-			\UCli  \cdtRef{unidadAprendizaje:nombre}{Nombre}.
-			\UCli  \cdtRef{tipoUA:nombreTipoUA}{Tipo de unidad de aprendizaje}.
-			\UCli  \cdtRef{tipoFormacion:nombre}{Tipo de formación}.
-			\UCli  \cdtRef{academia:nombre}{Academia}.
-			\UCli  \cdtRef{unidadAprendizaje:nivel}{Nivel}.
-			\UCli  \cdtRef{tipoEnsenanza:nombre}{Tipo de enseñanza}.
-			\UCli  \cdtRef{unidadAprendizaje:horasTeoricas}{Total de hora teóricas por semana}.
-			\UCli  \cdtRef{unidadAprendizaje:horasPracticas}{Total de hora prácticas por semana}.
+			\UCli  \cdtRef{unidadAprendizaje:clave}{Clave}: \ioObtener.
+			
+			\UCli  \cdtRef{unidadAprendizaje:nombre}{Nombre}: \ioObtener.
+			
+			\UCli  \cdtRef{tipoUA:nombreTipoUA}{Tipo de unidad de aprendizaje}: \ioObtener.
+			
+			\UCli  \cdtRef{tipoFormacion:nombre}{Tipo de formación}: \ioObtener.
+			
+			\UCli  \cdtRef{academia:nombre}{Academia}: \ioObtener.
+			
+			\UCli  \cdtRef{unidadAprendizaje:nivel}{Nivel}: \ioObtener.
+			
+			\UCli  \cdtRef{tipoEnsenanza:nombre}{Tipo de enseñanza}: \ioObtener.
+			
+			\UCli  \cdtRef{unidadAprendizaje:horasTeoricas}{Total de hora teóricas por semana}: \ioObtener.
+			
+			\UCli  \cdtRef{unidadAprendizaje:horasPracticas}{Total de hora prácticas por semana}: \ioObtener.
 			
 			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje} indicando que la modificación se realizó correctamente.
 		\end{UClist}
@@ -87,18 +95,18 @@
 			
 			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUOE1.5.2}{Modificar Unidad de Aprendizaje} indicando que la clave de la unidad de aprendizaje ya existe.
 			
-			\UCli \cdtIdRef{MSG7}{No existe información necesaria en el sistema}: Se muestra en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje} indicando que no existe información en el catálogo de academia.
+			\UCli \cdtIdRef{MSG7}{No existe información necesaria en el sistema}: Se muestra en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje} indicando que no existe información en el catálogo 'Academia'.
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Primario}
+	\UCitem{Tipo}{Terciario, extiende del caso de uso \cdtIdRef{CUOE1.5}{Gestionar unidades de aprendizaje}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita modificar una unidad de aprendizaje dando clic en el ícono IURegistrar de la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}. 
+	\UCpaso [\UCactor] Solicita modificar una unidad de aprendizaje oprimiendo el botón \cdtButton{Modificar} de la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}. 
 	
 	\UCpaso [\UCsist] Verifica que exista información en el catálogo \textbf{Academia}. \refTray{A}
 	
-	\UCpaso [\UCsist] Obtiene la información de la unidad de aprendizaje seleccionada.
+	\UCpaso [\UCsist] Obtiene la información de la unidad de aprendizaje previamente registrada.
 	
 	\UCpaso [\UCsist] Solicita modificar la información a través de la pantalla \cdtIdRef{IUOE1.5.2}{Modificar Unidad de Aprendizaje} con la información obtenida.
 	
@@ -110,17 +118,19 @@
 	
 	\UCpaso [\UCsist] Verifica que la clave de la unidad de aprendizaje no se haya registrado previamente, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{D}
 	
-	\UCpaso [\UCsist] Registra la información de la unidad de aprendizaje.
+	\UCpaso [\UCsist] Actualiza la información de la unidad de aprendizaje.
 	
 	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}, indicando que la unidad de aprendizaje se modificó correctamente.	
 	
 \end{UCtrayectoria}
 
-\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El catálogo de Academia no tiene información.}
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El catálogo 'Academia' no tiene información.}
 	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG7}{No existe información necesaria en el sistema} en la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}. 
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}[Fin del caso de uso]{B}{El actor desea cancelar la operación.}
+	\UCpaso [\UCactor] Solicita cancelar la operación oprimiendo el botón \cdtButton{Cancelar}.
+		
 	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUOE1.5}{Gestionar Unidades de Aprendizaje}.  
 \end{UCtrayectoriaA}
 
