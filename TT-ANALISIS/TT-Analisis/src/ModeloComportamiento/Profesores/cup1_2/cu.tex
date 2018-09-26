@@ -1,6 +1,6 @@
 
 \begin{UseCase}{CUP1.2}{Modificar profesor}{	
-	Permite al actor modificar la información de un profesor de la ESCOM previamente registrado.
+	Permite al actor modificar la información de un profesor de la ESCOM previamente registrado. Así, la información se mantendrá actualizada.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -40,8 +40,11 @@
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli \cdtRef{profesor:nombre}{Nombre}: \ioEscribir.
+			
 			\UCli \cdtRef{profesor:primerApellido}{Primer apellido}: \ioEscribir.
+			
 			\UCli \cdtRef{profesor:segundoApellido}{Segundo apellido}: \ioEscribir.
+			
 			\UCli \cdtRef{profesor:rfc}{RFC}: \ioEscribir.
 			\UCli \cdtRef{profesor:cargoEspecial}{Cargo especial}: \ioRadioBoton.
 		\end{UClist}
@@ -49,9 +52,13 @@
 	\UCitem{Salidas}{
 		\begin{UClist}
 			\UCli \cdtRef{profesor:nombre}{Nombre}: \ioObtener.
+			
 			\UCli \cdtRef{profesor:primerApellido}{Primer apellido}: \ioObtener.
+
 			\UCli \cdtRef{profesor:segundoApellido}{Segundo apellido}: \ioObtener.
+			
 			\UCli \cdtRef{profesor:rfc}{RFC}: \ioObtener.
+			
 			\UCli \cdtRef{profesor:cargoEspecial}{Cargo especial}: \ioObtener.
 			
 			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUP1}{Gestionar Profesores} indicando que el registro se actualizó correctamente.
@@ -70,6 +77,7 @@
 	\UCitem{Reglas de negocio}{
 		\begin{UClist}
 			\UCli \cdtIdRef{RN-S1}{Datos requeridos}
+			
 			\UCli \cdtIdRef{RN-S2}{Unicidad de elementos} 
 		\end{UClist}
 	}
@@ -80,11 +88,11 @@
 			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUP1.2}{Modificar Profesor} indicando que el RFC del profesor ya existe.
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Secundario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUP1}{Gestionar profesores}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita modificar el registro un profesor dando clic en el ícono %\IURegistrar 
+	\UCpaso [\UCactor] Solicita modificar el registro de un profesor oprimiendo el botón \cdtButton{Modificar} 
 	de la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}. 
 	
 	\UCpaso [\UCsist] Obtiene el nombre, primer apellido, segundo apellido, rfc y cargo especial del registro seleccionado.
@@ -106,6 +114,8 @@
 
 
 \begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor desea cancelar la operación.}
+	\UCpaso [\UCactor] Solicita cancelar la operación oprimiendo el botón \cdtButton{Cancelar}.
+	
 	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}. 
 \end{UCtrayectoriaA}
 

@@ -1,6 +1,6 @@
 
-\begin{UseCase}{CUA1}{Gestionar academias}{	
-	Permite al actor registrar una nueva academia, visualizar, modificar y eliminar las academias existentes de la ESCOM. Esto permitirá saber cuales son las academias existentes y asignarlas a las Unidades de Aprendizaje. 
+\begin{UseCase}{CUP1}{Gestionar profesores}{	
+	Permite al actor registrar un nuevo profesor, consultar, modificar y eliminar a los profesores existentes de la ESCOM. Esto permitirá mantener la información actualizada y poder asociarlos con unidades de aprendizaje, y así generar los horarios.
 }
 
 \UCccitem{Versión}{0.1}
@@ -13,7 +13,7 @@
 \UCccitem{Volatilidad}{Muy baja}
 \UCccitem{Madurez}{Alta}
 \UCccitem{Estatus}{Edición}
-\UCccitem{Fecha del último estatus}{01 de Abril de 2018}
+\UCccitem{Fecha del último estatus}{25 de Septiembre de 2018}
 
 % Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
 % Esta sección la debe llenar solo el Revisor
@@ -36,7 +36,7 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Mantener actualizadas las academias disponibles en ESCOM.}
+	\UCitem{Propósito}{Tener un control de los profesores existentes en la ESCOM.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -44,12 +44,12 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli Tabla que muestra el Nombre de la academia y el nombre del jefe de academia.
+			\UCli Tabla que muestra: \cdtRef{profesor:nombre}{Nombre}, \cdtRef{profesor:primerApellido}{Primer apellido} y \cdtRef{profesor:segundoApellido}{Segundo apellido} del profesor.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
 		\begin{UClist}
-			\UCli Se debe tener al menos un profesor registrado.
+			\UCli Ninguna
 		\end{UClist}
 	}
 	\UCitem{Postcondiciones}{
@@ -72,29 +72,35 @@
 
 \begin{UCtrayectoria}
 	
-	\UCpaso [\UCactor] Selecciona la opción ''Academias'' del menú \textbf{Academias}. %\cdtIdRef{MN1}{Menú de la Secretaría de Posgrado}.
-	\UCpaso [\UCsist] Obtiene el nombre de la academia y el nombre del jefe de academia.
-	\UCpaso [\UCsist] Ordena alfabéticamente las academias por el nombre.
-	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA1}{Gestionar Academias} con la información de las academias obtenidas e iconos %\IUModificar, \IUEliminar y \IURegistrar. 
-	\label{cua1:gestionar}
+	\UCpaso [\UCactor] Selecciona la opción ''Profesores'' del menú \textbf{Profesores}.
+	
+	\UCpaso [\UCsist] Obtiene el nombre, primer apellido y segundo apellido del profesor.
+	
+	\UCpaso [\UCsist] Ordena de forma ascendente a los profesores por el apellido paterno.
+	
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUP1}{Gestionar Profesores} con la información obtenida con los botones \cdtButton{Modificar}, \cdtButton{Eliminar} y \cdtButton{Consultar}, y el ícono \btnRegistrar. \label{cup1:gestionar}
 \end{UCtrayectoria}
 
 \subsection{Puntos de extensión}
 
 \UCExtensionPoint 
-{El actor requiere registrar una nueva academia.}
-{Paso \ref{cua1:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUA1.1}{Registrar academia}}
+{El actor requiere registrar un nuevo profesor.}
+{Paso \ref{cup1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUP1.1}{Registrar profesor}}
 
 \UCExtensionPoint 
-{El actor requiere modificar una academia previamente registrada.}
-{Paso \ref{cua1:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUA1.2}{Modificar academia}}
+{El actor requiere modificar un profesor previamente registrado.}
+{Paso \ref{cup1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUP1.2}{Modificar profesor}}
 
 \UCExtensionPoint 
-{El actor requiere eliminar una academia previamente registrada.}
-{Paso \ref{cua1:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUA1.3}{Eliminar academia}}
+{El actor requiere eliminar un profesor previamente registrado.}
+{Paso \ref{cup1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUP1.3}{Eliminar profesor}}
 
+\UCExtensionPoint 
+{El actor requiere consultar un profesor previamente registrado.}
+{Paso \ref{cup1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUP1.4}{Consultar profesor}}
 
 

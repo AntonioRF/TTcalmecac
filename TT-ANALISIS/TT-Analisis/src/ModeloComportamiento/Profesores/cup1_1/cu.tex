@@ -1,6 +1,6 @@
 
 \begin{UseCase}{CUP1.1}{Registrar profesor}{	
-	Permite al actor registrar un nuevo profesor para la ESCOM.
+	Permite al actor registrar un nuevo profesor para la ESCOM. De modo que, este pueda ser asociado con una unidad de aprendizaje para generar un horario. 
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -39,9 +39,13 @@
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli \cdtRef{profesor:nombre}{Nombre}: \ioEscribir.
+			
 			\UCli \cdtRef{profesor:primerApellido}{Primer apellido}: \ioEscribir.
+			
 			\UCli \cdtRef{profesor:segundoApellido}{Segundo apellido}: \ioEscribir.
+			
 			\UCli \cdtRef{profesor:rfc}{RFC}: \ioEscribir.
+			
 			\UCli \cdtRef{profesor:cargoEspecial}{Cargo especial}: \ioEscribir.
 		\end{UClist}
 	}
@@ -63,6 +67,7 @@
 	\UCitem{Reglas de negocio}{
 		\begin{UClist}
 			\UCli \cdtIdRef{RN-S1}{Datos requeridos}
+			
 			\UCli \cdtIdRef{RN-S2}{Unicidad de elementos} 
 		\end{UClist}
 	}
@@ -73,12 +78,11 @@
 			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUP1.1}{Registrar Profesor} indicando que el RFC del profesor ya existe.
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Secundario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUP1}{Gestionar profesores}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita registrar un profesor dando clic en el ícono %\IURegistrar 
-	de la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}. 
+	\UCpaso [\UCactor] Solicita registrar un profesor dando clic en el ícono \btnRegistrar de la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}. 
 	
 	\UCpaso [\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUP1.1}{Registrar Profesor}.
 	
@@ -98,6 +102,8 @@
 
 
 \begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor desea cancelar la operación.}
+	\UCpaso [\UCactor] Solicita cancelar la operación oprimiendo el botón \cdtButton{Cancelar}.
+	
 	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}. 
 \end{UCtrayectoriaA}
 

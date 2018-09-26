@@ -286,7 +286,7 @@
 \contentsline {subsection}{\numberline {10.1.2}Profesor}{138}{subsection.10.1.2}
 \contentsline {subsubsection}{Atributos}{138}{section*.94}
 \contentsline {section}{\numberline {10.2}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Profesores }{139}{section.10.2}
-\contentsline {section}{\numberline {10.3}CUA1 Gestionar academias}{140}{section.10.3}
+\contentsline {section}{\numberline {10.3}CUP1 Gestionar profesores}{140}{section.10.3}
 \contentsline {subsection}{\numberline {10.3.1}Resumen}{140}{subsection.10.3.1}
 \contentsline {subsection}{\numberline {10.3.2}Descripci\IeC {\'o}n}{140}{subsection.10.3.2}
 \contentsline {subsection}{\numberline {10.3.3}Trayectorias del caso de uso}{141}{subsection.10.3.3}
@@ -313,17 +313,17 @@
 \contentsline {subsubsection}{Objetivo}{151}{section*.95}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{151}{section*.96}
 \contentsline {subsubsection}{Comandos}{151}{section*.97}
-\contentsline {subsection}{\numberline {10.8.3}IUP1.1 Registrar Academia}{152}{subsection.10.8.3}
+\contentsline {subsection}{\numberline {10.8.3}IUP1.1 Registrar Profesor}{152}{subsection.10.8.3}
 \contentsline {subsubsection}{Objetivo}{152}{section*.98}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{152}{section*.99}
 \contentsline {subsubsection}{Comandos}{152}{section*.100}
 \contentsline {subsection}{\numberline {10.8.4}IUP1.2 Modificar Profesor}{152}{subsection.10.8.4}
-\contentsline {subsubsection}{Objetivo}{152}{section*.101}
+\contentsline {subsubsection}{Objetivo}{153}{section*.101}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{153}{section*.102}
 \contentsline {subsubsection}{Comandos}{153}{section*.103}
 \contentsline {subsection}{\numberline {10.8.5}IUP1.4 Consultar Profesor}{153}{subsection.10.8.5}
 \contentsline {subsubsection}{Objetivo}{153}{section*.104}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{153}{section*.105}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{154}{section*.105}
 \contentsline {subsubsection}{Comandos}{154}{section*.106}
 \contentsline {section}{\numberline {10.9}Pruebas del m\IeC {\'o}dulo: Infraestructura}{155}{section.10.9}
 \contentsline {subsection}{\numberline {10.9.1}Edificio}{155}{subsection.10.9.1}

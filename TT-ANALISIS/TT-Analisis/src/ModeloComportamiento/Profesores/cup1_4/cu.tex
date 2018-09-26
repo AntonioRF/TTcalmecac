@@ -44,9 +44,13 @@
 	\UCitem{Salidas}{
 		\begin{UClist}
 			\UCli \cdtRef{profesor:nombre}{Nombre}: \ioObtener.
+			
 			\UCli \cdtRef{profesor:primerApellido}{Primer apellido}: \ioObtener.
+			
 			\UCli \cdtRef{profesor:segundoApellido}{Segundo apellido}: \ioObtener.
+			
 			\UCli \cdtRef{profesor:rfc}{RFC}: \ioObtener.
+			
 			\UCli \cdtRef{profesor:cargoEspecial}{Cargo especial}: \ioObtener.
 		\end{UClist}
 	}
@@ -70,11 +74,11 @@
 			\UCli Ninguno
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Secundario}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUP1}{Gestionar profesores}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita consultar la información de un profesor dando clic en el icono %\IUEliminar 
+	\UCpaso [\UCactor] Solicita consultar la información de un profesor oprimiendo el botón \cdtButton{Consultar}
 	de la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}.
 	
 	\UCpaso [\UCsist] Obtiene el nombre, primer apellido, segundo apellido, RFC y si tiene un cargo especial el profesor seleccionado.
