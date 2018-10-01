@@ -1,0 +1,106 @@
+
+\begin{UseCase}{CUEE1}{Gestionar estructura educativa}{	
+	Permite al actor registrar un nuevo profesor, consultar, modificar y eliminar a los profesores existentes de la ESCOM. Esto permitirá mantener la información actualizada y poder asociarlos con unidades de aprendizaje, y así generar los horarios.
+}
+
+\UCccitem{Versión}{0.1}
+\UCccsection{Administración de Requerimientos}
+\UCccitem{Autor}{Brenda Gómez Caballero}
+\UCccitem{Evaluador}{}
+\UCccitem{Operación}{Gestión}
+\UCccitem{Prioridad}{Alta}
+\UCccitem{Complejidad}{Baja}
+\UCccitem{Volatilidad}{Muy baja}
+\UCccitem{Madurez}{Alta}
+\UCccitem{Estatus}{Edición}
+\UCccitem{Fecha del último estatus}{30 de Septiembre de 2018}
+
+% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+% Esta sección la debe llenar solo el Revisor
+%--------------------------------------------------------
+\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+\UCccitem{Fecha}{}
+\UCccitem{Evaluador}{}
+\UCccitem{Resultado}{}
+\UCccitem{Observaciones}{
+	\begin{Titemize}
+		\Titem \DONE 
+		\Titem \DONE 
+		\Titem \DONE 
+	\end{Titemize}   
+}
+%-------------------------------------------------------------------
+	\UCsection{Atributos}
+	\UCitem{Actor(es)}{	\begin{UClist}
+			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
+			\UCli \cdtRef{Actor:C}{Capturista}
+		\end{UClist} 
+	}
+	\UCitem{Propósito}{}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli Tabla que muestra: \cdtRef{ee:nombre}{Nombre}, \cdtRef{ee:cicloEscolar}{Ciclo escolar} de la estructura educativa.
+		\end{UClist}
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli Ninguna	
+		\end{UClist}
+	}
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Errores}{
+		\begin{UClist}
+			\UCli Ninguno
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Primario}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	
+	\UCpaso [\UCactor] Selecciona la opción ''Estructura Educativa'' del menú \textbf{Estructura Educativa}.
+	
+	\UCpaso [\UCsist] Obtiene el nombre y ciclo escolar de la estructura educativa.
+	
+	\UCpaso [\UCsist] Ordena de forma descendente los registros de estructura educativa mediante el ciclo escolar.
+	
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa} con la información obtenida con los botones \cdtButton{Modificar}, \cdtButton{Eliminar}, \cdtButton{Consultar}, \cdtButton{Asociar profesores}, \cdtButton{Asociar grupos} y el ícono \btnRegistrar. \label{cuee1:gestionar}
+\end{UCtrayectoria}
+
+\subsection{Puntos de extensión}
+
+\UCExtensionPoint 
+{El actor requiere registrar un nuevo profesor.}
+{Paso \ref{cup1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUP1.1}{Registrar profesor}}
+
+\UCExtensionPoint 
+{El actor requiere modificar un profesor previamente registrado.}
+{Paso \ref{cup1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUP1.2}{Modificar profesor}}
+
+\UCExtensionPoint 
+{El actor requiere eliminar un profesor previamente registrado.}
+{Paso \ref{cup1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUP1.3}{Eliminar profesor}}
+
+\UCExtensionPoint 
+{El actor requiere consultar un profesor previamente registrado.}
+{Paso \ref{cup1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUP1.4}{Consultar profesor}}
+
+

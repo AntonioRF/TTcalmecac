@@ -1,0 +1,132 @@
+
+\begin{UseCase}{CUP1.2}{Modificar profesor}{	
+	Permite al actor modificar la información de un profesor de la ESCOM previamente registrado. Así, la información se mantendrá actualizada.
+}
+\UCccitem{Versión}{0.1}
+\UCccsection{Administración de Requerimientos}
+\UCccitem{Autor}{Brenda Gómez Caballero}
+\UCccitem{Evaluador}{}
+\UCccitem{Operación}{Edición}
+\UCccitem{Prioridad}{Alta}
+\UCccitem{Complejidad}{Baja}
+\UCccitem{Volatilidad}{Muy baja}
+\UCccitem{Madurez}{Alta}
+\UCccitem{Estatus}{Edición}
+\UCccitem{Fecha del último estatus}{}
+
+% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+% Esta sección la debe llenar solo el Revisor
+%--------------------------------------------------------
+\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+\UCccitem{Fecha}{}
+\UCccitem{Evaluador}{}
+\UCccitem{Resultado}{}
+\UCccitem{Observaciones}{
+	\begin{Titemize}
+		\Titem \DONE 
+		\Titem \DONE 
+		\Titem \DONE 
+	\end{Titemize}   
+}
+%-------------------------------------------------------------------
+\UCsection{Atributos}
+	\UCitem{Actor(es)}{ 
+		\begin{UClist}
+			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
+			\UCli \cdtRef{Actor:C}{Capturista}
+		\end{UClist} 
+	}
+	\UCitem{Propósito}{Modificar la información de un profesor de la ESCOM, de modo que, esta se mantenga actualizada.}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli \cdtRef{profesor:nombre}{Nombre}: \ioEscribir.
+			
+			\UCli \cdtRef{profesor:primerApellido}{Primer apellido}: \ioEscribir.
+			
+			\UCli \cdtRef{profesor:segundoApellido}{Segundo apellido}: \ioEscribir.
+			
+			\UCli \cdtRef{profesor:rfc}{RFC}: \ioEscribir.
+			\UCli \cdtRef{profesor:cargoEspecial}{Cargo especial}: \ioRadioBoton.
+		\end{UClist}
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli \cdtRef{profesor:nombre}{Nombre}: \ioObtener.
+			
+			\UCli \cdtRef{profesor:primerApellido}{Primer apellido}: \ioObtener.
+
+			\UCli \cdtRef{profesor:segundoApellido}{Segundo apellido}: \ioObtener.
+			
+			\UCli \cdtRef{profesor:rfc}{RFC}: \ioObtener.
+			
+			\UCli \cdtRef{profesor:cargoEspecial}{Cargo especial}: \ioObtener.
+			
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUP1}{Gestionar Profesores} indicando que el registro se actualizó correctamente.
+		\end{UClist}
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli Ninguna	
+		\end{UClist}
+	}
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli \cdtIdRef{RN-S1}{Datos requeridos}
+			
+			\UCli \cdtIdRef{RN-S2}{Unicidad de elementos} 
+		\end{UClist}
+	}
+	\UCitem{Errores}{
+		\begin{UClist}	
+			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUP1.2}{Modificar Profesor} indicando que faltan campos obligatorios por completar.
+			
+			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUP1.2}{Modificar Profesor} indicando que el RFC del profesor ya existe.
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUP1}{Gestionar profesores}.}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	\UCpaso [\UCactor] Solicita modificar el registro de un profesor oprimiendo el botón \cdtButton{Modificar} 
+	de la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}. 
+	
+	\UCpaso [\UCsist] Obtiene el nombre, primer apellido, segundo apellido, rfc y cargo especial del registro seleccionado.
+	
+	\UCpaso [\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUP1.2}{Modificar Profesor} con la información obtenida.
+	
+	\UCpaso [\UCactor] Completa la información solicitada. \label{CUP1.2:CompletaInfo}
+	
+	\UCpaso [\UCactor] Solicita actualizar la información oprimiendo el botón \cdtButton{Aceptar}. \refTray{A}
+	
+	\UCpaso [\UCsist] Verifica que se hayan completado los campos obligatorios con base en la regla de negocios \cdtIdRef{RN-S1}{Datos requeridos}. \refTray{B}
+	
+	\UCpaso [\UCsist] Verifica que el RFC del profesor no se haya registrado previamente, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{C}
+	
+	\UCpaso [\UCsist] Actualiza la información del profesor.
+	
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}, indicando que la información del profesor se actualizó correctamente.	
+\end{UCtrayectoria}
+
+
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor desea cancelar la operación.}
+	\UCpaso [\UCactor] Solicita cancelar la operación oprimiendo el botón \cdtButton{Cancelar}.
+	
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}. 
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{B}{No se completaron los campos obligatorios.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUP1.2}{Modificar Profesor}.
+	
+	\UCpaso Regresa al paso \ref{CUP1.2:CompletaInfo} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{C}{El RFC del profesor ya fue registrado.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUP1.2}{Modificar Profesor}.
+	
+	\UCpaso Regresa al paso \ref{CUP1.2:CompletaInfo} de la trayectoria principal.
+\end{UCtrayectoriaA}

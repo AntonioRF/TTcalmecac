@@ -37,21 +37,21 @@
 \contentsline {subsubsection}{RN-S2 Unicidad de elementos}{37}{section*.12}
 \contentsline {subsection}{\numberline {5.1.2}Reglas derivadas del negocio}{37}{subsection.5.1.2}
 \contentsline {subsubsection}{RN-N1 N\IeC {\'u}mero de niveles permitido para un edificio}{37}{section*.13}
-\contentsline {subsubsection}{RN-N2 N\IeC {\'u}mero de espacios permitido para un nivel de edificio}{38}{section*.14}
+\contentsline {subsubsection}{RN-N2 N\IeC {\'u}mero de espacios permitido para un nivel de edificio}{37}{section*.14}
 \contentsline {subsubsection}{RN-N3 Calculo de la clave de un espacio}{38}{section*.15}
 \contentsline {subsubsection}{RN-N4 Jefe de academia}{38}{section*.16}
 \contentsline {subsubsection}{RN-N5 Capacidad de un espacio}{38}{section*.17}
-\contentsline {subsubsection}{RN-N6 Eliminaci\IeC {\'o}n de un espacio}{39}{section*.18}
+\contentsline {subsubsection}{RN-N6 Eliminaci\IeC {\'o}n de un espacio}{38}{section*.18}
 \contentsline {subsubsection}{RN-N7 Eliminaci\IeC {\'o}n de un edificio}{39}{section*.19}
 \contentsline {subsubsection}{RN-N8 Modificaci\IeC {\'o}n de un espacio}{39}{section*.20}
 \contentsline {subsubsection}{RN-N9 Modificaci\IeC {\'o}n de un edificio}{39}{section*.21}
-\contentsline {subsubsection}{RN-N10 Nombre del plan}{40}{section*.22}
+\contentsline {subsubsection}{RN-N10 Nombre del plan}{39}{section*.22}
 \contentsline {subsubsection}{RN-N11 M\IeC {\'a}quina de estados del plan de estudios}{40}{section*.23}
 \contentsline {subsubsection}{RN-N12 Clave de Unidad de Aprendizaje}{40}{section*.24}
-\contentsline {subsubsection}{RN-N13 Tipo de unidad de aprendizaje}{41}{section*.25}
+\contentsline {subsubsection}{RN-N13 Tipo de unidad de aprendizaje}{40}{section*.25}
 \contentsline {subsubsection}{RN-N14 Tipo de formaci\IeC {\'o}n}{41}{section*.26}
 \contentsline {subsubsection}{RN-N15 Tipo de ense\IeC {\~n}anza}{41}{section*.27}
-\contentsline {subsubsection}{RN-N16 Horas de unidad de aprendizaje}{42}{section*.28}
+\contentsline {subsubsection}{RN-N16 Horas de unidad de aprendizaje}{41}{section*.28}
 \contentsline {chapter}{\numberline {6}Modelo de comportamiento}{43}{chapter.6}
 \contentsline {section}{\numberline {6.1}M\IeC {\'o}dulos del sistema}{43}{section.6.1}
 \contentsline {section}{\numberline {6.2}Actores del Sistema}{43}{section.6.2}
