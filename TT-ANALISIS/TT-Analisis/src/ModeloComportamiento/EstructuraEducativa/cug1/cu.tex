@@ -1,0 +1,101 @@
+
+\begin{UseCase}{CUG1}{Gestionar grupos}{	
+	Permite al actor registrar un nuevo grupo, modificar y eliminar a los grupos existentes de la ESCOM. Esto permitirá mantener la información actualizada y poder asociarlos con espacios, y así generar los horarios.
+}
+
+\UCccitem{Versión}{0.1}
+\UCccsection{Administración de Requerimientos}
+\UCccitem{Autor}{Brenda Gómez Caballero}
+\UCccitem{Evaluador}{}
+\UCccitem{Operación}{Gestión}
+\UCccitem{Prioridad}{Alta}
+\UCccitem{Complejidad}{Baja}
+\UCccitem{Volatilidad}{Muy baja}
+\UCccitem{Madurez}{Alta}
+\UCccitem{Estatus}{Edición}
+\UCccitem{Fecha del último estatus}{}
+
+% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+% Esta sección la debe llenar solo el Revisor
+%--------------------------------------------------------
+\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+\UCccitem{Fecha}{}
+\UCccitem{Evaluador}{}
+\UCccitem{Resultado}{}
+\UCccitem{Observaciones}{
+	\begin{Titemize}
+		\Titem \DONE 
+		\Titem \DONE 
+		\Titem \DONE 
+	\end{Titemize}   
+}
+%-------------------------------------------------------------------
+	\UCsection{Atributos}
+	\UCitem{Actor(es)}{	\begin{UClist}
+			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
+		\end{UClist} 
+	}
+	\UCitem{Propósito}{}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli Tabla que muestra: \cdtRef{grupo:nombre}{Nombre}, \cdtRef{espacio:clave}{Salón} de ls grupos.
+		\end{UClist}
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli Ninguna	
+		\end{UClist}
+	}
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli Ninguna
+		\end{UClist}
+	}
+	\UCitem{Errores}{
+		\begin{UClist}
+			\UCli Ninguno
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Primario}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	
+	\UCpaso [\UCactor] Solicita gestionar los grupos oprimiendo el botón \cdtButton{Asociar grupos} de la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa}.
+	
+	\UCpaso [\UCsist] Obtiene el nombre y salón de los grupos.
+	
+	\UCpaso [\UCsist] Ordena de forma ascendente los registros mediante el nombre del grupo.
+	
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUG1}{Gestionar Grupos} con la información obtenida con los botones \cdtButton{Modificar} y \cdtButton{Eliminar}, con el ícono \btnRegistrar. \label{cug1:gestionar}
+\end{UCtrayectoria}
+
+
+\subsection{Puntos de extensión}
+
+\UCExtensionPoint 
+{El actor requiere registrar un nuevo grupo.}
+{Paso \ref{cug1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUG1.1}{Registrar grupo}}
+
+\UCExtensionPoint 
+{El actor requiere modificar un grupo previamente registrado.}
+{Paso \ref{cug1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUG1.2}{Modificar grupo}}
+
+\UCExtensionPoint 
+{El actor requiere eliminar un grupo previamente registrado.}
+{Paso \ref{cug1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUG1.3}{Eliminar grupo}}
+
+
