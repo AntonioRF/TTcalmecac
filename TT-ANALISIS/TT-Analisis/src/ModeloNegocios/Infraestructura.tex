@@ -45,13 +45,13 @@ En la figura~\ref{fig:espacios} se muestra la estructura de información que man
 
 	\Battr{numero}{Número}{\tdNumerico}{Es el número que se le asigna al espacio}{\requerido}{\longitudMinMax{1}{caracteres}{2}{caracteres}}{Caracteres admitidos: [0-9].}
 	
-	\Battr{nombre}{Nombre}{\tdFrase}{Es el nombre con el que se registra el espacio}{\requerido}{\longitudMax{50}{caracteres}}{Caracteres admitidos: [A-Z] $|$ [a-z] $|$ [1-9] $|$ \_ $|$ $-$ $|$ \textvisiblespace.}
+	\Battr{nombre}{Nombre}{\tdFrase}{Es el nombre con el que se registra el espacio}{\requerido}{\longitudMax{50}{caracteres}}{Caracteres admitidos: [A-Z] $|$ [a-z] $|$ [1-9] $|$ \_ $|$ $-$ $|$ [á,é,é,ó,ú]  $|$ [Á,É,Í,Ó,Ú] $|$ \textvisiblespace.}
 	
 	\Battr{capacidad}{Capacidad}{\tdNumerico}{Es el número que define la capacidad de alumnos que permite el espacio}{\requerido}{\longitudMinMax{1}{caracteres}{2}{caracteres}}{Caracteres admitidos: [0-9].}
 	
 	\Battr{accesoDiscapacitados}{Acceso a discapacitados}{\tdBooleano}{Indica si el espacio es accesible para las personas con capacidades diferentes}{\requerido}
 	
-	\Battr{observaciones}{Observaciones}{\tdFrase}{Es una frase }{\requerido}{\longitudMax{150}{caracteres}}{Caracteres admitidos: [A-Z] $|$ [a-z] $|$ [1-9] $|$ \_ $|$ $-$ $|$ \textvisiblespace.}
+	\Battr{observaciones}{Observaciones}{\tdFrase}{Es una frase }{\requerido}{\longitudMax{150}{caracteres}}{Caracteres admitidos: [A-Z] $|$ [a-z] $|$ [1-9] $|$ \_ $|$ $-$ $|$ [á,é,é,ó,ú]  $|$ [Á,É,Í,Ó,Ú] $|$ \textvisiblespace.}
 	
 	\Battr{funciona}{En función}{\tdBooleano}{Indica si el espacio puede ser contemplado en la asignación de espacios para los grupos ofertados.}{\requerido}
 	

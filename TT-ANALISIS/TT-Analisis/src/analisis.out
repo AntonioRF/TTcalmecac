@@ -193,7 +193,7 @@
 \BOOKMARK [2][-]{subsection.10.1.1}{M\363dulo Profesores: Descripci\363n general}{section.10.1}% 193
 \BOOKMARK [2][-]{subsection.10.1.2}{Profesor}{section.10.1}% 194
 \BOOKMARK [1][-]{section.10.2}{Modelo de comportamiento del m\363dulo: Gestionar Profesores }{chapter.10}% 195
-\BOOKMARK [1][-]{section.10.3}{CUA1 Gestionar academias}{chapter.10}% 196
+\BOOKMARK [1][-]{section.10.3}{CUP1 Gestionar profesores}{chapter.10}% 196
 \BOOKMARK [2][-]{subsection.10.3.1}{Resumen}{section.10.3}% 197
 \BOOKMARK [2][-]{subsection.10.3.2}{Descripci\363n}{section.10.3}% 198
 \BOOKMARK [2][-]{subsection.10.3.3}{Trayectorias del caso de uso}{section.10.3}% 199
@@ -217,21 +217,83 @@
 \BOOKMARK [1][-]{section.10.8}{Interfaces del m\363dulo}{chapter.10}% 217
 \BOOKMARK [2][-]{subsection.10.8.1}{Profesores}{section.10.8}% 218
 \BOOKMARK [2][-]{subsection.10.8.2}{IUP1 Gestionar Profesores}{section.10.8}% 219
-\BOOKMARK [2][-]{subsection.10.8.3}{IUP1.1 Registrar Academia}{section.10.8}% 220
+\BOOKMARK [2][-]{subsection.10.8.3}{IUP1.1 Registrar Profesor}{section.10.8}% 220
 \BOOKMARK [2][-]{subsection.10.8.4}{IUP1.2 Modificar Profesor}{section.10.8}% 221
 \BOOKMARK [2][-]{subsection.10.8.5}{IUP1.4 Consultar Profesor}{section.10.8}% 222
 \BOOKMARK [1][-]{section.10.9}{Pruebas del m\363dulo: Infraestructura}{chapter.10}% 223
 \BOOKMARK [2][-]{subsection.10.9.1}{Edificio}{section.10.9}% 224
 \BOOKMARK [2][-]{subsection.10.9.2}{Espacio}{section.10.9}% 225
-\BOOKMARK [0][-]{chapter.11}{Modelo de interacci\363n con el usuario}{}% 226
-\BOOKMARK [1][-]{section.11.1}{Dise\361o de mensajes}{chapter.11}% 227
-\BOOKMARK [1][-]{section.11.2}{Par\341metros comunes}{chapter.11}% 228
-\BOOKMARK [1][-]{section.11.3}{Mensajes a trav\351s de la pantalla}{chapter.11}% 229
-\BOOKMARK [0][-]{chapter.12}{M\363dulo de Optimizaci\363n}{}% 230
-\BOOKMARK [1][-]{section.12.1}{Modelo de comportamiento del m\363dulo: SistemaM\363dulo de Optimizaci\363n}{chapter.12}% 231
-\BOOKMARK [2][-]{subsection.12.1.1}{Prototipo versi\363n 1 del alogritmo de optimizaci\363n}{section.12.1}% 232
-\BOOKMARK [2][-]{subsection.12.1.2}{Funci\363n: generar Poblacion}{section.12.1}% 233
-\BOOKMARK [2][-]{subsection.12.1.3}{Funci\363n: evalua}{section.12.1}% 234
-\BOOKMARK [2][-]{subsection.12.1.4}{Mutaci\363n}{section.12.1}% 235
-\BOOKMARK [2][-]{subsection.12.1.5}{Pruebas de la versi\363n: 1}{section.12.1}% 236
-\BOOKMARK [0][-]{chapter.13}{Bibliograf\355a}{}% 237
+\BOOKMARK [0][-]{chapter.11}{Prototipo 4: Estructura Educativa}{}% 226
+\BOOKMARK [1][-]{section.11.1}{Modelo de informaci\363n: M\363dulo Oferta Educativa}{chapter.11}% 227
+\BOOKMARK [2][-]{subsection.11.1.1}{M\363dulo Plan de Estudio: Descripci\363n general}{section.11.1}% 228
+\BOOKMARK [2][-]{subsection.11.1.2}{Plan de estudio}{section.11.1}% 229
+\BOOKMARK [2][-]{subsection.11.1.3}{Tipo de division}{section.11.1}% 230
+\BOOKMARK [2][-]{subsection.11.1.4}{M\363dulo Unidad de Aprendizaje: Descripci\363n general}{section.11.1}% 231
+\BOOKMARK [2][-]{subsection.11.1.5}{Unidad de aprendizaje}{section.11.1}% 232
+\BOOKMARK [2][-]{subsection.11.1.6}{Tipo de unidad de aprendizaje}{section.11.1}% 233
+\BOOKMARK [2][-]{subsection.11.1.7}{Tipo de formaci\363n}{section.11.1}% 234
+\BOOKMARK [2][-]{subsection.11.1.8}{Tipo de ense\361anza}{section.11.1}% 235
+\BOOKMARK [1][-]{section.11.2}{Modelo de comportamiento del m\363dulo: Gestionar Grupos }{chapter.11}% 236
+\BOOKMARK [1][-]{section.11.3}{CUAP1 Gestionar asociaci\363n de profesores}{chapter.11}% 237
+\BOOKMARK [2][-]{subsection.11.3.1}{Resumen}{section.11.3}% 238
+\BOOKMARK [2][-]{subsection.11.3.2}{Descripci\363n}{section.11.3}% 239
+\BOOKMARK [2][-]{subsection.11.3.3}{Trayectorias del caso de uso}{section.11.3}% 240
+\BOOKMARK [2][-]{subsection.11.3.4}{Puntos de extensi\363n}{section.11.3}% 241
+\BOOKMARK [1][-]{section.11.4}{CUAP1.1 Registrar asociaci\363n de profesor}{chapter.11}% 242
+\BOOKMARK [2][-]{subsection.11.4.1}{Resumen}{section.11.4}% 243
+\BOOKMARK [2][-]{subsection.11.4.2}{Descripci\363n}{section.11.4}% 244
+\BOOKMARK [2][-]{subsection.11.4.3}{Trayectorias del caso de uso}{section.11.4}% 245
+\BOOKMARK [1][-]{section.11.5}{CUAP1.2 Modificar asociaci\363n de profesor}{chapter.11}% 246
+\BOOKMARK [2][-]{subsection.11.5.1}{Resumen}{section.11.5}% 247
+\BOOKMARK [2][-]{subsection.11.5.2}{Descripci\363n}{section.11.5}% 248
+\BOOKMARK [2][-]{subsection.11.5.3}{Trayectorias del caso de uso}{section.11.5}% 249
+\BOOKMARK [1][-]{section.11.6}{CUAP1.3 Eliminar asociaci\363n de profesor}{chapter.11}% 250
+\BOOKMARK [2][-]{subsection.11.6.1}{Resumen}{section.11.6}% 251
+\BOOKMARK [2][-]{subsection.11.6.2}{Descripci\363n}{section.11.6}% 252
+\BOOKMARK [2][-]{subsection.11.6.3}{Trayectorias del caso de uso}{section.11.6}% 253
+\BOOKMARK [1][-]{section.11.7}{CUP1.4 Consultar profesor}{chapter.11}% 254
+\BOOKMARK [2][-]{subsection.11.7.1}{Resumen}{section.11.7}% 255
+\BOOKMARK [2][-]{subsection.11.7.2}{Descripci\363n}{section.11.7}% 256
+\BOOKMARK [2][-]{subsection.11.7.3}{Trayectorias del caso de uso}{section.11.7}% 257
+\BOOKMARK [1][-]{section.11.8}{CUG1 Gestionar grupos}{chapter.11}% 258
+\BOOKMARK [2][-]{subsection.11.8.1}{Resumen}{section.11.8}% 259
+\BOOKMARK [2][-]{subsection.11.8.2}{Descripci\363n}{section.11.8}% 260
+\BOOKMARK [2][-]{subsection.11.8.3}{Trayectorias del caso de uso}{section.11.8}% 261
+\BOOKMARK [2][-]{subsection.11.8.4}{Puntos de extensi\363n}{section.11.8}% 262
+\BOOKMARK [1][-]{section.11.9}{CUG1.1 Registrar grupo}{chapter.11}% 263
+\BOOKMARK [2][-]{subsection.11.9.1}{Resumen}{section.11.9}% 264
+\BOOKMARK [2][-]{subsection.11.9.2}{Descripci\363n}{section.11.9}% 265
+\BOOKMARK [2][-]{subsection.11.9.3}{Trayectorias del caso de uso}{section.11.9}% 266
+\BOOKMARK [1][-]{section.11.10}{CUG1.2 Modificar grupo}{chapter.11}% 267
+\BOOKMARK [2][-]{subsection.11.10.1}{Resumen}{section.11.10}% 268
+\BOOKMARK [2][-]{subsection.11.10.2}{Descripci\363n}{section.11.10}% 269
+\BOOKMARK [2][-]{subsection.11.10.3}{Trayectorias del caso de uso}{section.11.10}% 270
+\BOOKMARK [1][-]{section.11.11}{CUG1.3 Eliminar grupo}{chapter.11}% 271
+\BOOKMARK [2][-]{subsection.11.11.1}{Resumen}{section.11.11}% 272
+\BOOKMARK [2][-]{subsection.11.11.2}{Descripci\363n}{section.11.11}% 273
+\BOOKMARK [2][-]{subsection.11.11.3}{Trayectorias del caso de uso}{section.11.11}% 274
+\BOOKMARK [2][-]{subsection.11.11.4}{Grupos}{section.11.11}% 275
+\BOOKMARK [1][-]{section.11.12}{Interfaces del m\363dulo}{chapter.11}% 276
+\BOOKMARK [2][-]{subsection.11.12.1}{Grupo}{section.11.12}% 277
+\BOOKMARK [2][-]{subsection.11.12.2}{IUAP1 Gestionar Asociaci\363n de Profesores}{section.11.12}% 278
+\BOOKMARK [2][-]{subsection.11.12.3}{IUAP1.1 Registrar Asociaci\363n de Profesores}{section.11.12}% 279
+\BOOKMARK [2][-]{subsection.11.12.4}{IUAP1.2 Modificar Asociaci\363n de Profesores}{section.11.12}% 280
+\BOOKMARK [2][-]{subsection.11.12.5}{IUAP1.4 Consultar Asociaci\363n de Profesor}{section.11.12}% 281
+\BOOKMARK [2][-]{subsection.11.12.6}{IUG1 Gestionar Grupos}{section.11.12}% 282
+\BOOKMARK [2][-]{subsection.11.12.7}{IUG1.1 Registrar Grupo}{section.11.12}% 283
+\BOOKMARK [2][-]{subsection.11.12.8}{IUG1.2 Modificar Grupo}{section.11.12}% 284
+\BOOKMARK [1][-]{section.11.13}{Pruebas del m\363dulo: Infraestructura}{chapter.11}% 285
+\BOOKMARK [2][-]{subsection.11.13.1}{Edificio}{section.11.13}% 286
+\BOOKMARK [2][-]{subsection.11.13.2}{Espacio}{section.11.13}% 287
+\BOOKMARK [0][-]{chapter.12}{Modelo de interacci\363n con el usuario}{}% 288
+\BOOKMARK [1][-]{section.12.1}{Dise\361o de mensajes}{chapter.12}% 289
+\BOOKMARK [1][-]{section.12.2}{Par\341metros comunes}{chapter.12}% 290
+\BOOKMARK [1][-]{section.12.3}{Mensajes a trav\351s de la pantalla}{chapter.12}% 291
+\BOOKMARK [0][-]{chapter.13}{M\363dulo de Optimizaci\363n}{}% 292
+\BOOKMARK [1][-]{section.13.1}{Modelo de comportamiento del m\363dulo: SistemaM\363dulo de Optimizaci\363n}{chapter.13}% 293
+\BOOKMARK [2][-]{subsection.13.1.1}{Prototipo versi\363n 1 del alogritmo de optimizaci\363n}{section.13.1}% 294
+\BOOKMARK [2][-]{subsection.13.1.2}{Funci\363n: generar Poblacion}{section.13.1}% 295
+\BOOKMARK [2][-]{subsection.13.1.3}{Funci\363n: evalua}{section.13.1}% 296
+\BOOKMARK [2][-]{subsection.13.1.4}{Mutaci\363n}{section.13.1}% 297
+\BOOKMARK [2][-]{subsection.13.1.5}{Pruebas de la versi\363n: 1}{section.13.1}% 298
+\BOOKMARK [0][-]{chapter.14}{Bibliograf\355a}{}% 299

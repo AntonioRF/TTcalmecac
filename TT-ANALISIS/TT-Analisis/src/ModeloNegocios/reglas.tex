@@ -38,7 +38,6 @@
 	\BRitem{Autor}{José Antonio Ricardo Flores}
 	\BRitem{Estatus}{Terminado}
 	\BRitem{Descripción}{Los datos proporcionados al sistema que son marcados como requeridos con el caracter *, no se deben omitir.}
-	\BRitem{Referenciado por}{}
 	
 \end{BusinessRule}
 
@@ -50,7 +49,6 @@
 	\BRitem{Autor}{José Antonio Ricardo Flores}
 	\BRitem{Estatus}{Edición}
 	\BRitem{Descripción}{En casos específicos, los datos proporcionados al sistema no se pueden duplicar ni registrar más de una vez.}
-	\BRitem{Referenciado por}{}
 	
 \end{BusinessRule}
 
@@ -68,7 +66,6 @@
 	\BRitem{Estatus}{Edición}
 	\BRitem{Descripción}{Un edificio podrá registrarse si y sólo si tiene como máximo 4 niveles.}
 		
-	\BRitem{Referenciado por}{}
 \end{BusinessRule}
 
 %============================== RN-N2 =================================
@@ -80,7 +77,6 @@
 	\BRitem{Estatus}{Edición}
 	\BRitem{Descripción}{Un nivel de un edificio sólo podrá tener como máximo 30 espacios.}
 		
-		\BRitem{Referenciado por}{}
 	\end{BusinessRule}
 
 %============================== RN-N3 =================================
@@ -96,7 +92,6 @@
 		Por lo tanto, la clave será: "1101".
 	}
 	
-	\BRitem{Referenciado por}{}
 \end{BusinessRule}
 
 %============================== RN-N4 =================================
@@ -108,7 +103,6 @@
 	\BRitem{Estatus}{Edición}
 	\BRitem{Descripción}{Un jefe de academia sólo podrá ser un profesor con base.}
 
-	\BRitem{Referenciado por}{}
 \end{BusinessRule}
 
 %============================== RN-N5 =================================
@@ -120,7 +114,6 @@
 	\BRitem{Estatus}{Edición}
 	\BRitem{Descripción}{Para un espacio la capacidad máxima debe ser de 35 alumnos.}
 	
-	\BRitem{Referenciado por}{}
 \end{BusinessRule}
 
 %============================== RN-N6 =================================
@@ -132,7 +125,6 @@
 	\BRitem{Estatus}{Edición}
 	\BRitem{Descripción}{Un espacio no podrá ser eliminado si este ya fue asociado a un grupo.}
 	
-	\BRitem{Referenciado por}{}
 \end{BusinessRule}
 
 %============================== RN-N7 =================================
@@ -144,7 +136,6 @@
 	\BRitem{Estatus}{Edición}
 	\BRitem{Descripción}{Un edificio no podrá ser eliminado si ya se le ha registrado al menos un espacio en alguno de sus niveles.}
 	
-	\BRitem{Referenciado por}{}
 \end{BusinessRule}
 
 %============================== RN-N8 =================================
@@ -156,7 +147,6 @@
 	\BRitem{Estatus}{Edición}
 	\BRitem{Descripción}{Un espacio no podrá ser modificado si este ya fue asociado a un grupo.}
 	
-	\BRitem{Referenciado por}{}
 \end{BusinessRule}
 
 %============================== RN-N9 =================================
@@ -168,7 +158,6 @@
 	\BRitem{Estatus}{Edición}
 	\BRitem{Descripción}{Un edificio no podrá ser modificado si ya se le ha registrado al menos un espacio en alguno de sus niveles.}
 	
-	\BRitem{Referenciado por}{}
 \end{BusinessRule}
 
 %============================== RN-N10 =================================
@@ -179,7 +168,6 @@
 	\BRitem{Autor}{Carlos Aníbal Larios Moguel}
 	\BRitem{Estatus}{Edición}
 	\BRitem{Descripción}{El nombre del plan de estudios se conforma por la palabra plan concatenada al año en que el mismo fue aprobado.}
-	\BRitem{Referenciado por}{\cdtIdRef{CUOE1}{Gestionar planes de Estudios}}
 \end{BusinessRule}
 
 %============================== RN-N11 =================================
@@ -196,7 +184,6 @@
 			\item Vigente: Es el estado en que el plan se encuentra siendo utilizado, este es el estado que utilizaremos para crear los horarios.
 			\item Derogado: Es el estado en que el plan ha sido remplazado por uno otro y deja de ser utilizado para crear horarios.
 		\end{Citemize}}
-	\BRitem{Referenciado por}{\cdtIdRef{CUOE1}{Gestionar planes de Estudios}}
 \end{BusinessRule}
 
 %============================== RN-N12 =================================
@@ -207,7 +194,7 @@
 	\BRitem{Autor}{Carlos Aníbal Larios Moguel}
 	\BRitem{Estatus}{Edición}
 	\BRitem{Descripción}{La clave de la unidad de aprendizaje se construye con la una letra que identifica el programa académico al que pertence, seguido de el número correspondiente al nivel del plan de estudios al que pertenece y finalmente concatenado a un consecutivo de las unidades del nivel.}
-	\BRitem{Referenciado por}{\cdtIdRef{CUOE1.5}{Gestionar Unidades de Aprendizaje}}
+
 \end{BusinessRule}
 
 %============================== RN-N13 =================================
@@ -218,7 +205,7 @@
 	\BRitem{Autor}{Carlos Aníbal Larios Moguel}
 	\BRitem{Estatus}{Edición}
 	\BRitem{Descripción}{La unidad de aprendizaje puede ser de tipo obligatoria u optativa.}
-	\BRitem{Referenciado por}{\cdtIdRef{CUOE1.5.1}{Registrar unidad de Aprendizaje}}
+
 \end{BusinessRule}
 
 %============================== RN-N14 =================================
@@ -235,7 +222,7 @@
 			\item Formación Profesional
 			\item Formación Terminal e Integración
 		\end{Citemize}}
-	\BRitem{Referenciado por}{\cdtIdRef{CUOE1.5.1}{Registrar unidad de aprendizaje}}
+
 \end{BusinessRule}
 
 %============================== RN-N15 =================================
@@ -252,7 +239,7 @@
 			\item Teórica-Práctica
 		\end{Citemize}
 		.}
-	\BRitem{Referenciado por}{\cdtIdRef{CUOE1.5.1}{Registrar unidad de aprendizaje}}
+
 \end{BusinessRule}
 
 %============================== RN-N16 =================================
@@ -263,6 +250,6 @@
 	\BRitem{Autor}{Carlos Aníbal Larios Moguel}
 	\BRitem{Estatus}{Edición}
 	\BRitem{Descripción}{Solo las unidades de aprendizaje pueden tener sus horas por semana divididas entre horas teóricas y prácticas, las unidades teóricas y las unidades prácticas tendrán toda su carga de horas asignadas a dicho tipo de enseñanza.}
-	\BRitem{Referenciado por}{\cdtIdRef{CUOE1.5.1}{Registrar unidad de aprendizaje}}
+
 \end{BusinessRule}
 
