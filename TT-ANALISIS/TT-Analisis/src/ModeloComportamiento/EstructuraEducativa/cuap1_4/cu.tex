@@ -1,6 +1,6 @@
 
 \begin{UseCase}{CUP1.4}{Consultar profesor}{	
-	Permite al actor consultar la información registrada de un profesor en caso de que se desee ver más detalles de este.
+	Permite al actor consultar la información de la asociación de un profesor con una o más unidades de aprendizaje en caso de que se desee ver más detalles de este.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -33,9 +33,8 @@
 	\UCitem{Actor(es)}{
 		\begin{UClist}
 			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
-			\UCli \cdtRef{Actor:C}{Capturista}
 	\end{UClist} }
-	\UCitem{Propósito}{Consultar la información de un profesor y así obtener mayor detalle del registro.}
+	\UCitem{Propósito}{Consultar la información de la asociación de un profesor y así obtener mayor detalle del registro.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -43,15 +42,14 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli \cdtRef{profesor:nombre}{Nombre}: \ioObtener.
+			\UCli Nombre: (\cdtRef{profesor:nombre}{Nombre}, \cdtRef{profesor:primerApellido}{Primer apellido} y \cdtRef{profesor:segundoApellido}{Segundo apellido}). \ioObtener.
 			
-			\UCli \cdtRef{profesor:primerApellido}{Primer apellido}: \ioObtener.
+			\UCli \cdtRef{profesor:clasificacion}{Clasificación}: \ioObtener.
 			
-			\UCli \cdtRef{profesor:segundoApellido}{Segundo apellido}: \ioObtener.
+			\UCli \cdtRef{profesor:horario}{Horario}: \ioObtener.
 			
-			\UCli \cdtRef{profesor:rfc}{RFC}: \ioObtener.
+			\UCli \cdtRef{unidadAprendizaje:nombre}{Nombre} de las unidades de aprendizaje y el número de veces que se impartirán: \ioObtener.
 			
-			\UCli \cdtRef{profesor:cargoEspecial}{Cargo especial}: \ioObtener.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -74,19 +72,19 @@
 			\UCli Ninguno
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUP1}{Gestionar profesores}.}
+	\UCitem{Tipo}{Terciario, extiende del caso de uso \cdtIdRef{CUAP1}{Gestionar asociación de profesores}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita consultar la información de un profesor oprimiendo el botón \cdtButton{Consultar}
-	de la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}.
+	\UCpaso [\UCactor] Solicita consultar la información de la asociación de un profesor oprimiendo el botón \cdtButton{Consultar}
+	de la pantalla \cdtIdRef{IUAP1}{Gestionar Asociación de Profesores}.
 	
-	\UCpaso [\UCsist] Obtiene el nombre, primer apellido, segundo apellido, RFC y si tiene un cargo especial el profesor seleccionado.
+	\UCpaso [\UCsist] Obtiene la información descrita en la sección de salidas.
 	
-	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUP1.4}{Consultar Profesor} con la información obtenida.
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUAP1.4}{Consultar Asociación de Profesor} con la información obtenida.
 	
-	\UCpaso [\UCactor] Solicita terminar la consulta oprimiendo el botón \cdtButton{Regresar} de la pantalla \cdtIdRef{IUP1.4}{Consultar Profesor}.
+	\UCpaso [\UCactor] Solicita terminar la consulta oprimiendo el botón \cdtButton{Regresar} de la pantalla \cdtIdRef{IUAP1.4}{Consultar Asociación de Profesor}.
 	
-	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}.
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUAP1}{Gestionar Asociación de Profesores}.
 	
 \end{UCtrayectoria}

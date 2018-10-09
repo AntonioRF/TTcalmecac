@@ -1,6 +1,8 @@
 
-\begin{UseCase}{CUP1.1}{Registrar profesor}{	
-	Permite al actor registrar un nuevo profesor para la ESCOM. De modo que, este pueda ser asociado con una unidad de aprendizaje para generar un horario. 
+\begin{UseCase}{CUAP1.1}{Registrar asociación de profesor}{	
+
+	Permite al actor asociar a un profesor de la ESCOM con una o más unidades de aprendizaje que puede impartir. Además, de señalar cuantas veces impartirá la unidad de aprendizaje. Esta asociación es importante debido a que será utilizada como parte del cromosoma del algoritmo que generará el horario. 
+	
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -32,26 +34,32 @@
 	\UCsection{Atributos}
 	\UCitem{Actor(es)}{ \begin{UClist}
 			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
-			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Registrar un nuevo profesor el cual podrá formar parte de los horarios de clases de la ESCOM.}
+	\UCitem{Propósito}{Registrar la asociación de un profesor con una o más unidades de aprendizaje para utilizarlo en el cromosoma del algoritmo que generará el horario.}
 	\UCitem{Entradas}{
 		\begin{UClist}
-			\UCli \cdtRef{profesor:nombre}{Nombre}: \ioEscribir.
+			\UCli Nombre del profesor: (\cdtRef{profesor:nombre}{Nombre}, \cdtRef{profesor:primerApellido}{Primer apellido} y \cdtRef{profesor:segundoApellido}{Segundo apellido}): \ioSeleccionar
 			
-			\UCli \cdtRef{profesor:primerApellido}{Primer apellido}: \ioEscribir.
+			\UCli \cdtRef{profesor:clasificacion}{Clasificación}: \ioSeleccionar.
 			
-			\UCli \cdtRef{profesor:segundoApellido}{Segundo apellido}: \ioEscribir.
+			\UCli \cdtRef{profesor:horario}{Horario}: \ioSeleccionar.
 			
-			\UCli \cdtRef{profesor:rfc}{RFC}: \ioEscribir.
+			\UCli \cdtRef{asociacionProfesor:cantidad}{Cantidad} de clases de la unidad de aprendizaje: \ioEscribir.
 			
-			\UCli \cdtRef{profesor:cargoEspecial}{Cargo especial}: \ioEscribir.
 		\end{UClist}
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUP1}{Gestionar Profesores} indicando que el registro se realizó correctamente.
+			\UCli Nombre del profesor: (\cdtRef{profesor:nombre}{Nombre}, \cdtRef{profesor:primerApellido}{Primer apellido} y \cdtRef{profesor:segundoApellido}{Segundo apellido}): \ioObtener.
+			
+			\UCli \cdtRef{profesor:clasificacion}{Clasificación}: \ioObtener.
+			
+			\UCli \cdtRef{profesor:horario}{Horario}: \ioObtener.
+			
+			\UCli \cdtRef{unidadAprendizaje:nombre}{Nombre} de las unidades de aprendizaje: \ioObtener.
+			
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUAP1}{Gestionar Asociación de Profesores} indicando que el registro se realizó correctamente.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -67,36 +75,32 @@
 	\UCitem{Reglas de negocio}{
 		\begin{UClist}
 			\UCli \cdtIdRef{RN-S1}{Datos requeridos}
-			
-			\UCli \cdtIdRef{RN-S2}{Unicidad de elementos} 
 		\end{UClist}
 	}
 	\UCitem{Errores}{
 		\begin{UClist}	
-			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUP1.1}{Registrar Profesor} indicando que faltan campos obligatorios por completar.
-			
-			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUP1.1}{Registrar Profesor} indicando que el RFC del profesor ya existe.
+			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUAP1.1}{Registrar Asociación de Profesor} indicando que faltan campos obligatorios por completar.
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUP1}{Gestionar profesores}.}
+	\UCitem{Tipo}{Terciario, extiende del caso de uso \cdtIdRef{CUAP1}{Gestionar asociación de profesores}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita registrar un profesor dando clic en el ícono \btnRegistrar de la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}. 
+	\UCpaso [\UCactor] Solicita registrar la asociación de un profesor dando clic en el ícono \btnRegistrar de la pantalla \cdtIdRef{IUAP1}{Gestionar Asociación de Profesores}. 
 	
-	\UCpaso [\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUP1.1}{Registrar Profesor}.
+	\UCpaso [\UCsist] Obtiene la información descrita en la sección de salidas.
 	
-	\UCpaso [\UCactor] Completa la información solicitada. \label{CUP1.1:CompletaInfo}
+	\UCpaso [\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUAP1.1}{Registrar Asociación de Profesor} con la información obtenida.
+	
+	\UCpaso [\UCactor] Completa la información solicitada. \label{CUAP1.1:CompletaInfo}
 	
 	\UCpaso [\UCactor] Solicita registrar la información oprimiendo el botón \cdtButton{Aceptar}. \refTray{A}
 	
 	\UCpaso [\UCsist] Verifica que se hayan completado los campos obligatorios con base en la regla de negocios \cdtIdRef{RN-S1}{Datos requeridos}. \refTray{B}
 	
-	\UCpaso [\UCsist] Verifica que el RFC del profesor no se haya registrado previamente, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{C}
+	\UCpaso [\UCsist] Registra la información de la asociación del profesor.
 	
-	\UCpaso [\UCsist] Registra la información del profesor.
-	
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}, indicando que el profesor se registró correctamente.	
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUAP1}{Gestionar Asociación de Profesores}, indicando que la asociación  se registró correctamente.	
 	
 \end{UCtrayectoria}
 
@@ -104,17 +108,12 @@
 \begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor desea cancelar la operación.}
 	\UCpaso [\UCactor] Solicita cancelar la operación oprimiendo el botón \cdtButton{Cancelar}.
 	
-	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}. 
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUAP1}{Gestionar Asociación de Profesores}. 
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{B}{No se completaron los campos obligatorios.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUP1.1}{Registrar Profesor}.
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUAP1.1}{Registrar Asociación de Profesor}.
 	
-	\UCpaso Regresa al paso \ref{CUP1.1:CompletaInfo} de la trayectoria principal.
+	\UCpaso Regresa al paso \ref{CUAP1.1:CompletaInfo} de la trayectoria principal.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{C}{El RFC del profesor ya fue registrado.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUP1.1}{Registrar Profesor}.
-	
-	\UCpaso Regresa al paso \ref{CUP1.1:CompletaInfo} de la trayectoria principal.
-\end{UCtrayectoriaA}

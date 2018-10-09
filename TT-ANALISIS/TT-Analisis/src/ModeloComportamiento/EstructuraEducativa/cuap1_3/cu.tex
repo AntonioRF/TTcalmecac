@@ -1,6 +1,6 @@
 
-\begin{UseCase}{CUP1.3}{Eliminar profesor}{	
-	Permite al actor eliminar un profesor previamente registrado el cual se registró por error o ya no se utilizará.
+\begin{UseCase}{CUAP1.3}{Eliminar asociación de profesor}{	
+	Permite al actor eliminar la asociación de un profesor con una o más unidades de aprendizaje, la cual se registró por error o ya no se utilizará.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -33,10 +33,9 @@
 	\UCitem{Actor(es)}{
 		\begin{UClist}
 			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
-			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Eliminar un profesor que fue registrado por error o que no se utilizará más.}
+	\UCitem{Propósito}{Eliminar la asociación de un profesor que fue registrado por error o que no se utilizará más.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -44,12 +43,12 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUP1}{Gestionar Profesores} indicando que el profesor se eliminó correctamente.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUAP1}{Gestionar Asociación de Profesores} indicando que la asociación de un profesor se eliminó correctamente.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
 		\begin{UClist}
-			\UCli Que el profesor en cuestión no haya sido asociado con una o más Academias y/o Unidades de Aprendizaje.
+			\UCli Que la asociación en cuestión no haya sido utilizada en la generación del horario.
 		\end{UClist}
 	}	
 	\UCitem{Postcondiciones}{
@@ -67,25 +66,25 @@
 			\UCli Ninguno
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUP1}{Gestionar profesores}.}
+	\UCitem{Tipo}{Terciario, extiende del caso de uso \cdtIdRef{CUAP1}{Gestionar asociación de profesores}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
 	\UCpaso [\UCactor] Solicita eliminar un profesor oprimiendo el botón \cdtButton{Eliminar} 
-	de la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}.
+	de la pantalla \cdtIdRef{IUAP1}{Gestionar Asociación de Profesores}.
 	
-	\UCpaso [\UCsist] Verifica que el profesor no haya sido asociado a una o más academias y/o Unidades de Aprendizaje. \refTray{A}
+	\UCpaso [\UCsist] Verifica que la asociación del profesor no haya sido utilizada en la generación de horarios. \refTray{A}
 	
 	\UCpaso [\UCsist] Solicita la confirmación a través del mensaje \cdtIdRef{MSG2}{Eliminar Elemento}.
 	
-	\UCpaso [\UCactor] Confirma eliminar el profesor oprimiendo el botón \cdtButton{Si}.
+	\UCpaso [\UCactor] Confirma eliminar la asociación de un profesor oprimiendo el botón \cdtButton{Si}.
 	
-	\UCpaso [\UCsist] Elimina el profesor.
+	\UCpaso [\UCsist] Elimina la asociación de un  profesor.
 	
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUP1}{Gestionar Profesores} indicando que el profesor se eliminó correctamente.	
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUAP1}{Gestionar Asociación de Profesores} indicando que la asociación se eliminó correctamente.	
 	
 \end{UCtrayectoria}
 
-\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El profesor ya fue asociado al menos a una academia o con una Unidad de Aprendizaje.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No es posible eliminar un elemento} en la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}. 
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{La asociación de un profesor ya ha sido utilizada en la generación de horarios.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No es posible eliminar un elemento} en la pantalla \cdtIdRef{IUAP1}{Gestionar Asociación de Profesores}. 
 \end{UCtrayectoriaA}
