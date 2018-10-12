@@ -1,6 +1,7 @@
 
-\begin{UseCase}{CUP1.3}{Eliminar profesor}{	
-	Permite al actor eliminar un profesor previamente registrado el cual se registró por error o ya no se utilizará.
+\begin{UseCase}{CUEE1.3}{Eliminar estructura educativa}{	
+		
+	Permite al actor eliminar una estructura educativa que se registró previamente, y que se hizo por error o ya no se utilizará.
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -33,10 +34,9 @@
 	\UCitem{Actor(es)}{
 		\begin{UClist}
 			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
-			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Eliminar un profesor que fue registrado por error o que no se utilizará más.}
+	\UCitem{Propósito}{Eliminar una estructura educativa que fue registrada por error o que no se utilizará más. Así, la información se mantendrá actualizada.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -44,12 +44,12 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUP1}{Gestionar Profesores} indicando que el profesor se eliminó correctamente.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa} indicando que la estructura educativa se eliminó correctamente.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
 		\begin{UClist}
-			\UCli Que el profesor en cuestión no haya sido asociado con una o más Academias y/o Unidades de Aprendizaje.
+			\UCli Que a la estructura educativa no se le haya registrado algún elemento.
 		\end{UClist}
 	}	
 	\UCitem{Postcondiciones}{
@@ -67,25 +67,24 @@
 			\UCli Ninguno
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUP1}{Gestionar profesores}.}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUEE1}{Gestionar estructura educativa}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita eliminar un profesor oprimiendo el botón \cdtButton{Eliminar} 
-	de la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}.
+	\UCpaso [\UCactor] Solicita eliminar una estructura educativa oprimiendo el botón \cdtButton{Eliminar} de la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa}.
 	
-	\UCpaso [\UCsist] Verifica que el profesor no haya sido asociado a una o más academias y/o Unidades de Aprendizaje. \refTray{A}
+	\UCpaso [\UCsist] Verifica que la estructura educativa no haya sido asociado con uno o más elementos. \refTray{A}
 	
 	\UCpaso [\UCsist] Solicita la confirmación a través del mensaje \cdtIdRef{MSG2}{Eliminar Elemento}.
 	
-	\UCpaso [\UCactor] Confirma eliminar el profesor oprimiendo el botón \cdtButton{Si}.
+	\UCpaso [\UCactor] Confirma eliminar la estructura educativa oprimiendo el botón \cdtButton{Si}.
 	
-	\UCpaso [\UCsist] Elimina el profesor.
+	\UCpaso [\UCsist] Elimina la estructura educativa.
 	
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUP1}{Gestionar Profesores} indicando que el profesor se eliminó correctamente.	
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa} indicando que la estructura educativa se eliminó correctamente.	
 	
 \end{UCtrayectoria}
 
-\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El profesor ya fue asociado al menos a una academia o con una Unidad de Aprendizaje.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No es posible eliminar un elemento} en la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}. 
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{La estructura educativa ya fue asociada con uno o más elementos.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No es posible eliminar un elemento} en la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa}. 
 \end{UCtrayectoriaA}

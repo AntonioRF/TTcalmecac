@@ -1,6 +1,9 @@
 
-\begin{UseCase}{CUP1.1}{Registrar profesor}{	
-	Permite al actor registrar un nuevo profesor para la ESCOM. De modo que, este pueda ser asociado con una unidad de aprendizaje para generar un horario. 
+\begin{UseCase}{CUEE1.1}{Registrar estructura educativa}{	
+		
+	La estructura educativa es el nombre que recibe el proceso para realizar los horarios en los que se impartirán las clases en la ESCOM.
+		
+	Permite al actor registrar una nueva estructura educativa, con la cual se identificarán las diferentes opciones de horario que pueden generarse. 
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -32,26 +35,19 @@
 	\UCsection{Atributos}
 	\UCitem{Actor(es)}{ \begin{UClist}
 			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
-			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Registrar un nuevo profesor el cual podrá formar parte de los horarios de clases de la ESCOM.}
+	\UCitem{Propósito}{Registrar una nueva estructura educativa para crear la información necesaria para generar los horarios de clases de la ESCOM.}
 	\UCitem{Entradas}{
 		\begin{UClist}
-			\UCli \cdtRef{profesor:nombre}{Nombre}: \ioEscribir.
+			\UCli \cdtRef{estructuraEducativa:nombre}{Nombre}: \ioEscribir.
 			
-			\UCli \cdtRef{profesor:primerApellido}{Primer apellido}: \ioEscribir.
-			
-			\UCli \cdtRef{profesor:segundoApellido}{Segundo apellido}: \ioEscribir.
-			
-			\UCli \cdtRef{profesor:rfc}{RFC}: \ioEscribir.
-			
-			\UCli \cdtRef{profesor:cargoEspecial}{Cargo especial}: \ioEscribir.
+			\UCli \cdtRef{estructuraEducativa:ciclo}{Ciclo escolar}: \ioSeleccionar.
 		\end{UClist}
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUP1}{Gestionar Profesores} indicando que el registro se realizó correctamente.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa} indicando que el registro se realizó correctamente.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -73,30 +69,30 @@
 	}
 	\UCitem{Errores}{
 		\begin{UClist}	
-			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUP1.1}{Registrar Profesor} indicando que faltan campos obligatorios por completar.
+			\UCli \cdtIdRef{MSG3}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IUEE1.1}{Registrar Estructura Educativa} indicando que faltan campos obligatorios por completar.
 			
-			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUP1.1}{Registrar Profesor} indicando que el RFC del profesor ya existe.
+			\UCli \cdtIdRef{MSG6}{Elemento duplicado}: Se muestra en la pantalla \cdtIdRef{IUEE1.1}{Registrar Estructura Educativa} indicando que el ciclo ya se utilizó.
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUP1}{Gestionar profesores}.}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUEE1}{Gestionar estructura educativa}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita registrar un profesor dando clic en el ícono \btnRegistrar de la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}. 
+	\UCpaso [\UCactor] Solicita registrar una estructura educativa dando clic en el ícono \btnRegistrar de la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa}. 
 	
-	\UCpaso [\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUP1.1}{Registrar Profesor}.
+	\UCpaso [\UCsist] Solicita la información a través de la pantalla \cdtIdRef{IUEE1.1}{Registrar Estructura Educativa}.
 	
-	\UCpaso [\UCactor] Completa la información solicitada. \label{CUP1.1:CompletaInfo}
+	\UCpaso [\UCactor] Completa la información solicitada. \label{CUEE1.1:CompletaInfo}
 	
 	\UCpaso [\UCactor] Solicita registrar la información oprimiendo el botón \cdtButton{Aceptar}. \refTray{A}
 	
 	\UCpaso [\UCsist] Verifica que se hayan completado los campos obligatorios con base en la regla de negocios \cdtIdRef{RN-S1}{Datos requeridos}. \refTray{B}
 	
-	\UCpaso [\UCsist] Verifica que el RFC del profesor no se haya registrado previamente, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{C}
+	\UCpaso [\UCsist] Verifica que no se haya registrado una estructura educativa con el ciclo escolar en cuestión, con base en la regla de negocios \cdtIdRef{RN-S2}{Unicidad de elementos}. \refTray{C}
 	
-	\UCpaso [\UCsist] Registra la información del profesor.
+	\UCpaso [\UCsist] Registra la información de la estructura educativa.
 	
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}, indicando que el profesor se registró correctamente.	
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa}, indicando que la estructura educativa se registró correctamente.	
 	
 \end{UCtrayectoria}
 
@@ -104,17 +100,17 @@
 \begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor desea cancelar la operación.}
 	\UCpaso [\UCactor] Solicita cancelar la operación oprimiendo el botón \cdtButton{Cancelar}.
 	
-	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}. 
+	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa}. 
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{B}{No se completaron los campos obligatorios.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUP1.1}{Registrar Profesor}.
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUEE1.1}{Registrar Estructura Educativa}.
 	
-	\UCpaso Regresa al paso \ref{CUP1.1:CompletaInfo} de la trayectoria principal.
+	\UCpaso Regresa al paso \ref{CUEE1.1:CompletaInfo} de la trayectoria principal.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{C}{El RFC del profesor ya fue registrado.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUP1.1}{Registrar Profesor}.
+\begin{UCtrayectoriaA}{C}{El ciclo escolar ya fue registrado en otro registro.}
+	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Elemento duplicado} en la pantalla \cdtIdRef{IUEE1.1}{Registrar Estructura Educativa}.
 	
-	\UCpaso Regresa al paso \ref{CUP1.1:CompletaInfo} de la trayectoria principal.
+	\UCpaso Regresa al paso \ref{CUEE1.1:CompletaInfo} de la trayectoria principal.
 \end{UCtrayectoriaA}
