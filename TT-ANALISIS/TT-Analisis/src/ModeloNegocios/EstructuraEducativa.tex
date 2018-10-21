@@ -21,7 +21,9 @@ En la figura~\ref{fig:estructuraEducativa} se muestra la estructura de informaci
 	
 	\Battr{nombre}{Nombre}{\tdFrase}{Es el nombre con el que se registra el edificio}{\requerido}{\longitudMax{50}{caracteres}}{Caracteres admitidos: [A-Z] $|$ [a-z] $|$ [1-9] $|$ \_ $|$ $-$ $|$ [á,é,é,ó,ú]  $|$ [Á,É,Í,Ó,Ú] $|$ \textvisiblespace.}
 	
-	\Battr{cicloEscolar}{CicloEscolar}{\tdCatalogo}{Es el nombre del ciclo escolar, el cual está formado por el ciclo escolar / 1 o 2 según corresponda.}{\requerido}
+	\Battr{cicloEscolar}{CicloEscolar}{\tdCatalogo}{Es el nombre del ciclo escolar, el cual está formado por el ciclo escolar / 1 o 2 según corresponda.}{\requerido}	
+	
+	\Battr{numero}{Número}{\tdNumerico}{Es el número que se le da al algoritmo que indica el número de veces que se quiere repetir el algoritmo y que estas sean las opciones generadas}{\requerido}{\longitudMax{2}{caracteres}}{Caracteres admitidos: [1-10] .}
 	
 \end{BusinessEntity}
 
@@ -44,7 +46,7 @@ En la figura~\ref{fig:grupos} se muestra la estructura de información que manej
 	
 	\Battr{turno}{Turno}{\tdPalabra}{Es el turno al cual pertencerá el grupo. De estos sólo existen CM y CV}{\requerido}{\longitudMax{2}{caracteres}}{Caracteres admitidos: CM $|$ CV.}
 		
-	\Battr{numero}{Número}{\tdPalabra}{Es el número consecutivo que se le da a los grupos, después de indicar el nivel y turno. Este será el número que lo diferencia de otro grupo }{\requerido}{\longitudMax{2}{caracteres}}{Caracteres admitidos: [1-99] .}
+	\Battr{numero}{Número}{\tdNumerico}{Es el número consecutivo que se le da a los grupos, después de indicar el nivel y turno. Este será el número que lo diferencia de otro grupo }{\requerido}{\longitudMax{2}{caracteres}}{Caracteres admitidos: [1-99] .}
 
 	\Battr{nombre}{Nombre}{\tdFrase}{Es el nombre con el que se registra el grupo. Este es la concatenación del nivel + turno + numero}{\requerido}{\longitudMax{5}{caracteres}}{Caracteres admitidos: CM $|$ CV $|$ [a-z] $|$ [1-9].}
 	
@@ -66,14 +68,11 @@ En la figura~\ref{fig:asociacionProfesores} se muestra la estructura de informac
 \end{figure}
 
 %--------------------------------------------------------------------------------
-\begin{BusinessEntity}{grupo}{Grupo}
+\begin{BusinessEntity}{asociacionProfesor}{Asociación de profesor}
 	
-	\Battr{turno}{Turno}{\tdPalabra}{Es el turno al cual pertencerá el grupo. De estos sólo existen CM y CV}{\requerido}{\longitudMax{2}{caracteres}}{Caracteres admitidos: CM $|$ CV.}
+	\Battr{turno}{Turno}{\tdPalabra}{Es el turno al cual pertence el profesor. De este sólo existen CM y CV}{\requerido}{\longitudMax{2}{caracteres}}{Caracteres admitidos: CM $|$ CV.}
 	
-	\Battr{numero}{Número}{\tdPalabra}{Es el número consecutivo que se le da a los grupos, después de indicar el nivel y turno. Este será el número que lo diferencia de otro grupo }{\requerido}{\longitudMax{2}{caracteres}}{Caracteres admitidos: [1-99] .}
-	
-	\Battr{nombre}{Nombre}{\tdFrase}{Es el nombre con el que se registra el grupo. Este es la concatenación del nivel + turno + numero}{\requerido}{\longitudMax{5}{caracteres}}{Caracteres admitidos: CM $|$ CV $|$ [a-z] $|$ [1-9].}
-	
+	\Battr{cantidad}{Cantidad}{\tdPalabra}{Es el número de veces en la que se impartirá la unidad de aprendizaje.}{\requerido}{\longitudMax{1}{carácter}}{Caracteres admitidos: [0-4].}
 	
 \end{BusinessEntity}
 

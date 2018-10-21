@@ -339,7 +339,7 @@
 \contentsline {subsection}{\numberline {11.1.4}Grupo}{160}{subsection.11.1.4}
 \contentsline {subsubsection}{Atributos}{160}{section*.108}
 \contentsline {subsection}{\numberline {11.1.5}M\IeC {\'o}dulo Asociaci\IeC {\'o}n de profesores: Descripci\IeC {\'o}n general}{161}{subsection.11.1.5}
-\contentsline {subsection}{\numberline {11.1.6}Grupo}{161}{subsection.11.1.6}
+\contentsline {subsection}{\numberline {11.1.6}Asociaci\IeC {\'o}n de profesor}{161}{subsection.11.1.6}
 \contentsline {subsubsection}{Atributos}{161}{section*.109}
 \contentsline {section}{\numberline {11.2}Modelo de comportamiento del m\IeC {\'o}dulo: Gestionar Grupos }{162}{section.11.2}
 \contentsline {section}{\numberline {11.3}CUEE1.1 Registrar estructura educativa}{163}{section.11.3}
