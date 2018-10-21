@@ -1,7 +1,8 @@
 
-\begin{UseCase}{CUEE1.3}{Eliminar estructura educativa}{	
+\begin{UseCase}{CUEE1.5}{Consultar horario}{	
 		
-	Permite al actor eliminar una estructura educativa que se registró previamente, y que se hizo por error o ya no se utilizará.
+	Permite al actor consultar la estructura educativa generada por el algoritmo. Esta se visualiza en un archivo con extensión .xml o.xls.
+	
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
@@ -36,7 +37,7 @@
 			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{Eliminar una estructura educativa que fue registrada por error o que no se utilizará más. Así, la información se mantendrá actualizada.}
+	\UCitem{Propósito}{Consultar el resultado de la estructura educativa generada por el algoritmo.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -44,12 +45,12 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa} indicando que la estructura educativa se eliminó correctamente.
+			\UCli 
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
 		\begin{UClist}
-			\UCli Que a la estructura educativa no se le haya registrado algún elemento.
+			\UCli Ninguna
 		\end{UClist}
 	}	
 	\UCitem{Postcondiciones}{
@@ -71,20 +72,10 @@
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita eliminar una estructura educativa oprimiendo el botón \cdtButton{Eliminar} de la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa}.
+	\UCpaso [\UCactor] Solicita consultar la estructura educativa generada oprimiendo el botón \cdtButton{Consultar} de la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa}.
 	
-	\UCpaso [\UCsist] Verifica que la estructura educativa no haya sido asociado con uno o más elementos. \refTray{A}
+	\UCpaso [\UCsist] Obtiene la información detallada en la sección de salidas. 
 	
-	\UCpaso [\UCsist] Solicita la confirmación a través del mensaje \cdtIdRef{MSG2}{Eliminar Elemento}.
-	
-	\UCpaso [\UCactor] Confirma eliminar la estructura educativa oprimiendo el botón \cdtButton{Si}.
-	
-	\UCpaso [\UCsist] Elimina la estructura educativa.
-	
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa} indicando que la estructura educativa se eliminó correctamente.	
+	\UCpaso [\UCsist] Muestra el documento con la información consultada.
 	
 \end{UCtrayectoria}
-
-\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{La estructura educativa ya fue asociada con uno o más elementos.}
-	\UCpaso [\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No es posible eliminar un elemento} en la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa}. 
-\end{UCtrayectoriaA}

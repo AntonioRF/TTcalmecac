@@ -1,22 +1,24 @@
-\subsection{IUP1 Gestionar Profesores}
+\subsection{IUEE1 Gestionar Estructura Educativa}
 
 \subsubsection{Objetivo}
 	
-	Esta pantalla permite al actor visualizar los profesores que se han registrado, teniendo la posibilidad de modificar, eliminar y consultar la información previamente registrada de este.
+	Esta pantalla permite al actor visualizar la información de las estructuras educativas que se han registrado, teniendo la posibilidad de modificar, eliminar, configurar el horario y consultar la estructura educativa generada.
 
 \subsubsection{Diseño}
 
-    En la figura \ref{IUP1} se muestra la pantalla ''Gestionar Profesores'', por medio de la cual se muestra la información de los profesores registrados. La pantalla muestra el nombre, primer apellido y segundo apellido del profesor, ordenados de forma ascendente por el primer apellido.
+    En la figura \ref{IUEE1} se muestra la pantalla ''Gestionar Estructura Educativa'', por medio de la cual se muestra la información de las estructuras educativas registrados. La pantalla muestra el nombre y ciclo de la estructura educativa, ordenados de forma descendente por el ciclo escolar.
  
-  \IUfig[.8]{../ModeloComportamiento/Profesores/cup1/images/IUP1.png}{IUP1}{Gestionar Profesores}
+  \IUfig[.8]{../ModeloComportamiento/EstructuraEducativa/cuee1/images/IUEE1.png}{IUEE1}{Gestionar Estructura Educativa}
 
 \subsubsection{Comandos}
     \begin{itemize}
-		\item \btnRegistrar: Permite al actor registrar un nuevo profesor, dirige a la pantalla \cdtIdRef{IUP1.1}{Registrar Profesor}.
+		\item \btnRegistrar: Permite al actor registrar una nueva estructura educativa, dirige a la pantalla \cdtIdRef{IUEE1.1}{Registrar Estructura Educativa}.
 		
-		\item \cdtButton{Modificar}: Permite al actor modificar el contenido de un profesor previamente registrado, dirige a la pantalla \cdtIdRef{IUP1.2}{Modificar Profesor}.
+		\item \cdtButton{Modificar}: Permite al actor modificar la información de la estructura educativa previamente registrada, dirige a la pantalla \cdtIdRef{IUEE1.2}{Modificar Estructura Educativa}.
 		
-		\item \cdtButton{Eliminar}: Permite al actor eliminar un profesor previamente registrada, dirige a la pantalla \cdtIdRef{IUP1}{Gestionar Profesor}.
+		\item \cdtButton{Eliminar}: Permite al actor eliminar una estructura educativa, dirige a la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa}.
+		
+		\item \cdtButton{Horario}: Permite al actor configurar el algoritmo para generar la estructura educativa, dirige a la pantalla \cdtIdRef{IUEE1.4}{Configurar Horario}.
 	
-		\item \cdtButton{Consultar}: Permite al actor consultar la información registrada para un profesor, dirige a la pantalla \cdtIdRef{IUP1.4}{Consultar Profesor}.
+		\item \cdtButton{Consultar}: Permite al actor consultar la información generada por el algoritmo, esta se visualiza en un archivo de excel.
     \end{itemize}
