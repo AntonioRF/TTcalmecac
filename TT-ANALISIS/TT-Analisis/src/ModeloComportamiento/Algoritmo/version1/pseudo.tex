@@ -1,4 +1,4 @@
-\subsection{Prototipo versión 1 del alogritmo de optimización}
+\subsection{Prototipo1 del alogritmo de optimización}
 
 Tenemos que nuestras variables son Materia, Profesor, Grupo, Salón y Horario. Consideramos que no todos los profesores pueden impartir todas las materias por lo que se toma una variable MP la cuál es un arreglo de Tuplas Materia-Profesor que indica las materias que imparte cada profesor, de igual manera sabemos que los grupos son asignados a un salón de manera previa por lo que tenemos la variable GS la cuál lleva el Id de la tupla Grupo-Salón.\\
 
@@ -36,7 +36,7 @@ Como se explicó anteriormente los algoritmos evolutivos tienen una estructura s
 
 Siguiendo el pseudocódigo del algoritmo, después de inicializar las variables con la información que utilizaremos para crear la estructura educativa, utilizamos la función generarPoblacion() para crear la población inicial con la cual trabajaremos. A continuación entramos a un ciclo que se detiene con el criterio de paro que hemos definido experimentalmente como un número de iteraciones, dentro del ciclo evaluamos la población inicial y creamos una copia de la misma, seleccionamos de manera aleatoria cualquiera de los dos operadores de mutación que hemos definido y operamos dicha mutación sobre la copia de la población inicial. Evaluamos la población mutada y comparamos contra la población inicial, la que sea determinada como mejor adaptada o, lo que es lo mismo, con la mejor calificación, será aquella con la que realizaremos la mutación en la siguiente iteración de forma que obtengamos el mejor resultado posible antes de alcanzar el número de iteraciones definido como criterio de paro.
 
-\subsection{Funci\'on: generar Poblacion}
+\subsubsection{Funci\'on: generar Poblacion}
 
 Esta función genera una población inicial, tradicionalmente la población inicial debe ser completamente aleatoria, sin embargo esto podría significar nunca encontrar una solución viable a partir de la misma. La función deifinida genera una población viable cuidando  las restricciones escenciales y utilizando todas los atributos contenidos en el arreglo MP asegurando que todos los profesores impartan todas sus clases a pesar de las mutaciones, mientras se verifica que los profesores no tengan traslapes.
 
@@ -81,7 +81,7 @@ Esta función genera una población inicial, tradicionalmente la población inic
 	\caption{generarPoblacion()}
 \end{algorithm}
 
-\subsection{Funci\'on: evalua}
+\subsubsection{Funci\'on: evalua}
 
 Para evaluar a un individuo tomamos en cuenta las siguientes restricciones con su respectiva penalizacion. La penalizacion es mayor cuando se viola una restriccion escencial(hard constraint) y menor cuando se viola una restriccion no escencial(soft constraint).
 
@@ -155,7 +155,7 @@ Para evaluar a un individuo tomamos en cuenta las siguientes restricciones con s
 	\caption{evalua(individuos)}
 \end{algorithm}
 
-\subsection{Mutaci\'on}
+\subsubsection{Mutaci\'on}
 
 Se definieron dos funciones de mutación, en ambos casos estamos considerando que dado el espacio limitado que tenemos para generar dichos cambios, aplicamos la mutación al mismo tiempo en dos cromosomas distintos de esta manera se busca mantener la viabilidad del resultado. La primera función de mutación  actúa sobre el gen GS de manera que el profesor sigue impartiendo una materia en el mismo horario pero en un grupo distinto, lo cual mitiga los casos en que un profesor imparte dos materias distintas en el mismo grupo o los casos en que una materia se imparte dos veces en el mismo grupo.\\ 
 
@@ -199,3 +199,9 @@ La segunda función actua sobre el gen H manteniendo los profesores y las materi
 	return poblacion \;
 	\caption{mutacionHorarios(poblacion)}
 	\end{algorithm}  
+
+\subsubsection{Resultado}
+
+Como resultado de este prototipo tenemos que las funciones crean un horario mejor que el actual de ESCOM para el espacio de prueba utilizado de acuerdo a nuestros criterios, el propósito de este prototipo fue generar las funciones que se van a utilizar y comprobar su correcto funcionamiento, aunado a esto pudimos determinar el número de iteraciones necesarias para llegar al mejor resultado posible de forma que las mismas se puedan considerar un criterio de paro.\\
+
+Como parte negativa tenemos que nunca se logra una calificación perfecta (igual a 0), teniendo como mejor calificación lograda en las pruebas el 42.\\
