@@ -36,7 +36,7 @@
 			\UCli \cdtRef{Actor:C}{Capturista}
 		\end{UClist} 
 	}
-	\UCitem{Propósito}{}
+	\UCitem{Propósito}{Llevar a cabo las acciones disponibles con el fin de generar la estructura educativa para la ESCOM, haciendo uso de la información necesaria.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -44,7 +44,7 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli Tabla que muestra: \cdtRef{ee:nombre}{Nombre}, \cdtRef{ee:cicloEscolar}{Ciclo escolar} de la estructura educativa.
+			\UCli Tabla que muestra: \cdtRef{estructuraEducativa:nombre}{Nombre}, \cdtRef{estructuraEducativa:cicloEscolar}{Ciclo escolar} de la estructura educativa.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -78,29 +78,33 @@
 	
 	\UCpaso [\UCsist] Ordena de forma descendente los registros de estructura educativa mediante el ciclo escolar.
 	
-	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa} con la información obtenida con los botones \cdtButton{Modificar}, \cdtButton{Eliminar}, \cdtButton{Consultar}, \cdtButton{Asociar profesores}, \cdtButton{Asociar grupos} y el ícono \btnRegistrar. \label{cuee1:gestionar}
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa} con la información obtenida con los botones \cdtButton{Modificar}, \cdtButton{Eliminar},  \cdtButton{Asociar profesores}, \cdtButton{Asociar grupos}, \cdtButton{Horario}, \cdtButton{Consultar} y el ícono \btnRegistrar. \label{cuee1:gestionar}
 \end{UCtrayectoria}
 
 \subsection{Puntos de extensión}
 
 \UCExtensionPoint 
-{El actor requiere registrar un nuevo profesor.}
-{Paso \ref{cup1:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUP1.1}{Registrar profesor}}
+{El actor requiere registrar una nueva estructura educativa.}
+{Paso \ref{cuee1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUEE1.1}{Registrar estructura educativa}}
 
 \UCExtensionPoint 
-{El actor requiere modificar un profesor previamente registrado.}
-{Paso \ref{cup1:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUP1.2}{Modificar profesor}}
+{El actor requiere modificar una estructura educativa previamente registrada.}
+{Paso \ref{cuee1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUEE1.2}{Modificar estructura educativa}}
 
 \UCExtensionPoint 
-{El actor requiere eliminar un profesor previamente registrado.}
-{Paso \ref{cup1:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUP1.3}{Eliminar profesor}}
+{El actor requiere eliminar una estructura educativa previamente registrada.}
+{Paso \ref{cuee1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUEE1.3}{Eliminar estructura educativa}}
 
 \UCExtensionPoint 
-{El actor requiere consultar un profesor previamente registrado.}
-{Paso \ref{cup1:gestionar} de la Trayectoria Principal}
-{\cdtIdRef{CUP1.4}{Consultar profesor}}
+{El actor requiere configurar el horario para la estructura educativa previamente registrada.}
+{Paso \ref{cuee1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUEE1.4}{Configurar horario}}
 
+\UCExtensionPoint 
+{El actor requiere consultar el horario para la estructura educativa previamente registrada.}
+{Paso \ref{cuee1:gestionar} de la Trayectoria Principal}
+{\cdtIdRef{CUEE1.5}{Consultar horario}}
 

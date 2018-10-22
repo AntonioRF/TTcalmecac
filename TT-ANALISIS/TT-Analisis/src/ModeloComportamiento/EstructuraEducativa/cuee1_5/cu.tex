@@ -1,12 +1,14 @@
 
-\begin{UseCase}{CUP1.4}{Consultar profesor}{	
-	Permite al actor consultar la información registrada de un profesor en caso de que se desee ver más detalles de este.
+\begin{UseCase}{CUEE1.5}{Consultar horario}{	
+		
+	Permite al actor consultar la estructura educativa generada por el algoritmo. Esta se visualiza en un archivo con extensión .xls.
+	
 }
 \UCccitem{Versión}{0.1}
 \UCccsection{Administración de Requerimientos}
 \UCccitem{Autor}{Brenda Gómez Caballero}
 \UCccitem{Evaluador}{}
-\UCccitem{Operación}{Consultar}
+\UCccitem{Operación}{Eliminación}
 \UCccitem{Prioridad}{Media}
 \UCccitem{Complejidad}{Baja}
 \UCccitem{Volatilidad}{Muy baja}
@@ -33,9 +35,9 @@
 	\UCitem{Actor(es)}{
 		\begin{UClist}
 			\UCli \cdtRef{Actor:SA}{Subdirector Académico}
-			\UCli \cdtRef{Actor:C}{Capturista}
-	\end{UClist} }
-	\UCitem{Propósito}{Consultar la información de un profesor y así obtener mayor detalle del registro.}
+		\end{UClist} 
+	}
+	\UCitem{Propósito}{Consultar el resultado de la estructura educativa generada por el algoritmo.}
 	\UCitem{Entradas}{
 		\begin{UClist}
 			\UCli Ninguna
@@ -43,15 +45,18 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli \cdtRef{profesor:nombre}{Nombre}: \ioObtener.
+			\UCli Nombre del profesor: (\cdtRef{profesor:nombre}{Nombre}, \cdtRef{profesor:primerApellido}{Primer apellido} y \cdtRef{profesor:segundoApellido}{Segundo apellido}): \ioObtener.
+	
+			\UCli \cdtRef{unidadAprendizaje:nombre}{Nombre} de la unidad de aprendizaje: \ioObtener.
 			
-			\UCli \cdtRef{profesor:primerApellido}{Primer apellido}: \ioObtener.
+			\UCli \cdtRef{grupo:nombre}{Nombre} del grupo: \ioObtener.
 			
-			\UCli \cdtRef{profesor:segundoApellido}{Segundo apellido}: \ioObtener.
+			\cdtRef{espacio:clave}{Espacio}: \ioObtener.
 			
-			\UCli \cdtRef{profesor:rfc}{RFC}: \ioObtener.
+			\UCli Día en que se impartirá la unidad de aprendizaje.
 			
-			\UCli \cdtRef{profesor:cargoEspecial}{Cargo especial}: \ioObtener.
+			\UCli Horario en que se impartirá la unidad de aprendizaje.
+			
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -74,19 +79,14 @@
 			\UCli Ninguno
 		\end{UClist}
 	}
-	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUP1}{Gestionar profesores}.}
+	\UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUEE1}{Gestionar estructura educativa}.}
 \end{UseCase}
 
 \begin{UCtrayectoria}
-	\UCpaso [\UCactor] Solicita consultar la información de un profesor oprimiendo el botón \cdtButton{Consultar}
-	de la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}.
+	\UCpaso [\UCactor] Solicita consultar la estructura educativa generada oprimiendo el botón \cdtButton{Consultar} de la pantalla \cdtIdRef{IUEE1}{Gestionar Estructura Educativa}.
 	
-	\UCpaso [\UCsist] Obtiene el nombre, primer apellido, segundo apellido, RFC y si tiene un cargo especial el profesor seleccionado.
+	\UCpaso [\UCsist] Obtiene la información detallada en la sección de salidas. 
 	
-	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUP1.4}{Consultar Profesor} con la información obtenida.
-	
-	\UCpaso [\UCactor] Solicita terminar la consulta oprimiendo el botón \cdtButton{Regresar} de la pantalla \cdtIdRef{IUP1.4}{Consultar Profesor}.
-	
-	\UCpaso [\UCsist] Muestra la pantalla \cdtIdRef{IUP1}{Gestionar Profesores}.
+	\UCpaso [\UCsist] Muestra el documento con la información consultada.
 	
 \end{UCtrayectoria}
