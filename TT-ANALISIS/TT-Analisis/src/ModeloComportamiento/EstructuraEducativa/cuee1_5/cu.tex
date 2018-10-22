@@ -1,7 +1,7 @@
 
 \begin{UseCase}{CUEE1.5}{Consultar horario}{	
 		
-	Permite al actor consultar la estructura educativa generada por el algoritmo. Esta se visualiza en un archivo con extensión .xml o.xls.
+	Permite al actor consultar la estructura educativa generada por el algoritmo. Esta se visualiza en un archivo con extensión .xls.
 	
 }
 \UCccitem{Versión}{0.1}
@@ -45,7 +45,18 @@
 	}
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli 
+			\UCli Nombre del profesor: (\cdtRef{profesor:nombre}{Nombre}, \cdtRef{profesor:primerApellido}{Primer apellido} y \cdtRef{profesor:segundoApellido}{Segundo apellido}): \ioObtener.
+	
+			\UCli \cdtRef{unidadAprendizaje:nombre}{Nombre} de la unidad de aprendizaje: \ioObtener.
+			
+			\UCli \cdtRef{grupo:nombre}{Nombre} del grupo: \ioObtener.
+			
+			\cdtRef{espacio:clave}{Espacio}: \ioObtener.
+			
+			\UCli Día en que se impartirá la unidad de aprendizaje.
+			
+			\UCli Horario en que se impartirá la unidad de aprendizaje.
+			
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
