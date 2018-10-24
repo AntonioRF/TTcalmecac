@@ -1,10 +1,10 @@
-\subsection{Prototipo1 del alogritmo de optimización}
+\subsection{Prototipo2 del alogritmo de optimización}
 
-Tenemos que nuestras variables son Materia, Profesor, Grupo, Salón y Horario. Consideramos que no todos los profesores pueden impartir todas las materias por lo que se toma una variable MP la cuál es un arreglo de Tuplas Materia-Profesor que indica las materias que imparte cada profesor, de igual manera sabemos que los grupos son asignados a un salón de manera previa por lo que tenemos la variable GS la cuál lleva el Id de la tupla Grupo-Salón.\\
+Teniendo en cuenta los resultados del protipo 1, tomamos las funciones ya definidas sin embargo, de acuedo a las pruebas del prototipo 1, se notó que el resultado nunca llegaba al óptimo y se detenía el progreso en al rededor del valor de 42, siendo esto sospechoso se notó un error en la función de evaluación, al analizar los llamados huecos se estaba cometiendo un error que penalizaba a los profesores con una sola clase.\\
 
-Teniendo en cuenta lo anterior y los conceptos de cómputo evolutivo expresados con anterioridad, tenemos que el cromosoma de los individuos que comprenden a nuestra población serán construidos con las tres variables mencionadas. De esta manera el cromosoma se puede representar de esta manera : (MP,GS,H).\\
+Al corregir el error mencionado en la función de evaluación junto con algunos arreglos menores se logró llegar a una calificación de 0, lo cuál es la calificación óptima. Tener una calificación óptima se tomó en cuenta como uno de los criterios de paro de la función, por otro lado de acuerdo a la complejidad del problema, la probabilidad de no alcanzar esta calificación es alta por lo que alternativamente se utiliza como criterio de paro un número de iteraciones definido de forma experimental.\\
 
-Como se explicó anteriormente los algoritmos evolutivos tienen una estructura similar por lo que tenemos el siguiente pseudocódigo para representar nuestro algoritmo.\\
+A continuación se muestra el pseudocódigo de las funciones utilizadas para el presente prototipo.
 
 \begin{algorithm}[H]
 	\DontPrintSemicolon
@@ -17,7 +17,7 @@ Como se explicó anteriormente los algoritmos evolutivos tienen una estructura s
 	y = 1\;
 	calificacion = 0 \;
 	calificacionaux = 0 \;
-	\While{$y < = N$}{
+	\For{$y < = N$}{
 		calificacion = evalua(poblacion)\;
 		poblacionaux = poblacion\;
 		ran = random(0,1)\;
@@ -28,17 +28,18 @@ Como se explicó anteriormente los algoritmos evolutivos tienen una estructura s
 		}
 		calificacionaux = evalua(poblacionaux)\;
 		\If{$calificacionaux < = calificacion$}{poblacion = poblacionaux\;}
+		\If{$calificacion == 0$}{ break\;}
 		incrementar $y$ en $1$\;
-	}
+	} 
 	
 	\caption{Algoritmo Principal Tlamantinime}
 \end{algorithm}
 
-Siguiendo el pseudocódigo del algoritmo, después de inicializar las variables con la información que utilizaremos para crear la estructura educativa, utilizamos la función generarPoblacion() para crear la población inicial con la cual trabajaremos. A continuación entramos a un ciclo que se detiene con el criterio de paro que hemos definido experimentalmente como un número de iteraciones, dentro del ciclo evaluamos la población inicial y creamos una copia de la misma, seleccionamos de manera aleatoria cualquiera de los dos operadores de mutación que hemos definido y operamos dicha mutación sobre la copia de la población inicial. Evaluamos la población mutada y comparamos contra la población inicial, la que sea determinada como mejor adaptada o, lo que es lo mismo, con la mejor calificación, será aquella con la que realizaremos la mutación en la siguiente iteración de forma que obtengamos el mejor resultado posible antes de alcanzar el número de iteraciones definido como criterio de paro.
+Siguiendo el pseudocódigo del algoritmo, después de inicializar las variables con la información que utilizaremos para crear la estructura educativa, utilizamos la función generarPoblacion() para crear la población inicial con la cual trabajaremos. A continuación entramos a un ciclo que se detiene con alguno de los criterios de paro que hemos definido experimentalmente ya sea el número de iteraciones o la calificación óptima, dentro del ciclo evaluamos la población inicial y creamos una copia de la misma, seleccionamos de manera aleatoria cualquiera de los dos operadores de mutación que hemos definido y operamos dicha mutación sobre la copia de la población inicial. Evaluamos la población mutada y comparamos contra la población inicial, la que sea determinada como mejor adaptada o, lo que es lo mismo, con la mejor calificación, será aquella con la que realizaremos la mutación en la siguiente iteración de forma que obtengamos la población se mantenga o mejore con cada iteración.
 
 \subsubsection{Funci\'on: generar Poblacion}
 
-Esta función genera una población inicial, tradicionalmente la población inicial debe ser completamente aleatoria, sin embargo esto podría significar nunca encontrar una solución viable a partir de la misma. La función deifinida genera una población viable cuidando  las restricciones escenciales y utilizando todas los atributos contenidos en el arreglo MP asegurando que todos los profesores impartan todas sus clases a pesar de las mutaciones, mientras se verifica que los profesores no tengan traslapes.
+Esta función genera una población inicial, tradicionalmente la población inicial debe ser completamente aleatoria, sin embargo esto podría significar nunca encontrar una solución viable a partir de la misma. La función deifinida genera una población viable cuidando las restricciones escenciales y utilizando todas los atributos contenidos en el arreglo MP asegurando que todos los profesores impartan todas sus clases a pesar de las mutaciones, mientras se verifica que los profesores no tengan traslapes.
 
 \begin{algorithm}[H]
 	\DontPrintSemicolon
@@ -90,7 +91,7 @@ Para evaluar a un individuo tomamos en cuenta las siguientes restricciones con s
 	
 	\item No se pueden impartir dos clases al mismo tiempo en un grupo. Penalizacion = 30
 	
-	\item No se debe impartir dos veces la misma materia en un grupo. Penalizacion = 10
+	\item No se debe impartir dos veces la misma materia en un grupo. Penalizacion = 30
 	
 	\item El horario de un grupo debe tener los menos huecos posibles. Penalizacion = 2
 	
@@ -131,12 +132,13 @@ Para evaluar a un individuo tomamos en cuenta las siguientes restricciones con s
 		incrementar $pge[profesor][grupo]$ en $1$\;
 		
 		\If{PHE[profesor][horario] $>$ 1  }{incrementar $calificacion$ en $30$}
-		\If{GHE[grupo][hora] $>$ 1}{incrementar $calificacion$ en $16$}
-		\If{MGE[materia][grupo] $>$ 1}{incrementar $calificacion$ en $10$}
+		\If{GHE[grupo][hora] $>$ 1}{incrementar $calificacion$ en $30$}
+		\If{MGE[materia][grupo] $>$ 1}{incrementar $calificacion$ en $30$}
 		\If{PGE[profesor][grupo]}{incrementar $calificacion$ en $1$}
-		\If{PHE[profesor][1]==1}{\If{PHE[profesor][2]==0}{\If{PHE[profesor][3]==0}{incrementar $calificacion$ en $2$}}}	
-		\If{PHE[profesor][2]==1}{\If{PHE[profesor][3]==0}{\If{PHE[profesor][4]==0}{incrementar $calificacion$ en $2$}}}
-		\If{PHE[profesor][3]==1}{\If{PHE[profesor][4]==0}{\If{PHE[profesor][5]==0}{incrementar $calificacion$ en $2$}}} \If{PHE[profesor][4]==1}{\If{PHE[profesor][5]==0}{\If{PHE[profesor][6]==0}{incrementar $calificacion$ en $2$}}}
+		\If{PHE[profesor][1]==1 AND PHE[profesor][2]==0 AND PHE[profesor][3]==0}{ \If{PHE[profesor][4] == 1 OR PHE[profesor][5] == 1 OR PHE[profesor][6] == 1 OR PHE[profesor][7] == 1}{incrementar $calificacion$ en $2$}}
+		\If{PHE[profesor][2]==1 AND PHE[profesor][3]==0 AND PHE[profesor][4]==0}{ \If{PHE[profesor][5] == 1 OR PHE[profesor][6] == 1 OR PHE[profesor][7] == 1}{incrementar $calificacion$ en $2$}}
+		\If{PHE[profesor][3]==1 AND PHE[profesor][4]==0 AND PHE[profesor][5]==0}{ \If{PHE[profesor][6] == 1 OR PHE[profesor][7] == 1}{incrementar $calificacion$ en $2$}}
+		\If{PHE[grupo][4]==1 AND PHE[grupo][5]==0 AND PHE[grupo][6]==0}{ \If{PHE[grupo][7] == 1}{incrementar $calificacion$ en $2$}}
 	}
 \end{algorithm}
 
@@ -146,10 +148,10 @@ Para evaluar a un individuo tomamos en cuenta las siguientes restricciones con s
 	\SetAlgoVlined
 	%HUECOS GRUPO
 	\While{
-		\If{GHE[grupo][1]==1}{\If{GHE[grupo][2]==0}{\If{GHE[grupo][3]==0}{incrementar $calificacion$ en $2$}}}	
-		\If{GHE[grupo][2]==1}{\If{GHE[grupo][3]==0}{\If{GHE[grupo][4]==0}{incrementar $calificacion$ en $2$}}}
-		\If{GHE[grupo][3]==1}{\If{GHE[grupo][4]==0}{\If{GHE[grupo][5]==0}{incrementar $calificacion$ en $2$}}}
-		\If{GHE[grupo][4]==1}{\If{GHE[grupo][5]==0}{\If{GHE[grupo][6]==0}{incrementar $calificacion$ en $2$}}}
+		\If{GHE[grupo][1]==1 AND GHE[grupo][2]==0 AND GHE[grupo][3]==0}{ \If{GHE[grupo][4] == 1 OR GHE[grupo][5] == 1 OR GHE[grupo][6] == 1 OR GHE[grupo][7] == 1}{incrementar $calificacion$ en $2$}}
+		\If{GHE[grupo][2]==1 AND GHE[grupo][3]==0 AND GHE[grupo][4]==0}{ \If{GHE[grupo][5] == 1 OR GHE[grupo][6] == 1 OR GHE[grupo][7] == 1}{incrementar $calificacion$ en $2$}}
+		\If{GHE[grupo][3]==1 AND GHE[grupo][4]==0 AND GHE[grupo][5]==0}{ \If{GHE[grupo][6] == 1 OR GHE[grupo][7] == 1}{incrementar $calificacion$ en $2$}}
+		\If{GHE[grupo][4]==1 AND GHE[grupo][5]==0 AND GHE[grupo][6]==0}{ \If{GHE[grupo][7] == 1}{incrementar $calificacion$ en $2$}}
 	}
 	return calificacion\;	
 	\caption{evalua(individuos)}
@@ -202,6 +204,6 @@ La segunda función actua sobre el gen H manteniendo los profesores y las materi
 
 \subsubsection{Resultado}
 
-Como resultado de este prototipo tenemos que las funciones crean un horario mejor que el actual de ESCOM para el espacio de prueba utilizado de acuerdo a nuestros criterios, el propósito de este prototipo fue generar las funciones que se van a utilizar y comprobar su correcto funcionamiento, aunado a esto pudimos determinar el número de iteraciones necesarias para llegar al mejor resultado posible de forma que las mismas se puedan considerar un criterio de paro.\\
+Como resultado de este prototipo tenemos que las funciones crean un horario mejor que el actual de ESCOM para el espacio de prueba utilizado de acuerdo a nuestros criterios, el propósito de este prototipo fue corregir los errores encontrados en el prototipo 1, aunado a esto pudimos determinar un nuevo criterio de paro teniendo en cuenta que utilizamos un número de iteraciones determinado de forma experimental y el momento en que la calificación llega a 0 la cuál es la mejor calificación alcanzable para este problema.\\
 
-Como parte negativa tenemos que nunca se logra una calificación perfecta (igual a 0), teniendo como mejor calificación lograda en las pruebas el 42.\\
+Como parte negativa tenemos que como tal aunque sirve para probar las funciones y los conceptos, este algoritmo sólo tiene un individuo en la población inicial y solo genera un resultado.\\
