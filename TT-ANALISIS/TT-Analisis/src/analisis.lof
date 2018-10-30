@@ -1,11 +1,79 @@
-\select@language {spanish}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Determinaci\IeC {\'o}n experimental del criterio de paro}}{31}{figure.1.1}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Gr\IeC {\'a}fica de mejora}}{31}{figure.1.2}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Determinaci\IeC {\'o}n experimental del criterio de paro}}{33}{figure.1.3}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Gr\IeC {\'a}fica de mejora}}{33}{figure.1.4}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Determinaci\IeC {\'o}n experimental del criterio de paro}}{35}{figure.1.5}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Gr\IeC {\'a}fica de mejora}}{35}{figure.1.6}
+\babel@toc {spanish}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Solicitud de informaci\IeC {\'o}n}}{40}{figure.3.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Modelo del sistema.}}{27}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de paquetes del sistema.}}{28}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Entorno de trabajo del sistema}}{30}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Arquitectura Django}}{31}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Estad\IeC {\'\i }stica de los navegadores utilizados en M\IeC {\'e}xico}}{32}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Comunicaci\IeC {\'o}n del sistema}}{33}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Estad\IeC {\'\i }stica de los sistemas operativos utilizados en M\IeC {\'e}xico}}{33}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Comunicaci\IeC {\'o}n entre paquetes}}{34}{figure.3.8}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Modelo Entidad Relaci\IeC {\'o}n del sistema.}}{38}{figure.5.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Academias }}{48}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Infraestructura }}{48}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Oferta Educativa }}{49}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Profesores }}{49}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Estructura Educativa }}{50}{figure.6.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Academias.}}{51}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces IUA1 Gestionar Academias}}{62}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces IUA1.1 Registrar Academia}}{63}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces IUA1.2 Modificar Academia}}{64}{figure.7.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Edificios.}}{67}{figure.8.1}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo de Espacios.}}{68}{figure.8.2}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces IUI1 Gestionar Edificios}}{91}{figure.8.3}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces IUI1.1 Registrar Edificio}}{92}{figure.8.4}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces IUI1.2 Modificar Edificio}}{93}{figure.8.5}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces IUI1.5 Gestionar Espacios}}{94}{figure.8.6}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces IUI1.5.1 Registrar Espacio}}{95}{figure.8.7}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces IUI1.5.2 Modificar Espacio}}{97}{figure.8.8}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces IUI1.5.4 Consultar Espacio}}{98}{figure.8.9}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Plan de estudio.}}{100}{figure.9.1}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Unidad de Aprendizaje.}}{101}{figure.9.2}
+\contentsline {figure}{\numberline {9.3}{\ignorespaces IUOE1 Gestionar Planes de Estudio}}{128}{figure.9.3}
+\contentsline {figure}{\numberline {9.4}{\ignorespaces IUOE1.1 Registrar Plan de Estudio}}{130}{figure.9.4}
+\contentsline {figure}{\numberline {9.5}{\ignorespaces IUOE1.2 Modificar Plan de Estudio}}{131}{figure.9.5}
+\contentsline {figure}{\numberline {9.6}{\ignorespaces IUOE1.4 Consultar Plan de Estudio}}{132}{figure.9.6}
+\contentsline {figure}{\numberline {9.7}{\ignorespaces IUOE1.5 Gestionar Unidades de Aprendizaje}}{133}{figure.9.7}
+\contentsline {figure}{\numberline {9.8}{\ignorespaces IUOE1.5.1 Registrar Unidad de Aprendizaje}}{134}{figure.9.8}
+\contentsline {figure}{\numberline {9.9}{\ignorespaces IUOE1.5.2 Modificar Unidad de Aprendizaje}}{136}{figure.9.9}
+\contentsline {figure}{\numberline {9.10}{\ignorespaces IUOE1.5.4 Consultar Unidad de Aprendizaje}}{137}{figure.9.10}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Profesores.}}{139}{figure.10.1}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces IUP1 Gestionar Profesores}}{153}{figure.10.2}
+\contentsline {figure}{\numberline {10.3}{\ignorespaces IUP1.1 Registrar Profesor}}{154}{figure.10.3}
+\contentsline {figure}{\numberline {10.4}{\ignorespaces IUP1.2 Modificar Profesor}}{155}{figure.10.4}
+\contentsline {figure}{\numberline {10.5}{\ignorespaces IUP1.4 Consultar Profesor}}{156}{figure.10.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Estructura educativa.}}{159}{figure.11.1}
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Grupos.}}{160}{figure.11.2}
+\contentsline {figure}{\numberline {11.3}{\ignorespaces Modelo de informaci\IeC {\'o}n del m\IeC {\'o}dulo Asociaci\IeC {\'o}n de profesores.}}{161}{figure.11.3}
+\contentsline {figure}{\numberline {11.4}{\ignorespaces IUEE1 Gestionar Estructura Educativa}}{196}{figure.11.4}
+\contentsline {figure}{\numberline {11.5}{\ignorespaces IUEE1.1 Registrar Estructura Educativa}}{197}{figure.11.5}
+\contentsline {figure}{\numberline {11.6}{\ignorespaces IUEE1.2 Modificar Estructura Educativa}}{198}{figure.11.6}
+\contentsline {figure}{\numberline {11.7}{\ignorespaces IUEE1.4 Configurar Horario}}{199}{figure.11.7}
+\contentsline {figure}{\numberline {11.8}{\ignorespaces IUAP1 Gestionar Asociaci\IeC {\'o}n de Profesores}}{200}{figure.11.8}
+\contentsline {figure}{\numberline {11.9}{\ignorespaces IUAP1.1 Registrar Asociaci\IeC {\'o}n de Profesor}}{201}{figure.11.9}
+\contentsline {figure}{\numberline {11.10}{\ignorespaces IUAP1.2 Modificar Asociaci\IeC {\'o}n de Profesor}}{203}{figure.11.10}
+\contentsline {figure}{\numberline {11.11}{\ignorespaces IUAP1.4 Consultar Asociaci\IeC {\'o}n de Profesor}}{204}{figure.11.11}
+\contentsline {figure}{\numberline {11.12}{\ignorespaces IUG1 Gestionar Grupos}}{205}{figure.11.12}
+\contentsline {figure}{\numberline {11.13}{\ignorespaces IUG1.1 Registrar Grupo}}{206}{figure.11.13}
+\contentsline {figure}{\numberline {11.14}{\ignorespaces IUG1.2 Modificar Grupo}}{207}{figure.11.14}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {13.1}{\ignorespaces Determinaci\IeC {\'o}n experimental del criterio de paro}}{237}{figure.13.1}
+\contentsline {figure}{\numberline {13.2}{\ignorespaces Gr\IeC {\'a}fica de mejora}}{237}{figure.13.2}
+\contentsline {figure}{\numberline {13.3}{\ignorespaces Determinaci\IeC {\'o}n experimental del criterio de paro}}{239}{figure.13.3}
+\contentsline {figure}{\numberline {13.4}{\ignorespaces Gr\IeC {\'a}fica de mejora}}{239}{figure.13.4}
+\contentsline {figure}{\numberline {13.5}{\ignorespaces Determinaci\IeC {\'o}n experimental del criterio de paro}}{241}{figure.13.5}
+\contentsline {figure}{\numberline {13.6}{\ignorespaces Gr\IeC {\'a}fica de mejora}}{241}{figure.13.6}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {15.1}{\ignorespaces Solicitud de informaci\IeC {\'o}n}}{246}{figure.15.1}
