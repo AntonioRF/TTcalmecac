@@ -426,7 +426,7 @@
 \contentsline {subsection}{\numberline {11.17.7}IUAP1.1 Registrar Asociaci\IeC {\'o}n de Profesores}{201}{subsection.11.17.7}
 \contentsline {subsubsection}{Objetivo}{201}{section*.125}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{201}{section*.126}
-\contentsline {subsubsection}{Comandos}{202}{section*.127}
+\contentsline {subsubsection}{Comandos}{201}{section*.127}
 \contentsline {subsection}{\numberline {11.17.8}IUAP1.2 Modificar Asociaci\IeC {\'o}n de Profesores}{202}{subsection.11.17.8}
 \contentsline {subsubsection}{Objetivo}{202}{section*.128}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{202}{section*.129}
@@ -435,16 +435,16 @@
 \contentsline {subsubsection}{Objetivo}{202}{section*.131}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{202}{section*.132}
 \contentsline {subsubsection}{Comandos}{202}{section*.133}
-\contentsline {subsection}{\numberline {11.17.10}IUG1 Gestionar Grupos}{205}{subsection.11.17.10}
-\contentsline {subsubsection}{Objetivo}{205}{section*.134}
+\contentsline {subsection}{\numberline {11.17.10}IUG1 Gestionar Grupos}{202}{subsection.11.17.10}
+\contentsline {subsubsection}{Objetivo}{202}{section*.134}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{205}{section*.135}
 \contentsline {subsubsection}{Comandos}{205}{section*.136}
 \contentsline {subsection}{\numberline {11.17.11}IUG1.1 Registrar Grupo}{205}{subsection.11.17.11}
-\contentsline {subsubsection}{Objetivo}{206}{section*.137}
+\contentsline {subsubsection}{Objetivo}{205}{section*.137}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{206}{section*.138}
 \contentsline {subsubsection}{Comandos}{206}{section*.139}
 \contentsline {subsection}{\numberline {11.17.12}IUG1.2 Modificar Grupo}{206}{subsection.11.17.12}
-\contentsline {subsubsection}{Objetivo}{207}{section*.140}
+\contentsline {subsubsection}{Objetivo}{206}{section*.140}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{207}{section*.141}
 \contentsline {subsubsection}{Comandos}{207}{section*.142}
 \contentsline {section}{\numberline {11.18}Pruebas del m\IeC {\'o}dulo: Infraestructura}{208}{section.11.18}
