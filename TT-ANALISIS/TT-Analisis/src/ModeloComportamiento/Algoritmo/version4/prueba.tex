@@ -1,44 +1,45 @@
-\subsection{Pruebas de la versión: 1} \label{chp:pruebasV1}
-En esta sección se describen los resultadods de las pruebas realizadas de la primera versión del algoritmo de optimización de horarios.\\
+\subsection{Pruebas de la versión: 4} \label{chp:pruebasV1}
+En esta sección se describen los resultadods de las pruebas realizadas de la cuarta versión del algoritmo de optimización de horarios.\\
 
 Como consideración tenemos que las pruebas fueron realizadas en una laptop dell Inspiron 15 con procesador intel i5 5ta generación 4gb de memoria ram usando el sistema operativo debian 9.\\
 
 
 \subsubsection{Pruebas realizadas}
 
-Inicialmente las funciones que comprenden el algoritmo fueron probadas por separado. \\
+Inicialmente las funciones que comprenden el algoritmo fueron modificadas de su funcionamiento en los prototipos anteriores para funcionar con la base de datos y la población completa por lo que se corroboró el funcionamiento de dichas funciones. \\
 
 \begin{itemize}
 	\item Se corroboró que la función de generar Población utilizara todas las opciones de Materia-Profesor disponibles y que el resultado tuviera la estructura que hemos definido. 
 	
 	\item Se probó la función de evaluación, para corroborar que las restricciones ingresadas sean tomadas en cuenta al momento de asignar una calificación a un horario.
 	
+	\item Se probó la función de crear la población evaluada de manera que se cree el número de individuos(horarios) que se requieren.
+	
 	\item Se probaron las funciones de mutación de forma que el resultado arrojado después de llevar a cabo dichos operadores sea en realidad distinto a la entrada del mismo así como se corroboró que se llevaran a cabo de la manera esperada.
 	
 \end{itemize}
 
-Una vez que se corrigieron los errores arrojados por las pruebas de cada función por separado, las funciones fueron integradas para ser utilizadas en conjunto. Para corroborar que el funcionamiento fuera correcto, utilizamos la estructura educativa actual de la ESCOM para el nivel 2 y el turno matutino. Utilizando estos datos, se creó una población inicial aleatoria, una población inicial usando la función generar Población y se tomó como ejemplo la estructura tal cual se utiliza hoy en día. Haciendo uso de la función de evaluación determinamos que la calificacion de la población aleatoria fue de 532, la calificación de la población generada por la función generar Población fue de 160 y finalmente la calificación de la estructura de ejemplo fue de 116. Teniendo en cuenta que nuestro problema es de minimización y la calificación óptima es 0, el horario actual fue el mejor evaluado.\\
+Una vez que se corrigieron los errores arrojados por las pruebas de cada función por separado, las funciones fueron integradas para ser utilizadas en conjunto. Para corroborar que el funcionamiento fuera correcto, utilizamos la estructura educativa actual de la ESCOM para el semestre 2019/1. Utilizando estos datos, se crearon 20 individuos dentro de la población inicial y se les dio una evaluación.\\
 
-Una vez que se operaron las funciones de mutación sobre la población generada por nuestra función de generar Población, se logró disminuir la calificación hasta llegar a 42 lo cuál demuestra que obtuvimos un mejor resultado que el actual de ESCOM.\\
+Una vez que se operaron las funciones de mutación sobre la población generada por nuestra función de generar Población, se logró disminuir la calificación del primer individuo por debajo de la calificación de la estructura actual de ESCOM al rededor de las 1500 iteraciones por lo cual esto fue considerado un criterio de paro.\\
 
-Finalmente se determinó que el criterio de paro al no alcanzar una calificación de 0(calificación óptima) debe ser un número determinado de iteraciones, el cúal se determinó de forma experimental de la siguiente manera.\\
 
-En cinco ocasiones se tomó la calificación arrojada por la función de evaluación para el resultado después de llevar a cabo la mutación un número determinado de veces el cúal fue aumentado gradualmente para determinar el momento en que la disminución en la calificación fuera despreciable. En la figura \ref{fig:PruebaV1} se muestran los resultados del experimento y en la figura \ref{fig:grafV1} se muestra la gráfica de los mismos donde se puede apreciar que a partir de las 60,000 iteraciones la mejora es mínima por lo cuál se determinó este punto como criterio de paro teniendo en cuenta que la calificación en este punto es muy superior a la del horario actual.\\
+Se tomó la calificación de los individuos de la población inicial por cada 100 iteraciones para comprobar la mejora. En la figura \ref{fig:PruebaV4} se muestran los resultados del experimento y en la figura \ref{fig:grafV4} se muestra la gráfica de los mismos donde se puede apreciar que a partir de las 1,500 iteraciones los individuos de la población alcanzan mejores calificaciones que la calificación de la estructura educativa actual.\\
  
  \begin{figure}[htbp!]
  	\begin{center}
- 		\fbox{\includegraphics[width=.7\textwidth]{ModeloComportamiento/Algoritmo/imagenes/tabla.png}}
+ 		\fbox{\includegraphics[width=.7\textwidth]{ModeloComportamiento/Algoritmo/imagenes/tabla2.png}}
  		\caption{Determinación experimental del criterio de paro}
- 		\label{fig:PruebaV1}
+ 		\label{fig:PruebaV4}
  	\end{center}
  \end{figure}
 
 
 \begin{figure}[htbp!]
 	\begin{center}
-	\fbox{\includegraphics[width=.7\textwidth]{ModeloComportamiento/Algoritmo/imagenes/grafica.png}}
+	\fbox{\includegraphics[width=.7\textwidth]{ModeloComportamiento/Algoritmo/imagenes/grafica2.png}}
 		\caption{Gráfica de mejora}
-		\label{fig:grafV1}
+		\label{fig:grafV4}
 	\end{center}
 \end{figure}
 

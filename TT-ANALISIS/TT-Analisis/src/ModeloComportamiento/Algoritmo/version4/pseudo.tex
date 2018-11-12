@@ -1,10 +1,10 @@
-\subsection{Prototipo1 del alogritmo de optimización}
+\subsection{Prototipo4 del alogritmo de optimización}
 
-Tenemos que nuestras variables son Materia, Profesor, Grupo, Salón y Horario. Consideramos que no todos los profesores pueden impartir todas las materias por lo que se toma una variable MP la cuál es un arreglo de Tuplas Materia-Profesor que indica las materias que imparte cada profesor, de igual manera sabemos que los grupos son asignados a un salón de manera previa por lo que tenemos la variable GS la cuál lleva el Id de la tupla Grupo-Salón.\\
+Tomando en cuenta los resultados del tercer prototipo, hicimos una nueva versión del algoritmo, en esta ocasión los cambios realizados al algoritmo fueron para que en primer lugar el algoritmo considere los distintos niveles y turnos en que se distribuyen los horarios dentro de la ESCOM y en segundo lugar la información sea recibida de la base de datos generada por el sistema y que de igual manera el o los horarios que se generan como resultado del algoritmo sean almacenados en la base de datos.\\
 
-Teniendo en cuenta lo anterior y los conceptos de cómputo evolutivo expresados con anterioridad, tenemos que el cromosoma de los individuos que comprenden a nuestra población serán construidos con las tres variables mencionadas. De esta manera el cromosoma se puede representar de esta manera : (MP,GS,H).\\
+En este caso tenemos que la población inicial se genera nivel por nivel y turno por turno, después de eso se evalúa de la misma manera que en el tercer prototipo previamente explicado exceptuando la ponderación de cada una de las penalizaciones, para finalmente establecer una mutación que de igual manera sea llevada a cabo nivel por nivel y turno por turno. Debido a la complejidad del problema la cuál ya fue explicada, al aumentar el tamaño de busqueda respecto al considerado en los prototipos anteriores, el tiempo que tarda el algoritmo, así como el número de iteraciones necesarias aumentó considerablemente y, de acuerdo a la experimentación, el criterio de alcanzar una calificación perfecta o en este caso 0 no es válido debido a que la probabilidad de no alcanzarla es alta.\\
 
-Como se explicó anteriormente los algoritmos evolutivos tienen una estructura similar por lo que tenemos el siguiente pseudocódigo para representar nuestro algoritmo.\\
+Como se explicó anteriormente los algoritmos evolutivos tienen una estructura similar por lo que tenemos el siguiente pseudocódigo para representar nuestro algoritmo. De acuerdo a lo previamente mencionado se agregaron los criterios de paro necesarios para asegurar una solución, considerando el número de iteraciones resultante de las pruebas del tercer prototipo y considerando la evaluación de los horarios actuales de la ESCOM.\\
 
 \begin{algorithm}[H]
 	\DontPrintSemicolon
@@ -12,33 +12,46 @@ Como se explicó anteriormente los algoritmos evolutivos tienen una estructura s
 	%\KwResult{Write here the result }
 	inicializar los arreglos globales de valores MP, GS y H\;
 	inicializar el numero de iteraciones N\;
+	inicializar el tamaño de la población inicial IND\;
+	inicializar el número de resultados deseados DESEADOS\;
 	inicializar poblacionaux\;
-	poblacion = generarPoblacion()\;
+	poblacion = poblacionEvaluada(IND,MP,H,GS)\;
+	poblacionaux = poblacion\;
 	y = 1\;
-	calificacion = 0 \;
-	calificacionaux = 0 \;
-	\While{$y < = N$}{
-		calificacion = evalua(poblacion)\;
-		poblacionaux = poblacion\;
-		ran = random(0,1)\;
-		\eIf{ran == 1}{
-			poblacionaux = mutarHorarios(poblacionaux)\;
-		}{
-			poblacionaux = mutarGrupos(poblacionaux)\;
+	i = 1\;
+	stop = 0\;
+	stop2 = 0\;
+	\For{$y < = N$}{
+		\For{$ i <= IND$}{
+			\If{poblacionaux[i][1] != 0}
+				aux = mutacionGrupos(mutacionHorarios(poblacionaux[i][0]))\;
+				poblacionaux[i][0] = aux\;
+				poblacionaux[i][1] = evalua(aux)\;
+				\If{poblacion[i][1] == 0}{
+					incrementar $stop$ en $1$\;
+				}
+				\If{poblacion[i][1] <= 150 and y > 1500}{
+					incrementar $stop2$ en $1$\;
+				}
+				incrementar $i$ en $1$\;
 		}
-		calificacionaux = evalua(poblacionaux)\;
-		\If{$calificacionaux < = calificacion$}{poblacion = poblacionaux\;}
-		incrementar $y$ en $1$\;
+		\If{$stop == DESEADOS$}{
+			break;
+		}
+		\If{$stop2 == DESEADOS$}{
+			break;
+		}
+		incrementar $y$ en $1$\; 
 	}
-	
-	\caption{Algoritmo Principal Tlamantinime}
+	return poblacionaux\;
+	\caption{principal(número iteraciones,tamañoo poblacion, resultados deseados)}
 \end{algorithm}
 
-Siguiendo el pseudocódigo del algoritmo, después de inicializar las variables con la información que utilizaremos para crear la estructura educativa, utilizamos la función generarPoblacion() para crear la población inicial con la cual trabajaremos. A continuación entramos a un ciclo que se detiene con el criterio de paro que hemos definido experimentalmente como un número de iteraciones, dentro del ciclo evaluamos la población inicial y creamos una copia de la misma, seleccionamos de manera aleatoria cualquiera de los dos operadores de mutación que hemos definido y operamos dicha mutación sobre la copia de la población inicial. Evaluamos la población mutada y comparamos contra la población inicial, la que sea determinada como mejor adaptada o, lo que es lo mismo, con la mejor calificación, será aquella con la que realizaremos la mutación en la siguiente iteración de forma que obtengamos el mejor resultado posible antes de alcanzar el número de iteraciones definido como criterio de paro.
+.
 
 \subsubsection{Funci\'on: generar Poblacion}
 
-Esta función genera una población inicial, tradicionalmente la población inicial debe ser completamente aleatoria, sin embargo esto podría significar nunca encontrar una solución viable a partir de la misma. La función deifinida genera una población viable cuidando  las restricciones escenciales y utilizando todas los atributos contenidos en el arreglo MP asegurando que todos los profesores impartan todas sus clases a pesar de las mutaciones, mientras se verifica que los profesores no tengan traslapes.
+Esta función genera una población inicial, los cambios a esta función son los siguientes, iniciando por filtrar a las materias y los grupos por nivel para poder así acomodarlos juntos, evitando así tener grupos con materias de niveles distintos. Teniendo en cuenta el turno de los profesores y los grupos, se les asigna un horario que también corresponda a dicho turno.\\
 
 \begin{algorithm}[H]
 	\DontPrintSemicolon
@@ -55,30 +68,31 @@ Esta función genera una población inicial, tradicionalmente la población inic
 	materia = 0\;
 	condicion = 0\;
 	\While{$k < = Tamanio$}{
-		$pmi \leftarrow $ individuo del arreglo MP sin repeticion \;
-		materia = pmi[0]\;
-		profesor = pmi[1]\;
-		\While{$condicion  != 1$ }{
-			$t \leftarrow $ individuo del arreglo H\;
-			$g \leftarrow $	individuo del arreglo GS\;
-			\If{MG[materia][g] == 0}{
-				\If{PH[profesor][t] == 0}{
-					\If{GH[g][t] == 0}{
-						PH[profesor][t] = 1\;	
-						MG[materia][g] = 1\;
-						GH[g][t] = 1\;
-						condicion = 1\;
-						individuo = [pmi,g,t]\;
-						poblacion[k]= individuo\;
+			
+			$pmi \leftarrow $ individuo del arreglo MP sin repeticion \;
+			materia = pmi[0]\;
+			profesor = pmi[1]\;
+			\While{$condicion  != 1$ }{
+				$t \leftarrow $ individuo del arreglo H\;
+				$g \leftarrow $	individuo del arreglo GS\;
+				\If{MG[materia][g] == 0}{
+					\If{PH[profesor][t] == 0}{
+						\If{GH[g][t] == 0}{
+							PH[profesor][t] = 1\;	
+							MG[materia][g] = 1\;
+							GH[g][t] = 1\;
+							condicion = 1\;
+							individuo = [pmi,g,t]\;
+							poblacion[k]= individuo\;
+						}
 					}
 				}
+				incrementar $k$ en $1$\;
 			}
-			incrementar $k$ en $1$\;
-		}
 		return poblacion\;	
 	}
 	
-	\caption{generarPoblacion()}
+	\caption{generarPoblacion(MP,H,GS)}
 \end{algorithm}
 
 \subsubsection{Funci\'on: evalua}
@@ -86,15 +100,15 @@ Esta función genera una población inicial, tradicionalmente la población inic
 Para evaluar a un individuo tomamos en cuenta las siguientes restricciones con su respectiva penalizacion. La penalizacion es mayor cuando se viola una restriccion escencial(hard constraint) y menor cuando se viola una restriccion no escencial(soft constraint).
 
 \begin{itemize}
-	\item Un profesor no puede dar clase en dos grupos al mismo tiempo. Penalizacion = 30
+	\item Un profesor no puede dar clase en dos grupos al mismo tiempo. Penalizacion = (tamaño del arreglo de población inicial * 2) + 1
 	
-	\item No se pueden impartir dos clases al mismo tiempo en un grupo. Penalizacion = 30
+	\item No se pueden impartir dos clases al mismo tiempo en un grupo. Penalizacion = (tamaño del arreglo de población inicial * 2) + 1
 	
-	\item No se debe impartir dos veces la misma materia en un grupo. Penalizacion = 10
+	\item No se debe impartir dos veces la misma materia en un grupo. Penalizacion = (tamaño del arreglo de población inicial * 2) + 1
 	
-	\item El horario de un grupo debe tener los menos huecos posibles. Penalizacion = 2
+	\item El horario de un grupo debe tener los menos huecos posibles. Penalizacion = 1
 	
-	\item El horario de un profesor debe tener los menos huecos posibles. Penalizacion = 2
+	\item El horario de un profesor debe tener los menos huecos posibles. Penalizacion = 1
 	
 	\item Se debe evitar que un profesor imparta dos materias distintas en el mismo grupo. Penalizacion = 1
 	
@@ -129,15 +143,17 @@ Para evaluar a un individuo tomamos en cuenta las siguientes restricciones con s
 		incrementar $mge[materia][grupo]$ en  $1$\;
 		incrementar $ghe[grupo][hora]$ en $1$\;
 		incrementar $pge[profesor][grupo]$ en $1$\;
-		
-		\If{PHE[profesor][horario] $>$ 1  }{incrementar $calificacion$ en $30$}
-		\If{GHE[grupo][hora] $>$ 1}{incrementar $calificacion$ en $16$}
-		\If{MGE[materia][grupo] $>$ 1}{incrementar $calificacion$ en $10$}
+		$pena = (tamaniopoblacioninicial * 2) + 1$\;
+		\If{PHE[profesor][horario] $>$ 1  }{incrementar $calificacion$ en $pena$}
+		\If{GHE[grupo][hora] $>$ 1}{incrementar $calificacion$ en $pena$}
+		\If{MGE[materia][grupo] $>$ 1}{incrementar $calificacion$ en $pena$}
 		\If{PGE[profesor][grupo]}{incrementar $calificacion$ en $1$}
-		\If{PHE[profesor][1]==1}{\If{PHE[profesor][2]==0}{\If{PHE[profesor][3]==0}{incrementar $calificacion$ en $2$}}}	
-		\If{PHE[profesor][2]==1}{\If{PHE[profesor][3]==0}{\If{PHE[profesor][4]==0}{incrementar $calificacion$ en $2$}}}
-		\If{PHE[profesor][3]==1}{\If{PHE[profesor][4]==0}{\If{PHE[profesor][5]==0}{incrementar $calificacion$ en $2$}}} \If{PHE[profesor][4]==1}{\If{PHE[profesor][5]==0}{\If{PHE[profesor][6]==0}{incrementar $calificacion$ en $2$}}}
+		\If{PHE[profesor][1]==1 AND PHE[profesor][2]==0 AND PHE[profesor][3]==0}{ \If{PHE[profesor][4] == 1 OR PHE[profesor][5] == 1 OR PHE[profesor][6] == 1 OR PHE[profesor][7] == 1}{incrementar $calificacion$ en $1$}}
+		\If{PHE[profesor][2]==1 AND PHE[profesor][3]==0 AND PHE[profesor][4]==0}{ \If{PHE[profesor][5] == 1 OR PHE[profesor][6] == 1 OR PHE[profesor][7] == 1}{incrementar $calificacion$ en $1$}}
+		\If{PHE[profesor][3]==1 AND PHE[profesor][4]==0 AND PHE[profesor][5]==0}{ \If{PHE[profesor][6] == 1 OR PHE[profesor][7] == 1}{incrementar $calificacion$ en $1$}}
+		\If{PHE[grupo][4]==1 AND PHE[grupo][5]==0 AND PHE[grupo][6]==0}{ \If{PHE[grupo][7] == 1}{incrementar $calificacion$ en $1$}}
 	}
+	\caption{evalua(individuos)}
 \end{algorithm}
 
 \begin{algorithm}
@@ -146,18 +162,41 @@ Para evaluar a un individuo tomamos en cuenta las siguientes restricciones con s
 	\SetAlgoVlined
 	%HUECOS GRUPO
 	\While{
-		\If{GHE[grupo][1]==1}{\If{GHE[grupo][2]==0}{\If{GHE[grupo][3]==0}{incrementar $calificacion$ en $2$}}}	
-		\If{GHE[grupo][2]==1}{\If{GHE[grupo][3]==0}{\If{GHE[grupo][4]==0}{incrementar $calificacion$ en $2$}}}
-		\If{GHE[grupo][3]==1}{\If{GHE[grupo][4]==0}{\If{GHE[grupo][5]==0}{incrementar $calificacion$ en $2$}}}
-		\If{GHE[grupo][4]==1}{\If{GHE[grupo][5]==0}{\If{GHE[grupo][6]==0}{incrementar $calificacion$ en $2$}}}
+		\If{GHE[grupo][1]==1 AND GHE[grupo][2]==0 AND GHE[grupo][3]==0}{ \If{GHE[grupo][4] == 1 OR GHE[grupo][5] == 1 OR GHE[grupo][6] == 1 OR GHE[grupo][7] == 1}{incrementar $calificacion$ en $2$}}
+		\If{GHE[grupo][2]==1 AND GHE[grupo][3]==0 AND GHE[grupo][4]==0}{ \If{GHE[grupo][5] == 1 OR GHE[grupo][6] == 1 OR GHE[grupo][7] == 1}{incrementar $calificacion$ en $2$}}
+		\If{GHE[grupo][3]==1 AND GHE[grupo][4]==0 AND GHE[grupo][5]==0}{ \If{GHE[grupo][6] == 1 OR GHE[grupo][7] == 1}{incrementar $calificacion$ en $2$}}
+		\If{GHE[grupo][4]==1 AND GHE[grupo][5]==0 AND GHE[grupo][6]==0}{ \If{GHE[grupo][7] == 1}{incrementar $calificacion$ en $2$}}
 	}
 	return calificacion\;	
 	\caption{evalua(individuos)}
 \end{algorithm}
 
-\subsubsection{Mutaci\'on}
+\subsubsection{Función: Población evaluada}
 
-Se definieron dos funciones de mutación, en ambos casos estamos considerando que dado el espacio limitado que tenemos para generar dichos cambios, aplicamos la mutación al mismo tiempo en dos cromosomas distintos de esta manera se busca mantener la viabilidad del resultado. La primera función de mutación  actúa sobre el gen GS de manera que el profesor sigue impartiendo una materia en el mismo horario pero en un grupo distinto, lo cual mitiga los casos en que un profesor imparte dos materias distintas en el mismo grupo o los casos en que una materia se imparte dos veces en el mismo grupo.\\ 
+Para generar varios individuos utilizando las funciones definidas se creó esta función, la cuál utiliza la función generar Población así como la función evalua. De forma que recibe como parámetros el tamaño de la población deseada y los arreglos materia-profesor, horario y grupo-salón. Utilizando dicha información y las funciones mencionadas, devuelve un una matriz con un número de filas igual al número de individuos determinado y donde la primer columna es contiene una estructura educativa y su segunda columna contiene la evaluación correspondiente a dicho individuo. Dicha matriz es nuestra población inicial con sus respectivas evaluaciones de forma que sea más sencillo manejar los resultados.\\
+
+\begin{algorithm}[H]
+	\DontPrintSemicolon
+	\SetAlgoLined
+	%\KwResult{Write here the result }
+	inicializar las vairables aux y pcalif como arreglos\;
+	inicializar variables tt y eva
+	i = 0\;
+	\For{$i <= IND$}{
+		tt = generarPoblacion(MP,H,GS)\;
+		eva = evalua(tt)\;
+		aux = [tt,eva]\;
+		pcalif[i] = aux\;
+	}
+	return pcalif\;
+	\caption{poblacionEvaluada(IND,MP,H,GS)}
+\end{algorithm}
+
+
+\subsubsection{Funciones: mutación}
+
+
+Se definieron dos funciones de mutación, en ambos casos estamos considerando que dado el espacio limitado que tenemos para generar dichos cambios, aplicamos la mutación al mismo tiempo en dos cromosomas distintos de esta manera se busca mantener la viabilidad del resultado. La primera función de mutación  actúa sobre el gen GS de manera que el profesor sigue impartiendo una materia en el mismo horario pero en un grupo distinto, lo cual mitiga los casos en que un profesor imparte dos materias distintas en el mismo grupo o los casos en que una materia se imparte dos veces en el mismo grupo. Tomando en cuenta lo anterior, la mutación se lleva a cabo únicamente dentro del mismo turno y del mismo nivel.\\ 
 
 
 \begin{algorithm}[H]
@@ -202,6 +241,6 @@ La segunda función actua sobre el gen H manteniendo los profesores y las materi
 
 \subsubsection{Resultado}
 
-Como resultado de este prototipo tenemos que las funciones crean un horario mejor que el actual de ESCOM para el espacio de prueba utilizado de acuerdo a nuestros criterios, el propósito de este prototipo fue generar las funciones que se van a utilizar y comprobar su correcto funcionamiento, aunado a esto pudimos determinar el número de iteraciones necesarias para llegar al mejor resultado posible de forma que las mismas se puedan considerar un criterio de paro.\\
+Como resultado de este prototipo tenemos que las funciones crean un horario mejor que el actual de ESCOM para el espacio de prueba utilizado de acuerdo a nuestros criterios, a demás esta versión funciona en conjunto con el sistema web.\\
 
-Como parte negativa tenemos que nunca se logra una calificación perfecta (igual a 0), teniendo como mejor calificación lograda en las pruebas el 42.\\
+Como parte negativa tenemos que el tiempo, así como el número de iteraciones que toma al algoritmo para llegar a la calificación perfecta, en este caso 0, es demasiado grande o incluso puede darse el caso en que no llega a dicha calificación, por lo tanto se definió a demás del criterio de paro de la calificación perfecta, tenemos un número de iteraciones definido de manera experimental.\\
