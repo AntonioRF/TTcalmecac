@@ -7,18 +7,18 @@
 	
 	\begin{itemize}
 		\item UTTP: Problema de Horarios de Universidades
-		en cuyo caso las clases son asignadas de forma semanal y se tienen que asignar materias a las clases dentro de un horario.
+		en cuyo caso las clases son asignadas de forma semanal y se tienen que asignar materias a las clases dentro de un horario. \ref{18}
 		
 		\item CTTP: Problema de Horarios por Curso
-		Se refiere al problema de las clases impartidas de un curso/materia a la semana en que el problema incluye asignarles salones y profesores a las materias dentro de un horario.
+		Se refiere al problema de las clases impartidas de un curso/materia a la semana en que el problema incluye asignarles salones y profesores a las materias dentro de un horario.\ref{18}
 		
 		\item LTTP: Problema de horarios por clase
-		Se refiere al problema de asignar una sola clase de un curso por día en la universidad sin que se translapen unas con otras.
+		Se refiere al problema de asignar una sola clase de un curso por día en la universidad sin que se translapen unas con otras.\ref{18}
 		
 		\item ETTP: Problema de horarios por examinación
-		Contiene una gran cantidad de situaciones propias de los demás problemas. La capacidad de los salones y el horario de profesores y alumnos debe ser tomado en cuenta.
+		Contiene una gran cantidad de situaciones propias de los demás problemas. La capacidad de los salones y el horario de profesores y alumnos debe ser tomado en cuenta.\ref{18}
 		
-		\item STTP: School Timetabling Problem. Los problemas de tipo STTP son aquellos que toman el cuenta el caso de preparatorias y secundarias donde se imparte determinado número de clases por día pero durante todo un período escolar es el mismo profesor quien imparte la misma materia en el mismo grupo en dichos días y horarios.  
+		\item STTP: School Timetabling Problem. Los problemas de tipo STTP son aquellos que toman el cuenta el caso de preparatorias y secundarias donde se imparte determinado número de clases por día pero durante todo un período escolar es el mismo profesor quien imparte la misma materia en el mismo grupo en dichos días y horarios.  \ref{19}
 	\end{itemize}
 
 	De acuerdo a dichas categorías, el problema que abordamos para el caso ESCOM recae en la categoría de STTP puesto que si bien ESCOM no es una preparatoria o secundaria, las restricciones y características se asemejan más a las que corresponden a esta categoría. De esta manera, las clases duran lo mismo y se imparten siempre en el mismo horario los mismos días sin mencionar que siempre es el mismo profesor quien la imparte y en el mismo salón.
@@ -27,7 +27,7 @@
 	
 	La complejidad en cuanto a computación tiene dos consideraciones, complejidad temporal y complejidad espacial. La complejidad temporal se basa en el concepto que cada operación que lleva a cabo la computadora requiere cierto tiempo, si bien las capacidades de las computadoras actuales permiten realizar múltiples operaciones en fracciones de segundos, cuando un problema requiere realizar demasiadas operaciones el tiempo que tarda una computadora en ejecutarlas aumenta. La complejidad espacial se refiere a los espacios en memoria que se necesitan para manejar toda la información de un problema, sin embargo las computadoras han avanzado a un nivel en que es difícil encontrar problemas que causen un conflicto con el espacio de una computadora.\\
 	
-	De esta manera nos enfocamos en la complejidad temporal. La complejidad temporal de un problema se puede clasificar de la siguiente manera: 
+	De esta manera nos enfocamos en la complejidad temporal. La complejidad temporal de un problema se puede clasificar de la siguiente manera de acuerdo a \ref{20}: 
 	
 		\begin{itemize}
 			\item P- Problemas que pueden ser resueltos en un tiempo polinomial de forma determinista
@@ -36,7 +36,7 @@
 			
 			\item NP-Complete - Problemas NP para los cuales ninguna solución ha sido alcanzada en un tiempo polinomial sin poder afirmar que no pueda ser alcanzada.
 			
-			\item NP-Hard - Problemas con una complejidad al menos tan grande como NP-Complete sin tener que ser necesariamente de tipo NP, la mayoría de los cuáles se considera indescifrable en tiempo polinomial. No son de Decisión.
+			\item NP-Hard - Problemas con una complejidad al menos tan grande como NP-Complete sin tener que ser necesariamente de tipo NP, la mayoría de los cuáles se considera indescifrable en tiempo polinomial. No son de Decisión. 
 			
 		\end{itemize}
 	De acuerdo a esto entendemos que el problema de la calendarización de actividades no puede ser considerado como problema de decisión sin embargo dependiendo del tamaño del espacio de búsqueda es posible no llegar a encontrar una solución o tardar demasiado en hacerlo.\\
@@ -51,31 +51,31 @@
 
 	\section{Cómputo Evolutivo}
 		
-		El cómputo evolutivo es definido como la disciplina del enfoque sub-simbólico o Bottom-UP de la Inteligencia Artificial, compuesta por un conjunto de técnicas heurísticas que imita la evolución y otros mecanismos observados en la naturaleza para la resolución de problemas intratables por otras técnicas. Todo el cómputo evolutivo se basa en la teoría de la evolución por selección natural de Darwin, el cómputo evolutivo está deriva así en programación evolutiva, estrategias evolutivas y algoritmos genéticos.\\
+		El cómputo evolutivo es definido como la disciplina del enfoque sub-simbólico o Bottom-UP de la Inteligencia Artificial, compuesta por un conjunto de técnicas heurísticas que imita la evolución y otros mecanismos observados en la naturaleza para la resolución de problemas intratables por otras técnicas. Todo el cómputo evolutivo se basa en la teoría de la evolución por selección natural de Darwin, el cómputo evolutivo derivando así en programación evolutiva, estrategias evolutivas y algoritmos genéticos.\\
 
 		\subsection{Antecedente histórico}
 
 		Las ideas evolucionistas que popularizó Charles Darwin en 1858 y más tarde en 1859 con la publicación de su libro ‘El origen de las especies’.\\
 
-		Entre las teorías evolutivas de la época encontramos teorías como la de la combinación según la cual las características hereditarias de los padres se mezclaban o combinaban de alguna forma en sus hijos, pero contrastaba la teoría de la selección natural dado que de esta manera los cambios adaptativos no se conservarían.\\
+		Entre las teorías evolutivas de la época encontramos teorías como la de la combinación según la cual las características hereditarias de los padres se mezclaban o combinaban de alguna forma en sus hijos, pero contrastaba la teoría de la selección natural dado que de esta manera los cambios adaptativos no se conservarían.\ref{14} \\ 
 
-		La teoría de la herencia de Mendel en la que habla de genes dominantes y recesivos en las características que los padres aportan a sus hijos de forma que los cambios adaptativos se mantienen y pasan a la siguiente generación.\\
+		La teoría de la herencia de Mendel en la que habla de genes dominantes y recesivos en las características que los padres aportan a sus hijos de forma que los cambios adaptativos se mantienen y pasan a la siguiente generación. \ref{14}\\
 
-		La teoría de la pangénesis esbozada por Darwin en que sostiene que los órganos producen pequeñas partículas hereditarias llamadas ‘gémulas’ o ‘pangenes’, de acuerdo con esta teoría dichas partículas se transportan a través de la sangre y se recolectan en los gametos(células reproductivas) durante su formación. De acuerdo con esta teoría los padres transmiten sus genes a los hijos directamente mediante la sangre.\\
+		La teoría de la pangénesis esbozada por Darwin en que sostiene que los órganos producen pequeñas partículas hereditarias llamadas ‘gémulas’ o ‘pangenes’, de acuerdo con esta teoría dichas partículas se transportan a través de la sangre y se recolectan en los gametos(células reproductivas) durante su formación. De acuerdo con esta teoría los padres transmiten sus genes a los hijos directamente mediante la sangre. \ref{14}\\
 
-		La teoría de la mutación de Hugo De Vries, afirma que los cambios en las especies no se dan de manera gradual y adaptativas, sino más bien de manera abrupta y aleatoria, aunque estaba equivocada, la teoría se basaba en la creencia de que las mutaciones generaban nuevas especies y retoma las leyes de herencia de Mendel.\\
+		La teoría de la mutación de Hugo De Vries, afirma que los cambios en las especies no se dan de manera gradual y adaptativas, sino más bien de manera abrupta y aleatoria, aunque estaba equivocada, la teoría se basaba en la creencia de que las mutaciones generaban nuevas especies y retoma las leyes de herencia de Mendel. \ref{14}\\
 
-		La teoría cromosómica de la herencia de Walter Sutton en 1903 quien determinó correctamente que los cromosomas en el núcleo de las células eran el lugar donde se almacenaban las características hereditarias, afirmó que el comportamiento de los cromosomas en las células sexuales era la base de las leyes de Mendel, indicó también que los cromosomas contienen genes y los genes de un cromosoma están ligados y se heredan juntos.\\
+		La teoría cromosómica de la herencia de Walter Sutton en 1903 quien determinó correctamente que los cromosomas en el núcleo de las células eran el lugar donde se almacenaban las características hereditarias, afirmó que el comportamiento de los cromosomas en las células sexuales era la base de las leyes de Mendel, indicó también que los cromosomas contienen genes y los genes de un cromosoma están ligados y se heredan juntos. \ref{14}\\
 
-		Finalmente el neodarwinismo afirma que hay 4 procesos que actúan sobre las poblaciones, dichos procesos son: Reproducción, mutación, competencia y selección. Cualquier forma de vida en el planeta cuenta con un mecanismo de reproducción que es la manera en que se asegura la continuidad de la especie, al proceso de reproducción de un sistema se le agrega casi de manera implícita una mutación. El hecho que estas reproducciones se lleven a cabo en un espacio finito obliga a que haya competencia entre los individuos y como consecuencia que haya una selección de los más aptos. De esta manera, la evolución es el resultado de estos procesos que interactúan en las poblaciones generación tras generación.\\
+		Finalmente el neodarwinismo afirma que hay 4 procesos que actúan sobre las poblaciones, dichos procesos son: Reproducción, mutación, competencia y selección. Cualquier forma de vida en el planeta cuenta con un mecanismo de reproducción que es la manera en que se asegura la continuidad de la especie, al proceso de reproducción de un sistema se le agrega casi de manera implícita una mutación. El hecho que estas reproducciones se lleven a cabo en un espacio finito obliga a que haya competencia entre los individuos y como consecuencia que haya una selección de los más aptos. De esta manera, la evolución es el resultado de estos procesos que interactúan en las poblaciones generación tras generación. \ref{14}\\
 
-		De esta manera, analizando la evolución como un proceso de optimización, los padres de la computación como es Alan Turing por poner un ejemplo, estudiaron dicho proceso y la posibilidad de aplicarlo a la computación como una manera de resolver problemas lo cual dio paso a las técnicas de cómputo evolutivo que conocemos hoy en día, desde las optimizaciones hasta la inteligencia artificial.\\
+		De esta manera, analizando la evolución como un proceso de optimización, los padres de la computación como es Alan Turing por poner un ejemplo, estudiaron dicho proceso y la posibilidad de aplicarlo a la computación como una manera de resolver problemas lo cual dio paso a las técnicas de cómputo evolutivo que conocemos hoy en día, desde las optimizaciones hasta la inteligencia artificial.\ref{14} \\
 
 		\subsection{Estructura General de un Algoritmo Evolutivo}
 
-		Los algoritmos evolutivos siguen una estructura similar, primero crean una población inicial de individuos y se hace evolucionar mediante un proceso con operadores genéticos. Los procesos dependen de la aptitud que un individuo de la población que muestran en el ambiente en que se desarrollan. A continuación detallamos la información de los atributos de un algoritmo genético.\\
+		Los algoritmos evolutivos siguen una estructura similar, primero crean una población inicial de individuos y se hace evolucionar mediante un proceso con operadores genéticos. Los procesos dependen de la aptitud que un individuo de la población que muestran en el ambiente en que se desarrollan. A continuación detallamos la información de los atributos de un algoritmo genético de acuerdo a \ref{14}.\\
 
-		\textbf{Individuo:} Posible solución a un problema que se está tranado.\\
+		\textbf{Individuo:} Posible solución a un problema que se está tratado.\\
 
 		\textbf{Cromosoma:} Representación de un individuo formada por un conjunto de genes.\\
 
@@ -129,11 +129,11 @@
 		\caption{Estructura general de un algoritmo evolutivo}
 		\end{algorithm}
 	
-		\subsection{Principales paradigmas del cómputo evolutivo}
+		\subsection{Principales paradigmas del cómputo evolutivo}\ref{14}
 
 		El término de cómputo evolutivo engloba las técnicas inspiradas en la evolución biológica del Neo-Darwinismo. En términos generales la computadora requiere los siguientes procesos para simular la evolución: Codificar las estructuras, operaciones que afectan a los individuos, función de aptitud y mecanismo de selección.\\
 
-			\paragraph{Programación evolutiva}
+			\paragraph{Programación evolutiva}\ref{14}
 			Lawrence J. Fogel y otros autores plantearon la posibilidad del uso de la evolución simulada en la solución de problemas. La programación evolutiva consistía en hacer evolucionar autómatas de estados finitos que recibían símbolos, Fogel usaba una función para indicar que tan bueno era un autómata en particular para predecir un símbolo y utilizó el operador de mutación para efectuar cambios en las transiciones y estados de los autómatas para volverlos más aptos. Se aplicó principalmente a problemas de predicción y teoría de juegos entre otros.\\
 
 			Es una técnica en la cual la inteligencia se ve como un comportamiento adaptativo, enfatiza los nexos de comportamiento entre padres e hijos en vez de buscar  emular operadores genéticos.\\
@@ -143,7 +143,7 @@
 			Como la programación evolutiva abstrae la evolución a nivel especie no requiere de una cruza entre especies distintas, sólo una selección y recombinación entre sí.\\
 
 
-			\paragraph{Estaregias evolutivas}
+			\paragraph{Estaregias evolutivas} \ref{14}
 			Desarrolladas por primera vez como una solución a un problema imposible de optimizar analíticamente o utilizando métodos tradicionales para un túnel de viento por Ingo Rechenberg. Implementaban un mecanismo de mutación basándose en el de la naturaleza para generar cambios discretos aleatorios para llegar a la mejor solución posible.\\
 
 			La versión original usaba solo un padre para generar un solo hijo que se mantenía sólo si era mejor que el padre, este tipo de selección se llama extintiva ya que los peores individuos nunca serán seleccionados. En las estrategias se debe evolucionar a las variables del problema así como los parámetros de la técnica.\\
@@ -153,7 +153,7 @@
 			Contempla la adaptación como un proceso poblacional en un ambiente, que los comportamientos individuales pueden representarse mediante programas, que pueden generarse nuevos comportamientos mediante variaciones aleatorias de los programas y las salidas de dos programas normalmente están relacionadas si sus estructuras lo están también. De forma que la adaptación se podía reducir a un formalismo en que los programas interactúan y mejoran con base en un ambiente que determina la adaptación del comportamiento, concebido en el contexto de aprendizaje de máquina, se utiliza de manera muy popular en optimización.\\
 
 
-			\paragraph{Algoritmos genéticos}
+			\paragraph{Algoritmos genéticos}\ref{14}
 			Los algoritmos genéticos fueron propuestos por John H. Hollan a principios de la decada de los 60 como: \\
 				Un algoritmo matemático altamente paralelo que transforma un conjunto de objetos matemáticos individuales con respecto al tiempo usando operaciones modeladas de acuerdo al principio Darwiniano de reproducción y supervivencia del más apto, y tras haberse presentado de forma natural una serie de operaciones genéticas de entre las que destaca la  recombinación sexual. Cada uno de estos objetos matemáticos suele ser una cadena de caracteres (letras o números) de longitud fija que se ajusta el modelo de las cadenas de cromosomas, y se les asocia con una cierta función matemática que refleja su aptitud.\\
 
@@ -163,7 +163,7 @@
 
 			Generar población inicial, calcular aptitud de cada individuo, seleccionar con base en la aptitud, aplicar operadores de cruza para generar la siguiente población, ciclar hasta que cierta condición se satisfaga.\\
 
-			\paragraph{Programación genética}
+			\paragraph{Programación genética}\ref{14}
 			Discute la combinación de segmentos de programas mediante el copiado de subárboles de un individuo a otro y plantea el uso de mutación para introducir nuevos árboles en la población. Posteriormente consideran un operador de cruza para intercambiar sub-árboles entre los programas de una población generada al azar. Se utilizaba también una función de aptitud para definir que tan buena es una población para resolver el problema.\\
 			
-		Par nuestro proyecto hemos tomado la decisión de utilizar programación evolutiva, esto debido a los resultados mostrados en distintos artículos donde el cómputo evolutivo supera a otras técnicas y dentro del cómputo evolutivo, nosotros no necesitamos usar una cruza entre especies si no mutar dentro de los individuos del mismo tipo, en este caso al sólo utilizar el operador de mutación estamos haciendo uso de programación evolutiva en su definición sin mencionar que su estructura nos permite eficientar el proceso.	
+		Para nuestro proyecto hemos tomado la decisión de utilizar programación evolutiva, esto debido a los resultados mostrados en distintos artículos donde el cómputo evolutivo supera a otras técnicas y dentro del cómputo evolutivo, nosotros no necesitamos usar una cruza entre especies si no mutar dentro de los individuos del mismo tipo, en este caso al sólo utilizar el operador de mutación estamos haciendo uso de programación evolutiva en su definición sin mencionar que su estructura nos permite eficientar el proceso.	\ref{21}
